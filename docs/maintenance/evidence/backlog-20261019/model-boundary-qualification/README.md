@@ -52,3 +52,12 @@ owned access-only grant and owned profile/client configuration were deleted;
 owner credentials were not changed or refreshed. Only public SDK metadata of
 owned synthetic sessions is escrowed. The original first guard failure remains
 [retained](attempt1/e41-report.json).
+
+
+A later independent #1399 native warm-up [witnessed an attempted 4.8 fallback
+following real Opus 5.5 refusals](../1399/pilot3-refusal-summary.json). The
+unexpected-model request was blocked before network. This establishes a
+current native fallback mechanism, not the cause of the older missing-boundary
+E41 failure. Remaining arms stay held. Future manual observers must latch
+HTTP-200 `stop_reason: refusal` before permitting another generation; the
+historical successful diagnostic did not exercise that boundary.

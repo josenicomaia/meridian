@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-// Actual native Claude Code -> Meridian -> real SDK/native Claude -> Haiku.
+// Actual native Claude Code -> Meridian -> real SDK/native Claude -> pinned model.
 // Explicit live opt-in, access-only grant, generation/time/quota bounds required.
 import assert from 'node:assert/strict';
 import {spawn,spawnSync} from 'node:child_process';
@@ -12,6 +12,7 @@ import {randomUUID,createHash} from 'node:crypto';
 import {spyOn} from 'bun:test';
 import {installLoadObserver} from './native-load-observer.mjs';
 import {loadContext} from './load-context.mjs';
+import {validateOwnedToolCalls} from './load-guards.mjs';
 const [repoArg,nativeArg,outArg,durationArg,seedArg,maxGenerationsArg]=process.argv.slice(2);
 assert.equal(process.env.E2E_ALLOW_LIVE_MODEL,'1');assert.equal(process.env.E2E_ALLOW_NATIVE_LOAD,'1');
 assert(repoArg&&nativeArg&&outArg&&durationArg&&seedArg&&maxGenerationsArg);
@@ -47,6 +48,9 @@ const {startProxyServer}=await import(pathToFileURL(join(repo,'src/proxy/server.
 const report={head:expectedHead,scope:'Actual parallel native clients and real provider model; public-SDK fork fixtures create owned large-store pressure',durationSeconds:duration,seedCount,maxGenerations,concurrency,minimumWorkerCycleMs:25000,model,context:'200k for Opus; explicit alias opus',native:{version:nativeVersion.stdout.trim(),sha256:createHash('sha256').update(readFileSync(native)).digest('hex')},sdk:observer.sdkVersion,bun:Bun.version,platform:process.platform,arch:process.arch,periodicGcDisabled:true,publicationGcUnchanged:true,cycles:0,clientRequests:0,capacityRefusal:null,failure:null,passed:false};
 const actors=[],allowedFiles=new Set(),admission=[],locks=[],snapshots=[],fronts=new Map(),workerRequests=new Map();let instance,stopping=false,loadStartedAt=0,nextQuotaAt=0,quotaPromise;
 const record=row=>appendFileSync(join(out,'requests.jsonl'),JSON.stringify({at:Date.now(),...row})+'\n',{mode:0o600});
+let stopSignalSent=false;
+const stopTimer=setInterval(()=>{if(observer.state.stopped&&!stopSignalSent){stopSignalSent=true;stopping=true;for(const {child,witness} of actors)if(!witness.state.exitSeen)child.kill('SIGTERM');}},100);
+stopTimer.unref();
 const sidecar=join(process.env.MERIDIAN_SESSION_DIR,'session-gc.json');
 function stateSnapshot(){
   if(!existsSync(sidecar))return {at:Date.now(),resources:0,counts:{}};
@@ -121,20 +125,21 @@ try{
   const port=instance.server.address().port;
   for(const worker of ['warmup',...Array.from({length:concurrency},(_,index)=>String(index))])fronts.set(worker,Bun.serve({hostname:'127.0.0.1',port:0,idleTimeout:240,async fetch(request){
     const url=new URL(request.url);if(url.pathname.endsWith('/count_tokens'))return Response.json({input_tokens:4000});if(!url.pathname.endsWith('/messages'))return Response.json({});
-    if(stopping||observer.state.stopped)return Response.json({type:'error',error:{type:'api_error',message:'Owned load stopped'}},{status:503});
+    if(stopping||observer.state.stopped)return Response.json({type:'error',error:{type:'invalid_request_error',message:'Owned load stopped'}},{status:400});
     const started=performance.now(),startedWall=Date.now(),requestId=randomUUID(),body=await request.arrayBuffer();const payload=JSON.parse(Buffer.from(body).toString());assert.equal(payload.model,model);report.clientRequests++;workerRequests.set(worker,(workerRequests.get(worker)??0)+1);const index=report.clientRequests;
     const headers=new Headers(request.headers);for(const name of ['host','connection','content-length','transfer-encoding'])headers.delete(name);headers.set('x-request-id',requestId);
     const response=await fetch(`http://127.0.0.1:${port}${url.pathname}${url.search}`,{method:'POST',headers,body,signal:AbortSignal.any([request.signal,AbortSignal.timeout(170_000)])});
     const text=await response.text();assert(text.length<512*1024);const responseHeaders=new Headers(response.headers);for(const name of ['content-length','content-encoding','transfer-encoding','connection'])responseHeaders.delete(name);
+    if(observer.state.stopped){stopping=true;record({request:index,requestId,phase:'load-stopped',reason:observer.state.stopped});return Response.json({type:'error',error:{type:'invalid_request_error',message:'Owned load stopped before returning any tool block'}},{status:400});}
     if(!response.ok){let error;try{const value=JSON.parse(text);error={type:value.error?.type,message:observer.state.queries===0&&response.status===400?value.error?.message:undefined,messageSha256:typeof value.error?.message==='string'?createHash('sha256').update(value.error.message).digest('hex'):undefined};}catch{error={type:'non-json'};}report.lastHttpError={status:response.status,...error};if(response.status===503&&text.includes('session transcript ownership capacity is full')){report.capacityRefusal={request:index,status:503,at:Date.now()};stopping=true;}record({request:index,requestId,status:response.status,elapsedMs:performance.now()-started,capacity:!!report.capacityRefusal,error});return new Response(text,{status:response.status,headers:responseHeaders});}
     const parsed=parseAssistantResponse(text,payload.stream===true);
-    for(const block of parsed.blocks.filter(block=>block.type==='tool_use'))assert(block.name==='Read'&&typeof block.input?.file_path==='string'&&allowedFiles.has(resolve(block.input.file_path))&&resolve(block.input.file_path).startsWith(join(out,'clients',worker,'project')+sep),'Refuse any tool or path outside owned fixtures before native execution');
+    try{validateOwnedToolCalls(parsed.blocks,allowedFiles,join(out,'clients',worker,'project'));}catch(error){stopping=true;observer.state.stopped??='Owned tool/path guard rejected response';record({request:index,requestId,phase:'tool-guard-rejection',diagnostic:error.diagnostic??{errorType:error.name}});return Response.json({type:'error',error:{type:'invalid_request_error',message:'Owned fixture tool guard stopped this load'}},{status:400});}
     // Forward unchanged completed bytes after the owned-path guard. This
     // buffers model responses; it is not a streaming latency benchmark.
     const first=observer.state.queryStarts.get(requestId);assert(first,'Need exact existing request-ID correlation at real SDK admission');admission.push({at:startedWall,requestId,delayMs:first-startedWall});
     record({request:index,requestId,status:response.status,elapsedMs:performance.now()-started,model:payload.model,roles:payload.messages.map(message=>message.role),toolCalls:parsed.blocks.filter(block=>block.type==='tool_use').length});
     return new Response(text,{status:response.status,headers:responseHeaders});
-  }}));
+  },error(error){stopping=true;observer.state.stopped??='Native front transport/validation error';record({phase:'front-error',errorType:error.name});return Response.json({type:'error',error:{type:'invalid_request_error',message:'Owned front guard stopped this load'}},{status:400});}}));
   await cycle('warmup');report.warmupAdapters=[...new Set(telemetryStore.getRecent({limit:20}).map(metric=>metric.adapter))];assert.deepEqual(report.warmupAdapters,['claude-code'],'Actual native client must use the real Claude Code adapter');await seed();report.beforeLoad=stateSnapshot();report.queriesBeforeLoad=observer.state.queries;loadStartedAt=Date.now();
   const hardStop=setTimeout(()=>{stopping=true;report.hardDeadline=true;for(const {child,witness} of actors)if(!witness.state.exitSeen)child.kill('SIGTERM');},(duration+120)*1000);
   const timer=setInterval(()=>{const snapshot=stateSnapshot();snapshots.push(snapshot);writeFileSync(join(out,'progress.json'),JSON.stringify({phase:'native-load',elapsedSeconds:(Date.now()-loadStartedAt)/1000,cycles:report.cycles,generations:observer.state.generations,...snapshot}));},30_000);
@@ -143,11 +148,12 @@ try{
   assert(!observer.state.stopped,observer.state.stopped??'Model observer stopped');assert(!report.capacityRefusal,'Ownership capacity exhausted');assert(report.elapsedSeconds>=duration,'Full requested duration required');report.sdkQueriesPerMinute=(observer.state.queries-report.queriesBeforeLoad)/(report.elapsedSeconds/60);if(duration===3600)assert(report.sdkQueriesPerMinute>=28,'Need sustained native-client retirement pressure above the old 256/11-minute bound');report.passed=true;
 }catch(error){report.failure=String(error);process.exitCode=1;}
 finally{
+  clearInterval(stopTimer);
   stopping=true;for(const {child,witness} of actors)if(!witness.state.joined)await stopAndJoinChild(child,witness,{graceMs:2000,forceMs:3000});
   report.beforeClose=stateSnapshot();const closeStarted=Date.now();if(instance)try{await instance.close();}catch(error){report.closeFailure=String(error);report.passed=false;process.exitCode=1;}report.closeMs=Date.now()-closeStarted;report.afterClose=stateSnapshot();
   if(existsSync(sidecar)){const state=JSON.parse(readFileSync(sidecar,'utf8'));report.deletedAfterCloseStarted=Object.values(state.resources).filter(row=>row.state==='deleted'&&row.updatedAt>=closeStarted).length;if(report.deletedAfterCloseStarted>16||report.closeMs>35_000){report.closeBudgetFailure=true;report.passed=false;process.exitCode=1;}}
   for(const front of fronts.values())await front.stop(true);for(const {child,witness} of allActors)if(!witness.state.joined)await stopAndJoinChild(child,witness,{graceMs:2000,forceMs:3000});await observer.close();lockSpy.mockRestore();contextSpy.mockRestore();for(const spy of processSpies.reverse())spy.mockRestore();report.allSpawnedProcesses={started:allActors.length,joined:allActors.filter(actor=>actor.witness.state.joined).length};
-  report.model={expected:model,observed:[...observer.state.models],queries:observer.state.queries,generations:observer.state.generations,stopped:observer.state.stopped};report.sdkChildren={started:observer.state.children,closed:observer.state.closedChildren};report.clientChildren={started:actors.filter(actor=>actor.kind==='client').length,joined:actors.filter(actor=>actor.kind==='client'&&actor.witness.state.joined).length};report.quotaChildren={started:actors.filter(actor=>actor.kind==='quota').length,joined:actors.filter(actor=>actor.kind==='quota'&&actor.witness.state.joined).length};
+  report.model={expected:model,observed:[...observer.state.models],queries:observer.state.queries,generationAttempts:observer.state.generationAttempts,generations:observer.state.generations,blockedGenerations:observer.state.blockedGenerations,stopped:observer.state.stopped};report.sdkChildren={started:observer.state.children,closed:observer.state.closedChildren};report.clientChildren={started:actors.filter(actor=>actor.kind==='client').length,joined:actors.filter(actor=>actor.kind==='client'&&actor.witness.state.joined).length};report.quotaChildren={started:actors.filter(actor=>actor.kind==='quota').length,joined:actors.filter(actor=>actor.kind==='quota'&&actor.witness.state.joined).length};
   report.joined=report.sdkChildren.started===report.sdkChildren.closed&&report.clientChildren.started===report.clientChildren.joined&&report.quotaChildren.started===report.quotaChildren.joined&&report.allSpawnedProcesses.started===report.allSpawnedProcesses.joined;if(!report.joined){report.passed=false;process.exitCode=1;}
   const loadAdmission=admission.filter(row=>row.at>=loadStartedAt),loadLocks=locks.filter(row=>row.at>=loadStartedAt);report.latency={requestPreSdkAdmissionMs:{p50:percentile(loadAdmission.map(row=>row.delayMs),.5),p95:percentile(loadAdmission.map(row=>row.delayMs),.95),p99:percentile(loadAdmission.map(row=>row.delayMs),.99)},lifecycleLocalQueueWaitMs:{p50:percentile(loadLocks.map(row=>row.queueWaitMs),.5),p95:percentile(loadLocks.map(row=>row.queueWaitMs),.95),p99:percentile(loadLocks.map(row=>row.queueWaitMs),.99)},externalAcquireAndTransactionMs:{p50:percentile(loadLocks.map(row=>row.externalAcquireAndTransactionMs),.5),p95:percentile(loadLocks.map(row=>row.externalAcquireAndTransactionMs),.95),p99:percentile(loadLocks.map(row=>row.externalAcquireAndTransactionMs),.99)}};
   writeFileSync(join(out,'lifecycle-lock-timings.json'),JSON.stringify(locks));writeFileSync(join(out,'request-admission-timings.json'),JSON.stringify(admission));writeFileSync(join(out,'lifecycle-snapshots.json'),JSON.stringify(snapshots));

@@ -55,7 +55,7 @@ export async function installModelObserver(root, output, expectedModel) {
             if(event.type==='message_start'){
               row.events.push({type:event.type,id:event.message?.id,model:event.message?.model});observeModel('provider response',event.message?.model);
             }
-            if(event.type==='message_delta')row.events.push({type:event.type,stopReason:event.delta?.stop_reason,usage:event.usage});
+            if(event.type==='message_delta'){row.events.push({type:event.type,stopReason:event.delta?.stop_reason,usage:event.usage});if(event.delta?.stop_reason==='refusal')witness.stopped??='Provider refusal: no retry, fallback or further inference permitted';}
             if(event.type==='error'){row.events.push({type:event.type,errorType:event.error?.type});witness.stopped??='Provider in-band error';}
             save();
           }

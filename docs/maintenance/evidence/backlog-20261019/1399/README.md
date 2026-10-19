@@ -52,7 +52,7 @@ routing, request and custody facts before any large run. Baseline/main and
 candidate each need new owned output/config/session directories; preserve a
 capacity refusal as the baseline result rather than silently rerunning it.
 The original hour-long affected-flow acceptance remains open until an actual
-complete run establishes it. No live result is claimed in this preparation.
+complete run establishes it. The bounded pilot results below do not establish the full-hour acceptance gate.
 
 ## First live pilot — stopped before inference
 
@@ -86,3 +86,44 @@ cycle are required, then an ordinary saved-session follow-up. Real adapter
 telemetry must say `claude-code`. The observer now joins all root spawn/execFile
 children, including cleanup workers, and records the provider context beta.
 No larger run starts until this additional pilot is reviewed.
+
+
+## Dependency-chain pilot — refused, then stopped
+
+[The third pilot](pilot3-refusal-summary.json) failed during warm-up before any
+public forks, large-store seed or hourly run. Provider generations one through
+three were all Opus 5.5. The second and third stopped with `refusal`; the native
+CLI then attempted Opus 4.8 despite the requested model and null SDK fallback.
+The model guard rejected that fourth request **before network**. No Opus 4.8
+provider response was received. The old report's `generations: 4` counts that
+blocked attempt; it is not four actual upstream generations. See the original
+[append-only metadata](pilot3-model-metadata.jsonl), [report](pilot3-report.json)
+and [request receipt](pilot3-requests.jsonl). All five owned processes joined;
+owned access-only grants and client/profile configuration were removed.
+
+A tool block also failed the front relay's owned-path guard. Its input was not
+retained, so this artifact cannot establish why; no outside path executed. That
+assertion previously returned HTTP 500, which could trigger a client retry.
+The harness now latches this failure, emits a bounded sanitized diagnostic and
+returns nonretryable HTTP 400. It canonicalizes existing whitelisted fixtures
+without admitting arbitrary project files or symlink escapes. On provider
+`refusal` it stops all further inference, suppresses returned tool blocks and
+terminates only its owned clients. Attempted, admitted and blocked generation
+counts are separate. [Offline regression controls](load-guards.test.mjs) and
+[receipt](load-guards-offline.json) pass; these are harness corrections, not a
+production behavior fix or a rerun of the refused request.
+
+The [actual pinned native offline control](native-refusal-control.mjs) uses an
+owned SSE fixture, not a real model. [Its result](native-refusal-offline.json)
+shows two Opus 5.5 fixture requests by default and with
+`CLAUDE_CODE_NO_MODEL_FALLBACK=1` alone, versus one with that flag plus
+`CLAUDE_CODE_DISABLE_REFUSAL_RETRY=1`. Every variant retains `is_error: true`
+and joins its child. No variant attempted a different model in this API-key
+fixture, so it cannot prove prevention of the real OAuth fallback pivot.
+Production defaults were not changed based on undocumented controls. Any
+future live qualification must stop on refusal and explicitly establish its
+model/fallback policy first; do not retry or switch models to get past one.
+
+The newly witnessed fallback mechanism may be relevant to old mixed-model
+histories, but the missing old provider boundary prevents a causal attribution.
+#1399 remains held. No further paid-model calls were made after this refusal.
