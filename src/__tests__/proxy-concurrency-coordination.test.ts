@@ -1,4 +1,3 @@
-import { hashClientSystemContext } from "../proxy/session/systemContext"
 import { afterEach, beforeEach, describe, expect, it, mock, spyOn } from "bun:test"
 import { installSdkMock } from "./sdkMock"
 import { installLoggerMock } from "./loggerMock"
@@ -808,8 +807,7 @@ describe("SDK and Session concurrency coordination", () => {
         max_tokens: 32000,
         stream: true,
         tools: [],
-        // Keep the effective system unchanged on the continuation below.
-        system: [],
+        system: [{ type: "text", text: "You are Claude Code, Anthropic's official CLI for Claude." }],
         messages: [{ role: "user", content: "Summarise this module" }],
         metadata: { user_id: JSON.stringify({ session_id: ordinarySessionId }) },
       }),
@@ -1153,8 +1151,6 @@ describe("SDK and Session concurrency coordination", () => {
       computeLineageHash(committed),
       computeMessageHashes(committed),
       ["winner-uuid-1", "winner-uuid-2", "winner-uuid-3"],
-      undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined,
-      hashClientSystemContext(""),
     )
     // Ensure this fixture actually reaches the undo path under current proofs.
     const winner = readSessionStoreSnapshot()[sessionId]
@@ -1199,8 +1195,6 @@ describe("SDK and Session concurrency coordination", () => {
       computeLineageHash(committed),
       computeMessageHashes(committed),
       ["winner-uuid-1", "winner-uuid-2", "winner-uuid-3"],
-      undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined,
-      hashClientSystemContext(""),
     )
     // Ensure this fixture actually reaches the undo path under current proofs.
     const winner = readSessionStoreSnapshot()[sessionId]

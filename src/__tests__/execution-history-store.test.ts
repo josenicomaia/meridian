@@ -4,7 +4,7 @@ import { tmpdir } from "node:os"
 import { join } from "node:path"
 import { lookupSession, rollbackPrioritySessionPublication, storeSession, type PrioritySessionPublication } from "../proxy/session/cache"
 import { computeLineageHash } from "../proxy/session/lineage"
-import { hashClientSystemContext } from "../proxy/session/systemContext"
+import { openCodePrimaryAgentContextHash } from "../proxy/adapters/opencodeAgentContext"
 import { claimPriorityAttempt, lookupPriorityAssignmentResult, lookupSharedSession, lookupSharedSessionResult, setSessionStoreDir } from "../proxy/sessionStore"
 
 const messages = [{ role: "user", content: "raw original objective" }]
@@ -56,8 +56,8 @@ describe("durable raw proof and execution reuse proof", () => {
   })
 
   it("priority atomic publication, reload and rollback retain distinct proofs", () => {
-    const originalSystem = hashClientSystemContext("original instructions")
-    const revisedSystem = hashClientSystemContext("revised instructions")
+    const originalSystem = openCodePrimaryAgentContextHash("primary", "build")
+    const revisedSystem = openCodePrimaryAgentContextHash("primary", "reviewer")
     storeSession("work:priority", messages, "sdk-transformed", undefined, [null, "current-only"], undefined,
       undefined, undefined, undefined, undefined, undefined, undefined, false, originalSystem)
     const before = lookupSharedSessionResult("work:priority")
@@ -65,7 +65,7 @@ describe("durable raw proof and execution reuse proof", () => {
     const publication = priorityPublication("priority")
     expect(storeSession("work:priority", continuation, "sdk-full-replay", undefined, undefined, undefined,
       undefined, undefined, undefined, undefined, before.generation, publication, true, revisedSystem)).not.toBe(false)
-    expect(lookupSharedSession("work:priority")?.clientSystemContextHash).toBe(revisedSystem)
+    expect(lookupSharedSession("work:priority")?.resumeContextHash).toBe(revisedSystem)
     expect(lookupSharedSession("work:priority")?.clientLineageHash).toBeUndefined()
     expect(lookupSharedSession("work:priority")?.lineageHash).toBe(computeLineageHash(continuation))
     expect(rollbackPrioritySessionPublication("work:priority", continuation, undefined, publication)).not.toBe(false)
@@ -73,13 +73,13 @@ describe("durable raw proof and execution reuse proof", () => {
     expect(restored?.lineageHash).toBe("")
     expect(restored?.clientLineageHash).toBe(computeLineageHash(messages))
     expect(restored?.sdkMessageUuids).toEqual([null, "current-only"])
-    expect(restored?.clientSystemContextHash).toBe(originalSystem)
+    expect(restored?.resumeContextHash).toBe(originalSystem)
     setSessionStoreDir(null)
     setSessionStoreDir(directory)
     const reloaded = lookupSession("work:priority", continuation)
     expect(reloaded.type).toBe("continuation")
     if (reloaded.type === "diverged") throw new Error("Expected restored mapping")
-    expect(reloaded.session.clientSystemContextHash).toBe(originalSystem)
+    expect(reloaded.session.resumeContextHash).toBe(originalSystem)
   })
 
   it("priority transformed publication clears checkpoint proof in the atomic stored record", () => {
@@ -112,11 +112,11 @@ describe("durable raw proof and execution reuse proof", () => {
     } finally { errors.mockRestore() }
   })
 
-  it("fails closed on malformed persisted instruction proof", () => {
+  it("fails closed on malformed persisted adapter context proof", () => {
     storeSession("malformed-system", messages, "sdk-malformed-system")
     const file = join(directory, "sessions.json")
     const document = JSON.parse(readFileSync(file, "utf8"))
-    document["malformed-system"].clientSystemContextHash = "not-a-digest"
+    document["malformed-system"].resumeContextHash = "not-a-digest"
     writeFileSync(file, JSON.stringify(document))
     const errors = spyOn(console, "error").mockImplementation(() => {})
     try { expect(lookupSharedSessionResult("malformed-system").status).toBe("error") }

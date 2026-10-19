@@ -85,7 +85,7 @@ import { withClaudeLogContext } from "../logger"
 import { parseToolInputObject } from "./toolInputJson"
 import { createPassthroughMcpServer, createPassthroughReplayToolNameRenderer, resolveClientToolName, normalizeToolInput, hasRepairableToolInput, computeToolSetKey, toolUseSignature, PASSTHROUGH_MCP_NAME, PASSTHROUGH_MCP_PREFIX, passthroughMcpPrefix, autoDeferDecision, getAutoDeferThreshold } from "./passthroughTools"
 import { describeLocalBootIdentity } from "./session/processIncarnation"
-import { hashClientSystemContext, requiresSystemContextReplay } from "./session/systemContext"
+import { openCodePrimaryAgentContextHash, requiresOpenCodeAgentReplay } from "./adapters/opencodeAgentContext"
 import { detectServerTools, serverToolErrorMessage } from "./tools"
 import { clientAbortDisposition, coalesceCompleteToolResultContinuation, createEarlyStopTracker, isClientForwardedToolUse, noteAssistantMessage, noteUserContent, settledToolCallAssistantUuid, settlesCheckpointThenContinues, shouldEarlyStop, trackerCoversStreamedCalls } from "./passthroughEarlyStop"
 import { checkEmptyToolInputs, checkUndeliveredToolUses, type EnvelopeViolation } from "./envelopeIntegrity"
@@ -3433,21 +3433,22 @@ function createProxyServerWithAuthOwner(config: Partial<ProxyConfig>, authOwner:
         // transcript previously published without complete raw-prefix proof.
         // Tool inheritance is retained only for a namespace-qualified request
         // that would otherwise resume this exact SDK session.
-        const clientSystemContextHash = hashClientSystemContext(
-          pipelineCtx.systemContext ?? systemContext,
+        const resumeContextHash = adapterBase === "opencode" ? openCodePrimaryAgentContextHash(
+          c.req.header("x-opencode-agent-mode"),
+          c.req.header("x-opencode-agent-name"),
           sdkFeatures.clientSystemPrompt !== false,
-        )
-        const systemContextReplay = Boolean(cachedSession && requiresSystemContextReplay(
-          cachedSession.clientSystemContextHash,
-          clientSystemContextHash,
+        ) : undefined
+        const agentContextReplay = Boolean(cachedSession && requiresOpenCodeAgentReplay(
+          cachedSession.resumeContextHash,
+          resumeContextHash,
         ))
         const executionReplay = executionHistory.changed || Boolean(cachedSession && !cachedSession.lineageHash)
-          || systemContextReplay
+          || agentContextReplay
         const executionReplayToolSessionId = executionReplay && isResume ? resumeSessionId : undefined
         if (executionReplay) {
           claudeLog("session.execution_replay", {
             reason: executionHistory.changed ? "transformed_history"
-              : systemContextReplay ? "changed_or_unproved_system_context" : "unproved_sdk_prefix",
+              : agentContextReplay ? "changed_or_unproved_primary_agent" : "unproved_sdk_prefix",
           })
           isResume = false
           isUndo = false
@@ -5373,7 +5374,7 @@ function createProxyServerWithAuthOwner(config: Partial<ProxyConfig>, authOwner:
                     mappingExpectedGeneration,
                     options.priorityPublication,
                     !executionHistory.changed,
-                    clientSystemContextHash,
+                    resumeContextHash,
                       )
                         if (stored) {
                           mappingExpectedGeneration = stored
@@ -6765,7 +6766,7 @@ function createProxyServerWithAuthOwner(config: Partial<ProxyConfig>, authOwner:
                     mappingExpectedGeneration,
                     options.priorityPublication,
                     !executionHistory.changed,
-                    clientSystemContextHash,
+                    resumeContextHash,
                       )
                       if (stored) {
                         mappingExpectedGeneration = stored
@@ -7102,7 +7103,7 @@ function createProxyServerWithAuthOwner(config: Partial<ProxyConfig>, authOwner:
                     mappingExpectedGeneration,
                     options.priorityPublication,
                     !executionHistory.changed,
-                    clientSystemContextHash,
+                    resumeContextHash,
                       )
                       if (stored) {
                         mappingExpectedGeneration = stored
@@ -7835,7 +7836,7 @@ function createProxyServerWithAuthOwner(config: Partial<ProxyConfig>, authOwner:
                     mappingExpectedGeneration,
                     options.priorityPublication,
                     !executionHistory.changed,
-                    clientSystemContextHash,
+                    resumeContextHash,
                       )
                       if (stored) {
                         mappingExpectedGeneration = stored

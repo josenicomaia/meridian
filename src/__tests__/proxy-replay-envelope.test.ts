@@ -87,7 +87,7 @@ installMcpToolsMock(() => ({
 }))
 
 const { createProxyServer, clearSessionCache } = await import("../proxy/server")
-import { storeSessionWithEmptySystem as storeSession } from "./sessionFixtures"
+const { storeSession } = await import("../proxy/session/cache")
 const { diagnosticLog } = await import("../telemetry")
 
 // Sonnet 4.6 keeps the 200k window these budgets exercise; the canonical

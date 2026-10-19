@@ -22,7 +22,7 @@ installLoggerMock(() => ({ claudeLog: () => {}, withClaudeLogContext: (_context:
 installMcpToolsMock(() => ({ createOpencodeMcpServer: () => ({ type: "sdk", name: "opencode", instance: {} }) }))
 
 const { createProxyServer, clearSessionCache } = await import("../proxy/server")
-import { storeSessionWithEmptySystem as storeSession } from "./sessionFixtures"
+const { storeSession } = await import("../proxy/session/cache")
 const { diagnosticLog } = await import("../telemetry")
 const original = Array.from({ length: 9 }, (_, index) => ({
   role: index % 2 === 0 ? "user" : "assistant", content: `original ${index}`,

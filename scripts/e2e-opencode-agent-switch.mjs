@@ -18,6 +18,8 @@ const repo=resolve(process.env.E2E_MERIDIAN_ROOT??'.'), client=process.env.E2E_O
 assert(client?.startsWith('/')&&native?.startsWith('/'),'Absolute client/native binaries required')
 const scrub=resolveOpenCodeScrub(process.env.E2E_PLUGIN_PATH,process.env.E2E_SCRUB_VERSION)
 const live=process.argv.includes('--live'), expected=process.env.E2E_EXPECT??'candidate'
+const diagnose=process.argv.includes('--diagnose')
+assert(!diagnose||live,'--diagnose requires the live transport; it denies every generation before forwarding')
 assert(['baseline','candidate'].includes(expected))
 const output=resolve(process.env.E2E_EVIDENCE_DIR??'local-evidence/agent-switch')
 mkdirSync(output,{recursive:true})
@@ -25,7 +27,7 @@ const root=realpathSync(mkdtempSync('/tmp/meridian-agent-switch-'))
 for(const dir of ['home','project','config','sessions','client','data','cache','state'])mkdirSync(join(root,dir),{mode:0o700})
 const work=join(root,'project'),nonce=randomBytes(12).toString('hex'),history='OWNED_HISTORY_'+randomUUID(),model='claude-haiku-5-5'
 const primarySystem='OWNED_PRIMARY_SYSTEM_'+randomUUID()
-const report={scope:live?'actual OpenCode/SDK/native/model':'actual OpenCode/SDK/native, loopback model responder only',expected,platform:process.platform,arch:process.arch,node:process.version,model,requests:[],provider:[],actors:[],turns:[],discovery:0,refusal:false}
+const report={scope:live?'actual OpenCode/SDK/native/model':'actual OpenCode/SDK/native, loopback model responder only',expected,diagnose,platform:process.platform,arch:process.arch,node:process.version,model,requests:[],upstreamRequests:[],provider:[],actors:[],turns:[],discovery:0,refusal:false}
 let profiles
 if(live){
  assert.equal(process.env.E2E_ALLOW_LIVE_MODEL,'1')
@@ -54,17 +56,25 @@ const upstreamControllers=new Set()
 const upstream=createServer(async(req,res)=>{
  const controller=new AbortController();upstreamControllers.add(controller)
  res.once('close',()=>{if(!res.writableFinished)controller.abort()})
+ let transport
  try{
   const chunks=[];for await(const chunk of req)chunks.push(chunk)
   const payload=Buffer.concat(chunks),url=new URL(req.url,'https://api.anthropic.com')
   assert.equal(url.origin,'https://api.anthropic.com')
-  const generation=req.method==='POST'&&url.pathname==='/v1/messages'
+  transport={method:req.method,path:url.pathname};report.upstreamRequests.push(transport)
+  let json
+  if(req.method==='POST'&&payload.length){try{json=JSON.parse(payload)}catch{transport.nonJsonBody=true}}
+  const generation=req.method==='POST'&&(url.pathname==='/v1/messages'||(typeof json?.model==='string'&&Array.isArray(json?.messages)))
   let body,row
   if(generation){
-   body=JSON.parse(payload)
+   body=json??JSON.parse(payload)
    const text=JSON.stringify(body.messages),turns=[...text.matchAll(/OWNED_AGENT_SWITCH_TURN_(\d)/g)].map(m=>Number(m[1]))
    row={turn:turns.length?Math.max(...turns):null,primary:JSON.stringify(body.system).includes(primarySystem),model:body.model,systemHasCanary:JSON.stringify(body.system).includes(nonce),historyPresent:text.includes(history)}
-   if(stopped||body.model!==model||report.provider.length>=12){stopped=true;res.writeHead(400,{'content-type':'application/json'});res.end(JSON.stringify({type:'error',error:{type:'invalid_request_error',message:'Owned probe model/attempt boundary reached'}}));return}
+   if(diagnose||stopped||url.pathname!='/v1/messages'||body.model!==model||report.provider.length>=12){
+    transport.deniedBeforeForward=true;stopped=true;report.diagnosticStop=diagnose
+    res.writeHead(400,{'content-type':'application/json'});res.end(JSON.stringify({type:'error',error:{type:'invalid_request_error',message:'Owned probe model/attempt boundary reached'}}))
+    setTimeout(()=>server?.kill('SIGTERM'),0).unref();return
+   }
    report.provider.push(row)
   }
   if(!live){
@@ -77,10 +87,12 @@ const upstream=createServer(async(req,res)=>{
   }
   const headers=new Headers();for(const [name,value]of Object.entries(req.headers))if(value&&!['host','connection','content-length','transfer-encoding','accept-encoding'].includes(name))headers.set(name,Array.isArray(value)?value.join(','):value)
   const response=await fetch(url,{method:req.method,headers,body:['GET','HEAD'].includes(req.method)?undefined:payload,redirect:'error',signal:AbortSignal.any([controller.signal,AbortSignal.timeout(90000)])})
+  transport.status=response.status
   row&&(row.status=response.status)
   const responseHeaders={};for(const [name,value]of response.headers)if(!['content-length','content-encoding','transfer-encoding','connection'].includes(name))responseHeaders[name]=value
   res.writeHead(response.status,responseHeaders)
   if(!response.ok){stopped=true;res.end(Buffer.from(await response.arrayBuffer()));return}
+  if(!response.body){res.end();return} // The OAuth native CLI begins with HEAD /api/hello.
   let buffer='',answer=''
   for await(const chunk of response.body){
    if(generation){buffer+=Buffer.from(chunk).toString().replaceAll('\r','');assert(buffer.length<1048576);let end
@@ -91,7 +103,12 @@ const upstream=createServer(async(req,res)=>{
     }}
    }res.write(Buffer.from(chunk))
   }if(row)row.answerHasCanary=answer.includes(nonce);res.end()
- }catch(error){stopped=true;report.upstreamFailure=error.name;if(!res.headersSent)res.writeHead(400);res.end()}
+ }catch(error){
+  // Native startup may cancel its optional HEAD health probe. Cancellation
+  // must abort that fetch without turning it into a model-access diagnosis.
+  if(req.method==='HEAD'&&controller.signal.aborted){if(transport)transport.clientCancelled=true;return}
+  stopped=true;report.upstreamFailure={name:error.name,code:error.code,causeCode:error.cause?.code,causeName:error.cause?.name};if(transport)transport.failed=true;if(!res.headersSent)res.writeHead(400);res.end();setTimeout(()=>server?.kill('SIGTERM'),0).unref()
+ }
  finally{upstreamControllers.delete(controller)}
 })
 await new Promise(resolve=>upstream.listen(0,'127.0.0.1',resolve))
@@ -168,7 +185,7 @@ try{
  assert.deepEqual(report.turns.map(r=>r.systemHasCanary),expected==='baseline'?[false,false,false,false]:[false,true,true,false])
  assert.deepEqual(report.telemetry.map(rows=>{assert.equal(rows.length,1);assert.equal(rows[0].status,200);return rows[0].isResume}),expected==='baseline'?[false,true,true,true]:[false,false,true,false])
  report.result=expected==='baseline'?'EXPECTED_BASELINE_FAILURE':'PASS'
-}catch(error){report.result='FAIL';report.failure=String(error)}finally{
+}catch(error){report.result=report.diagnosticStop?'DIAGNOSTIC_STOP':'FAIL';report.failure=String(error)}finally{
  stopped=true
  for(const controller of upstreamControllers)controller.abort()
  if(server&&server.exitCode===null){const closed=once(server,'close');server.kill('SIGTERM');const timer=setTimeout(()=>server.kill('SIGKILL'),5000);await closed;clearTimeout(timer)}
@@ -178,5 +195,5 @@ try{
  if(!report.joined)report.result='FAIL'
  writeFileSync(join(output,'report.json'),JSON.stringify(report,null,2)+'\n')
  console.log(JSON.stringify({result:report.result,failure:report.failure,joined:report.joined,evidence:output}))
- process.exitCode=['PASS','EXPECTED_BASELINE_FAILURE'].includes(report.result)?0:1
+ process.exitCode=['PASS','EXPECTED_BASELINE_FAILURE','DIAGNOSTIC_STOP'].includes(report.result)?0:1
 }

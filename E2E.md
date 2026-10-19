@@ -4922,6 +4922,9 @@ not real-model acceptance. `E2E_EXPECT=baseline` requires the old prompt to
 survive the switch; the candidate requires build → reviewer → unchanged reviewer
 → build to deliver absent/present/present/absent system canaries while retaining
 the first user turn. Hidden title calls remain detached.
+Same-agent dynamic context must retain normal resume; the fingerprint-context
+suite and the agent-context HTTP controls protect that cache behavior. This
+gate covers an explicit primary-agent switch, rather than same-agent config edits.
 
 `--live` additionally requires `E2E_ALLOW_LIVE_MODEL=1` and a private
 `E2E_LIVE_PROFILE_FILE` containing one access-only OAuth profile, plus
@@ -4932,6 +4935,8 @@ setup, discovery, signed client-plugin, server-scrub and joined-child witnesses.
 The reported OpenCode 2.0.31/Linux/native 2.1.301 tuple remains a separate
 qualification gate until setup supports that exact client. Run all four live
 E41 modes for the affected session/resume behavior before acceptance.
+`--live --diagnose` keeps the same client/plugin preflight and denies generation
+before forwarding, for transport diagnostics without spending a model turn.
 
 ## OpenCode E41 plugin qualification
 

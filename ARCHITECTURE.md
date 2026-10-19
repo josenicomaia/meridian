@@ -441,15 +441,18 @@ that base, because the protocol's tool loop lives entirely in the client.
 
 Both are LRU with coordinated eviction — evicting from one removes the corresponding entry in the other.
 
-The SDK mapping also records a SHA-256 digest of the effective client system
-instructions. The native CLI restores its original system prompt on ordinary
-resume and on forks, so supplying changed instructions beside `resume` does not
-apply them. A changed or missing digest forces complete client-history replay
-into a fresh SDK session; unchanged instructions retain ordinary resume and
-checkpoint behavior. Legacy mappings replay once to establish that proof.
-`session/systemContext.ts` owns the pure comparison, the cache and shared store
-publish the digest with the mapping, and `server.ts` chooses replay using the
-existing execution-history boundary. Prompt text is never added to the store.
+The SDK mapping can also record an adapter-owned stable context digest.
+`adapters/opencodeAgentContext.ts` fingerprints an explicitly declared primary
+agent when client prompts are enabled. The native CLI restores its original
+system prompt on ordinary resume and on forks, so switching primary agents
+requires complete client-history replay into a fresh SDK session. A legacy
+mapping replays once when the plugin first supplies primary-agent identity.
+The cache and shared store publish the digest with the mapping; `server.ts`
+uses the existing execution-history replay boundary. Dynamic file-tree and
+diagnostic context within the same agent retains ordinary resume, as do
+clients without this explicit identity. Editing instructions without changing
+the primary agent remains subject to the native resume limitation. Prompt text
+is never added to the store.
 
 ### Lineage Verification
 
