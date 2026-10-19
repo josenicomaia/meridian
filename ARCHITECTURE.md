@@ -441,6 +441,16 @@ that base, because the protocol's tool loop lives entirely in the client.
 
 Both are LRU with coordinated eviction — evicting from one removes the corresponding entry in the other.
 
+The SDK mapping also records a SHA-256 digest of the effective client system
+instructions. The native CLI restores its original system prompt on ordinary
+resume and on forks, so supplying changed instructions beside `resume` does not
+apply them. A changed or missing digest forces complete client-history replay
+into a fresh SDK session; unchanged instructions retain ordinary resume and
+checkpoint behavior. Legacy mappings replay once to establish that proof.
+`session/systemContext.ts` owns the pure comparison, the cache and shared store
+publish the digest with the mapping, and `server.ts` chooses replay using the
+existing execution-history boundary. Prompt text is never added to the store.
+
 ### Lineage Verification
 
 Every request verifies that incoming messages are a valid continuation of the cached session:

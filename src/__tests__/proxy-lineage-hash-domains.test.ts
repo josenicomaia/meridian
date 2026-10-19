@@ -24,7 +24,7 @@ installSdkMock(() => ({
 installLoggerMock(() => ({ claudeLog: () => {}, withClaudeLogContext: (_context: unknown, fn: () => unknown) => fn() }))
 installMcpToolsMock(() => ({ createOpencodeMcpServer: () => ({ type: "sdk", name: "opencode", instance: {} }) }))
 const { createProxyServer, clearSessionCache } = await import("../proxy/server")
-const { storeSession } = await import("../proxy/session/cache")
+import { storeSessionWithEmptySystem as storeSession } from "./sessionFixtures"
 const { storeSharedSession } = await import("../proxy/sessionStore")
 const result = (is_error: boolean) => ({ type: "tool_result", tool_use_id: "call-1", content: "ok", is_error })
 const text = (value: string) => ({ type: "text", text: value })

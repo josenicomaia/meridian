@@ -4910,6 +4910,29 @@ entry. Through the live proxy (E17 shape): output 306 → 144 and cache_read
 *"I attempted to read that file, but the tool call w…"* — content the client
 never sees and the account is billed for.
 
+## OpenCode agent instruction changes (#1404)
+
+`node scripts/e2e-opencode-agent-switch.mjs` runs an isolated real OpenCode
+2.0.21 server with the generation-matching Meridian plugin installed by actual
+`setup --v2`. Set absolute `E2E_MERIDIAN_ROOT`, `E2E_OPENCODE_BIN`,
+`E2E_NATIVE_BIN`, `E2E_PLUGIN_PATH` (installed server scrub) and
+`E2E_EVIDENCE_DIR`. The default uses an owned loopback model responder through
+the real SDK/native CLI; it proves model-facing instruction/history delivery,
+not real-model acceptance. `E2E_EXPECT=baseline` requires the old prompt to
+survive the switch; the candidate requires build → reviewer → unchanged reviewer
+→ build to deliver absent/present/present/absent system canaries while retaining
+the first user turn. Hidden title calls remain detached.
+
+`--live` additionally requires `E2E_ALLOW_LIVE_MODEL=1` and a private
+`E2E_LIVE_PROFILE_FILE` containing one access-only OAuth profile, plus
+`E2E_USAGE_GUARD_FILE` pointing to the fresh read-only included-usage report.
+The relay pins Haiku 5.5, stops on refusal
+or an unexpected model, and never retries a failed acceptance run. Retain the
+setup, discovery, signed client-plugin, server-scrub and joined-child witnesses.
+The reported OpenCode 2.0.31/Linux/native 2.1.301 tuple remains a separate
+qualification gate until setup supports that exact client. Run all four live
+E41 modes for the affected session/resume behavior before acceptance.
+
 ## OpenCode E41 plugin qualification
 
 `scripts/e2e-qualified-passthrough-turns.mjs` requires **both** installed plugins:

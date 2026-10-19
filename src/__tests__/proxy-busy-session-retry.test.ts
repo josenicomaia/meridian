@@ -105,7 +105,7 @@ installMcpToolsMock(() => ({
 }))
 
 const { createProxyServer, clearSessionCache } = await import("../proxy/server")
-const { storeSession } = await import("../proxy/session/cache")
+import { storeSessionWithEmptySystem as storeSession } from "./sessionFixtures"
 
 function createTestApp() {
   const { app } = createProxyServer({ port: 0, host: "127.0.0.1" })
