@@ -23,6 +23,46 @@ the contributor's PR is what merges:
 Corrections to past PRs (reopening, comment edits, release notes, any rewrite of
 `main`) are the owner's decisions in #1363. Do not start them from this note.
 
+## Renewed issue goal (2026-10-19 MDT)
+
+The owner requested another issue goal after the 1.84.0 release and explicitly
+deferred Mac notarization. Fresh paginated discovery covered 165 visible
+repositories and the same six managed queues, without a coverage gap: 26
+Meridian PRs / 18 issues at batch start and only the two existing scrub release
+PRs. No new release, external comment, owner credential write or issue closure
+was performed. The original checkout's 12 file hashes remain unchanged.
+
+- **#1404 / draft #1423:** product head
+  `4e90948a22b6436ed1f4c2b7148f454984f04549` detects explicit OpenCode
+  primary-agent changes and replays complete client history under the new
+  instructions. Real SDK/native probes confirmed both ordinary resume and forks
+  restore the initial system prompt. The first broad whole-system digest was
+  rejected by the existing dynamic-context tests; the final guard leaves those
+  tests and client behavior unchanged. Final local gates: **6,992 pass / 36 skip /
+  0 fail**, all 24 invocations, standalone typecheck/build and 26 focused controls.
+  An independently installed clean artifact passes real OpenCode 2.0.21,
+  matching V2 plugin, scrub 0.2.3, SDK 0.2.141, native 2.1.301 and Haiku 5.5 on
+  Debian Linux arm64. Baseline and candidate each used five actual generations;
+  reviewer system/answer canaries changed from all false to false/true/true/false,
+  full history survived, and only the unchanged reviewer resumed. All owned
+  processes joined and the private access-only grant was removed.
+  [Durable receipts, failed probes and limits](evidence/1404-opencode-agent-switch-20261019/README.md).
+  **Still held:** reporter's OpenCode 2.0.31 setup qualification, all four live
+  E41 modes, existing unexplained Opus model/cache holds and final-head CI.
+  Same-agent instruction edits retain the native resume limitation. The new
+  Haiku task did not retry or relabel the earlier refused Opus load task.
+- **#1424:** isolated documentation repair at
+  `787619532139bb9b7f5a6bdb073b8acd076718f0` removes literal conflict markers and
+  contradictory duplicate passthrough configuration rows. Both sides were
+  reconciled against current query/recovery code, including structured output,
+  JSON-parse rejection, undeclared names and opt-in limits. Content, table-shape,
+  anchor and diff checks pass. Ready for normal exact-head squash after every
+  required final-head CI check, including `test`, passes.
+- **#1401:** refreshed source remains `356eeb0b5`; its documented missing-copy
+  and ignored-read-error limits remain review findings. No new contributor
+  correction or acceptance is claimed at this checkpoint. Existing contributor,
+  owner/API, native-platform, draft and no-review holds remain in force.
+
 ## Overnight goal checkpoint (2026-10-19 MDT)
 
 The six-PR product/test batch ends at `6c241a897bdc7ffe4c233d32270a17402b3528a0`;
