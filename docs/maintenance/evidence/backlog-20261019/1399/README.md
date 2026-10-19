@@ -3,7 +3,7 @@
 Source head `7379cd4652af910897480bae3469f6c6e65c3025` incorporates current main
 `6c241a897bdc7ffe4c233d32270a17402b3528a0` without conflict. Capacity/limit
 regressions pass 16 tests; typecheck/build and final-head CI pass. The previous
-89-failure local gate remains retained; a fresh complete pinned gate is running.
+89-failure local gate remains retained. The [fresh complete pinned gate](final-gate-summary.json) passes 7,000 tests / 36 skips / 0 failures over all 24 invocations.
 
 The [actual native-client preflight](native-client-preflight.json) passes three
 client requests: real Read, result, resumed receipt. Both native CLI children
