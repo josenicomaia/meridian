@@ -52,3 +52,7 @@ allowance tests, native platform and model/cache gates remain in force. Issue
 copied into a maintainer PR. A supported permission/classifier and client-denial
 review is still needed. The two scrub release PRs remain held, and this task does
 not authorize another release or Apple secret changes.
+
+The [fixture-repair merge receipt](ci-fixture-merge.json) records the final local
+25-invocation gate and reviewed/signed mainline tree for PR 1425. Its original
+failed runs and negative controls remain in the adjacent logger evidence.

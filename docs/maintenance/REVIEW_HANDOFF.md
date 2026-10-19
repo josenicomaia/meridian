@@ -45,14 +45,17 @@ credential write or issue closure was performed in this batch.
   old sleep from the corrected cleanup; all 31 drain tests pass on both
   platforms. [Durable proof and original failures](evidence/logger-mock-order-20261019/README.md).
   Issues 917 and 933 remain open; these two mechanisms do not explain every
-  historical failure. Full local and final-head CI completion remain pending
-  at this checkpoint.
+  historical failure. The complete 25-invocation local gate passes **6,996 / 36 skip / 0 fail**,
+  standalone typecheck/build and all active final-head CI pass. Normal exact-head
+  squash landed signed `3feb772479d5e04f1f28e5c452ef359b09d1c65b`; its tree
+  matches reviewed `b3ebc945d3`. The Nix push duplicate was superseded by the
+  successful same-head PR run under the documented workflow concurrency policy.
 - **Configuration reference [#1424](https://github.com/rynfar/meridian/pull/1424):**
   removes literal conflict markers and contradictory duplicate configuration
   rows. Both sides were reconciled against current query/recovery code,
   including structured output, JSON-parse rejection, undeclared names and
   opt-in limits. Content, table-shape, anchor and diff checks pass. Its first
-  CI run failed on the logger cause above; it needs the mainline repair and
+  CI run failed on the logger cause above; it now includes the mainline repair via a signed merge and requires
   fresh final-head CI before normal squash.
 - **Account-copy guard [#1401](https://github.com/rynfar/meridian/pull/1401):**
   signed correction `32483870992ce3f953322cf6c1bf9bbdaede2469` now rejects
