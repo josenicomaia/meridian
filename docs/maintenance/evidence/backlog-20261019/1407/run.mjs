@@ -56,6 +56,7 @@ async function runCase(label,root,mode){
   assert(native.textDeltas>0,'Need genuine native text before failure/control');
   assert.equal(client.httpStatus,200);
   assert.equal(client.requests,1,'Actual AgentLink transport must not resend the failed partial turn');
+  if(mode==='truncated')assert.equal(native.queries[0]?.outputTokenCap,'1024','Documented enforcement opt-in must reach native CLI');
   if(mode==='fault'){
     assert(native.faultInjected && native.upstreamGenerations===1,'Fault must cut a single actual provider generation after genuine text');
     assert(client.events.some(e=>e.type==='text_delta' && e.text),'Real partial text must reach AgentLink before failure');
@@ -64,6 +65,7 @@ async function runCase(label,root,mode){
   return result;
 }
 try{
+  if(!process.argv.includes('--only-truncated')){
   const healthy=await runCase('candidate-healthy',candidate,'healthy');
   assert.equal(healthy.client.outcome,'completed');assert(!healthy.client.wire.includes('"error":'));
   const before=await runCase('baseline-fault',baseline,'fault');
@@ -72,9 +74,18 @@ try{
   assert.equal(after.client.outcome,'error');assert(after.client.wire.includes('"error":'));
   assert(after.client.error.providerCode && after.client.error.providerType,'Client must retain typed provider error');
   assert(!after.client.events.some(event=>event.type==='model_stop'),'Failed partial turn must not become a successful/truncated stop');
-  const truncated=await runCase('candidate-truncated',candidate,'truncated');
-  assert.equal(truncated.client.outcome,'completed');assert(!truncated.client.wire.includes('"error":'));
-  assert(truncated.client.events.some(event=>event.type==='model_stop' && event.reason==='max_tokens'),'Real output cap must retain truncation semantics');
+  }
+  // The native CLI may recover a provider max_tokens stop internally. Compare
+  // both roots and verify genuine provider caps; do not manufacture client
+  // truncation or require a stop reason the native CLI did not return.
+  for(const [label,root] of [['baseline-output-cap',baseline],['candidate-output-cap',candidate]]){
+    const capped=await runCase(label,root,'truncated');
+    assert.equal(capped.client.outcome,'completed');assert(!capped.client.wire.includes('"error":'));
+    assert(capped.native.providerStops.some(event=>event.stopReason==='max_tokens'),'Need genuine provider output-cap stop');
+    assert(capped.native.nativeResults.length===1 && capped.native.nativeResults[0].isError===false,'Native recovery must complete cleanly');
+    assert.equal(capped.native.retryRefusals,0,'Owned recovery budget must not cause the result');
+    assert(capped.client.events.some(event=>event.type==='model_stop' && ['max_tokens','end_turn'].includes(event.reason)),'Need actual successful terminal stop');
+  }
   report.passed=true;
 }catch(error){report.failure=String(error);throw error;}
 finally{writeFileSync(join(out,'report.json'),JSON.stringify(report,null,2)+'\n');}

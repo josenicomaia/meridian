@@ -14,6 +14,7 @@ external comments remain separate holds.
 | [#1415](https://github.com/rynfar/meridian/pull/1415) | SDK mock isolation plus discriminating worker startup/auth controls; 6,959 pass / 36 skip; signed squash `658a3b5c5` | [gates](1415/final-gate-summary.json), [merge](1415/merge-receipt.json) |
 | [#1411](https://github.com/rynfar/meridian/pull/1411) | Provider-filter URLs, including corrected empty selection; 6,972 pass / 36 skip and 19 asserted browser cases; contributor Author verified | [gates](1411/final-gate-summary.json), [browser](1411/browser-control.json), [merge](1411/merge-receipt.json) |
 | [#1420](https://github.com/rynfar/meridian/pull/1420) | Replace the 150ms cleanup-test assumption with real timer ownership; mutation control catches the old leak; 6,972 pass / 36 skip | [gates](1420/final-gate-summary.json), [merge](1420/merge-receipt.json) |
+| [#1398](https://github.com/rynfar/meridian/pull/1398) | Bun startup advisory; 6,977 pass / 36 skip, nine CLI and four transport controls; all eight introduced author objects retained unchanged | [gates](1398/final-gate-summary.json), [merge](1398/merge-receipt.json) |
 | [#1409](https://github.com/rynfar/meridian/pull/1409) | Owned per-process test temp directory and child cleanup; 6,973 pass / 36 skip; contributor Author verified without maintainer coauthor credit | [gates](1409/final-gate-summary.json), [merge](1409/merge-receipt.json) |
 
 Every complete gate above used all 24 pinned Bun 1.3.11 (`af24e281`)
@@ -45,8 +46,9 @@ paginated GitHub data against local ancestry and records all eight introduced
 Author/AuthorDate/Committer/signature records. Four original code/test edit
 sets match the earlier source; E2E prose was adapted by the forwarding author.
 Preserving the forwarded object preserves its original Author, not the earlier
-source SHA or an original-source signature. Merge and reachability verification
-are still pending in this checkpoint.
+source SHA or an original-source signature. The signed merge `70b5af12a` has the exact reviewed parents and tree. All eight
+introduced objects remain reachable on main with unchanged Author/AuthorDate;
+see the [post-merge receipt](1398/merge-receipt.json).
 
 **#1407 — typed streaming errors.** The [earlier live attempts](1407/earlier-live-attempts.json)
 retain failed qualification controls and the three-case real AgentLink/Opus
@@ -56,9 +58,17 @@ after one real generation. No SDK/model event is manufactured. Native process
 gates remain enabled and every owned child is joined. This does not reproduce
 an upstream safeguard classifier. The updated [driver](1407/run.mjs),
 [proxy observer/relay](1407/live-proxy.mjs) and [actual client entry](1407/client-template.ts)
-add default-retry request counting, a genuine output-cap control and explicit
-native-binary pinning. Those final controls and complete final-head gates are
-pending. The real AgentLink source is pinned to
+include default-retry request counting, provider/native output-cap witnesses
+and explicit native-binary pinning. The [final five-case summary](1407/live-summary.json)
+shows healthy success, baseline false length, candidate typed error without a
+successful stop, and capped provider generations on both roots without false
+client errors. The initial terminal-max_tokens expectation was wrong: native
+CLI recovery made two baseline / three candidate provider generations and
+returned `end_turn`. The earlier failed overall run remains explicitly marked;
+its first three cases passed. This does not establish terminal client truncation;
+direct translator tests cover that mapping. Complete final-head gates are
+[6,982 pass / 36 skip](1407/final-gate-summary.json), typecheck/build and CI.
+Merge verification is pending. The real AgentLink source is pinned to
 `ab98566573e893fc4667971a86573fb56beec677` (1.44.5); this is its production
 headless transport, not a VS Code UI test.
 

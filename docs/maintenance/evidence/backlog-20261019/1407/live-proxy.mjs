@@ -19,11 +19,12 @@ Object.assign(process.env, {
   MERIDIAN_CLAUDE_PATH:nativeExecutable,
 });
 for (const key of ['MERIDIAN_CONFIG_DIR','MERIDIAN_SESSION_DIR','MERIDIAN_WORKDIR']) mkdirSync(process.env[key],{recursive:true});
+if(mode==='truncated')process.env.MERIDIAN_ENFORCE_MAX_TOKENS='1';
 const require = createRequire(join(root,'package.json'));
 const sdkPath = require.resolve('@anthropic-ai/claude-agent-sdk');
 const sdk = await import(sdkPath);
 const realQuery = sdk.query;
-const witness = {mode,sourceRoot:root,processGateDisabled:false,queries:[],children:[],models:[],promptSummaries:[],textDeltas:0,upstreamGenerations:0,retryRefusals:0,faultInjected:false,closed:false};
+const witness = {mode,sourceRoot:root,processGateDisabled:false,queries:[],children:[],models:[],promptSummaries:[],providerRequests:[],providerStops:[],nativeAssistants:[],nativeResults:[],textDeltas:0,upstreamGenerations:0,retryRefusals:0,faultInjected:false,closed:false};
 // The native CLI talks through a loopback relay to the fixed real provider.
 // Only an actual streaming generation may be cut; tokens/headers are never logged.
 const relay=Bun.serve({hostname:'127.0.0.1',port:0,async fetch(request){
@@ -31,17 +32,20 @@ const relay=Bun.serve({hostname:'127.0.0.1',port:0,async fetch(request){
   const target=new URL('https://api.anthropic.com');
   target.pathname=incoming.pathname;target.search=incoming.search;
   const generation=request.method==='POST' && incoming.pathname==='/v1/messages';
-  if(generation && witness.upstreamGenerations>=1){
+  const generationLimit=mode==='truncated'?3:1;
+  if(generation && witness.upstreamGenerations>=generationLimit){
     witness.retryRefusals++;
-    return Response.json({type:'error',error:{type:'invalid_request_error',message:'Owned transport E2E: retry refused after the single real generation was interrupted.'}},{status:400});
+    return Response.json({type:'error',error:{type:'invalid_request_error',message:mode==='truncated'?'Owned transport E2E: bounded native output-cap recovery budget exceeded.':'Owned transport E2E: retry refused after the single real generation was interrupted.'}},{status:400});
   }
   if(generation)witness.upstreamGenerations++;
   const headers=new Headers(request.headers);
   for(const name of ['host','connection','content-length','accept-encoding','transfer-encoding'])headers.delete(name);
-  const upstream=await fetch(target,{method:request.method,headers,body:['GET','HEAD'].includes(request.method)?undefined:await request.arrayBuffer(),signal:request.signal,redirect:'error'});
+  const payload=['GET','HEAD'].includes(request.method)?undefined:await request.arrayBuffer();
+  if(generation){const body=JSON.parse(Buffer.from(payload).toString());witness.providerRequests.push({model:body.model,maxTokens:body.max_tokens,thinking:body.thinking?.type});}
+  const upstream=await fetch(target,{method:request.method,headers,body:payload,signal:request.signal,redirect:'error'});
   const responseHeaders=new Headers(upstream.headers);
   for(const name of ['content-length','content-encoding','transfer-encoding','connection'])responseHeaders.delete(name);
-  if(mode!=='fault' || !generation || !upstream.ok || !upstream.body || !upstream.headers.get('content-type')?.includes('text/event-stream'))return new Response(upstream.body,{status:upstream.status,headers:responseHeaders});
+  if(!generation || !upstream.ok || !upstream.body || !upstream.headers.get('content-type')?.includes('text/event-stream'))return new Response(upstream.body,{status:upstream.status,headers:responseHeaders});
   const reader=upstream.body.getReader(),decoder=new TextDecoder();
   let pending='',ended=false;
   return new Response(new ReadableStream({async start(controller){
@@ -59,7 +63,8 @@ const relay=Bun.serve({hostname:'127.0.0.1',port:0,async fetch(request){
           let event;
           try{event=JSON.parse(data);}catch{continue; /* non-data frame */}
           if(event.type==='message_start')model('provider-message-start',event.message?.model);
-          if(event.type==='content_block_delta' && event.delta?.type==='text_delta' && event.delta.text){
+          if(event.type==='message_delta' && event.delta?.stop_reason)witness.providerStops.push({generation:witness.upstreamGenerations,stopReason:event.delta.stop_reason});
+          if(mode==='fault' && event.type==='content_block_delta' && event.delta?.type==='text_delta' && event.delta.text){
             witness.faultInjected=true;
             await reader.cancel('Owned real-stream transport interruption');
             // Let the genuine partial text cross the native SDK boundary first.
@@ -98,7 +103,8 @@ mock.module(sdkPath, () => ({...sdk, query(params) {
         let value;
         try { value=JSON.parse(line); } catch { continue; /* native non-JSON diagnostic, not a model event */ }
         if(value.type==='system' && value.subtype==='init') model('native-init',value.model);
-        if(value.type==='result') for(const name of Object.keys(value.modelUsage??{})) model('native-result-usage',name);
+        if(value.type==='assistant'){witness.nativeAssistants.push({id:value.message?.id,uuid:value.uuid,model:value.message?.model,stopReason:value.message?.stop_reason});}
+        if(value.type==='result'){witness.nativeResults.push({subtype:value.subtype,isError:value.is_error});for(const name of Object.keys(value.modelUsage??{})) model('native-result-usage',name);}
         const event=value.type==='stream_event'?value.event:undefined;
         if(event?.type==='message_start') model('native-message-start',event.message?.model);
         if(event?.type==='content_block_delta' && event.delta?.type==='text_delta' && event.delta.text) {
