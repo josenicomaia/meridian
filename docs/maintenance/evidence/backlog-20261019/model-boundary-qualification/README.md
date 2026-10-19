@@ -33,5 +33,22 @@ different response model. It stopped before the second generation and joined
 all children. The correction strips only this context suffix on native init
 and aggregate usage labels; actual provider/native assistant/stored model IDs
 remain exact. The original E41 history-model assertion is unchanged. The first
-failure is retained; it does not explain the old Opus 4.8 mismatch. A second
-bounded chain diagnostic is pending; other matrix arms remain held.
+failure is retained; it does not explain the old Opus 4.8 mismatch. The second bounded chain diagnostic **passed**: five provider generations,
+three sequential calls, four unchanged source snapshots, one real answer per
+call in the active fork, saved-session follow-up and full previous-cache-prefix
+reads. Every provider response message ID correlates with exact Opus 5.5
+native and supported stored assistant rows. Native config/aggregate labels
+retain the `[1m]` suffix. See [metadata](attempt2/model-witness.json),
+[full assertions](attempt2/e41-report.json) and [log](attempt2/run.log).
+
+**The original Opus 4.8 annotation mismatch remains unexplained.** This fresh
+success is not a causal explanation or permission to run the remaining arms.
+The original failed arm lacks its provider boundary and cannot be reconstructed
+from a new run. No source defect was inferred or model guard weakened. Current
+#1410, #1419 and other applicable matrix acceptance remains held.
+
+Both diagnostic attempts joined every owned child and closed the relay. The
+owned access-only grant and owned profile/client configuration were deleted;
+owner credentials were not changed or refreshed. Only public SDK metadata of
+owned synthetic sessions is escrowed. The original first guard failure remains
+[retained](attempt1/e41-report.json).

@@ -68,7 +68,8 @@ returned `end_turn`. The earlier failed overall run remains explicitly marked;
 its first three cases passed. This does not establish terminal client truncation;
 direct translator tests cover that mapping. Complete final-head gates are
 [6,982 pass / 36 skip](1407/final-gate-summary.json), typecheck/build and CI.
-Merge verification is pending. The real AgentLink source is pinned to
+Signed squash `6c241a897` preserves Tristan Cartledge / TristanSpeakEasy as Author,
+has no maintainer coauthor, and matches the reviewed tree; [merge receipt](1407/merge-receipt.json). The real AgentLink source is pinned to
 `ab98566573e893fc4667971a86573fb56beec677` (1.44.5); this is its production
 headless transport, not a VS Code UI test.
 
@@ -100,3 +101,16 @@ E41 stored-model-tag mismatch and incomplete matrix remain open. A new
 bounded diagnostic must preserve provider API, native SDK and stored-row
 message identity before interpreting that mismatch. Current fresh Opus/Haiku
 success does not explain the previous third-round stored Opus 4.8 tags.
+
+**#1406 — client-owned tool isolation.** A signed maintainer correction makes
+the UI/helper comments truthful, and a second documents existing-session
+limits. The real native SDK/CLI [baseline](1406/baseline.json) advertises a
+foreign tool and SessionStart guidance; [candidate](1406/candidate.json) removes
+both in a fresh session while retaining client tools/context. The
+[resumed-session control](1406/resumed-session.json) removes foreign tool
+declarations but retains old foreign guidance. Starting a fresh conversation
+is required for uncontaminated instructions; no existing-history purge is
+claimed. The [driver](1406/resumed-session-probe.mjs) is credentialless with a
+loopback model responder. Actual affected OpenCode/model/E41/E42 proof remains
+a gate, and #1405 stays open. Focused 136 tests/typecheck/build pass; final-head
+full checks are running.
