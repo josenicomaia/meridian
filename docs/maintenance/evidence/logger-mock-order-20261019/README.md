@@ -54,3 +54,33 @@ mock mechanism; it does not establish that every historical CI failure has the
 same cause. Final local totals and final-head CI belong in the PR body before
 merge. Documentation PR #1424 still needs a fresh passing head containing this
 fix; its failed run is preserved rather than replaced by an unexplained retry.
+
+
+## Drain fixture cleanup
+
+The first full local gate with the logger correction exposed an independent
+fixture-lifetime race: the raw-abort test's complete store snapshot acquired a
+`session-gc.json.lock.candidate-*` file while its SDK-call and session-store-read
+assertions remained zero. That run stopped after **6505 pass / 36 skip / 1 fail**;
+[the failure excerpt is retained](drain-full-gate-failure.txt).
+
+The fixture previously released streams, slept 25 ms, and removed its root.
+An opportunistic GC sweep can still be awaiting filesystem I/O at that point;
+`closeBackend` alone does not join it. The next test changes the shared store-root
+override, allowing old fixture work to touch the later root. Teardown now owns
+every proxy created by this suite, begins drain, releases its streams, waits for
+accepted requests, and joins each actual GC sweep and backend before removing
+the root and resetting the override.
+
+The new regression test pauses the real `node:fs/promises.link` publication after
+the actual GC candidate has been written and fsynced. Cleanup must reach and join
+that pending sweep before the gate is released. Restoring the former 25 ms sleep
+makes the regression fail with **expected "joined", received "returned"**;
+the real candidate is always released and joined even on this negative control.
+No synthetic candidate is injected, and no candidate is filtered from snapshots.
+The original raw-abort and store-snapshot assertions remain unchanged.
+
+Run `bun test --timeout 30000 src/__tests__/drain.test.ts` with pinned Bun 1.3.11.
+The complete corrected drain file passes **31 / 31** on both Darwin arm64 and Debian Linux arm64. The
+[old-sleep mutation](drain-old-sleep.log), [Darwin corrected file](drain-darwin-candidate.log), [Linux corrected file](drain-linux-candidate.log)
+and source commit in [the receipt](proof.json) preserve the discriminating proof.
