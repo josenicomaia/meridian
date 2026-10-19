@@ -65,6 +65,10 @@ credential write or issue closure was performed in this batch.
   typecheck/build pass. The clean main merge and correction were added to the
   source fork's existing branch; all ten original authored objects remain
   unchanged. CI run 39289578058 failed with the same reproduced logger counts.
+  Signed main merge `1c2bd51dd940c082cdcfc85bdea31671edb650b0` now integrates
+  the repaired fixtures, retaining all ten original source objects unchanged.
+  Fresh full 25-invocation local and final-head CI results are recorded in the
+  source PR body; standalone typecheck/build pass.
   Missing/evicted mappings and clock-based comparison remain limits. Actual E85
   client/account/model proof, durable actual-client harness, all four E41 modes
   and prior model/cache holds remain acceptance gates. No source work is
@@ -88,6 +92,11 @@ credential write or issue closure was performed in this batch.
   Reporter OpenCode 2.0.31 qualification, all four live E41 modes and prior
   unexplained Opus model/cache holds remain. Same-agent instruction edits retain
   the native limitation. The Haiku task did not retry the refused Opus load task.
+
+The final paginated refresh still covers 165 visible repositories and six
+managed queues without gaps or new issues. At this documentation checkpoint
+Meridian has 28 open PRs (including this PR and draft 1423) and 18 issues; the
+scrub queues still contain only their two held release PRs.
 
 Other source-author, draft/no-review, public API/SQLite, native platform and
 naturally exhausted allowance gates below remain in force. Issue 1390 has a

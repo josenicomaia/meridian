@@ -26,8 +26,11 @@ At that correction the pinned complete 24-invocation local gate passed
 **6,995 / 36 skip / 0 fail**, plus standalone typecheck/build. Exact-head CI run
 [39289578058](https://github.com/rynfar/meridian/actions/runs/39289578058) failed
 with the independently reproduced logger counts **[0, 1, 1]**. PR 1425 preserves
-that cause and its correction; a fresh main integration and final-head test gate
-are required before any merge. The missing/evicted-map fallback and clock-based
+that cause and its correction; signed main merge `1c2bd51dd940c082cdcfc85bdea31671edb650b0` now integrates
+that repair. Its parents are the reviewed correction `3248387099` and main
+`3feb772479`. All ten original authored objects were rechecked unchanged. Fresh
+25-invocation local and final-head CI results are recorded in the source PR
+body; standalone typecheck/build pass. The missing/evicted-map fallback and clock-based
 comparison remain known limits. Actual E85 client/account/model proof, a durable
 actual-client harness, all four E41 modes and prior model/cache holds remain.
 
@@ -56,3 +59,6 @@ not authorize another release or Apple secret changes.
 The [fixture-repair merge receipt](ci-fixture-merge.json) records the final local
 25-invocation gate and reviewed/signed mainline tree for PR 1425. Its original
 failed runs and negative controls remain in the adjacent logger evidence.
+
+[Fresh paginated repository/queue counts](queue-refresh.json) include this open
+documentation PR. No new issue appeared in the six managed queues.
