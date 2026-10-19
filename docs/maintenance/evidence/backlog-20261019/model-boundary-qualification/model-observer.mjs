@@ -85,7 +85,7 @@ export async function installModelObserver(root, output, expectedModel) {
           if(value.type==='assistant')row={type:'assistant',uuid:value.uuid,id:value.message?.id,model:value.message?.model,stopReason:value.message?.stop_reason,error:value.error??null,blocks:value.message?.content?.map(block=>({type:block.type,...(block.type==='tool_use'?{id:block.id,name:block.name}:{})}))};
           if(value.type==='stream_event' && value.event?.type==='message_start')row={type:'message_start',id:value.event.message?.id,model:value.event.message?.model};
           if(value.type==='result')row={type:'result',subtype:value.subtype,isError:value.is_error,models:Object.keys(value.modelUsage??{}),session:value.session_id};
-          if(row){witness.native.push({query,...row});if(row.model)observeModel('native',row.type==='init'?row.model.replace(/\[1m\]$/,''):row.model);if(row.models)for(const model of row.models)observeModel('native result',model);save();}
+          if(row){witness.native.push({query,...row});if(row.model)observeModel('native',row.type==='init'?row.model.replace(/\[1m\]$/,''):row.model);if(row.models)for(const model of row.models)observeModel('native result',model.replace(/\[1m\]$/,''));save();}
         }
       });
       child.once('close',(code,signal)=>{Object.assign(record,{closed:true,code,signal});save();});save();return child;

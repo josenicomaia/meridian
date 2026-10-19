@@ -26,4 +26,12 @@ V1 protocol host separately loads/invokes its matching client/server plugins.
 It is not an actual OpenCode executable E41 conversation. Delete only the owned
 private grant after the run. Native CLI 2.1.302 is pinned by path and SHA-256.
 
-Drivers are escrowed before execution. Results are pending at this checkpoint.
+Drivers were escrowed before execution. The first attempt captured one provider
+request/response and matching native/stored Opus 5.5 message ID, then its guard
+mistook the native result's configured `claude-opus-5-5[1m]` aggregate key for a
+different response model. It stopped before the second generation and joined
+all children. The correction strips only this context suffix on native init
+and aggregate usage labels; actual provider/native assistant/stored model IDs
+remain exact. The original E41 history-model assertion is unchanged. The first
+failure is retained; it does not explain the old Opus 4.8 mismatch. A second
+bounded chain diagnostic is pending; other matrix arms remain held.
