@@ -2,19 +2,19 @@
 
 The owner authorized autonomous safe backlog work, not a release. Six product
 and test PRs landed with verified trees, required exact-head CI and preserved
-contributor Authors. Three more contributor branches received corrections or
-fresh main integrations and now pass full local gates; their real-flow evidence
-remains incomplete. No issue was closed on partial proof. No release or
+contributor Authors. Five more contributor branches received corrections or
+fresh main integrations and now pass full local gates and CI; their real-flow
+evidence remains incomplete. No issue was closed on partial proof. No release or
 external comment/message was published. The user's dirty desktop checkout was
 preserved; all work used isolated worktrees. This root run used Centeva
 GPT-6.1-Sol after the requested account handoff; the earlier fixture task result
 was incorporated and independently corrected/verified.
 
 The paginated inventory covered 165 accessible repositories and six managed
-Meridian/scrub repositories without a discovery gap. The post-merge refresh
-has 28 open Meridian PRs (including this evidence PR), 18 issues, and only the
-two already-held scrub release PRs. The detailed prior queue dispositions stay
-in [the earlier handoff](../backlog-20261018/README.md).
+Meridian/scrub repositories without a discovery gap. The product-batch refresh
+recorded 28 open Meridian PRs (including the then-open evidence PR), 18 issues, and only the
+two already-held scrub release PRs. Every still-open PR/issue has a [current disposition and revisit trigger](queue-dispositions.md);
+the detailed prior source findings remain in [the earlier handoff](../backlog-20261018/README.md).
 
 ## Landed and verified
 
@@ -50,9 +50,14 @@ bundler fix. Broader flaky-test issues #917 and #933 stay open.
 | [#1406](https://github.com/rynfar/meridian/pull/1406) `c8bab07d0` | Truthful isolation UI/docs, readable mobile select, actual fresh/resumed native SDK fixtures, desktop/mobile browser checks; full 6,984 pass / 36 skip, type/build and CI | Actual affected OpenCode/model and applicable E41/E42 matrix. Resumed sessions retain earlier foreign guidance; fresh conversation required. #1405 stays open. |
 | [#1419](https://github.com/rynfar/meridian/pull/1419) `8ca566398` | Maintainer correction preserves assistant-ending legacy last-user fallback; two discriminating red tests then 68 message tests green; full 6,988 pass / 36 skip, type/build and CI | Final-head actual-client verification and applicable resume/cache matrix. Earlier DeepSeek Harness/Haiku framing/tool-result proof is explicitly on an earlier head; baseline answer omission did not reproduce. |
 | [#1399](https://github.com/rynfar/meridian/pull/1399) `7379cd465` | Cooperative shutdown clamp corrected; 16 focused cases, full 7,000 pass / 36 skip, type/build and CI; actual native bounded pilot | Native large-store/hourly throughput, admission and bounded shutdown proof. The dependency-chain pilot stopped on refusal/fallback before seeding; no hour claim. |
+| [#1220](https://github.com/rynfar/meridian/pull/1220) `b1fffe4ac` | Known queued-input, pre-rename revocation and clear-epoch corrections plus new local-fallback ownership fix; seven red cases, 29 affected and 59 adjacent tests green; full 6,997 pass / 36 skip, type/build and CI | The original unexplained residual E41 cache-prefix failure plus actual affected-client/model/platform acceptance. No SQLite changes; existing #1244 approval remains valid. |
+| [#1400](https://github.com/rynfar/meridian/pull/1400) `2f17bf73d` | Effective Retry-After correction retained with a clean main merge; full 7,059 pass / 36 skip, type/build and CI | Naturally spent model allowance with other-account capacity, whole-pool/late-refusal behavior, actual native main/subagent and Linux proof. No quota burn or paid overage. |
 
 Full receipts: [#1406](1406/final-gate-summary.json),
-[#1419](1419/final-gate-summary.json), [#1399](1399/final-gate-summary.json).
+[#1419](1419/final-gate-summary.json), [#1399](1399/final-gate-summary.json),
+[#1220](1220/final-gate-summary.json), [#1400](1400/final-gate-summary.json). [The #1220 correction record](1220/README.md)
+retains all seven failing-before controls, the new recovery attachment guard and
+the seven newer hooks adapted to await async cleanup.
 The earlier #1406 benchmark miss is [retained](1406/earlier-benchmark-failure.json)
 without a claimed causal fix. Its benchmark/session-store bytes match main;
 concurrent work was present, but its effect is unknown. The later complete gate
@@ -121,10 +126,14 @@ queue behind them. The old product, platform, draft, owner-decision and
 no-review dispositions in the prior evidence remain in force. In particular,
 #1403 lacks actual reported PDF client/model proof; #1404 needs actual agent-
 switch reproduction; #1400 needs real spent-allowance failover without forced
-exhaustion; storage/API proposals require their recorded owner decisions.
+exhaustion; unapproved public API proposals retain approval holds; already-approved storage
+contracts require correct implementation and native acceptance.
 
 Native executables, access grants, raw customer content and private SDK files
 are excluded. New native controls pin Claude Code 2.1.302 SHA-256
 `5262ce9de86243fed0d21edc39b271555d56780d0112e2b194439fe1c6662d37`.
 Screenshots were visually inspected and retained locally; structured browser
-receipts and drivers are committed. No full-queue-clear or release claim.
+receipts and drivers are committed. [The media follow-up](visual-media-status.json)
+records both available GitHub browser profiles signed out, no upload/login
+attempt beyond that check, and closed agent tabs. Media upload remains explicit
+before accepting held #1406. No full-queue-clear or release claim.

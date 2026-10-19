@@ -23,6 +23,8 @@ const concurrency=Number(process.env.E2E_LOAD_CLIENTS??4);assert([2,4].includes(
 const repo=realpathSync(repoArg),native=realpathSync(nativeArg),duration=Number(durationArg),seedCount=Number(seedArg),maxGenerations=Number(maxGenerationsArg);
 assert([60,3600].includes(duration),'Only one-minute pilot or one-hour load');
 assert(Number.isInteger(seedCount)&&seedCount>=0&&seedCount<=19800);assert(Number.isInteger(maxGenerations)&&maxGenerations>=3&&maxGenerations<=4000);
+assert(duration!==3600||concurrency===4,'Full-hour pressure requires four clients at the 25-second cycle cadence');
+assert(duration!==3600||seedCount===19800,'Full-hour large-store gate requires the full owned fixture seed');
 assert(!existsSync(outArg),'New output directory required');mkdirSync(outArg,{recursive:true,mode:0o700});const out=realpathSync(outArg);
 const git=(...args)=>spawnSync('git',args,{cwd:repo,encoding:'utf8'}).stdout.trim();assert.equal(git('rev-parse','HEAD'),expectedHead);assert.equal(git('status','--porcelain'),'','Do not run against changing source');
 const nativeVersion=spawnSync(native,['--version'],{encoding:'utf8',timeout:5000});assert.equal(nativeVersion.status,0);assert.equal(nativeVersion.stdout.trim(),'2.1.302 (Claude Code)');assert.equal(createHash('sha256').update(readFileSync(native)).digest('hex'),'5262ce9de86243fed0d21edc39b271555d56780d0112e2b194439fe1c6662d37');

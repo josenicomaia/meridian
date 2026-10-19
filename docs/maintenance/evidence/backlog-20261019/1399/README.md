@@ -15,6 +15,12 @@ this newer actual client; it does not claim the original 2.1.284–2.1.294 runs.
 The [live driver](run-native-load.mjs) and [observer](native-load-observer.mjs)
 are escrowed before inference. They run two or four actual native clients through the
 real proxy, SDK 0.2.141, pinned native child and an explicitly selected model.
+A full-hour gate requires four clients and the full 19,800-session fixture seed;
+the two-client mode is pilot-only at the configured 25-second cadence.
+[Offline invalid-hour controls](hour-plan-offline.json) reject an insufficient
+client count and an empty seed before output/config/SDK construction. The
+large-store seed path remains unqualified because the third pilot stopped
+before seeding. A small-store hour must not be counted as that acceptance.
 The load qualification selects **Opus 5.5, 200k**, via the supported `opus`
 alias. This is a new qualified GC route, not proof of the unspecified original
 reporter model/context or a change to the earlier failed E41 qualification. Only Read is enabled;

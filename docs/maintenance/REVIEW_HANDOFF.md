@@ -25,7 +25,8 @@ Corrections to past PRs (reopening, comment edits, release notes, any rewrite of
 
 ## Overnight goal checkpoint (2026-10-19 MDT)
 
-Current product main is `6c241a897bdc7ffe4c233d32270a17402b3528a0`.
+The six-PR product/test batch ends at `6c241a897bdc7ffe4c233d32270a17402b3528a0`;
+#1421 adds only documentation and manual evidence probes.
 This section supersedes the dated in-progress gates immediately below; the old
 records and failures remain historical evidence. The owner authorized the
 Centeva GPT-6.1-Sol overnight backlog goal. Work stayed in isolated worktrees;
@@ -53,6 +54,15 @@ are escrowed in [#1421](https://github.com/rynfar/meridian/pull/1421).
   Earlier real DeepSeek Harness/Haiku proof reproduced framing, not the reported
   answer omission. #1399 `7379cd465` has 7,000 pass / 36 skip plus type/build/CI;
   native large-store/hourly/admission/shutdown acceptance remains open.
+- **Additional independent corrections:** #1220 `b1fffe4ac` now has the known
+  queued-input/revocation/clear-epoch fixes, a newly reproduced local-fallback
+  ownership correction and seven awaited fixture resets. Seven distinct red
+  cases are retained by stage; 29 affected and 59 adjacent tests pass, with
+  6,997 full passes / 36 skips plus type/build/CI. The original residual E41
+  cache discrepancy and actual-client/model/platform gate remain. #1400
+  `2f17bf73d` preserves the earlier Retry-After fix with a clean main merge;
+  7,059 full passes / 36 skips plus type/build/CI now pass. Actual naturally
+  spent-allowance/whole-pool/late-refusal/native-subagent/Linux proof remains.
 - **Real refusal/fallback stop:** #1399 warm-up received Opus 5.5 refusals,
   then native CLI attempted Opus 4.8 despite the requested model/null fallback.
   The model guard blocked 4.8 before network; only three actual 5.5 generations
@@ -70,7 +80,8 @@ are escrowed in [#1421](https://github.com/rynfar/meridian/pull/1421).
   Remaining #1410/#1396/applicable matrix arms stay held. Do not retry refused
   requests or change models to obtain a green gate.
 - **Queue/release:** 165 accessible repositories covered, six managed queues,
-  28 open Meridian PRs including this evidence PR and 18 issues after six
+  product-batch snapshot of 28 open Meridian PRs including the then-open
+  evidence PR and 18 issues after six
   product/test merges; scrub queues contain only the two existing release PRs.
   No issue closed on incomplete proof. Release Please #1418 omits #1398 from
   its generated body; correct/explain before any separately authorized release.
