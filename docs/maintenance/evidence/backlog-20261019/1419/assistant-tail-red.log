@@ -2,7 +2,7 @@ bun test v1.3.11 (af24e281)
 
 src/__tests__/messages.test.ts:
 143 |   })
-144 | 
+144 |
 145 |   it("preserves the last-user fallback for assistant-ending history", () => {
 146 |     const question = { role: "user", content: "continue the explanation" }
 147 |     const prefill = { role: "assistant", content: "The next step is" }
@@ -24,7 +24,7 @@ error: expect(received).toEqual(expected)
 
       at <anonymous> (/private/tmp/meridian-pr1419-20261019/src/__tests__/messages.test.ts:148:53)
 (fail) getLastUserMessage > preserves the last-user fallback for assistant-ending history [1.02ms]
-150 | 
+150 |
 151 |   it("preserves the existing assistant-ending fallback when earlier users are consecutive", () => {
 152 |     const earlier = { role: "user", content: "background" }
 153 |     const question = { role: "user", content: "current question" }
