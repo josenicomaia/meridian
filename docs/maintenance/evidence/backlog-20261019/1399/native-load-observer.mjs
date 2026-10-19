@@ -27,7 +27,7 @@ export async function installLoadObserver(root,out,expectedModel,maxGenerations)
     const body=['GET','HEAD'].includes(request.method)?undefined:await request.arrayBuffer();
     const headers=new Headers(request.headers);for(const name of ['host','connection','content-length','accept-encoding','transfer-encoding'])headers.delete(name);
     const index=generation?++state.generations:undefined;
-    if(generation){const payload=JSON.parse(Buffer.from(body).toString());guard('provider-request',payload.model);log({where:'provider-request',generation:index,model:payload.model,maxTokens:payload.max_tokens});
+    if(generation){const payload=JSON.parse(Buffer.from(body).toString());const context1mBeta=(request.headers.get('anthropic-beta')??'').split(',').some(beta=>beta.trim().startsWith('context-1m'));if(expectedModel==='claude-opus-5-5'&&context1mBeta)state.stopped??='Unexpected 1m beta on explicit 200k load route';guard('provider-request',payload.model);log({where:'provider-request',generation:index,model:payload.model,maxTokens:payload.max_tokens,context1mBeta});
       if(state.stopped)return Response.json({type:'error',error:{type:'invalid_request_error',message:'Owned native load model guard'}},{status:400});}
     const response=await fetch(target,{method:request.method,headers,body,signal:request.signal,redirect:'error'});
     if(generation&&!response.ok){state.stopped??=`Provider HTTP ${response.status}`;log({where:'provider-status',generation:index,status:response.status});}
@@ -56,7 +56,7 @@ export async function installLoadObserver(root,out,expectedModel,maxGenerations)
           if(value.type==='system'&&value.subtype==='init'){guard('native-init',value.model);log({where:'native-init',query,model:value.model});}
           if(value.type==='assistant'){guard('native-assistant',value.message?.model);log({where:'native-assistant',query,id:value.message?.id,uuid:value.uuid,model:value.message?.model,blocks:value.message?.content?.map(block=>({type:block.type,...(block.type==='tool_use'?{id:block.id,name:block.name}:{})}))});}
           if(value.type==='stream_event'&&value.event?.type==='message_start'){guard('native-stream',value.event.message?.model);log({where:'native-stream',query,id:value.event.message?.id,model:value.event.message?.model});}
-          if(value.type==='result'){for(const model of Object.keys(value.modelUsage??{}))guard('native-usage',model);log({where:'native-result',query,subtype:value.subtype,isError:value.is_error,models:Object.keys(value.modelUsage??{})});}
+          if(value.type==='result'){if(value.is_error&&value.subtype!=='error_max_turns')state.stopped??=`Native result ${value.subtype}`;for(const model of Object.keys(value.modelUsage??{}))guard('native-usage',model);log({where:'native-result',query,subtype:value.subtype,isError:value.is_error,models:Object.keys(value.modelUsage??{})});}
         }
       });child.once('close',()=>{state.closedChildren++;log({where:'native-close',query});});return child;
     };return realQuery(params);
