@@ -6,6 +6,7 @@ import {spawn,spawnSync} from 'node:child_process';
 import {mkdirSync,readFileSync,writeFileSync,existsSync,realpathSync,renameSync,appendFileSync,rmSync,statSync} from 'node:fs';
 import {join,resolve,sep,dirname} from 'node:path';
 import {pathToFileURL,fileURLToPath} from 'node:url';
+import {setTimeout as delay} from 'node:timers/promises';
 import {randomUUID,createHash} from 'node:crypto';
 import {spyOn} from 'bun:test';
 import {installLoadObserver} from './native-load-observer.mjs';
@@ -15,18 +16,20 @@ assert.equal(process.env.E2E_ALLOW_LIVE_MODEL,'1');assert.equal(process.env.E2E_
 assert(repoArg&&nativeArg&&outArg&&durationArg&&seedArg&&maxGenerationsArg);
 const grantFile=process.env.E2E_LIVE_PROFILE_FILE,expectedHead=process.env.E2E_EXPECT_HEAD;
 assert(grantFile&&expectedHead,'Explicit access-only grant and exact head required');
+const model=process.env.E2E_LOAD_MODEL;assert(['claude-opus-5-5','claude-haiku-5-5'].includes(model),'Explicit qualified model required');
+const concurrency=Number(process.env.E2E_LOAD_CLIENTS??4);assert([2,4].includes(concurrency),'Two or four owned native clients');
 const repo=realpathSync(repoArg),native=realpathSync(nativeArg),duration=Number(durationArg),seedCount=Number(seedArg),maxGenerations=Number(maxGenerationsArg);
 assert([60,3600].includes(duration),'Only one-minute pilot or one-hour load');
-assert(Number.isInteger(seedCount)&&seedCount>=0&&seedCount<=19800);assert(Number.isInteger(maxGenerations)&&maxGenerations>=3&&maxGenerations<=3600);
+assert(Number.isInteger(seedCount)&&seedCount>=0&&seedCount<=19800);assert(Number.isInteger(maxGenerations)&&maxGenerations>=3&&maxGenerations<=4000);
 assert(!existsSync(outArg),'New output directory required');mkdirSync(outArg,{recursive:true,mode:0o700});const out=realpathSync(outArg);
 const git=(...args)=>spawnSync('git',args,{cwd:repo,encoding:'utf8'}).stdout.trim();assert.equal(git('rev-parse','HEAD'),expectedHead);assert.equal(git('status','--porcelain'),'','Do not run against changing source');
 const nativeVersion=spawnSync(native,['--version'],{encoding:'utf8',timeout:5000});assert.equal(nativeVersion.status,0);assert.equal(nativeVersion.stdout.trim(),'2.1.302 (Claude Code)');assert.equal(createHash('sha256').update(readFileSync(native)).digest('hex'),'5262ce9de86243fed0d21edc39b271555d56780d0112e2b194439fe1c6662d37');
 assert.equal(statSync(grantFile).mode&0o077,0);const profiles=JSON.parse(readFileSync(grantFile,'utf8'));assert(profiles.length===1&&profiles[0].type==='oauth-token'&&profiles[0].oauthToken&&profiles[0].refreshToken===undefined);
 for(const key of Object.keys(process.env))if(/^(MERIDIAN_|CLAUDE_PROXY_|ANTHROPIC_|CLAUDE_)/.test(key))delete process.env[key];
-Object.assign(process.env,{MERIDIAN_CONFIG_DIR:join(out,'proxy-config'),MERIDIAN_SESSION_DIR:join(out,'proxy-sessions'),MERIDIAN_WORKDIR:join(out,'proxy-work'),MERIDIAN_CLAUDE_PATH:native,MERIDIAN_PASSTHROUGH:'1',MERIDIAN_CREDENTIALS_READONLY:'1',MERIDIAN_TELEMETRY_PERSIST:'0',MERIDIAN_NO_UPDATE_CHECK:'1',MERIDIAN_SILENT:'1',MERIDIAN_SESSION_GC_INTERVAL_MS:'0',MERIDIAN_SHUTDOWN_GRACE_MS:'5000'});
+Object.assign(process.env,{MERIDIAN_CONFIG_DIR:join(out,'proxy-config'),MERIDIAN_SESSION_DIR:join(out,'proxy-sessions'),MERIDIAN_WORKDIR:join(out,'proxy-work'),MERIDIAN_CLAUDE_PATH:native,MERIDIAN_PASSTHROUGH:'1',MERIDIAN_CREDENTIALS_READONLY:'1',MERIDIAN_TELEMETRY_PERSIST:'0',MERIDIAN_NO_UPDATE_CHECK:'1',MERIDIAN_SILENT:'1',MERIDIAN_SESSION_GC_INTERVAL_MS:'0',MERIDIAN_SHUTDOWN_GRACE_MS:'5000',MERIDIAN_OPUS_MODEL:'opus'});
 for(const key of ['MERIDIAN_CONFIG_DIR','MERIDIAN_SESSION_DIR','MERIDIAN_WORKDIR'])mkdirSync(process.env[key],{recursive:true,mode:0o700});
 profiles[0].claudeConfigDir=join(out,'profile');mkdirSync(profiles[0].claudeConfigDir,{recursive:true,mode:0o700});
-const here=dirname(fileURLToPath(import.meta.url)),model='claude-haiku-5-5';
+const here=dirname(fileURLToPath(import.meta.url));
 const observer=await installLoadObserver(repo,out,model,maxGenerations);
 const {observeChildClosure,stopAndJoinChild}=await import(pathToFileURL(join(repo,'scripts/lib/e2eProcessCustody.mjs')).href);
 const {parseAssistantResponse}=await import(pathToFileURL(join(repo,'scripts/lib/e41-assistant-response.ts')).href);
@@ -37,7 +40,7 @@ const logger=await import(pathToFileURL(join(repo,'src/logger.ts')).href);
 const realLogContext=logger.withClaudeLogContext;
 const contextSpy=spyOn(logger,'withClaudeLogContext').mockImplementation((context,fn)=>realLogContext(context,()=>loadContext.run(context,fn)));
 const {startProxyServer}=await import(pathToFileURL(join(repo,'src/proxy/server.ts')).href);
-const report={head:expectedHead,scope:'Actual parallel native clients and real Haiku; public-SDK fork fixtures create owned large-store pressure',durationSeconds:duration,seedCount,maxGenerations,model,native:{version:nativeVersion.stdout.trim(),sha256:createHash('sha256').update(readFileSync(native)).digest('hex')},sdk:observer.sdkVersion,bun:Bun.version,platform:process.platform,arch:process.arch,periodicGcDisabled:true,publicationGcUnchanged:true,cycles:0,clientRequests:0,capacityRefusal:null,failure:null,passed:false};
+const report={head:expectedHead,scope:'Actual parallel native clients and real provider model; public-SDK fork fixtures create owned large-store pressure',durationSeconds:duration,seedCount,maxGenerations,concurrency,minimumWorkerCycleMs:12000,model,context:'200k for Opus; explicit alias opus',native:{version:nativeVersion.stdout.trim(),sha256:createHash('sha256').update(readFileSync(native)).digest('hex')},sdk:observer.sdkVersion,bun:Bun.version,platform:process.platform,arch:process.arch,periodicGcDisabled:true,publicationGcUnchanged:true,cycles:0,clientRequests:0,capacityRefusal:null,failure:null,passed:false};
 const actors=[],allowedFiles=new Set(),admission=[],locks=[],snapshots=[],fronts=new Map(),workerRequests=new Map();let instance,stopping=false,loadStartedAt=0,nextQuotaAt=0,quotaPromise;
 const record=row=>appendFileSync(join(out,'requests.jsonl'),JSON.stringify({at:Date.now(),...row})+'\n',{mode:0o600});
 const sidecar=join(process.env.MERIDIAN_SESSION_DIR,'session-gc.json');
@@ -108,16 +111,16 @@ async function seed(){
 }
 function percentile(values,q){if(!values.length)return null;const sorted=values.toSorted((a,b)=>a-b);return sorted[Math.min(sorted.length-1,Math.floor(sorted.length*q))];}
 try{
-  await quota();instance=await startProxyServer({host:'127.0.0.1',port:0,silent:true,maxConcurrent:2,profiles,defaultProfile:profiles[0].id});
+  await quota();instance=await startProxyServer({host:'127.0.0.1',port:0,silent:true,maxConcurrent:concurrency,profiles,defaultProfile:profiles[0].id});
   const port=instance.server.address().port;
-  for(const worker of ['warmup','0','1'])fronts.set(worker,Bun.serve({hostname:'127.0.0.1',port:0,idleTimeout:240,async fetch(request){
+  for(const worker of ['warmup',...Array.from({length:concurrency},(_,index)=>String(index))])fronts.set(worker,Bun.serve({hostname:'127.0.0.1',port:0,idleTimeout:240,async fetch(request){
     const url=new URL(request.url);if(url.pathname.endsWith('/count_tokens'))return Response.json({input_tokens:4000});if(!url.pathname.endsWith('/messages'))return Response.json({});
     if(stopping||observer.state.stopped)return Response.json({type:'error',error:{type:'api_error',message:'Owned load stopped'}},{status:503});
     const started=performance.now(),startedWall=Date.now(),requestId=randomUUID(),body=await request.arrayBuffer();const payload=JSON.parse(Buffer.from(body).toString());assert.equal(payload.model,model);report.clientRequests++;workerRequests.set(worker,(workerRequests.get(worker)??0)+1);const index=report.clientRequests;
     const headers=new Headers(request.headers);for(const name of ['host','connection','content-length','transfer-encoding'])headers.delete(name);headers.set('x-request-id',requestId);
     const response=await fetch(`http://127.0.0.1:${port}${url.pathname}${url.search}`,{method:'POST',headers,body,signal:AbortSignal.timeout(170_000)});
     const text=await response.text();assert(text.length<512*1024);const responseHeaders=new Headers(response.headers);for(const name of ['content-length','content-encoding','transfer-encoding','connection'])responseHeaders.delete(name);
-    if(!response.ok){if(response.status===503&&text.includes('session transcript ownership capacity is full')){report.capacityRefusal={request:index,status:503,at:Date.now()};stopping=true;}record({request:index,requestId,status:response.status,elapsedMs:performance.now()-started,capacity:!!report.capacityRefusal});return new Response(text,{status:response.status,headers:responseHeaders});}
+    if(!response.ok){let error;try{const value=JSON.parse(text);error={type:value.error?.type,message:observer.state.queries===0&&response.status===400?value.error?.message:undefined,messageSha256:typeof value.error?.message==='string'?createHash('sha256').update(value.error.message).digest('hex'):undefined};}catch{error={type:'non-json'};}report.lastHttpError={status:response.status,...error};if(response.status===503&&text.includes('session transcript ownership capacity is full')){report.capacityRefusal={request:index,status:503,at:Date.now()};stopping=true;}record({request:index,requestId,status:response.status,elapsedMs:performance.now()-started,capacity:!!report.capacityRefusal,error});return new Response(text,{status:response.status,headers:responseHeaders});}
     const parsed=parseAssistantResponse(text,payload.stream===true);
     for(const block of parsed.blocks.filter(block=>block.type==='tool_use'))assert(block.name==='Read'&&typeof block.input?.file_path==='string'&&allowedFiles.has(resolve(block.input.file_path))&&resolve(block.input.file_path).startsWith(join(out,'clients',worker,'project')+sep),'Refuse any tool or path outside owned fixtures before native execution');
     // Forward unchanged completed bytes after the owned-path guard. This
@@ -129,7 +132,7 @@ try{
   await cycle('warmup');await seed();report.beforeLoad=stateSnapshot();report.queriesBeforeLoad=observer.state.queries;loadStartedAt=Date.now();
   const hardStop=setTimeout(()=>{stopping=true;report.hardDeadline=true;for(const {child,witness} of actors)if(!witness.state.exitSeen)child.kill('SIGTERM');},(duration+120)*1000);
   const timer=setInterval(()=>{const snapshot=stateSnapshot();snapshots.push(snapshot);writeFileSync(join(out,'progress.json'),JSON.stringify({phase:'native-load',elapsedSeconds:(Date.now()-loadStartedAt)/1000,cycles:report.cycles,generations:observer.state.generations,...snapshot}));},30_000);
-  try{await Promise.all([0,1].map(async worker=>{while(!stopping&&!observer.state.stopped&&Date.now()-loadStartedAt<duration*1000)await cycle(worker);}));}finally{clearInterval(timer);clearTimeout(hardStop);}
+  try{await Promise.all(Array.from({length:concurrency},(_,index)=>index).map(async worker=>{while(!stopping&&!observer.state.stopped&&Date.now()-loadStartedAt<duration*1000){const started=Date.now();await cycle(worker);const pause=Math.min(Math.max(0,12000-(Date.now()-started)),Math.max(0,loadStartedAt+duration*1000-Date.now()));if(pause)await delay(pause);}}));}finally{clearInterval(timer);clearTimeout(hardStop);}
   report.elapsedSeconds=(Date.now()-loadStartedAt)/1000;
   assert(!observer.state.stopped,observer.state.stopped??'Model observer stopped');assert(!report.capacityRefusal,'Ownership capacity exhausted');assert(report.elapsedSeconds>=duration,'Full requested duration required');report.sdkQueriesPerMinute=(observer.state.queries-report.queriesBeforeLoad)/(report.elapsedSeconds/60);if(duration===3600)assert(report.sdkQueriesPerMinute>=28,'Need sustained native-client retirement pressure above the old 256/11-minute bound');report.passed=true;
 }catch(error){report.failure=String(error);process.exitCode=1;}
@@ -142,6 +145,14 @@ finally{
   report.joined=report.sdkChildren.started===report.sdkChildren.closed&&report.clientChildren.started===report.clientChildren.joined&&report.quotaChildren.started===report.quotaChildren.joined;if(!report.joined){report.passed=false;process.exitCode=1;}
   const loadAdmission=admission.filter(row=>row.at>=loadStartedAt),loadLocks=locks.filter(row=>row.at>=loadStartedAt);report.latency={requestPreSdkAdmissionMs:{p50:percentile(loadAdmission.map(row=>row.delayMs),.5),p95:percentile(loadAdmission.map(row=>row.delayMs),.95),p99:percentile(loadAdmission.map(row=>row.delayMs),.99)},lifecycleLocalQueueWaitMs:{p50:percentile(loadLocks.map(row=>row.queueWaitMs),.5),p95:percentile(loadLocks.map(row=>row.queueWaitMs),.95),p99:percentile(loadLocks.map(row=>row.queueWaitMs),.99)},externalAcquireAndTransactionMs:{p50:percentile(loadLocks.map(row=>row.externalAcquireAndTransactionMs),.5),p95:percentile(loadLocks.map(row=>row.externalAcquireAndTransactionMs),.95),p99:percentile(loadLocks.map(row=>row.externalAcquireAndTransactionMs),.99)}};
   writeFileSync(join(out,'lifecycle-lock-timings.json'),JSON.stringify(locks));writeFileSync(join(out,'request-admission-timings.json'),JSON.stringify(admission));writeFileSync(join(out,'lifecycle-snapshots.json'),JSON.stringify(snapshots));
+  report.supportedModelSnapshots=[];
+  const priorConfig=process.env.CLAUDE_CONFIG_DIR;
+  try{for(const locator of observer.state.sessions.slice(-8)){
+    if(!locator.sessionId||!locator.configDir||!locator.projectDir||!resolve(locator.configDir).startsWith(out+sep)){report.supportedModelSnapshots.push({query:locator.query,status:'missing-owned-locator'});continue;}
+    process.env.CLAUDE_CONFIG_DIR=locator.configDir;
+    try{const rows=await observer.sdk.getSessionMessages(locator.sessionId,{dir:locator.projectDir});report.supportedModelSnapshots.push({query:locator.query,sessionId:locator.sessionId,rows:rows.filter(row=>row.type==='assistant').map(row=>({id:row.message?.id,uuid:row.uuid,model:row.message?.model,blocks:row.message?.content?.map(block=>({type:block.type,...(block.type==='tool_use'?{id:block.id,name:block.name}:{})}))}))});}
+    catch(error){report.supportedModelSnapshots.push({query:locator.query,status:error.name});}
+  }}finally{if(priorConfig===undefined)delete process.env.CLAUDE_CONFIG_DIR;else process.env.CLAUDE_CONFIG_DIR=priorConfig;}
   if(report.joined){for(const name of ['proxy-config','profile','clients'])rmSync(join(out,name),{recursive:true,force:true});report.ownedCredentialAndClientConfigRemoved=true;}
   writeFileSync(join(out,'report.json'),JSON.stringify(report,null,2)+'\n');
 }

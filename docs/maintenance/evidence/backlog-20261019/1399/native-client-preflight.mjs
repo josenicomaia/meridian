@@ -16,6 +16,7 @@ const {observeChildClosure,stopAndJoinChild}=await import(pathToFileURL(join(rep
 const root=realpathSync(mkdtempSync(join(tmpdir(),'meridian-gc-native-client-')));
 for(const name of ['home','config','project','cache','data','state'])mkdirSync(join(root,name));
 const version=spawnSync(native,['--version'],{encoding:'utf8'});assert.equal(version.status,0);assert.equal(version.stdout.trim(),'2.1.302 (Claude Code)');
+const model=process.env.E2E_PREFLIGHT_MODEL??'claude-haiku-5-5';assert(['claude-haiku-5-5','claude-opus-5-5'].includes(model));
 const receipt='owned_gc_'+randomUUID(),file=join(root,'project','receipt.txt');writeFileSync(file,receipt);
 const report={scope:'Actual native client against owned fixture provider; no paid model or Meridian acceptance',native:{version:version.stdout.trim(),sha256:createHash('sha256').update(readFileSync(native)).digest('hex')},platform:process.platform,arch:process.arch,bun:Bun.version,requests:[],children:[],passed:false};
 const actors=[];
@@ -27,7 +28,7 @@ const server=Bun.serve({hostname:'127.0.0.1',port:0,async fetch(request){
   const body=await request.json();
   const blocks=body.messages.flatMap(message=>Array.isArray(message.content)?message.content:[]);
   const hasResult=blocks.some(block=>block.type==='tool_result');
-  report.requests.push({model:body.model,roles:body.messages.map(message=>message.role),tools:body.tools?.map(tool=>tool.name),toolResults:blocks.filter(block=>block.type==='tool_result').map(block=>({id:block.tool_use_id,hasReceipt:JSON.stringify(block.content).includes(receipt)})),userAgent:request.headers.get('user-agent'),metadataKeys:Object.keys(body.metadata??{})});
+  report.requests.push({model:body.model,thinking:body.thinking??null,outputConfig:body.output_config??null,roles:body.messages.map(message=>message.role),tools:body.tools?.map(tool=>tool.name),toolResults:blocks.filter(block=>block.type==='tool_result').map(block=>({id:block.tool_use_id,hasReceipt:JSON.stringify(block.content).includes(receipt)})),userAgent:request.headers.get('user-agent'),metadataKeys:Object.keys(body.metadata??{})});
   const content=hasResult?[{type:'text',text:receipt}]:[{type:'tool_use',id:'toolu_owned_gc_preflight',name:'Read',input:{file_path:file}}];
   const stop=hasResult?'end_turn':'tool_use';
   const message={id:'msg_owned_'+report.requests.length,type:'message',role:'assistant',model:body.model,content,stop_reason:stop,stop_sequence:null,usage:{input_tokens:4000,output_tokens:100}};
@@ -43,7 +44,7 @@ const server=Bun.serve({hostname:'127.0.0.1',port:0,async fetch(request){
 }});
 const env={PATH:process.env.PATH,HOME:join(root,'home'),USERPROFILE:join(root,'home'),CLAUDE_CONFIG_DIR:join(root,'config'),XDG_CACHE_HOME:join(root,'cache'),XDG_DATA_HOME:join(root,'data'),XDG_STATE_HOME:join(root,'state'),ANTHROPIC_BASE_URL:`http://127.0.0.1:${server.port}`,ANTHROPIC_API_KEY:'owned-loopback-not-a-credential',ANTHROPIC_AUTH_TOKEN:'',CLAUDE_CODE_OAUTH_TOKEN:'',CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC:'1',CLAUDE_CODE_FORCE_MID_CONVERSATION_SYSTEM:'1',DISABLE_AUTOUPDATER:'1',DISABLE_TELEMETRY:'1',DISABLE_ERROR_REPORTING:'1'};
 async function run(prompt,resume){
-  const args=['--setting-sources','','--strict-mcp-config','--mcp-config','{"mcpServers":{}}',...(resume?['--resume',resume]:[]),'-p',prompt,'--model','claude-haiku-5-5','--tools','Read','--allowedTools','Read','--max-turns','3','--output-format','json'];
+  const args=['--setting-sources','','--strict-mcp-config','--mcp-config','{"mcpServers":{}}',...(resume?['--resume',resume]:[]),'-p',prompt,'--model',model,'--tools','Read','--allowedTools','Read','--max-turns','3','--output-format','json'];
   const child=spawn(native,args,{cwd:join(root,'project'),env,stdio:['ignore','pipe','pipe']});
   const witness=observeChildClosure(child);actors.push({child,witness});
   let stdout='',stderr='';child.stdout.on('data',chunk=>{stdout+=chunk;assert(stdout.length<256*1024);});child.stderr.on('data',chunk=>{stderr+=chunk;assert(stderr.length<256*1024);});
@@ -57,7 +58,7 @@ try{
   assert(report.requests[1].toolResults.some(row=>row.hasReceipt),'Actual client must return the file receipt');
   const second=await run('Repeat the receipt just read. Do not call tools.',first.session_id);
   assert.equal(second.session_id,first.session_id);assert.equal(report.requests.length,3,'Resume must take one ordinary follow-up request');
-  assert(report.requests.every(row=>row.model==='claude-haiku-5-5'));
+  assert(report.requests.every(row=>row.model===model));
   assert(report.requests.some(row=>row.roles.at(-1)==='system'),'Require actual trailing-system client shape');
   report.passed=true;
 }catch(error){report.failure=String(error);process.exitCode=1;}

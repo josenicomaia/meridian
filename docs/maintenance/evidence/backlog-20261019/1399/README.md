@@ -13,8 +13,11 @@ This preflight uses a loopback provider fixture, not a real model. It qualifies
 this newer actual client; it does not claim the original 2.1.284–2.1.294 runs.
 
 The [live driver](run-native-load.mjs) and [observer](native-load-observer.mjs)
-are escrowed before inference. They run two actual native clients through the
-real proxy, SDK 0.2.141, pinned native child and Haiku 5.5. Only Read is enabled;
+are escrowed before inference. They run two or four actual native clients through the
+real proxy, SDK 0.2.141, pinned native child and an explicitly selected model.
+The load qualification selects **Opus 5.5, 200k**, via the supported `opus`
+alias. This is a new qualified GC route, not proof of the unspecified original
+reporter model/context or a change to the earlier failed E41 qualification. Only Read is enabled;
 the local relay validates every tool/path against owned fixtures before the
 native client executes it. Responses are buffered for this guard, so observed
 request timings are not streaming first-byte latency. Existing `x-request-id`
@@ -25,8 +28,8 @@ A new private access-only grant and both explicit live opt-ins are required.
 The read-only official quota guard requires disabled Extra Usage and reserves
 at least 25% of the five-hour / 10% of the weekly allowance, rechecking every
 minute. No refresh or account setting write occurs. Bounds are one minute for
-a pilot or one hour for load, plus two minutes to settle; at most 3,600 actual
-provider generations, two clients and three CLI turns per print invocation.
+a pilot or one hour for load, plus two minutes to settle; at most 4,000 actual
+provider generations, up to four clients and three CLI turns per print invocation.
 Any provider error, unexpected model, missing quota witness or owned-path guard
 stops further inference. All native/provider model metadata is observed without
 reading private SDK files. Exact real source head and clean checkout are checked.
@@ -38,7 +41,8 @@ under its actual local lifecycle queue. Private SDK files are never opened by
 the harness. Periodic GC is disabled during this fixture so it can be seeded;
 actual publication-triggered GC and default backlog/deletion/grace values stay
 in effect. This measures the back-to-back sweep path under load, not idle
-periodic scheduling. A full-hour pass requires at least 28 actual SDK queries
+periodic scheduling. Each worker cycle is paced to at least 12 seconds to keep the total generation
+budget bounded. A full-hour pass requires at least 28 actual SDK queries
 per minute, no capacity refusal, correct receipts and joined processes. Close
 records active deletion state, elapsed time and at most 16 newly deleted rows.
 
@@ -49,3 +53,18 @@ candidate each need new owned output/config/session directories; preserve a
 capacity refusal as the baseline result rather than silently rerunning it.
 The original hour-long affected-flow acceptance remains open until an actual
 complete run establishes it. No live result is claimed in this preparation.
+
+## First live pilot — stopped before inference
+
+[The first pilot](pilot1-before-inference.json) returned HTTP 400 before any SDK
+query or provider generation. The [exact native request construction](native-client-preflight-controls.json)
+requests adaptive thinking with `display: omitted`. Main's unchanged
+`haikuThinkingCompatibilityError` deterministically rejects that control on
+Haiku 5.5. The original HTTP error body was not retained; the construction
+fixture plus exact pure guard establish the unsupported control. The driver now
+retains bounded early error details. All client/quota processes joined, and
+owned config was removed. No guard or real client payload is weakened.
+
+A separate credentialless Opus construction check and bounded Opus pilot are
+required before the large run. This does not claim a Haiku fix. Other E41 modes
+remain held by the unexplained historical Opus 4.8 annotation mismatch.

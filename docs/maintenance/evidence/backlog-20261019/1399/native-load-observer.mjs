@@ -10,7 +10,7 @@ export async function installLoadObserver(root,out,expectedModel,maxGenerations)
   const require=createRequire(join(root,'package.json'));
   const sdkPath=require.resolve('@anthropic-ai/claude-agent-sdk'),sdk=await import(sdkPath),realQuery=sdk.query;
   const sdkVersion=JSON.parse(readFileSync(join(dirname(sdkPath),'package.json'),'utf8')).version;assert.equal(sdkVersion,'0.2.141');
-  const state={queries:0,generations:0,children:0,closedChildren:0,models:new Set(),stopped:null,queryTimes:[],queryStarts:new Map()};
+  const state={queries:0,generations:0,children:0,closedChildren:0,models:new Set(),stopped:null,queryTimes:[],queryStarts:new Map(),sessions:[]};
   const log=row=>appendFileSync(join(out,'model-metadata.jsonl'),JSON.stringify({at:Date.now(),...row})+'\n',{mode:0o600});
   const guard=(where,model)=>{
     if(typeof model!=='string')return;
@@ -47,7 +47,7 @@ export async function installLoadObserver(root,out,expectedModel,maxGenerations)
   mock.module(sdkPath,()=>({...sdk,query(params){
     assert(!state.stopped,'Owned native load stopped: '+state.stopped);
     const original=params.options?.spawnClaudeCodeProcess;assert.equal(typeof original,'function','Production SDK process gate required');
-    const query=++state.queries,at=Date.now(),requestId=loadContext.getStore()?.requestId;state.queryTimes.push(at);if(requestId&&!state.queryStarts.has(requestId))state.queryStarts.set(requestId,at);log({where:'query',query,requestId,model:params.options.model,fallbackModel:params.options.fallbackModel??null,resume:params.options.resume??null,fork:params.options.forkSession??false});
+    const query=++state.queries,at=Date.now(),requestId=loadContext.getStore()?.requestId;state.sessions.push({query,sessionId:params.options.sessionId,configDir:params.options.env?.CLAUDE_CONFIG_DIR,projectDir:params.options.cwd});state.queryTimes.push(at);if(requestId&&!state.queryStarts.has(requestId))state.queryStarts.set(requestId,at);log({where:'query',query,requestId,model:params.options.model,fallbackModel:params.options.fallbackModel??null,resume:params.options.resume??null,fork:params.options.forkSession??false});
     params.options.env={...params.options.env,ANTHROPIC_BASE_URL:`http://127.0.0.1:${relay.port}`};
     params.options.spawnClaudeCodeProcess=options=>{
       const child=original(options);state.children++;let pending='';
