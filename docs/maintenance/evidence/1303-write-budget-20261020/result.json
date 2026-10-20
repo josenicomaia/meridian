@@ -19,6 +19,14 @@
         "scope": "Synthetic Meridian mapping/ledger metadata only; no SDK transcript files or inference",
         "seedMappingBytes": 947871,
         "seedLedgerBytes": 34217,
+        "gc": {
+          "rounds": 20,
+          "scriptedDeletionCalls": 20,
+          "gcWriteSyscallBytes": 3954800,
+          "metric": "Linux process wchar: bytes returned by write-family syscalls, including native SQLite WAL/checkpoint or JSON payload and lock records; not physical-device bytes",
+          "scope": "Real prepare/abandon/GC metadata paths with an explicit scripted deleter; actual SDK deletion custody is qualified separately in PR1219",
+          "seedResourcesRetainedAsLive": 100
+        },
         "results": {
           "mappingMutations": 20,
           "mappingPayloadBytes": 18959243,
@@ -30,10 +38,10 @@
           "changedLocatorAdvancesGeneration": true,
           "staleGenerationRejectedWithoutPublication": true,
           "lifecycleLeaseMutations": 40,
-          "lifecyclePayloadBytes": 1748600
+          "lifecyclePayloadBytes": 1748240
         },
         "retainedMappings": 100,
-        "retainedResources": 100,
+        "retainedResources": 120,
         "result": "PASS",
         "fixtureRemoved": true
       }
@@ -55,6 +63,14 @@
         "scope": "Synthetic Meridian mapping/ledger metadata only; no SDK transcript files or inference",
         "seedMappingBytes": 8533471,
         "seedLedgerBytes": 308617,
+        "gc": {
+          "rounds": 20,
+          "scriptedDeletionCalls": 20,
+          "gcWriteSyscallBytes": 31855812,
+          "metric": "Linux process wchar: bytes returned by write-family syscalls, including native SQLite WAL/checkpoint or JSON payload and lock records; not physical-device bytes",
+          "scope": "Real prepare/abandon/GC metadata paths with an explicit scripted deleter; actual SDK deletion custody is qualified separately in PR1219",
+          "seedResourcesRetainedAsLive": 900
+        },
         "results": {
           "mappingMutations": 20,
           "mappingPayloadBytes": 170671243,
@@ -69,7 +85,7 @@
           "lifecyclePayloadBytes": 15698800
         },
         "retainedMappings": 900,
-        "retainedResources": 900,
+        "retainedResources": 920,
         "result": "PASS",
         "fixtureRemoved": true
       }
@@ -77,7 +93,7 @@
     {
       "case": "candidate-json-100",
       "exit": 0,
-      "originalPID": 52,
+      "originalPID": 55,
       "originalJoined": true,
       "report": {
         "sourceSHA": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
@@ -91,6 +107,14 @@
         "scope": "Synthetic Meridian mapping/ledger metadata only; no SDK transcript files or inference",
         "seedMappingBytes": 947871,
         "seedLedgerBytes": 34217,
+        "gc": {
+          "rounds": 20,
+          "scriptedDeletionCalls": 20,
+          "gcWriteSyscallBytes": 3955520,
+          "metric": "Linux process wchar: bytes returned by write-family syscalls, including native SQLite WAL/checkpoint or JSON payload and lock records; not physical-device bytes",
+          "scope": "Real prepare/abandon/GC metadata paths with an explicit scripted deleter; actual SDK deletion custody is qualified separately in PR1219",
+          "seedResourcesRetainedAsLive": 100
+        },
         "results": {
           "mappingMutations": 20,
           "mappingPayloadBytes": 18959243,
@@ -105,7 +129,7 @@
           "lifecyclePayloadBytes": 1748600
         },
         "retainedMappings": 100,
-        "retainedResources": 100,
+        "retainedResources": 120,
         "result": "PASS",
         "fixtureRemoved": true
       }
@@ -113,7 +137,7 @@
     {
       "case": "candidate-json-900",
       "exit": 0,
-      "originalPID": 71,
+      "originalPID": 76,
       "originalJoined": true,
       "report": {
         "sourceSHA": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
@@ -127,6 +151,14 @@
         "scope": "Synthetic Meridian mapping/ledger metadata only; no SDK transcript files or inference",
         "seedMappingBytes": 8533471,
         "seedLedgerBytes": 308617,
+        "gc": {
+          "rounds": 20,
+          "scriptedDeletionCalls": 20,
+          "gcWriteSyscallBytes": 31856316,
+          "metric": "Linux process wchar: bytes returned by write-family syscalls, including native SQLite WAL/checkpoint or JSON payload and lock records; not physical-device bytes",
+          "scope": "Real prepare/abandon/GC metadata paths with an explicit scripted deleter; actual SDK deletion custody is qualified separately in PR1219",
+          "seedResourcesRetainedAsLive": 900
+        },
         "results": {
           "mappingMutations": 20,
           "mappingPayloadBytes": 170671243,
@@ -138,10 +170,10 @@
           "changedLocatorAdvancesGeneration": true,
           "staleGenerationRejectedWithoutPublication": true,
           "lifecycleLeaseMutations": 40,
-          "lifecyclePayloadBytes": 15697720
+          "lifecyclePayloadBytes": 15699160
         },
         "retainedMappings": 900,
-        "retainedResources": 900,
+        "retainedResources": 920,
         "result": "PASS",
         "fixtureRemoved": true
       }
@@ -149,7 +181,7 @@
     {
       "case": "candidate-sqlite-100",
       "exit": 0,
-      "originalPID": 88,
+      "originalPID": 95,
       "originalJoined": true,
       "report": {
         "sourceSHA": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
@@ -167,6 +199,14 @@
         "engine": {
           "version": "3.53.4",
           "sourceId": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+        },
+        "gc": {
+          "rounds": 20,
+          "scriptedDeletionCalls": 20,
+          "gcWriteSyscallBytes": 1911680,
+          "metric": "Linux process wchar: bytes returned by write-family syscalls, including native SQLite WAL/checkpoint or JSON payload and lock records; not physical-device bytes",
+          "scope": "Real prepare/abandon/GC metadata paths with an explicit scripted deleter; actual SDK deletion custody is qualified separately in PR1219",
+          "seedResourcesRetainedAsLive": 100
         },
         "results": {
           "mappingMutations": 20,
@@ -182,7 +222,7 @@
           "lifecyclePayloadBytes": 494400
         },
         "retainedMappings": 100,
-        "retainedResources": 100,
+        "retainedResources": 120,
         "result": "PASS",
         "fixtureRemoved": true
       }
@@ -190,7 +230,7 @@
     {
       "case": "candidate-sqlite-900",
       "exit": 0,
-      "originalPID": 128,
+      "originalPID": 136,
       "originalJoined": true,
       "report": {
         "sourceSHA": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
@@ -209,6 +249,14 @@
           "version": "3.53.4",
           "sourceId": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
         },
+        "gc": {
+          "rounds": 20,
+          "scriptedDeletionCalls": 20,
+          "gcWriteSyscallBytes": 2055880,
+          "metric": "Linux process wchar: bytes returned by write-family syscalls, including native SQLite WAL/checkpoint or JSON payload and lock records; not physical-device bytes",
+          "scope": "Real prepare/abandon/GC metadata paths with an explicit scripted deleter; actual SDK deletion custody is qualified separately in PR1219",
+          "seedResourcesRetainedAsLive": 900
+        },
         "results": {
           "mappingMutations": 20,
           "mappingPayloadBytes": 370832,
@@ -223,7 +271,7 @@
           "lifecyclePayloadBytes": 494400
         },
         "retainedMappings": 900,
-        "retainedResources": 900,
+        "retainedResources": 920,
         "result": "PASS",
         "fixtureRemoved": true
       }
@@ -233,15 +281,16 @@
     "baseline": "413f4b7c73dc25302b877404066767f599ac210e",
     "candidate": "91df1ba233593e53118c2e9184f5a13d1d0f8902"
   },
-  "started": "2026-10-20T23:21:06.185470+00:00",
-  "harnessSHA256": "d17eadff077c34b31b7a91a31a7bdad7fa0005f94740b3c0536f237eff77b79f",
+  "started": "2026-10-20T23:29:37.946672+00:00",
+  "harnessSHA256": "c232344a65e086577f8decf8ed4b3eeceb39e788c7aa9667faa7335829b01134",
   "resourcePolicy": "Source snapshots/read-only existing dependencies; one owned TMPFS case at a time; no installs or new worktrees",
   "sqlGrowthRatiosForNinefoldUnrelatedHistory": {
     "mappingPayloadBytes": 1.0112349745849605,
-    "lifecyclePayloadBytes": 1.0
+    "lifecyclePayloadBytes": 1.0,
+    "gcWriteSyscallBytes": 1.0754310344827587
   },
   "defaultJSONStillFullDocument": true,
   "metric": "JSON replacement payload bytes versus appended SQLite WAL bytes; not physical device writes or an SSD benchmark",
   "runnerHomeRemoved": true,
-  "finished": "2026-10-20T23:21:10.494333+00:00"
+  "finished": "2026-10-20T23:29:47.440579+00:00"
 }

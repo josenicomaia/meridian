@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-20T23:24:25.412011+00:00",
+  "at": "2026-10-20T23:31:29.438770+00:00",
   "files": [
     {
       "path": "baseline-json-100.log",
@@ -10,6 +10,16 @@
       "path": "case-r4.mjs",
       "bytes": 7357,
       "sha256": "d17eadff077c34b31b7a91a31a7bdad7fa0005f94740b3c0536f237eff77b79f"
+    },
+    {
+      "path": "case-r5.mjs",
+      "bytes": 8465,
+      "sha256": "fd166d80f961eddf2e7d64156055cd91d26b762f36b9b52d716321191873b071"
+    },
+    {
+      "path": "case-r6.mjs",
+      "bytes": 8914,
+      "sha256": "c232344a65e086577f8decf8ed4b3eeceb39e788c7aa9667faa7335829b01134"
     },
     {
       "path": "case.mjs",
@@ -142,6 +152,81 @@
       "sha256": "f22bb1ee460772e5a247f6a5632e071ccd08b1a6e88a763458130858adfb26b6"
     },
     {
+      "path": "r5/baseline-json-100.log",
+      "bytes": 644,
+      "sha256": "41d5892b5cce192fe4fa360d803f4fdace71b6bece69672367bd75d7e19b2954"
+    },
+    {
+      "path": "r5/docker-result.json",
+      "bytes": 229,
+      "sha256": "745721b31df50e8ac80b54abd2647fe6a720d6aa5fa6d70871529616045aa3ef"
+    },
+    {
+      "path": "r5/docker.log",
+      "bytes": 142,
+      "sha256": "09cd7a988226f1f74ff1b7bb17183df904ac1cf89da956571c41788fac4b9202"
+    },
+    {
+      "path": "r5/linux-library.json",
+      "bytes": 590,
+      "sha256": "0e3069083c218d1de81a00846077a50fd9f45396a6307dc7024e723efdf09178"
+    },
+    {
+      "path": "r5/result.json",
+      "bytes": 687,
+      "sha256": "985e679668f79b1273542da14163d869a550907ac43cbf44e47f52321f987f81"
+    },
+    {
+      "path": "r6/baseline-json-100.log",
+      "bytes": 1172,
+      "sha256": "a69445a232fe9e0347df5ea76d4b65f8d87f9c6b8a6714878771303d7d5fae46"
+    },
+    {
+      "path": "r6/baseline-json-900.log",
+      "bytes": 1177,
+      "sha256": "96d7abc028302067ec1006cc395e960f8767b17bcdfe6042c1dd739eb570349f"
+    },
+    {
+      "path": "r6/candidate-json-100.log",
+      "bytes": 1172,
+      "sha256": "8a4c84170cebf277964ae7b68e47384d14daa60c03943ab0af7ae6c94f42e55e"
+    },
+    {
+      "path": "r6/candidate-json-900.log",
+      "bytes": 1177,
+      "sha256": "1537ed47a764da927375126777d01656fdcc346fd5ff36b3262a9874ee337328"
+    },
+    {
+      "path": "r6/candidate-sqlite-100.log",
+      "bytes": 1334,
+      "sha256": "4edb70a3e7943ca44522e380f522cac6ccee08a97de47eb438bb5ebad4f8d009"
+    },
+    {
+      "path": "r6/candidate-sqlite-900.log",
+      "bytes": 1336,
+      "sha256": "8cdddf2b0f9e603c2dd2dd14035bb4ee2f1baf1b4cb44cca4e53a701c19a3800"
+    },
+    {
+      "path": "r6/docker-result.json",
+      "bytes": 229,
+      "sha256": "c3aa895627046ee0a0f1f599a304f9c81d22f9a8482d0bec6555b8f989d063f3"
+    },
+    {
+      "path": "r6/docker.log",
+      "bytes": 3150,
+      "sha256": "73a25a2b61a1cd99496134c6f52a0bd9bd56cab3a4504f0736b6c86b77bedf4f"
+    },
+    {
+      "path": "r6/linux-library.json",
+      "bytes": 590,
+      "sha256": "0e3069083c218d1de81a00846077a50fd9f45396a6307dc7024e723efdf09178"
+    },
+    {
+      "path": "r6/result.json",
+      "bytes": 11584,
+      "sha256": "b9cbd0af0d2e65bb8bd89d18c29f24914c424c66c23fc27c628b464b3b213406"
+    },
+    {
       "path": "result.json",
       "bytes": 687,
       "sha256": "17cbebafdd4de2fd1a263f1097714e9d83839323f00969c2d977a5e1d706205b"
@@ -160,6 +245,16 @@
       "path": "run-docker-r4.py",
       "bytes": 1601,
       "sha256": "1596e2db2b5d3b0ab549a040e492282e98b23eb109913b3b66dbe27d3e7ef5b3"
+    },
+    {
+      "path": "run-docker-r5.py",
+      "bytes": 1601,
+      "sha256": "5ab594ed7420dbbcd0259c63253c950ce298a32f3cfdeb231f41164ec0841f43"
+    },
+    {
+      "path": "run-docker-r6.py",
+      "bytes": 1601,
+      "sha256": "bab547c830fe4990d188b0478b5e5f1bc9a74cb02700b9a784234d42d57afdc9"
     },
     {
       "path": "run-docker.py",
@@ -182,9 +277,24 @@
       "sha256": "1055dd1c095390a74862ff5d81530ecc317af8b205b04e6e6e40bec7ed48c0b0"
     },
     {
+      "path": "run-inside-r5.py",
+      "bytes": 5113,
+      "sha256": "3f97162861b80a7944c3f24e11569c7d103eeb7284477e84bcb481ce7253b756"
+    },
+    {
+      "path": "run-inside-r6.py",
+      "bytes": 5113,
+      "sha256": "440dd53acd4b28f9ce30e446dff5233697387400b24f5534701254ffedff3bcb"
+    },
+    {
       "path": "run-inside.py",
       "bytes": 3144,
       "sha256": "2ad6776fcb990a4d49729c9094f128701acbf13f3762dc57482d0c86ea55bb04"
+    },
+    {
+      "path": "summary-final.json",
+      "bytes": 3042,
+      "sha256": "3a3ca7d3b02e8400c2f6693ce4ad356b283e696243a9ffd4132a908a15143031"
     },
     {
       "path": "summary.json",
@@ -192,7 +302,7 @@
       "sha256": "4904314e1e5ffe3a3fd9e5714b41e0516340b9def4af52639b1f05c361e18252"
     }
   ],
-  "sourceSnapshotsExcluded": "Recreate exact src/bin/package.json archives at the recorded Git SHAs; existing dependency tree is read-only, matching Linux native package extracted only in disposable TMPFS",
-  "archiveSHA256": "b874a82d96ffcda12b5e1f5f40ae7780df148d5b20120093989c7c1f76964e92",
-  "archiveBytes": 8076
+  "sourceSnapshotsExcluded": "Exact Git source archives can be recreated at recorded SHAs; no new install or worktree",
+  "archiveSHA256": "52f8b855326a0900b22697228b7ec30102bdf910a8ff46ab9671dbd5516739f5",
+  "archiveBytes": 9928
 }

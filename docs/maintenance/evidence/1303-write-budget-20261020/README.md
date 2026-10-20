@@ -15,7 +15,7 @@ All state is private Linux TMPFS, Bun 1.4.3; SQL uses actual built-in SQLite
 3.53.4. There are no model calls or SDK transcript files. These are replacement
 payload and appended WAL byte measurements, not physical SSD/NAND write counts.
 
-| Backend on new main | Retained mappings/resources | 20 mapping mutations, bytes | 40 lease mutations, bytes | Five identical locators, bytes |
+| Backend on new main | Seeded mappings/live resources | 20 mapping mutations, bytes | 40 lease mutations, bytes | Five identical locators, bytes |
 | --- | ---: | ---: | ---: | ---: |
 | Default JSON | 100 / 100 | 18,959,243 | 1,748,600 | 0 |
 | Default JSON | 900 / 900 | 170,671,243 | 15,697,720 | 0 |
@@ -23,10 +23,18 @@ payload and appended WAL byte measurements, not physical SSD/NAND write counts.
 | Opt-in SQLite | 900 / 900 | 370,832 | 494,400 | 0 |
 
 Ninefold unrelated history increases SQL mapping WAL bytes **1.1%** and lifecycle
-WAL bytes **0%**. The meaningful regression bound is less than twice the write
+WAL bytes **0%**. Twenty additional prepare/abandon/GC cycles write
+1,911,680 versus 2,055,880 bytes through Linux write-family syscalls: **7.5%**
+growth for ninefold seed history. Each cycle deletes exactly one new synthetic
+target through an explicitly scripted deleter; all 100/900 original live
+resources remain live. This is real GC metadata code, not actual SDK deletion
+evidence, and its syscall-byte metric includes lock records and native writes.
+It is distinct from the WAL/replacement-payload columns above.
+
+The meaningful regression bound is less than twice the write
 volume for nine times the retained history; both pass. No-op calls retain the
 generation and publish nothing. Changed locators still advance the generation;
-a stale expected generation is rejected without publication. Read-only public
+a stale expected generation is rejected without publication. Read-only
 store snapshots confirm all 100/900 mappings remain; SQL/JSON ledger checks
 confirm all retained resources remain. Retention was not reduced.
 
@@ -49,7 +57,10 @@ Original attempts remain: missing Linux optional binary stopped module loading
 before measurement; the extraction helper used a Python API absent in the
 container and was corrected without changing the case; the first passing report
 counted the JSON metadata entry as a mapping. The final report uses the actual
-store snapshot and adds strict 100/900 retention assertions. Measured-byte and
+store snapshot and adds strict 100/900 retention assertions. A GC extension initially passed
+the options as the pin-list argument; it was corrected to the actual API and
+pins every unchanged seeded live resource. The final six cases also assert
+exactly 20 scripted deletions and preserve every original live row. Measured-byte and
 generation assertions were retained. Both passing matrices are preserved.
 
 This manual metric gate supplements the committed store/lifecycle/CAS,
