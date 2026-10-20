@@ -1,5 +1,11 @@
 # OpenCode primary-agent switch: issue #1404
 
+**2026-10-20 update:** [Reporter OpenCode 2.0.31 qualification](reporter-2031/README.md)
+now supplies the exact reported client/native/Linux/model proof, four live E41
+arms and source/installed E42 matrix. The earlier records below remain historical;
+their missing reporter-version and adjacent-flow gates are superseded by that
+record. The separate historical Opus task remains unresolved.
+
 [Draft PR #1423](https://github.com/rynfar/meridian/pull/1423) contains the fix.
 Product source tested: `4e90948a22b6436ed1f4c2b7148f454984f04549`, based on
 `d0326e28255d84a8df70e6d2629fb1e2478c79ae`. The issue remains open.
