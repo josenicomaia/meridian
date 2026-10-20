@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-20T19:38:22.379254+00:00",
+  "PR": {
+    "headRefOid": "e5100bd4cf40804cb8799f5a85a63890fe668984",
+    "mergeCommit": {
+      "oid": "19ff3bcac167cdcbbd91a6f79f7af07605a0ad99"
+    },
+    "mergedAt": "2026-10-20T19:37:30Z",
+    "state": "MERGED",
+    "url": "https://github.com/rynfar/meridian/pull/1428"
+  },
+  "merge": "19ff3bcac167cdcbbd91a6f79f7af07605a0ad99",
+  "base": "6f50d2f315f62369c99a9cd307e2beaa93440a6c",
+  "head": "e5100bd4cf40804cb8799f5a85a63890fe668984",
+  "tree": "59ff8b7ac5f358177f2ff24532851fe8da55ed42",
+  "signed": true,
+  "exactParentAndTree": true,
+  "actualGitAuthor": {
+    "name": "Oleksandr Ovcharov",
+    "email": "oleksandr.sheff3rd@gmail.com",
+    "date": "2026-10-20T19:37:29Z"
+  },
+  "GitHubAuthor": "technoch1ef",
+  "message": "fix(opencode): skip the Claude Code preset for one-shot title and summary requests (#1428)\n\nCo-authored-by: Trevor Walker <rynfar@gmail.com>",
+  "local": "7091/36/0all25/typebuild0",
+  "actual": "22cases231generations",
+  "proof": {
+    "commit": "bde18fa1158df8d2e1f5a7606e986a425746d2b5",
+    "remoteBytesVerified": true,
+    "sha256": "896a5c4e304d163202544763d53f9c2d4e2043f1a0a331e5d6e8111107e33710",
+    "bytes": 137180,
+    "files": 142,
+    "summary": {
+      "qualifiedCases": 22,
+      "actualGenerations": 231,
+      "local": "7091/36/0all25",
+      "head": "e5100bd4cf40804cb8799f5a85a63890fe668984",
+      "base": "6f50d2f315f62369c99a9cd307e2beaa93440a6c"
+    },
+    "path": "/private/tmp/meridian-1406-evidence-20261020/docs/maintenance/evidence/1428-one-shot-20261020/proof.tar.xz"
+  }
+}

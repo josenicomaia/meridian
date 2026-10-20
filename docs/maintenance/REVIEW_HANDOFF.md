@@ -1,3 +1,17 @@
+## Active continuation, 2026-10-20 19:40 UTC
+
+Eight original PRs have verified merges: #1419, #1403, #1395, #1423, #1394, #1406, #1401 and now #1428 (`19ff3bcac167cdcbbd91a6f79f7af07605a0ad99`). #1404/#1405 closed after validation. Main is `19ff3bcac167cdcbbd91a6f79f7af07605a0ad99`. #1431 is a separately counted necessary owner harness merge. Current source records below that still say seven original merges are historical. Backlog goal remains ACTIVE; continue independently actionable work.
+
+#1428 exact e510 source qualified7091/36/0all25/type/build0+8greenCI+skip,22realcases231generations. Signed squash Author Oleksandr Ovcharov is verified from git/GitHub. [Finalproof](evidence/1428-one-shot-20261020/README.md) and [verifiedmerge](evidence/1428-one-shot-20261020/verified-merge.json) preserve all original failures and exact scripts; no personal-account quota recovery is claimed.
+
+#1432 necessary owner-only one-shot harness PR remains open. Old980full7086/36/0/typebuild0 qualified, then it integrated landed1428 as signed61fa29329d78decb0ec30bf2a29bc13ee1dd469a. Fresh full/CI are running; currenttype/build0. No application change introduced by this PR.
+
+#1397 original branch integrated currentmain through signedc92455a844af61569f7a80907c3836226b3848f8. SevenHTTPcontrols/type/build0; fresh full/CI running. The old recorder's catch can reference out-of-scope row only after localtransportaborted; a new exact aborted-HEAD0model causalcontrol reproduces crash and validates scopedrecorder. Originalhistoricalupstreammethod/status/completion remainsUNKNOWN, notpresumed0. Next qualification must use strict causallycontrolled baseline/candidate realSonnet5.5 cancellation cases; retain oldattempt and require actualpool/platforms/queued-or-starting/subtree/watchdog/E41 evidence.
+
+Fresh readonly profiles: three distinct owned accounts; ordinal0 has paidExtraUsageenabled and must not be used or changed, ordinal1Team activepaid-disabled has completed includedH55tasks, ordinal2personalactivepaid-disabled remains knownweeklyexhausted. A realpool could retain exhaustedpersonal as non-inference spare with provider-boundary denial if selected, while all actualwork stays on Team; it must not claim twohealthyaccounts, quota-recovery or failover proof. No new cancellation grant/model task yet. No release/Applewrites/externalcomments.
+
+---
+
 ## Active backlog continuation, 2026-10-20 19:15 UTC
 
 This evidence branch is the current portable checkpoint; dated source checkpoints below are historical. The user's backlog goal remains ACTIVE. Continue independently actionable work without stopping at a merge checkpoint. No new release is authorized; Apple notarization remains deferred. The user's dirty root checkout and local main remain unchanged (12 original file hashes verified).

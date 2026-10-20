@@ -1,0 +1,252 @@
+{
+  "at": "2026-10-20T19:37:20.465176+00:00",
+  "head": "e5100bd4cf40804cb8799f5a85a63890fe668984",
+  "base": "6f50d2f315f62369c99a9cd307e2beaa93440a6c",
+  "tree": "59ff8b7ac5f358177f2ff24532851fe8da55ed42",
+  "PR": {
+    "headRefName": "fix/one-shot-title-skips-code-preset",
+    "headRefOid": "e5100bd4cf40804cb8799f5a85a63890fe668984",
+    "headRepositoryOwner": {
+      "id": "MDQ6VXNlcjIyMTE4NzA0",
+      "name": "Oleksandr Ovcharov",
+      "login": "technoch1ef"
+    },
+    "isDraft": false,
+    "maintainerCanModify": true,
+    "mergeStateStatus": "BLOCKED",
+    "mergeable": "MERGEABLE",
+    "reviewDecision": "",
+    "state": "OPEN",
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T19:13:47Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39481618455/job/118831347362",
+        "name": "authorship",
+        "startedAt": "2026-10-20T19:13:37Z",
+        "status": "COMPLETED",
+        "workflowName": "Attribution"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T19:25:48Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39481622366/job/118832718354",
+        "name": "test",
+        "startedAt": "2026-10-20T19:16:22Z",
+        "status": "COMPLETED",
+        "workflowName": "CI"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T19:18:51Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39481622363/job/118832709847",
+        "name": "smoke",
+        "startedAt": "2026-10-20T19:16:21Z",
+        "status": "COMPLETED",
+        "workflowName": "Docker"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T19:16:46Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39481622412/job/118832705966",
+        "name": "build (.#checks.x86_64-linux.home)",
+        "startedAt": "2026-10-20T19:16:21Z",
+        "status": "COMPLETED",
+        "workflowName": "Nix installable builds"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T19:17:18Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39481622374/job/118832731710",
+        "name": "desktop-build (ubuntu-latest)",
+        "startedAt": "2026-10-20T19:16:24Z",
+        "status": "COMPLETED",
+        "workflowName": "desktop"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T19:17:35Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39481622374/job/118832732276",
+        "name": "desktop-build (macos-latest)",
+        "startedAt": "2026-10-20T19:16:29Z",
+        "status": "COMPLETED",
+        "workflowName": "desktop"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T19:18:13Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39481622366/job/118832718027",
+        "name": "windows-smoke",
+        "startedAt": "2026-10-20T19:16:22Z",
+        "status": "COMPLETED",
+        "workflowName": "CI"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T19:21:48Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39481622363/job/118833970776",
+        "name": "build-push",
+        "startedAt": "2026-10-20T19:18:55Z",
+        "status": "COMPLETED",
+        "workflowName": "Docker"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T19:16:19Z",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39481622366/job/118832720905",
+        "name": "changelog-duplication",
+        "startedAt": "2026-10-20T19:16:19Z",
+        "status": "COMPLETED",
+        "workflowName": "CI"
+      }
+    ]
+  },
+  "protection": {
+    "url": "https://api.github.com/repos/rynfar/meridian/branches/main/protection",
+    "required_signatures": {
+      "url": "https://api.github.com/repos/rynfar/meridian/branches/main/protection/required_signatures",
+      "enabled": true
+    },
+    "enforce_admins": {
+      "url": "https://api.github.com/repos/rynfar/meridian/branches/main/protection/enforce_admins",
+      "enabled": false
+    },
+    "required_linear_history": {
+      "enabled": false
+    },
+    "allow_force_pushes": {
+      "enabled": false
+    },
+    "allow_deletions": {
+      "enabled": false
+    },
+    "block_creations": {
+      "enabled": false
+    },
+    "required_conversation_resolution": {
+      "enabled": false
+    },
+    "lock_branch": {
+      "enabled": false
+    },
+    "allow_fork_syncing": {
+      "enabled": false
+    }
+  },
+  "signatureProtection": {
+    "url": "https://api.github.com/repos/rynfar/meridian/branches/main/protection/required_signatures",
+    "enabled": true
+  },
+  "introduced": [
+    {
+      "sha": "8811ed1d5c81844c0663cba6e0da804d0121bd20",
+      "Author": {
+        "name": "technoch1ef",
+        "email": "oleksandr.sheff3rd@gmail.com",
+        "date": "2026-10-20T08:03:08Z"
+      },
+      "Committer": {
+        "name": "technoch1ef",
+        "email": "oleksandr.sheff3rd@gmail.com",
+        "date": "2026-10-20T08:03:08Z"
+      },
+      "verifiedSignature": false,
+      "signatureReason": "unsigned",
+      "subject": "fix(opencode): skip the Claude Code preset for one-shot title and summary requests"
+    },
+    {
+      "sha": "e987b23f623508a024c501a2ee2c043352ddb705",
+      "Author": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T08:36:34Z"
+      },
+      "Committer": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T08:36:34Z"
+      },
+      "verifiedSignature": true,
+      "signatureReason": "valid",
+      "subject": "Merge remote-tracking branch 'origin/main' into review/pr1428-20261020"
+    },
+    {
+      "sha": "dba37e39932cd9e6a45b9874f060edc3cf0e2282",
+      "Author": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T08:42:46Z"
+      },
+      "Committer": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T08:42:46Z"
+      },
+      "verifiedSignature": true,
+      "signatureReason": "valid",
+      "subject": "fix: scope one-shot prompts to enabled OpenCode client instructions"
+    },
+    {
+      "sha": "e5100bd4cf40804cb8799f5a85a63890fe668984",
+      "Author": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T19:13:10Z"
+      },
+      "Committer": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T19:13:10Z"
+      },
+      "verifiedSignature": true,
+      "signatureReason": "valid",
+      "subject": "chore: merge current main before title prompt verification"
+    }
+  ],
+  "local": {
+    "head": "e5100bd4cf40804cb8799f5a85a63890fe668984",
+    "base": "6f50d2f315f62369c99a9cd307e2beaa93440a6c",
+    "started": "2026-10-20T19:13:26.741581+00:00",
+    "commands": [
+      {
+        "label": "focused",
+        "exit": 0
+      },
+      {
+        "label": "typecheck",
+        "exit": 0
+      },
+      {
+        "label": "build",
+        "exit": 0
+      },
+      {
+        "label": "full",
+        "exit": 0
+      }
+    ],
+    "nodeModulesSymlink": false,
+    "exit": 0,
+    "finished": "2026-10-20T19:23:59.580211+00:00",
+    "totals": {
+      "pass": 7091,
+      "skip": 36,
+      "fail": 0
+    },
+    "invocations": 25
+  },
+  "actualSummary": {
+    "cases": 22,
+    "generations": 231
+  },
+  "route": "NormaloriginalcontributorPRsignedsquashadminexception; unsignedoriginalsourceSOLEblockafterallgatespass; legitimateTrevorcoauthor"
+}
