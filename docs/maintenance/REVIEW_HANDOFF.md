@@ -1,3 +1,19 @@
+## Active continuation, 2026-10-20 23:02 UTC
+
+Nine original backlog PR merges are verified; main remains `413f4b7c73dc25302b877404066767f599ac210e`. **#1219 is now qualified for the final exact-head merge check**, signed maintainer head `c91cf4357f04c1f3473896a182aaad2c51f524e1`, on the original Aleksey Proshutinskiy PR/fork. [Current review and durable proof](evidence/1219-runtime-sqlite-20261020/README.md) supersedes the old engine hold below. No new PR or release is created.
+
+The private runtime SQLite driver requires the official WAL-reset fix before persistent main/guard opens, preserves immutable URI inspection, primary mutation counts and native ownership. There are no dependency/lock/Nix hash changes. Product never chooses a global Bun library. Current Linux test Bun1.4.3 is explicit; prior Bun1.3.11/SQLite3.51.2 refusal and the newer export-error wording failure have causal corrections with all old failures retained. Ordinary macOS SQL support is narrowed to verified APFS; HFS and Windows are excluded. Default JSON remains.
+
+Final local **8049pass/36skip/0fail, all26groups**, typecheck/build/pack0, and **12executed final-head CI successes +2expectedskips** qualify. Exact current installed Mac/Linux package gates pass against main and published1.84 rollback; all16installed actualSDK GC/close/pipes cases pass across Mac/native2.1.302 and Linux/native2.1.301 with0models. All4SQL E41 modes pass16realSonnet5.5generations; actual installed LinuxNode24/OpenCode2.0.31/plugin+scrub0.2.3/SDK0.2.141 passes5realHaiku5.5generations with publication/export/remigration and provider/native/public-SDK IDs correlated. All original actors/pipes join; all grants, installs and containers are removed. Earlier Opus/Fable/quota/cache-prefix holds are unchanged. Sourcef428 real ext4/Btrfs/XFS image gates pass (Linux branch/driver unchanged in c91); every owned loop/image is gone. No broader platform or multi-hour GC soak is claimed.
+
+Archive633files2,532,004bytesSHA`5d114745f8b96e1917bb90210459d708b4e444cb9bda97a64cf89be099548f39` includes the exact current package and all failed/causal attempts. Strict external declaration validation has19upstream SDK errors also reproduced through published1.84; both pass the repository's existing library policy, and no Bun/private SQL declarations leak into the public handle. Root HEAD446a/all12original dirty hashes are unchanged. Only active candidate and evidence worktrees remain; remove candidate/dependencies after durable proof and merge. Do not leave task Docker/loop/disk-image resources.
+
+Normal1219squash must name Aleksey as Git Author. Its32introduced objects contain13unsigned original Aleksey commits and19valid signed maintainer commits; no other unverified signatures. Repository protection requires signatures; all local/actual/CI gates are now met. Use the documented unsigned-only signed-squash exception only if that is the sole remaining block, never for a red test. Recheck fresh main/head/rules and verify landed tree, GitHub signature and contributor credit.
+
+After delivery, continue #1303: its narrow identical-locator no-op correction is already in1219; the reporter's actual write-volume/changed-record and lifecycle byte-budget acceptance still deserves qualification. Do not call default JSON genuine mutations incremental. #1244's async cleanup was already explicitly owner-approved on2026-10-02; #1220 is held by its old unexplained cache-prefix/actual-flow gate, not missing approval. Fresh1244/1220bodies are retained in this proof.
+
+---
+
 ## Active continuation, 2026-10-20 21:28 UTC
 
 Nine original PR merges remain verified; main is `413f4b7c73dc25302b877404066767f599ac210e`. The backlog goal remains ACTIVE. No new PR, release, model call or external comment was made in this batch. Apple notarization and earlier model/account holds remain deferred.

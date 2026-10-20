@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-20T22:17:39.719541+00:00",
+  "head": "c91cf4357f04c1f3473896a182aaad2c51f524e1",
+  "originalSourceAncestor": "f97e6dbf05f82873d5759671a54010b5ad237f46",
+  "sourceFrozen": true,
+  "candidate": "/private/tmp/meridian-pr1219-engine-20261020",
+  "compatTar": "/tmp/meridian-release-20261019/registry-1.84.0.tgz",
+  "compatIntegrity": "sha512-8/6dSvF2YxUAaG8tWpowdWhQWSZ+Sls1N0+LplwZohaK4u0KoXdQ5cjm7Kdnx0sC/xIZkjUZckUdvJAe8Uixiw==",
+  "compatIntegrityVerified": true,
+  "library": "/opt/homebrew/opt/sqlite/lib/libsqlite3.dylib",
+  "librarySHA256": "75feed7151d3e496343ffee9c25960d85188ed99b2ffb1051fe016f912c6c808",
+  "newProductDependencies": false,
+  "bun": "/tmp/meridian-resume-20261020/1219-native-engine-r2/runtime/package/bin/bun",
+  "bunSHA256": "28c7dd0a06916aba284d570ef44a2d70e9c538eaf2ba58dfe0910525563b3f79",
+  "bunVersion": "1.4.3",
+  "priorSource": "f428e2e3c0872301ce250242ac4d32a2c302f676",
+  "change": "Bun diagnostic test accepts its exact newer wording; Darwin SQL topology restricted to qualified APFS; prior HFS numeric assumption removed with negative controls.",
+  "package": "/tmp/meridian-resume-20261020/1219-native-engine-r4/final-pack/rynfar-meridian-1.84.0.tgz",
+  "packageSHA256": "17740db38f9ff727c54c477469824538306afb9ae0256f8937729991f58a0d09"
+}

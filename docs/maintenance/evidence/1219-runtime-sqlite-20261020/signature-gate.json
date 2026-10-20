@@ -1,0 +1,24 @@
+{
+  "head": "c91cf4357f04c1f3473896a182aaad2c51f524e1",
+  "introduced": 32,
+  "verificationCounts": {
+    "unsigned": 13,
+    "valid": 19
+  },
+  "unsigned": [
+    "d4e36fa90a3ecfbcb48c91c8c4023224b1386f32",
+    "0e5a8de84cae388a8f64619f2bacde622ca1e11b",
+    "004f685376e11e33ef08cf128c013e18f0274a75",
+    "d8339e62599e1372670d8e76ad28b8c279949eb3",
+    "1c8f17099ad62dbd2a511f69c12e5b4e15d9da7f",
+    "e5c15bc7fca18cab7af3de24e5520f77eda46d02",
+    "c2423d40798a7e3cefa0fa6847f27e3c5f10f820",
+    "5355aefceabf00ee1746d2329bf26d891ca807b9",
+    "ad004b1f00451fc739a9a2e76c52144eccdbfd0a",
+    "0bf16b0d83f2fcc8c9b55df06bf20f97d763a23f",
+    "5b136f8bfd0451d2e1311affabc13b36bcca9492",
+    "d1f6a05d33307c9eb4f6a23a25fffd2e081a98da",
+    "ce9b1ec4a5e06e0321ce391aadaa71de3712322e"
+  ],
+  "otherUnverified": []
+}

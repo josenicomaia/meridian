@@ -1,0 +1,27 @@
+{
+  "head": "c91cf4357f04c1f3473896a182aaad2c51f524e1",
+  "started": "2026-10-20T22:46:02.383873+00:00",
+  "commands": [
+    {
+      "label": "typecheck",
+      "exit": 0
+    },
+    {
+      "label": "build",
+      "exit": 0
+    },
+    {
+      "label": "pack",
+      "exit": 0
+    },
+    {
+      "label": "full",
+      "exit": 0
+    }
+  ],
+  "exit": 0,
+  "compatIntegrityVerified": true,
+  "sourceFrozen": true,
+  "sourceBytesUnchanged": true,
+  "finished": "2026-10-20T22:57:45.680132+00:00"
+}

@@ -1,0 +1,32 @@
+d4e36fa90a3ecfbcb48c91c8c4023224b1386f32	Aleksey Proshutinskiy <alexey.prosh@fluence.one>	2026-10-01T20:46:35+04:00	fix: preserve account failover across SSE keepalives
+0e5a8de84cae388a8f64619f2bacde622ca1e11b	Aleksey Proshutinskiy <alexey.prosh@fluence.one>	2026-10-01T22:40:08+04:00	feat(session): add opt-in SQLite bookkeeping with offline recovery
+004f685376e11e33ef08cf128c013e18f0274a75	Aleksey Proshutinskiy <alexey.prosh@fluence.one>	2026-10-02T01:48:25+04:00	Merge upstream/main into feat/sqlite-session-bookkeeping-public
+d8339e62599e1372670d8e76ad28b8c279949eb3	Aleksey Proshutinskiy <alexey.prosh@fluence.one>	2026-10-02T03:00:20+04:00	chore(session): drop internal evidence notes and stray code
+1c8f17099ad62dbd2a511f69c12e5b4e15d9da7f	Aleksey Proshutinskiy <alexey.prosh@fluence.one>	2026-10-02T03:06:02+04:00	fix: keep pre-stream statuses and classify in-stream dispatch failures
+e5c15bc7fca18cab7af3de24e5520f77eda46d02	Aleksey Proshutinskiy <alexey.prosh@fluence.one>	2026-10-02T03:09:55+04:00	chore(session): trim comments and name the unavailable-operation error plainly
+c2423d40798a7e3cefa0fa6847f27e3c5f10f820	Aleksey Proshutinskiy <alexey.prosh@fluence.one>	2026-10-02T03:12:28+04:00	Merge fix/sse-keepalive-failover into feat/sqlite-session-bookkeeping-public
+5355aefceabf00ee1746d2329bf26d891ca807b9	Aleksey Proshutinskiy <alexey.prosh@fluence.one>	2026-10-02T03:35:50+04:00	ci: rerun after an unrelated /inflight timing flake
+ad004b1f00451fc739a9a2e76c52144eccdbfd0a	Aleksey Proshutinskiy <alexey.prosh@fluence.one>	2026-10-02T11:50:53+04:00	Merge upstream/main into feat/sqlite-session-bookkeeping-public
+0bf16b0d83f2fcc8c9b55df06bf20f97d763a23f	Aleksey Proshutinskiy <alexey.prosh@fluence.one>	2026-10-02T11:50:53+04:00	test(session): give the GC sweep harness the profile-copy pruning dependencies
+5b136f8bfd0451d2e1311affabc13b36bcca9492	Aleksey Proshutinskiy <alexey.prosh@fluence.one>	2026-10-07T17:48:33+04:00	Merge upstream/main into feat/sqlite-session-bookkeeping-public
+d1f6a05d33307c9eb4f6a23a25fffd2e081a98da	Aleksey Proshutinskiy <alexey.prosh@fluence.one>	2026-10-07T19:10:41+04:00	test(session): a resumed SQLite turn refused by a held writer lock stays retryable
+ce9b1ec4a5e06e0321ce391aadaa71de3712322e	Aleksey Proshutinskiy <alexey.prosh@fluence.one>	2026-10-07T19:45:38+04:00	fix(session): treat a bootstrap seen mid-publication as busy
+755233e4fa169ca4021f75db6018e98905645b28	Trevor Walker <rynfar@gmail.com>	2026-10-20T05:15:43-06:00	fix(session): retain native ownership through startup validation
+7d74a208919004555fdfda8ad9e477e3e171e040	Trevor Walker <rynfar@gmail.com>	2026-10-20T05:19:46-06:00	fix(session): preserve metadata order in legacy SQL exports
+7f732a15fb347d0282b7f068e2ea2a0c3b2efa19	Trevor Walker <rynfar@gmail.com>	2026-10-20T05:29:59-06:00	fix(session): require exclusive maintenance for WAL truncation
+bbdde5f7fdfdf5952d52c59a2407edb7489417ed	Trevor Walker <rynfar@gmail.com>	2026-10-20T05:56:52-06:00	fix(session): compose SQLite bookkeeping with current session proofs
+dc6511527153ff659ee57fc5b0cf0f10d8088327	Trevor Walker <rynfar@gmail.com>	2026-10-20T06:31:17-06:00	fix(test): build the bookkeeping contract CLI in an owned fixture
+96e1bd417aea6d89f290894ecbb3779db7495379	Trevor Walker <rynfar@gmail.com>	2026-10-20T06:31:17-06:00	fix(session): prune SQLite profile copies within the lifecycle budget
+39bc6fe72b0711a56256d0470ce280d4c8da2b02	Trevor Walker <rynfar@gmail.com>	2026-10-20T07:19:14-06:00	fix(session): expose opaque async bookkeeping ownership
+2fe2c9bd9df6b79c08792aa062b20326212b5828	Trevor Walker <rynfar@gmail.com>	2026-10-20T07:46:55-06:00	fix: join request finalizers before closing storage
+fb737a98412c4fb6ad8a03daa8e99744ebecac13	Trevor Walker <rynfar@gmail.com>	2026-10-20T08:19:54-06:00	fix: join existing GC without starting deletions during embedded close
+e8169b97aa06dd1e2af7122696db3b3a44e2784e	Trevor Walker <rynfar@gmail.com>	2026-10-20T09:22:05-06:00	Merge remote-tracking branch 'origin/main' into review/pr1219-native-unwind-20261020
+a8a9e0dafba7c4bb72e36a58bbc9a4445c230e3b	Trevor Walker <rynfar@gmail.com>	2026-10-20T10:20:53-06:00	fix: retain bookkeeping ownership through session GC cleanup
+64feb72f33e5d1e83a4714163e700300a9368f51	Trevor Walker <rynfar@gmail.com>	2026-10-20T10:36:13-06:00	test: join deferred deletion work in lifecycle comparison
+5da7b6b40e2b2871c0f50313f59dc09e4c13806d	Trevor Walker <rynfar@gmail.com>	2026-10-20T11:03:28-06:00	fix: keep deletion claims fenced until their proxy owner exits
+6af00eb7441462dcfe06d21af52784655ea861cc	Trevor Walker <rynfar@gmail.com>	2026-10-20T14:51:02-06:00	Merge current main and reviewed bookkeeping contribution
+4cf77705ca7ef7aa9e7f11916efe60d9cfbb1dae	Trevor Walker <rynfar@gmail.com>	2026-10-20T14:53:38-06:00	test: isolate bookkeeping auth and join package fixtures
+f97e6dbf05f82873d5759671a54010b5ad237f46	Trevor Walker <rynfar@gmail.com>	2026-10-20T15:12:17-06:00	fix: acquire recovered lifecycle locks before timing out
+b7bccdddd2784dce3a22d4bc2fc89f8efa040e41	Trevor Walker <rynfar@gmail.com>	2026-10-20T16:16:22-06:00	fix: qualify patched runtime SQLite for bookkeeping
+f428e2e3c0872301ce250242ac4d32a2c302f676	Trevor Walker <rynfar@gmail.com>	2026-10-20T16:32:46-06:00	fix: qualify SQLite in Linux test runtime
+c91cf4357f04c1f3473896a182aaad2c51f524e1	Trevor Walker <rynfar@gmail.com>	2026-10-20T16:45:21-06:00	fix: retain qualified runtime and filesystem boundaries

@@ -1,0 +1,3176 @@
+{
+  "at": "2026-10-20T23:00:20.793519+00:00",
+  "head": "c91cf4357f04c1f3473896a182aaad2c51f524e1",
+  "files": [
+    {
+      "path": "1219-native-engine-r2/all-bookkeeping-r1-exit.txt",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "1219-native-engine-r2/all-bookkeeping-r1.log",
+      "bytes": 160577,
+      "sha256": "bb39e67695736586b8375593dcda790df6d62533a4f8f1d39f4ff1b32b2aeda3"
+    },
+    {
+      "path": "1219-native-engine-r2/all-bookkeeping-r2-exit.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "1219-native-engine-r2/all-bookkeeping-r2.log",
+      "bytes": 120484,
+      "sha256": "09be29c218622a0f0ebb00c47ff06e48f796a9fe222086442ee70fb3fe7b7f51"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/binding.js",
+      "bytes": 2123,
+      "sha256": "4fe0f892facc02af7db0a1770150565d2e944e7da3c6493116d8e2a01a0f9b19"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/darwin-arm64.js",
+      "bytes": 166,
+      "sha256": "830ec2bbc0d402f8be13e93d5549c7a9030a2d5eed40f527e4b4aee9f962ec3b"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/darwin-x64.js",
+      "bytes": 164,
+      "sha256": "2d7671f3e5d0f19e78eb88d6cd2547ec7554acd3844942fa5a8fff61fd8f9c93"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/database.js",
+      "bytes": 4729,
+      "sha256": "539315c97591561394d2a0f257632305c3af1e32915a123aa8cc9032056d8ae2"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/index.js",
+      "bytes": 149,
+      "sha256": "0d56e190de8623278641b613433e89c4af2e5c90092c9c6e425f873d7fbc7ccf"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/linux-arm64.js",
+      "bytes": 165,
+      "sha256": "e2ff6a1e844f0f95794ebe50cea071f235bd57182ac04985819b86498541797c"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/linux-x64.js",
+      "bytes": 163,
+      "sha256": "96f9bbd76ab65da4f98a4833eb512746db6a99a2728db20feae2d70db0c2e273"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/linuxmusl-arm64.js",
+      "bytes": 190,
+      "sha256": "2edb0f14e62d3efa76c8089e58207895abb46642d1e988755a5eef5059605de9"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/linuxmusl-x64.js",
+      "bytes": 188,
+      "sha256": "d28b85927738844f589601e78e241d501c30231e9b9890f8f3605fca6d238f3d"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/methods/aggregate.js",
+      "bytes": 1932,
+      "sha256": "e9f74eb919ec93fe089c95ddf25a98f1f631c80418fa34fb2346ca1bc29f1b82"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/methods/backup.js",
+      "bytes": 2380,
+      "sha256": "ea29d34992bb02e006d0fdeda9675ac5d2bb227aaf57468decd997e9fc9c7dbf"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/methods/explain.js",
+      "bytes": 292,
+      "sha256": "0bd8cc80ccc7338f1d93058beea0cde924d4e7e652da9f51267e7c0757361be7"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/methods/function.js",
+      "bytes": 1396,
+      "sha256": "f431d49303b8bbdc044b1f1b455bdad21fc9b74b007de0acb22f08f25b4febd3"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/methods/inspect.js",
+      "bytes": 174,
+      "sha256": "4975a78daee850adee62ba98719d0f223819a0ec135a07c0e302994bd8dbff61"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/methods/pragma.js",
+      "bytes": 543,
+      "sha256": "d399bf1dbc85ef8a51f946c5a9505f2c37d0b1bed3f68863b1bf202d53d6524e"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/methods/serialize.js",
+      "bytes": 625,
+      "sha256": "7a10ee5c2735384b7f0c361811bc6d017db29f62b203fd3c68a35f667e2c2605"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/methods/table.js",
+      "bytes": 7243,
+      "sha256": "2356885ca1ef37d20f2daeed2b82b9dd6e61481e851194174a16d32efa3ae2f0"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/methods/transaction.js",
+      "bytes": 2855,
+      "sha256": "40b71d6113f328f96cec8f6f888ffddd98b5926d38fb1e2746939c7daba93e2e"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/methods/wrappers.js",
+      "bytes": 1152,
+      "sha256": "b289d339ff56b19ab40d109050080e1c844f2a5d01e62d8cb37a0152b0479a47"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/sqlite-error.js",
+      "bytes": 512,
+      "sha256": "903c140bb3d9d4f6256124889f5a820a491299907885d5b9d5ff2c4eaa268a06"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/util.js",
+      "bytes": 331,
+      "sha256": "92b2e39e2151b43a2252e10b6d6de876ecaf0008336a4fa1dfe1317b20f1916f"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/win32-arm64.js",
+      "bytes": 165,
+      "sha256": "00c1d5355a4e47e485e0ea8408a28423a18204d6d7ea5c57e599ebe64a1aa309"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/lib/win32-x64.js",
+      "bytes": 163,
+      "sha256": "c25867a2e904a367743498377e6e156a653bd10bcc5f9be7cbdf8a28359012ef"
+    },
+    {
+      "path": "1219-native-engine-r2/binding/package/package.json",
+      "bytes": 1838,
+      "sha256": "6c9ea355190dfce3646ad4d2a31c9506de36d884a6461b3655a2a0c4ba3d1695"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-actor-fixtures-r1-exit.txt",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-actor-fixtures-r1.log",
+      "bytes": 7044,
+      "sha256": "d4ce927722fd44ed285e674783eb221615263facca9335b893503c6f59ae406d"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-build.log",
+      "bytes": 2860,
+      "sha256": "d02f551d9b728ebe09bb1c462738b29a816e68fbc01baa09509297a74a26cdec"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-bun143.json",
+      "bytes": 688,
+      "sha256": "42d1fae4863d91a0881659b6b86688d66e5948744145bbf64f29b385c9611539"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-changed-fixtures-r2.log",
+      "bytes": 1467,
+      "sha256": "d8140a4624d26743601c5277b22af9a0d1c0a4aabd188349a22af5609ff1626c"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-focused-r2.log",
+      "bytes": 12272,
+      "sha256": "a111c506b8872ba106625646a17b0caa54262833b0fde0eb949dfce3e433b9f0"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-focused-r3.log",
+      "bytes": 7583,
+      "sha256": "c908d9404fd4470f8b8a4f01f7e6d38b2705abc1422070311b9d401395e3c97a"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-focused-r4.log",
+      "bytes": 7093,
+      "sha256": "c7805e6a3f80c2884cb799b669a080ab496dcc9343b2ea26e563964ede83c285"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-focused.log",
+      "bytes": 80597,
+      "sha256": "cbce0c2ee49ccecab3f226bffdee9ef12298caa76d335a89a6da1350d1bbdae0"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-native-gc-peer-r2.log",
+      "bytes": 259,
+      "sha256": "238700670f89f6a1107b7e49ce675b4cb20222e7b03d5f848a64ae72007e2eed"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-node-escrow-type.log",
+      "bytes": 53,
+      "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-node-escrow.log",
+      "bytes": 783,
+      "sha256": "42906aab4ddf727dbb198aea0930ec52c21746158bc2162aa97940ab59e9a2b3"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-node.json",
+      "bytes": 837,
+      "sha256": "1809c108e2dda4ee52e636698de80bddd91d04be6888efb0297d6206776f6260"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-typecheck-r2.log",
+      "bytes": 53,
+      "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-typecheck-r4.log",
+      "bytes": 53,
+      "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-typecheck-r5.log",
+      "bytes": 467,
+      "sha256": "697662e448416f5cb4d4971ca9fa4c3723dc739306ad5f207de8b548885bd407"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-typecheck-r6.log",
+      "bytes": 53,
+      "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+    },
+    {
+      "path": "1219-native-engine-r2/builtin-typecheck.log",
+      "bytes": 53,
+      "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+    },
+    {
+      "path": "1219-native-engine-r2/bun-trigger-primary-count.json",
+      "bytes": 669,
+      "sha256": "0972003758dbbbd1dae9a33edad279c411fac259f2ca0f1e59012b8880450756"
+    },
+    {
+      "path": "1219-native-engine-r2/bun1311-custom-system.json",
+      "bytes": 492,
+      "sha256": "4f8051f49ddc58575fe1934132c04dce0446f4a7faaf903c3fc66d8e5fc971e8"
+    },
+    {
+      "path": "1219-native-engine-r2/bun143-linux-builtin.json",
+      "bytes": 652,
+      "sha256": "a62d8cf0c44f5dedb02f644c648147cb5c8b40ea42bc05e05a056b4d39f02a81"
+    },
+    {
+      "path": "1219-native-engine-r2/ci-test-failed.log",
+      "bytes": 5193456,
+      "sha256": "5e638f5808b5831cf5303fc62139e3388699fd066cd3d21d453eb276237aa50c"
+    },
+    {
+      "path": "1219-native-engine-r2/continuation-update.json",
+      "bytes": 2574,
+      "sha256": "cee63335d5299db99d87a4b45f708dfa392f34a837361556862d5c6cdd42b2ba"
+    },
+    {
+      "path": "1219-native-engine-r2/current-builtin-proposal.json",
+      "bytes": 10914,
+      "sha256": "99cdfc1c4cb969b37ff9e43c50f05465b92bdd2ca0ea9aef4f478d3304f3d242"
+    },
+    {
+      "path": "1219-native-engine-r2/current-pr.json",
+      "bytes": 8338,
+      "sha256": "e0d696e0141bfb78b6e59d1e187eeec25dccd89eed84b62c299e7290c7b15a9b"
+    },
+    {
+      "path": "1219-native-engine-r2/final-build.log",
+      "bytes": 2860,
+      "sha256": "b89e0cdc58ae15d1b34adfbbd483b4dd0b8f69f1a2aa0686602b1bc7bd3e72cc"
+    },
+    {
+      "path": "1219-native-engine-r2/final-full.log",
+      "bytes": 1528634,
+      "sha256": "2e2548085228eb337491ea79249a8826efd1a61b6bd70abc3b58c6c612d7f866"
+    },
+    {
+      "path": "1219-native-engine-r2/final-local.json",
+      "bytes": 494,
+      "sha256": "5aa8e9dcaa34bafce948fcaee53fbd4ad04cb2fecab160f2342a3aaea47ef887"
+    },
+    {
+      "path": "1219-native-engine-r2/final-pack.log",
+      "bytes": 80030,
+      "sha256": "0988c51d88bfbc2d597756268192ec6025e9b618714430dc9322da9404dfd6ed"
+    },
+    {
+      "path": "1219-native-engine-r2/final-source.json",
+      "bytes": 668,
+      "sha256": "969b0e0fd35d9dcbfe2511953d3dac78e1d319253ab69414faf0fedb2a5767ca"
+    },
+    {
+      "path": "1219-native-engine-r2/final-typecheck.log",
+      "bytes": 53,
+      "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+    },
+    {
+      "path": "1219-native-engine-r2/idle-wal-holder-control.json",
+      "bytes": 665,
+      "sha256": "ff561732944ed43c776d2679e2c6cb3adc30d7102b8fa60f198b578e12311c44"
+    },
+    {
+      "path": "1219-native-engine-r2/issue1277-current.json",
+      "bytes": 6177,
+      "sha256": "f3d3c3a2edd8da8067ade85c5dd4e7fc0d2105858e17bd024131a2a3084621a1"
+    },
+    {
+      "path": "1219-native-engine-r2/native-driver-linux-r1.json",
+      "bytes": 731,
+      "sha256": "a430a7f851b164dc2b20bee4a7d2bae6121a3729552ca0ddc3ee72456841a9d9"
+    },
+    {
+      "path": "1219-native-engine-r2/native-driver-smoke.mjs",
+      "bytes": 1919,
+      "sha256": "bf775a57cb037dbd73e82c8b2e3385eecf956868e0b8abaca387790c7ef25e54"
+    },
+    {
+      "path": "1219-native-engine-r2/package-identity.json",
+      "bytes": 259,
+      "sha256": "ced2316def29b6561874520f41c1489c349663632183d598973102e3012e424c"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/ATTEMPT.json",
+      "bytes": 1326,
+      "sha256": "a9770d5a9e2a2c51eb5453fc72f4a7459cd23600b52db1224bb7350181e67f00"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody/actor-112.json",
+      "bytes": 1100,
+      "sha256": "a6505186b415f08a75e3100fc208a8d4a1bca657c18d7ead9d1150694e4b985d"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody/actor-130.json",
+      "bytes": 1100,
+      "sha256": "b4fe0deb45c22e1f30b5acd255043e303697c8c9f2d8c58c193b30ff3534be59"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody/actor-14.json",
+      "bytes": 25097,
+      "sha256": "0f0d3ef4be53152ee56f284cc88e635f96ff6be49eaa3c12a85aaa3be3394cb7"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody/actor-145.json",
+      "bytes": 1569,
+      "sha256": "cadac5bfbf0eb9756b39673f3667833628b5373762198b1bdc986cc72b9b8162"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody/actor-194.json",
+      "bytes": 1569,
+      "sha256": "852e45c9396566d9a2fddcd3c30bf98dbb6e199d9550ba299a3a3ffb185a589c"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody/actor-238.json",
+      "bytes": 1729,
+      "sha256": "c539fe1bf1a3b100b8e566312d979533eb93d7c84d779bdfd935257763781028"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody/actor-258.json",
+      "bytes": 1729,
+      "sha256": "589f97d692a96189012d462faf141ae36044a3b188f0cb4ebe8196d67194a15b"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody/actor-278.json",
+      "bytes": 1100,
+      "sha256": "3fa1b956248e821144babb258d6a4e3689d531406650735eb1fce913eafa033d"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody/actor-296.json",
+      "bytes": 1100,
+      "sha256": "558051fc5681d1aa9afed40e89ac50903a52736e7e6b7c202c0c75996ec892bc"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody/actor-413.json",
+      "bytes": 1076,
+      "sha256": "de9c5149c2c49ea9de96802017233f765752a8f592383f45ad2294816d8a9412"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody/actor-45.json",
+      "bytes": 1095,
+      "sha256": "ca8f81a6fb2cb74f84bf928d95bbdce947ae6dd7570bac2b8ec8641551b3b9e9"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody/actor-61.json",
+      "bytes": 1095,
+      "sha256": "16591d425674e09ff3d8d04e69026038d39195768a72d0a08c0c06ebee0a399e"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody/actor-83.json",
+      "bytes": 1095,
+      "sha256": "9fd8ab9a040ed81db20be1a8db7a73592e6fe6b5ac3517d954e4f35022bce7a1"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody/actor-94.json",
+      "bytes": 1099,
+      "sha256": "827b0333bc342322f851a159660f00b0fcbb2c28f0179b461154ad1fce694660"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/custody-observer.mjs",
+      "bytes": 4151,
+      "sha256": "4558864dc5e61b9b0eac7856bf3d42b3611fc7bcbd412a3a381022956bab1fa8"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/docker-result.json",
+      "bytes": 446,
+      "sha256": "6d30eb65330bb8ad524f3030fde42ef15988464b12d9b45214865e2d70fa3f45"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/docker.log",
+      "bytes": 1757,
+      "sha256": "224bcd1a89d32573bac15644ce2441721f2c1d887082e61d3f41ed9a0e86f0a1"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/preparation.json",
+      "bytes": 2562,
+      "sha256": "2a8cd165b61cbba2d4f12f720d58a090946f18db24c02e1c6badf799b5c9f2df"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/result.json",
+      "bytes": 1757,
+      "sha256": "224bcd1a89d32573bac15644ce2441721f2c1d887082e61d3f41ed9a0e86f0a1"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/run-docker.py",
+      "bytes": 2167,
+      "sha256": "23b0afe4dcd0efa167938438c347e80dc4f3a33dd2b01325fa5fd4e287284ea2"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/run-inside.py",
+      "bytes": 2594,
+      "sha256": "9f1128d1920477d3c04c2532f154b7dc20eabaec887eb0ebc71c9e355fdde72a"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-linux-main/run.log",
+      "bytes": 190,
+      "sha256": "240ecf778d2058430caa2728cb2e9f34a20e47293302de2f74e73935185ad3e1"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/ATTEMPT.json",
+      "bytes": 1309,
+      "sha256": "4f9a36011f6be9c2ca2bc86c74c1c6a36082000312700de45f387c20af4cecea"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody/actor-66154.json",
+      "bytes": 29435,
+      "sha256": "38a7e53783b6008a5aeb85218e50b84724a067d8b11fecb6a749a17123d5fd35"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody/actor-66806.json",
+      "bytes": 1884,
+      "sha256": "9a58976318d444ce3409d9321c63b86ebc150e16c4c6f1bfcfee1ceec72414c0"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody/actor-66862.json",
+      "bytes": 1884,
+      "sha256": "3449afd3e7a058ec91052e97ed7b6f857400f262134d4b60b1ab2ec65af6d446"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody/actor-66924.json",
+      "bytes": 1884,
+      "sha256": "6721f3e8041cc9fb23bd8cb667ef153e0852f1c886191dc8015bc9400cf63bc5"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody/actor-66944.json",
+      "bytes": 1884,
+      "sha256": "a512e7087ef87510fc3d7b52ef127d8f2602e8bb417f94819fba7e4a6e1cad84"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody/actor-66982.json",
+      "bytes": 1884,
+      "sha256": "e3d60bd468c1841604ea8b9845d5587004b1d8e2b6dadac6b409e0eced6bb66e"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody/actor-67025.json",
+      "bytes": 1884,
+      "sha256": "ddb98f5f23192d6e2f51f61a36d07d0f2f5c862351ad55f4613bd4ec9a79ffcd"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody/actor-67045.json",
+      "bytes": 2367,
+      "sha256": "a0f867a87f724aaea5fe5f9a2f95a53ba4ab24f4002f86e165246173d4e14538"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody/actor-67127.json",
+      "bytes": 2367,
+      "sha256": "c6af3a3787c16b50eae334307d427649a2829c54d588c502cee30d3c93045166"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody/actor-67145.json",
+      "bytes": 2527,
+      "sha256": "1c5e6149492c75b11bdc2ce50cc6954cbfdf6f24c7f7b473545867479452e59a"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody/actor-67166.json",
+      "bytes": 2527,
+      "sha256": "4c12fc01776a75280c91a6a62479c3cf963faef8dcfe23f3a58363ab3eb0c372"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody/actor-67291.json",
+      "bytes": 1884,
+      "sha256": "3d0722eb72a4106a288e710ec4f0d21531373d1ce7f64a4ea7cbc9fa4b0b48fd"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody/actor-67420.json",
+      "bytes": 1630,
+      "sha256": "b7196c0bb3f4b0b110f651d09b860d8d68c835e1a1aaea4defd023e4782c6db1"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody/actor-67673.json",
+      "bytes": 1860,
+      "sha256": "74d96c19be207fb153c0310151d86e0aa14793b34475d9a80dee561908562eb3"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/custody-observer.mjs",
+      "bytes": 4043,
+      "sha256": "1cf600f60471d5dbe6d9279cd1362c80b01b0765692e3c801fb9b316ae0abe89"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/preparation.json",
+      "bytes": 2381,
+      "sha256": "40854d5d5cde7d5f380d2900d91916a92c1cab16b1be504946eefbe55e64518f"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/result.json",
+      "bytes": 1744,
+      "sha256": "4a57d7b7e597c25d39384267e8b4832421015b5d0fc8c0adde441ff39a00053d"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/run.log",
+      "bytes": 191,
+      "sha256": "a4f5bb3477527e2b51a1c38282fb6a6c0cbc14cf09690b0e38ff49cd981b0636"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-main/run.py",
+      "bytes": 2592,
+      "sha256": "28afd6f9c4464a7df10f98973ae4b63132aaf694103dcb1b19ad3f4e197830d6"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/ATTEMPT.json",
+      "bytes": 1334,
+      "sha256": "e026cf92f9ff601f18fcf811e769cf1512aaa89abd1929b9ac7125a28f7a5d14"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody/actor-10195.json",
+      "bytes": 29457,
+      "sha256": "95754e4c2552fe40a63d808b0ef8c3817cc91426065c6ef4d3e5ec13319cde11"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody/actor-11196.json",
+      "bytes": 1884,
+      "sha256": "b99e74e6384642b87b54f1777b8156cfcec02e80f23785fd637307bd5f97057e"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody/actor-11202.json",
+      "bytes": 1884,
+      "sha256": "48e943b3dc2ec606838f6ffd3abf4d69686e5b2c91211b5b7fd133fda2d2e71e"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody/actor-11270.json",
+      "bytes": 1884,
+      "sha256": "003db56adfb65b256820e7c3cfa528f414c1484167d4dd361d832e441e617749"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody/actor-11276.json",
+      "bytes": 1884,
+      "sha256": "78e3e60fc851bc8235305e9b3d7090d6f2a162237ba91b40885e4afa3a6c5791"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody/actor-11284.json",
+      "bytes": 1884,
+      "sha256": "00b1f5a8c556ecacedf6e407c8dea60b649554a7895ed6a9be6a00b8fb30a9ce"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody/actor-11316.json",
+      "bytes": 1884,
+      "sha256": "0ab28b6863fe87d0eb4783bd101f229166b650dd73936f7482fc270b48ba723d"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody/actor-11323.json",
+      "bytes": 2367,
+      "sha256": "8292f6501553eff901cfcad7775c675e2ce4089ef7a8d4f909e8142f436e8321"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody/actor-11405.json",
+      "bytes": 2367,
+      "sha256": "7718d4f9c57305fde84ae65aef803aaae4714d1e7f8cd1792fe05912d5bbe1bb"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody/actor-11432.json",
+      "bytes": 2527,
+      "sha256": "78a6cab23847da3f247359330c30141f5c0fb2ab6e56338d1b312fe14c46fc38"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody/actor-11447.json",
+      "bytes": 2527,
+      "sha256": "f9d81d2d513a540508019546d06c3533e6a2f7cf23a254b09138d4e9d862a191"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody/actor-11458.json",
+      "bytes": 1884,
+      "sha256": "5c6ebb5ae485e07747f78e1949e5df4a30d7eea3b2867c5d62265df4de532930"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody/actor-11471.json",
+      "bytes": 1630,
+      "sha256": "4fc92c7056b6db8e6bbc24742038852021849dc3dd923b8a7b86df0429a7b1e7"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody/actor-11552.json",
+      "bytes": 1860,
+      "sha256": "dbc8665480209df39e8938c8f73d886230055b372378bd374b463b98b085d16f"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/custody-observer.mjs",
+      "bytes": 4043,
+      "sha256": "1cf600f60471d5dbe6d9279cd1362c80b01b0765692e3c801fb9b316ae0abe89"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/preparation.json",
+      "bytes": 2328,
+      "sha256": "7f3af4a0b5e055cf2d86f1905e7ad6d66ff64f41efbac0434e6740007a9df1d7"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/result.json",
+      "bytes": 1769,
+      "sha256": "a0386723d68389c205dfe9ee77e709b3a90677f5163bd15ceb74a8de4816c727"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/run.log",
+      "bytes": 191,
+      "sha256": "a4f5bb3477527e2b51a1c38282fb6a6c0cbc14cf09690b0e38ff49cd981b0636"
+    },
+    {
+      "path": "1219-native-engine-r2/packages-mac-published/run.py",
+      "bytes": 2597,
+      "sha256": "7b7a53bfe73b69c9f53b291e8759196544b0b80af999532f5870d2802239e5bb"
+    },
+    {
+      "path": "1219-native-engine-r2/pr-body-before-engine.md",
+      "bytes": 4438,
+      "sha256": "5057b7b02c2b7c3a6cc55779eab1c4eb3ab26eea95a0f959005dfe8baacfa199"
+    },
+    {
+      "path": "1219-native-engine-r2/pr-body-current.md",
+      "bytes": 4012,
+      "sha256": "08191eda11a3ef350dc41065f04214bd4b749d516c0d8fd4a5619610c5b547a4"
+    },
+    {
+      "path": "1219-native-engine-r2/pr-body-patch.json",
+      "bytes": 4041,
+      "sha256": "d6909c19feb1eba0d95ee651d32144ec7b43df59df59c3877cad33253f2d1bb5"
+    },
+    {
+      "path": "1219-native-engine-r2/pr-body-update.json",
+      "bytes": 260,
+      "sha256": "44c67a1fd4c338a1470313ec73caf9f7dafbc4809078c3a4404627ed18668200"
+    },
+    {
+      "path": "1219-native-engine-r2/probe-builtin-uri.cjs",
+      "bytes": 1395,
+      "sha256": "603e56d12e0711239922675ecbf6780ad223161b1abdff431da59c56d142b966"
+    },
+    {
+      "path": "1219-native-engine-r2/probe-idle-wal-holder.cjs",
+      "bytes": 1391,
+      "sha256": "c7361cc47d1aa4e20a838511d18ec3c7eede9918b65a70663141acd65c6b1534"
+    },
+    {
+      "path": "1219-native-engine-r2/probe-native.cjs",
+      "bytes": 1343,
+      "sha256": "8a5333fafc9d86d1e410a299b47b552eff4da813a1e9633d1d045841ccd36139"
+    },
+    {
+      "path": "1219-native-engine-r2/probe-readonly-modes.cjs",
+      "bytes": 1480,
+      "sha256": "79b9b9af19c953708d894ee5a8fe8ee8ef8ff4314d39cd1fbe4f6a02649358e6"
+    },
+    {
+      "path": "1219-native-engine-r2/probe.log",
+      "bytes": 320,
+      "sha256": "7cc036b1145e9c180e6754e72cf28ac9c902564b3cfc3ebfa3947af4156e85ca"
+    },
+    {
+      "path": "1219-native-engine-r2/readonly-modes.json",
+      "bytes": 1865,
+      "sha256": "09c5b8b23e8f02eb09a467dcc9858c727b44b365f9695ca2223fb0434854ffb3"
+    },
+    {
+      "path": "1219-native-engine-r2/readonly-modes.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "1219-native-engine-r2/rejected-better-nativeDatabase.ts",
+      "bytes": 2692,
+      "sha256": "33248ef0c655afa50737a5678eeff26f5d560b4620ba709e82f9f6d50d75a91d"
+    },
+    {
+      "path": "1219-native-engine-r2/rejected-better-prototype.json",
+      "bytes": 449,
+      "sha256": "691f0bb373a410cee85d9b5bbe6341a65be1d3dbd13f8b806c37a78ed1e0576d"
+    },
+    {
+      "path": "1219-native-engine-r2/rejected-better-prototype.patch",
+      "bytes": 17860,
+      "sha256": "724c08eb28765956eb8a8436cf22d81d7c8a5930a70eff605fa069f6e4411c29"
+    },
+    {
+      "path": "1219-native-engine-r2/result.json",
+      "bytes": 5954,
+      "sha256": "5800add9d4a341d5a650a0ea35399352761bed8e5089f5db78129da056cd4748"
+    },
+    {
+      "path": "1219-native-engine-r2/run-final.py",
+      "bytes": 1995,
+      "sha256": "cc4a9c5931926ccdf6d42b2fdfb9ca9122fc1b12840d3d324b2bdc49df402ab0"
+    },
+    {
+      "path": "1219-native-engine-r2/sdk-gc-close-original-template.mjs",
+      "bytes": 8063,
+      "sha256": "6fdf70f3dba0d9b324edc8ea0491b826d6497a23753280d2d4473384ee61fe0b"
+    },
+    {
+      "path": "1219-native-engine-r2/sdk-gc-close-peer-probe.mjs",
+      "bytes": 9417,
+      "sha256": "00e3a406ac85e492cd30899b5c473619032b94b19023898d03a780a843bd1159"
+    },
+    {
+      "path": "1219-native-engine-r2/sdk-gc-mac/install.log",
+      "bytes": 234,
+      "sha256": "f5db413734a791fd650bf93ebca56665e872ce1b518a33e62eea9c55e4651c4b"
+    },
+    {
+      "path": "1219-native-engine-r2/sdk-gc-mac/json-close.log",
+      "bytes": 985,
+      "sha256": "82f97b3707a4eb68188a13a5179d705be96d20f0ab53be7c39fa81b657a6ba39"
+    },
+    {
+      "path": "1219-native-engine-r2/sdk-gc-mac/json-normal.log",
+      "bytes": 869,
+      "sha256": "df6996e77bcab8e149b58e38cfb4f02612ed33d49909ad994d615acc6a1bb074"
+    },
+    {
+      "path": "1219-native-engine-r2/sdk-gc-mac/json-stderr.log",
+      "bytes": 986,
+      "sha256": "44a1d2a789374bf0b8ece8833030cfe261f229188ce15195656b435b0a1e4c6e"
+    },
+    {
+      "path": "1219-native-engine-r2/sdk-gc-mac/json-stdout.log",
+      "bytes": 986,
+      "sha256": "004ab72c7d42328213bbf114fd326bb467a8bb24d5272601916f37004906de4e"
+    },
+    {
+      "path": "1219-native-engine-r2/sdk-gc-mac/result.json",
+      "bytes": 17692,
+      "sha256": "c08e7ff20c0f0799c3c920bde1258a0202905e60499cf722c1dd182c33bd1c67"
+    },
+    {
+      "path": "1219-native-engine-r2/sdk-gc-mac/sqlite-close.log",
+      "bytes": 2242,
+      "sha256": "ff86e6bca018f924f63eb782807abacffe7135076734aaaf7023447758d0cb86"
+    },
+    {
+      "path": "1219-native-engine-r2/sdk-gc-mac/sqlite-normal.log",
+      "bytes": 1852,
+      "sha256": "5c3ba38afefecc1ce7f1c6adcf5c8e30ffc3856f40014c21453527b5224b257b"
+    },
+    {
+      "path": "1219-native-engine-r2/sdk-gc-mac/sqlite-stderr.log",
+      "bytes": 2242,
+      "sha256": "7c0960528c3dc8b3ad7260bf13e58f39dd51fa316a11fae004689b759449011f"
+    },
+    {
+      "path": "1219-native-engine-r2/sdk-gc-mac/sqlite-stdout.log",
+      "bytes": 2243,
+      "sha256": "1eaed255ad44032382997b56d6173905382cbaea3713d69b9ae01ad00817875f"
+    },
+    {
+      "path": "1219-native-engine-r2/source-push.json",
+      "bytes": 520,
+      "sha256": "8243b524ec8597ca21554e5175b66bc483da4e991bbe89e5df5aeef9b0b1c06c"
+    },
+    {
+      "path": "1219-native-engine-r2/standalone-driver/nativeDatabase.mjs",
+      "bytes": 4551,
+      "sha256": "81c4be6ff26f6784288a7c8f3d6210b09d8d0554c70daab969c6407a69e29cf9"
+    },
+    {
+      "path": "1219-native-engine-r2/standalone-driver-build.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "1219-native-engine-r2/unpatched-runtime-refusal.json",
+      "bytes": 411,
+      "sha256": "901001af0bc512ee4df6d2e61fab4b224ecb0ca78195fa63faa1e0ca19665fbb"
+    },
+    {
+      "path": "1219-native-engine-r2/unpatched-runtime-refusal.mjs",
+      "bytes": 672,
+      "sha256": "23332d7a60855add001b9be7eeed890bdfee03fefe693e14fdf33efea0810974"
+    },
+    {
+      "path": "1219-native-engine-r3/bun1311-duplicate-control.log",
+      "bytes": 311,
+      "sha256": "8e1f477c7a204f287ea5421343b28f2671567e477168854abd5ffd673568655c"
+    },
+    {
+      "path": "1219-native-engine-r3/bun143-duplicate-before.log",
+      "bytes": 901,
+      "sha256": "ed6dbc233526d6cc537ba06bfbdccceb4329a10f0acc86c1b9e54a308e82bb8e"
+    },
+    {
+      "path": "1219-native-engine-r3/ci-checkpoint.json",
+      "bytes": 4127,
+      "sha256": "62ed17b264c3d988809240a1e2de1c9dc41d34fc4fad0e87ecb5c4df441925f7"
+    },
+    {
+      "path": "1219-native-engine-r3/classify-hfs-transport.py",
+      "bytes": 3780,
+      "sha256": "0347b1fc43633b2509c5c59beeeb8d7fc0c4b84052fe387fa5605592ce61d81b"
+    },
+    {
+      "path": "1219-native-engine-r3/create-e41-pool-grant.mjs",
+      "bytes": 4388,
+      "sha256": "f6d810b62bc6d64ab220b4a0fc5dc959f6013b5a3d20b7f17a670d8782503b07"
+    },
+    {
+      "path": "1219-native-engine-r3/final-build.log",
+      "bytes": 2864,
+      "sha256": "20cfc81de3e68c4c0d1871b04b96f6cbfcaeb9c6a6c1a6f89ec028e2aee9c5ac"
+    },
+    {
+      "path": "1219-native-engine-r3/final-full.log",
+      "bytes": 1364523,
+      "sha256": "536608989adb5454f4863e2ccc12b9cbeb9a6a44e5517ef1bc23ed79dccd59db"
+    },
+    {
+      "path": "1219-native-engine-r3/final-local.json",
+      "bytes": 494,
+      "sha256": "a585d6f5880d192955c4a538897cfb887966a513d8ecb400026405490e2a1f72"
+    },
+    {
+      "path": "1219-native-engine-r3/final-pack.log",
+      "bytes": 80030,
+      "sha256": "ec6db22ab2aaf3c87e653a12adf855fd82f5974190e7280e8cbbe241fa20ee1d"
+    },
+    {
+      "path": "1219-native-engine-r3/final-source.json",
+      "bytes": 1026,
+      "sha256": "503344c14552ab3ebd7dea237bdbcd418a260b510fd671f210f40dcc5c3eed05"
+    },
+    {
+      "path": "1219-native-engine-r3/final-typecheck.log",
+      "bytes": 53,
+      "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+    },
+    {
+      "path": "1219-native-engine-r3/fs-type.c",
+      "bytes": 251,
+      "sha256": "0806175c39b6d2083d1987a9ecf6cd71c9baa1e09fa9d00ee2e6907d511df9a5"
+    },
+    {
+      "path": "1219-native-engine-r3/hfs-transport-diagnostic/attach.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "1219-native-engine-r3/hfs-transport-diagnostic/attach.stdout.plist",
+      "bytes": 965,
+      "sha256": "bfe862edbea303297384ddc4c3bbd1fd2ccc4615090fd220ac03f113308509c5"
+    },
+    {
+      "path": "1219-native-engine-r3/hfs-transport-diagnostic/create.log",
+      "bytes": 105,
+      "sha256": "92627e9d3dbbdcb81885493ccf118e4ff09b35186504d61fa8b58de9832e55c2"
+    },
+    {
+      "path": "1219-native-engine-r3/hfs-transport-diagnostic/custody-observer.mjs",
+      "bytes": 4043,
+      "sha256": "1cf600f60471d5dbe6d9279cd1362c80b01b0765692e3c801fb9b316ae0abe89"
+    },
+    {
+      "path": "1219-native-engine-r3/hfs-transport-diagnostic/detach.log",
+      "bytes": 18,
+      "sha256": "6f3a063885926676a965e2ecf3da87294bee98e4a0214686653e35b4bd3d6cb3"
+    },
+    {
+      "path": "1219-native-engine-r3/hfs-transport-diagnostic/filesystem-result.json",
+      "bytes": 784,
+      "sha256": "0a4a87845ba1efd5b1b98d87f950ca6f32b9f87054d8763865d60f2f8d4cbd29"
+    },
+    {
+      "path": "1219-native-engine-r3/hfs-transport-diagnostic/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r3/hfs-transport-diagnostic/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r3/hfs-transport-diagnostic/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r3/hfs-transport-diagnostic/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r3/hfs-transport-diagnostic/preparation.json",
+      "bytes": 2281,
+      "sha256": "090a827481feffa1a397afe9b2dd77ac14371b2b95dfe1371a10fe0459be771e"
+    },
+    {
+      "path": "1219-native-engine-r3/hfs-transport-diagnostic/run.py",
+      "bytes": 2591,
+      "sha256": "b261f34b230c5e154e613f887eb0e2abb870bf30a80bcb8bb44721ac8caef895"
+    },
+    {
+      "path": "1219-native-engine-r3/linux-filesystem-docker-result.json",
+      "bytes": 241,
+      "sha256": "c788b66d4d3bef582b5288f976cddfd1dc7862853d44c43b81931c1feefbbae5"
+    },
+    {
+      "path": "1219-native-engine-r3/linux-filesystem-docker.log",
+      "bytes": 520,
+      "sha256": "e77f98009f07b116cad26d314def5b4f1e283c9d2a40f8997ea2e7ef2b09cbbf"
+    },
+    {
+      "path": "1219-native-engine-r3/linux-filesystem-r2-docker-result.json",
+      "bytes": 244,
+      "sha256": "c6dde8a2f5be104e6336be358e428b816c3f8c94760b2979fbe6a2acc5c55290"
+    },
+    {
+      "path": "1219-native-engine-r3/linux-filesystem-r2-docker.log",
+      "bytes": 1886,
+      "sha256": "477f65c6f2bf4d5dfed5ecee6351d1b16f5972ae94230dba23b8dd9d46ff715f"
+    },
+    {
+      "path": "1219-native-engine-r3/linux-filesystem-r2-result.json",
+      "bytes": 2584,
+      "sha256": "12bc6c0d263a36c6638b408df5f061b6c8fa5470fe38248e8732286c46e2b4c0"
+    },
+    {
+      "path": "1219-native-engine-r3/linux-filesystem-r2-tools.log",
+      "bytes": 3064,
+      "sha256": "4316bfb7689c96a16ec6df3fdc5ffee7e0a3d1cf0776f471977090a1a69ea296"
+    },
+    {
+      "path": "1219-native-engine-r3/linux-filesystem-result.json",
+      "bytes": 576,
+      "sha256": "01e398385c73e7005a85c23c3389568fbf2672c74bfb48a16580a219132857a9"
+    },
+    {
+      "path": "1219-native-engine-r3/linux-filesystem-tools.log",
+      "bytes": 3064,
+      "sha256": "45d123333fb6a0b32d9981fd1674b5c3eca5ed4dae4077dd9b8b30bc7a066ef6"
+    },
+    {
+      "path": "1219-native-engine-r3/linux-fs-capability.log",
+      "bytes": 73,
+      "sha256": "ed46b896789e300ce8269f1a2fed8d3de49f7f7b8addc2547971463724a3c143"
+    },
+    {
+      "path": "1219-native-engine-r3/loop-cleanup-inventory.json",
+      "bytes": 171,
+      "sha256": "4f3d7062ccaa1309d28c2b0dbf3b895d7086be0d28f414489f1ef89ef08450a0"
+    },
+    {
+      "path": "1219-native-engine-r3/loop-final-audit.json",
+      "bytes": 30,
+      "sha256": "3f1d39e826503300542203478b61c9393220197f672114f5813fa484380802ed"
+    },
+    {
+      "path": "1219-native-engine-r3/owned-loop-cleanup.json",
+      "bytes": 264,
+      "sha256": "5b8f520e792f6f46eedc2203d746983feb08e1d89d4073ddff283cd05557fd01"
+    },
+    {
+      "path": "1219-native-engine-r3/package-byte-equivalence.json",
+      "bytes": 3703,
+      "sha256": "32c7c8d12e6353e5ad2e4889172386e5bf45f71f1676e6e6ce39b25e96b1db9b"
+    },
+    {
+      "path": "1219-native-engine-r3/package-identity.json",
+      "bytes": 1219,
+      "sha256": "a46dc01e6055db388352d7765a05a8d5ad8a8cd1af76e8374ba321a11d1131c4"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs/custody-observer.mjs",
+      "bytes": 4151,
+      "sha256": "4558864dc5e61b9b0eac7856bf3d42b3611fc7bcbd412a3a381022956bab1fa8"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs/preparation.json",
+      "bytes": 2469,
+      "sha256": "dc5cab974098b6bcd274dfc83c6ef9f45204cfb500032c6c9dc0c96e13c25c4c"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs/run-inside.py",
+      "bytes": 2595,
+      "sha256": "5c27afc1c996de08da5152dd53fbd3a6f08b1de040d59e39abde6a2979cce3fa"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/ATTEMPT.json",
+      "bytes": 1253,
+      "sha256": "a1e87dc3fb135c8009fd3734cef8f69f8f6e5dd27d38a1f0dde10a458a12163e"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody/actor-1039.json",
+      "bytes": 624,
+      "sha256": "f07cb3d2ffa27ed521a52f7b874500ca211694f5334f3d29fdda6746e65d2988"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody/actor-652.json",
+      "bytes": 28502,
+      "sha256": "526ca6d846b483a2313648653ad43786124db65e3203dac1dae78da27f1e19e9"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody/actor-683.json",
+      "bytes": 645,
+      "sha256": "2cfe2f42bc11c992b06444a38e099c0a3e22981ad1a9a3d3853ed5c26327b296"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody/actor-698.json",
+      "bytes": 645,
+      "sha256": "63e88d19da480b4d6ab67fe60f98bff68557ae1187804e0985938158b29c4ca0"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody/actor-719.json",
+      "bytes": 645,
+      "sha256": "8a03e017679d0954f3e9b6f3aa19a68a7b7b507912cd9131e514755f4cb0f2ea"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody/actor-729.json",
+      "bytes": 645,
+      "sha256": "1679fa68080f152fb41ed317e2060d95d9d0584b9d66ad17bb293a0ea4fdedf9"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody/actor-746.json",
+      "bytes": 645,
+      "sha256": "ef27cc5182c1e4ad1f5e6b16b7b130f6e7d8f47a39ce01b49c3312a4b2eda070"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody/actor-763.json",
+      "bytes": 645,
+      "sha256": "c302bc75e6465698cbca368e8b0fba10693d76efa0b13f55c21d6e05e2961627"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody/actor-777.json",
+      "bytes": 1242,
+      "sha256": "b1058a1d7698c99a8de3bf74fc2a001bd72aeeb772a907abf504887a3f685d0e"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody/actor-826.json",
+      "bytes": 1242,
+      "sha256": "deec8689d5e8e41e3753470003e99da0a769b17fff9897aefd7953bc8cea6a54"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody/actor-870.json",
+      "bytes": 1402,
+      "sha256": "fee2af65b8a8ad1e2e459d496471c89bf5333154f7944aafdce8f789be889693"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody/actor-888.json",
+      "bytes": 1402,
+      "sha256": "f37f5bf98cdcde7ccf3e65bb7a2cda3786b6953c24d32b23d4458ccc662240ab"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody/actor-906.json",
+      "bytes": 645,
+      "sha256": "bc288f19c3e523cfe39ac7f371903a43f662556d30ae98b022a8371a59a13923"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody/actor-923.json",
+      "bytes": 645,
+      "sha256": "a16c39a2842d137cdf1f06abb1ff102fa3f80654438413473ed407083f7e621b"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/custody-observer.mjs",
+      "bytes": 4151,
+      "sha256": "4558864dc5e61b9b0eac7856bf3d42b3611fc7bcbd412a3a381022956bab1fa8"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/filesystem.log",
+      "bytes": 2620,
+      "sha256": "3ee17dd548c1e366cb9c06526223e5231591e1f26965388957a096d0772df302"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/preparation.json",
+      "bytes": 2469,
+      "sha256": "dc5cab974098b6bcd274dfc83c6ef9f45204cfb500032c6c9dc0c96e13c25c4c"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/result.json",
+      "bytes": 1685,
+      "sha256": "3a9677342a23b8bd94effc314b9dfd17dfc8f5ccce1df89f93060ddf02af598b"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/run-inside.py",
+      "bytes": 2598,
+      "sha256": "bcba1d2defb92cdcb154c0672ea0adf573ea911f03a90f541df830e5d7bd6d9e"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-btrfs-r2/run.log",
+      "bytes": 190,
+      "sha256": "240ecf778d2058430caa2728cb2e9f34a20e47293302de2f74e73935185ad3e1"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4/custody-observer.mjs",
+      "bytes": 4151,
+      "sha256": "4558864dc5e61b9b0eac7856bf3d42b3611fc7bcbd412a3a381022956bab1fa8"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4/filesystem.log",
+      "bytes": 605,
+      "sha256": "ca618bcd45df3588c408176ee1830d1e1c08acb1f97deea10717b4bc035da546"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4/preparation.json",
+      "bytes": 2468,
+      "sha256": "166411156a22c019e568936fa7a3e4a622475415c008c634f71a6ac60dd1c84f"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4/run-inside.py",
+      "bytes": 2594,
+      "sha256": "79cb9d3521a696cc61b510db1b7eb7a9b0a3dc296f52d4e36f7daac390034402"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/ATTEMPT.json",
+      "bytes": 1247,
+      "sha256": "88cfbab8852efa754398d37f672f06f8a709f74ad88659d221477f461737f808"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody/actor-209.json",
+      "bytes": 28393,
+      "sha256": "5c09aa1f2e6c7ca124ce08dca1abfc067f1dd2778692082555de9f01676ed411"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody/actor-240.json",
+      "bytes": 645,
+      "sha256": "0e7b2c064681cd215115d576bb49c9d5fc44f9baca8d6e0a179607ba1260339d"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody/actor-255.json",
+      "bytes": 645,
+      "sha256": "022041b66acd7c514fcaa32059a1a0f8539e777284cf1cca55f7599bad80afac"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody/actor-276.json",
+      "bytes": 645,
+      "sha256": "d3eef0da6095e68a10c828c08b3975881d25836746950eb138a21882a321f069"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody/actor-286.json",
+      "bytes": 645,
+      "sha256": "778231dc261c557f3bdbe4b2ec71332984d779182dad805fac0805335bb8952d"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody/actor-303.json",
+      "bytes": 645,
+      "sha256": "cc883dbac273cff30490ae79a66a6bcb10b254177e754c272bb6463521d4ecf6"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody/actor-320.json",
+      "bytes": 645,
+      "sha256": "f6d484081101e9f03736d65f5f793e45348eaabe65ff72832dcb77df730d87a4"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody/actor-334.json",
+      "bytes": 1241,
+      "sha256": "def90cbe005398a7bc876cd5236761a5922ed67660fb06670fa1231ef18169d0"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody/actor-384.json",
+      "bytes": 1241,
+      "sha256": "422c631b411b7c03001cb8bf925adf5b0c74cd62ada61b6b9fbff8a083cfc999"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody/actor-428.json",
+      "bytes": 1401,
+      "sha256": "6013f0fc9090642de3de2f73d457bcd00b0753a4f06d5b9cd586270762303f10"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody/actor-446.json",
+      "bytes": 1401,
+      "sha256": "54cc3b9e34de43241d272df28f6dcda3c1927212b92fdb80a404e4923504224b"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody/actor-465.json",
+      "bytes": 645,
+      "sha256": "e1edc8f2a5d8a1449c041aa0cc0069b90379116186713c6e806343c8ed195b7d"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody/actor-482.json",
+      "bytes": 645,
+      "sha256": "a82e9f93a00b5bbb277ed3842cca0deac1fed88ff51f2b4819f4ce7f5a5d0fd4"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody/actor-598.json",
+      "bytes": 621,
+      "sha256": "dbd429a30ebb82ab4e0013230ee16e4d3519baf79471ff7c8077cbabf9287927"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/custody-observer.mjs",
+      "bytes": 4151,
+      "sha256": "4558864dc5e61b9b0eac7856bf3d42b3611fc7bcbd412a3a381022956bab1fa8"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/filesystem.log",
+      "bytes": 2284,
+      "sha256": "36471c7ddb77e1a77fc984943d43fe4a30cb9a2a39394adc971d3d33bd62c4f1"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/preparation.json",
+      "bytes": 2468,
+      "sha256": "166411156a22c019e568936fa7a3e4a622475415c008c634f71a6ac60dd1c84f"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/result.json",
+      "bytes": 1679,
+      "sha256": "7c10b152d309c513a2144bf4534bac7ff5617712dff1c7a5a76f4f3839cfde5e"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/run-inside.py",
+      "bytes": 2597,
+      "sha256": "729cc037fb5254c9531f88ea9b65480a10445c2ade499d28d56b6c5598e53c81"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-ext4-r2/run.log",
+      "bytes": 190,
+      "sha256": "240ecf778d2058430caa2728cb2e9f34a20e47293302de2f74e73935185ad3e1"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/ATTEMPT.json",
+      "bytes": 1326,
+      "sha256": "44baff7bf1e83a7d36fddf2c5cdf0268bce02f43e3ac5f723a898da24089612a"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody/actor-112.json",
+      "bytes": 1100,
+      "sha256": "a6505186b415f08a75e3100fc208a8d4a1bca657c18d7ead9d1150694e4b985d"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody/actor-130.json",
+      "bytes": 1100,
+      "sha256": "b4fe0deb45c22e1f30b5acd255043e303697c8c9f2d8c58c193b30ff3534be59"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody/actor-14.json",
+      "bytes": 25097,
+      "sha256": "c04d2044e1fd97eb214b13a4748c33ae339e5e106324c1f29db0c6995bf9e202"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody/actor-145.json",
+      "bytes": 1569,
+      "sha256": "cadac5bfbf0eb9756b39673f3667833628b5373762198b1bdc986cc72b9b8162"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody/actor-194.json",
+      "bytes": 1569,
+      "sha256": "852e45c9396566d9a2fddcd3c30bf98dbb6e199d9550ba299a3a3ffb185a589c"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody/actor-237.json",
+      "bytes": 1729,
+      "sha256": "af401fe42e8cc1ec889d298a543df3a7d5fc744e7bfd9fa6a24329d70342ab68"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody/actor-255.json",
+      "bytes": 1729,
+      "sha256": "2ff6e8ba10ab4fea110cbcdef087955ad3e90421e57f7a5474775ee3939a8a0d"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody/actor-274.json",
+      "bytes": 1100,
+      "sha256": "e5f41ab6e229fe589eed7bcb0a9ed356ce101ab93f6f1f012db7a2b06eb31073"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody/actor-292.json",
+      "bytes": 1100,
+      "sha256": "8ab5309f9247c4ccf3e2b251320e317a071abd6ae8356c1f285617ae7d64a138"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody/actor-409.json",
+      "bytes": 1076,
+      "sha256": "81b9ba25a7331487ffc0491fa607f64b45a1d1235203deded5d944f0a82253b8"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody/actor-45.json",
+      "bytes": 1095,
+      "sha256": "ca8f81a6fb2cb74f84bf928d95bbdce947ae6dd7570bac2b8ec8641551b3b9e9"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody/actor-61.json",
+      "bytes": 1095,
+      "sha256": "16591d425674e09ff3d8d04e69026038d39195768a72d0a08c0c06ebee0a399e"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody/actor-83.json",
+      "bytes": 1095,
+      "sha256": "9fd8ab9a040ed81db20be1a8db7a73592e6fe6b5ac3517d954e4f35022bce7a1"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody/actor-94.json",
+      "bytes": 1099,
+      "sha256": "827b0333bc342322f851a159660f00b0fcbb2c28f0179b461154ad1fce694660"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/custody-observer.mjs",
+      "bytes": 4151,
+      "sha256": "4558864dc5e61b9b0eac7856bf3d42b3611fc7bcbd412a3a381022956bab1fa8"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/docker-result.json",
+      "bytes": 449,
+      "sha256": "b6e2e6f885ccb90d0ce97a069a035416c2d30050eae95bf4291d26fe9a5df7d2"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/docker.log",
+      "bytes": 1757,
+      "sha256": "125bdee7553d65e959164a4a506ed0eaa22bc1d93b3fab57dd608a5811adff60"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/preparation.json",
+      "bytes": 2562,
+      "sha256": "54cf6a09dcbaa6b819273a876f5cb22217bccbe4ee22acfd36085276dfd33332"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/result.json",
+      "bytes": 1757,
+      "sha256": "125bdee7553d65e959164a4a506ed0eaa22bc1d93b3fab57dd608a5811adff60"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/run-docker.py",
+      "bytes": 2170,
+      "sha256": "519ef3f07d6727142df1c2b5ccc38e6fe0a7344ff2e10c729ce6badaf3610b26"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/run-inside.py",
+      "bytes": 2594,
+      "sha256": "493140872af33c1cf75ebb67a141d74f2a106cd32c20349e40925de8e479a83a"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-main/run.log",
+      "bytes": 190,
+      "sha256": "240ecf778d2058430caa2728cb2e9f34a20e47293302de2f74e73935185ad3e1"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs/custody-observer.mjs",
+      "bytes": 4151,
+      "sha256": "4558864dc5e61b9b0eac7856bf3d42b3611fc7bcbd412a3a381022956bab1fa8"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs/preparation.json",
+      "bytes": 2467,
+      "sha256": "da8a2ef2395df03ae24ad7883b62343997d0a8d716e1abd858f7c36d7c98adfb"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs/run-inside.py",
+      "bytes": 2593,
+      "sha256": "f40e9a558b90313787dc60d8c1dd06487dd084bf78fe557b14063713c1e08958"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/ATTEMPT.json",
+      "bytes": 1241,
+      "sha256": "afd09900143eb8ce333278a5b82bc53b860efcb9dcffb94f02f82a13e91ade9d"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody/actor-1093.json",
+      "bytes": 28354,
+      "sha256": "c0003ce0d19fe37e84c002b5b71f7ba0e4452c6883a900f935724037dcd11511"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody/actor-1124.json",
+      "bytes": 649,
+      "sha256": "76e865e78c27d3055337b48554ab72d2ccb64cc95d10476e45a5fff2d0bb7ac5"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody/actor-1139.json",
+      "bytes": 649,
+      "sha256": "78092957d2324aa684b9f2fea195337804bc78ead3b4c8c34457cf7677eed4a6"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody/actor-1160.json",
+      "bytes": 649,
+      "sha256": "ef0c1438e08f495b2d83060e16726c69b3beb4a3459369838041f5ef0b48d87e"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody/actor-1170.json",
+      "bytes": 649,
+      "sha256": "8cda2630f16cc158a82bbcf43ae7530ec89c79e85ccfe073727bc0003d5235d2"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody/actor-1187.json",
+      "bytes": 649,
+      "sha256": "f8db41002a7a1d65aef76a124d75fb70ff38557ae3a0e2292b6453eb7e011be3"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody/actor-1204.json",
+      "bytes": 649,
+      "sha256": "d0444f74eb7c49fab271806f72ea5147607f24ee850ab11f6305eef446f47739"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody/actor-1218.json",
+      "bytes": 1246,
+      "sha256": "5e12274977e99a267ba08f638390e5669efed642ae3c300ffb91792181d644ac"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody/actor-1266.json",
+      "bytes": 1246,
+      "sha256": "b31ce52d25805a3e65d04d3e2c92bef3c443025f31e7bb4d2fab8eb103b2dcf7"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody/actor-1310.json",
+      "bytes": 1406,
+      "sha256": "9c00e8325944f1d0d74407dfc667f1fa133453fde63ff79255b77267d3865b29"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody/actor-1329.json",
+      "bytes": 1406,
+      "sha256": "4217e138255373f88758a212533c4ecfbad18b5d46332aa8f93ad2d3424ccdec"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody/actor-1348.json",
+      "bytes": 649,
+      "sha256": "95a46b019e523c0e36414f8ffabc6f21eabb2e52c0124d42dff87af707cedb4e"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody/actor-1365.json",
+      "bytes": 649,
+      "sha256": "add605e03b08cd47fdca89e7b2d3dede63ec8614dc52fe6b9e43c4da30b5b637"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody/actor-1481.json",
+      "bytes": 625,
+      "sha256": "a5797cd9f24b295beec657a93e385068c642ca88c90817978b16ef324b5552ea"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/custody-observer.mjs",
+      "bytes": 4151,
+      "sha256": "4558864dc5e61b9b0eac7856bf3d42b3611fc7bcbd412a3a381022956bab1fa8"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/filesystem.log",
+      "bytes": 2407,
+      "sha256": "d161590d3eedb0fff5be1617ba6e2a324b6ff433f434d7a08d52778011b9806b"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/preparation.json",
+      "bytes": 2467,
+      "sha256": "da8a2ef2395df03ae24ad7883b62343997d0a8d716e1abd858f7c36d7c98adfb"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/result.json",
+      "bytes": 1674,
+      "sha256": "14bbeb3ddb1a14744537d2dcff941fb50929a0e71d28c136bb9f6a434e44581c"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/run-inside.py",
+      "bytes": 2596,
+      "sha256": "dd86a0035fefcd71f35a95b730f74c7e426f421e0cc6f08dd161ba5a616cb5eb"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-linux-xfs-r2/run.log",
+      "bytes": 190,
+      "sha256": "240ecf778d2058430caa2728cb2e9f34a20e47293302de2f74e73935185ad3e1"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs/attach.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs/attach.stdout.plist",
+      "bytes": 965,
+      "sha256": "378f7ea61c2d42e1130f10d70ff782a34754acd2a5f9ab35f23d9e59fea6ed20"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs/create.log",
+      "bytes": 105,
+      "sha256": "119e94e47d87c2f3b861294036f8375f1cd0067a7f2306e4120d09a1cd6dde5f"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs/custody-observer.mjs",
+      "bytes": 4043,
+      "sha256": "1cf600f60471d5dbe6d9279cd1362c80b01b0765692e3c801fb9b316ae0abe89"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs/detach.log",
+      "bytes": 18,
+      "sha256": "6f3a063885926676a965e2ecf3da87294bee98e4a0214686653e35b4bd3d6cb3"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs/filesystem-result.json",
+      "bytes": 474,
+      "sha256": "4095c28d98fcd526542bac659a3cb3301f6fe020f5c04bfb50f4c9f7f9bc8c4f"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs/preparation.json",
+      "bytes": 2281,
+      "sha256": "090a827481feffa1a397afe9b2dd77ac14371b2b95dfe1371a10fe0459be771e"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs/run.py",
+      "bytes": 2591,
+      "sha256": "b261f34b230c5e154e613f887eb0e2abb870bf30a80bcb8bb44721ac8caef895"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs-r2/attach.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs-r2/attach.stdout.plist",
+      "bytes": 965,
+      "sha256": "123ca640ea48c909a264207598f650ead7958037c14f30017309624417ba931e"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs-r2/create.log",
+      "bytes": 105,
+      "sha256": "0cdbdae0d49d2ab4e1f5f260fea7acd8668154d51c64935ad67259001cfe4e51"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs-r2/custody-observer.mjs",
+      "bytes": 4043,
+      "sha256": "1cf600f60471d5dbe6d9279cd1362c80b01b0765692e3c801fb9b316ae0abe89"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs-r2/detach.log",
+      "bytes": 18,
+      "sha256": "6f3a063885926676a965e2ecf3da87294bee98e4a0214686653e35b4bd3d6cb3"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs-r2/filesystem-result.json",
+      "bytes": 642,
+      "sha256": "6aa27606ea997d2b3f0d350f7cf388fc2ce95ccebb635b39af63f971ebc47a9a"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs-r2/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs-r2/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs-r2/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs-r2/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs-r2/preparation.json",
+      "bytes": 2281,
+      "sha256": "090a827481feffa1a397afe9b2dd77ac14371b2b95dfe1371a10fe0459be771e"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-hfs-r2/run.py",
+      "bytes": 2591,
+      "sha256": "b261f34b230c5e154e613f887eb0e2abb870bf30a80bcb8bb44721ac8caef895"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/ATTEMPT.json",
+      "bytes": 1309,
+      "sha256": "f752e673c3f7b0368c35fb643e517436e25246780ebcb9f36efb30d388005d01"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody/actor-58728.json",
+      "bytes": 29435,
+      "sha256": "f4f46e0292a853dd6241982855dfcabe8782a736ae929196c42c269a27d71128"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody/actor-62862.json",
+      "bytes": 1884,
+      "sha256": "f96c2862e0cd143e4bf7c1203fa31d68f65347da2d546a689505a3888232cd6a"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody/actor-63127.json",
+      "bytes": 1884,
+      "sha256": "6868ab65f3d991f411f3770f7f969ebd0b30eb0fca8158d74b6b1f5cdf499b92"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody/actor-63509.json",
+      "bytes": 1884,
+      "sha256": "072dcac9da79c6e7468183db44b97f715bea8447cf4655a1434da46507afad6b"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody/actor-63669.json",
+      "bytes": 1884,
+      "sha256": "0e08f3efdc38b7ae6a9238e03a5f86d3bd2d6491a9d5fa0f9d95105531edcc9f"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody/actor-63846.json",
+      "bytes": 1884,
+      "sha256": "ef4c287b83afcd0fb8763a81b6374a46ba68e6612e07d5568d59d86f3632cbf7"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody/actor-64121.json",
+      "bytes": 1884,
+      "sha256": "6b8812d7bb01d195d1db0677657b414961fb6b8c83d8c4eea10c90bda233304c"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody/actor-64284.json",
+      "bytes": 2367,
+      "sha256": "f2c33b6f254668b05553fd9cd0ac44fbf743e709c6f61a90c31dd2c557023332"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody/actor-64893.json",
+      "bytes": 2367,
+      "sha256": "716c620502853c56a4c0d0b99e01c3e4e574a922627f70a48f1d94aa29bfb653"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody/actor-65989.json",
+      "bytes": 2527,
+      "sha256": "e991e75271df011f0817255df01a3fe6b97b95a113d03109469a9e44db1f3297"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody/actor-66282.json",
+      "bytes": 2527,
+      "sha256": "f38556be033ce0107a21852c258a3e63aeda896e73b17a550c81dea59562f77e"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody/actor-66651.json",
+      "bytes": 1884,
+      "sha256": "c799fcebc399056a44180ce5c03dee246a38f9a70c30db3545a5b6ee89df5e71"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody/actor-67068.json",
+      "bytes": 1630,
+      "sha256": "9a8f6598fe9a223af5ca572a5741d9bc01d8c9418fc6ddff93cfa3ba2da3ebf0"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody/actor-68096.json",
+      "bytes": 1860,
+      "sha256": "d7c5ff1bc21e00db9a6196b4f508a4b626e4d2f80b8d663ff03caf7df87d2dde"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/custody-observer.mjs",
+      "bytes": 4043,
+      "sha256": "1cf600f60471d5dbe6d9279cd1362c80b01b0765692e3c801fb9b316ae0abe89"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/preparation.json",
+      "bytes": 2381,
+      "sha256": "10bdb59cfcaee208ed216dd159c8a740fcbda67364ee3df2a9f56771274d5de7"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/result.json",
+      "bytes": 1744,
+      "sha256": "90659444c18df3a3ed7f95d25249c5d47a22a760bb4e17cb2290a5770c54803e"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/run.log",
+      "bytes": 191,
+      "sha256": "a4f5bb3477527e2b51a1c38282fb6a6c0cbc14cf09690b0e38ff49cd981b0636"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-main/run.py",
+      "bytes": 2592,
+      "sha256": "ec72cb30497122c6f1fed456c362b79164c6d4099a9a91335ceca4ce747da8eb"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/ATTEMPT.json",
+      "bytes": 1334,
+      "sha256": "b0ad5a396063577738d67dfe8d3a5d2b0c114b7855a68eb4e68948fa1f407011"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody/actor-59683.json",
+      "bytes": 29457,
+      "sha256": "054703457fe28d9a0105c6dc10b5d728b23114dd739d05dbe2f1584d21359284"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody/actor-64454.json",
+      "bytes": 1884,
+      "sha256": "7bf85681cd06f1a075cdca59a7b359a73cc938297d51d45e9e3c8b136003a720"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody/actor-64674.json",
+      "bytes": 1884,
+      "sha256": "3a351910ec970377e77ac7c365178e500dad3b89fd36f7b43e9af5cf164c85f7"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody/actor-65546.json",
+      "bytes": 1884,
+      "sha256": "01d6c695c20356e8c94f73c8e6a3ef2c7085eb42f0b61a6d58a031e88729cb3e"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody/actor-65991.json",
+      "bytes": 1884,
+      "sha256": "e68297f6fae1498dfc92ecbccfc5554dc828656a61bdf5692550b8231f4c75ab"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody/actor-66193.json",
+      "bytes": 1884,
+      "sha256": "7d4efcc80571cda298fcf76efab78dcd9098f253f7b875010a50fe74b07e3b15"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody/actor-66504.json",
+      "bytes": 1884,
+      "sha256": "d587cdbb4486a4028ca0d00d7dd4db6cecd10069ec33904fc472f51232215a07"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody/actor-66653.json",
+      "bytes": 2367,
+      "sha256": "a3db03aa597455806235e8e78bbaf818a121de7a922fbac0daf8318f402c11c4"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody/actor-67430.json",
+      "bytes": 2367,
+      "sha256": "f97b02b10496f52eb2214727f63a8ba051e3b311d31db29b205637ae304d55d5"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody/actor-67729.json",
+      "bytes": 2527,
+      "sha256": "ece7bee7169dc1816fad542b8ef65283b22bcee946044aa75e257c40b0d381c1"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody/actor-68192.json",
+      "bytes": 2527,
+      "sha256": "fd07fa24b0668b7281a27ef141246cb9680e1e6baa6bcfcbb05140438bffd997"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody/actor-68433.json",
+      "bytes": 1884,
+      "sha256": "0cfec1ca330572e76cd36da0bb5e4e3eaf8b748922602387de875fe985a34850"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody/actor-68690.json",
+      "bytes": 1630,
+      "sha256": "d994c039c321272a6dc3b2a18cb4c2aa4e7347bc1e6e26ae2a3ba0b3288d9e9d"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody/actor-69825.json",
+      "bytes": 1860,
+      "sha256": "d3a2c0636d30e90e6ac9e03ccd5441ab45e87dcbd6a0a6ad28d2efce5cfd6eb1"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/custody-observer.mjs",
+      "bytes": 4043,
+      "sha256": "1cf600f60471d5dbe6d9279cd1362c80b01b0765692e3c801fb9b316ae0abe89"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/preparation.json",
+      "bytes": 2328,
+      "sha256": "7f05d0512256f2a2e05ed5ef6d446a8ce79880a40cdd472c111a3315c26cbbf7"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/result.json",
+      "bytes": 1769,
+      "sha256": "9ec9f336d4eee5fc370107e72b3cf53e258e912c6ac04cd37855ad9dff41b175"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/run.log",
+      "bytes": 191,
+      "sha256": "a4f5bb3477527e2b51a1c38282fb6a6c0cbc14cf09690b0e38ff49cd981b0636"
+    },
+    {
+      "path": "1219-native-engine-r3/packages-mac-published/run.py",
+      "bytes": 2597,
+      "sha256": "1317fc6e090f7351fd817354596951b0ade8ac7a18bab3fa5f56eab21f65ae66"
+    },
+    {
+      "path": "1219-native-engine-r3/qualified-e41/e41-model-observer.mjs",
+      "bytes": 9195,
+      "sha256": "d706efaf51d1f07943d9ab926f6e51dbadb2b36d2499306bb61dfd4931488e2f"
+    },
+    {
+      "path": "1219-native-engine-r3/qualified-e41/run-e41.mjs",
+      "bytes": 23882,
+      "sha256": "733d38fa7169f99ba94bc5aeb2b48f84fc486e9934f8a9a23a7d09a3e104015a"
+    },
+    {
+      "path": "1219-native-engine-r3/qualify-type-consumer.py",
+      "bytes": 4068,
+      "sha256": "ff12e8185b627b7cafc8a17da19b549af234feb7bd324d4b2d8cacb7434bb5d3"
+    },
+    {
+      "path": "1219-native-engine-r3/run-e41-live.py",
+      "bytes": 7565,
+      "sha256": "a0f285c72625465cd24159406b92e8dd2d030a4882b42f594ba8a019965a6c8b"
+    },
+    {
+      "path": "1219-native-engine-r3/run-final.py",
+      "bytes": 2022,
+      "sha256": "24c8c3954c9a2a4a18c11858b1282f764a55238fffb37edeb23926c9301e223a"
+    },
+    {
+      "path": "1219-native-engine-r3/run-hfs-package-r2.py",
+      "bytes": 3399,
+      "sha256": "96dd54066c16b3f69e26e3dd2808c0f236cbc7bf0daaf13d561e497ef0e8e240"
+    },
+    {
+      "path": "1219-native-engine-r3/run-hfs-package.py",
+      "bytes": 3365,
+      "sha256": "c6646c43063305bfaa51ea92ace2e62b94587b8534f768446d72d8d7ac134c15"
+    },
+    {
+      "path": "1219-native-engine-r3/run-linux-filesystems-docker.py",
+      "bytes": 1313,
+      "sha256": "1366a74491cf5cee034678d18b37886ee91007d9df7ea22f4974e81d143108c4"
+    },
+    {
+      "path": "1219-native-engine-r3/run-linux-filesystems-r2-docker.py",
+      "bytes": 1325,
+      "sha256": "4cfdf67eeeba4d6527d82ef473cb5e4fbf2c7fc64981317cd3474dea93fd7f4b"
+    },
+    {
+      "path": "1219-native-engine-r3/run-linux-filesystems-r2.py",
+      "bytes": 3856,
+      "sha256": "5a8f0ef48b85175dbb05789a05e1fa7d990508f7affa652cc97f123c9cf714e5"
+    },
+    {
+      "path": "1219-native-engine-r3/run-linux-filesystems.py",
+      "bytes": 3677,
+      "sha256": "53a2210f821cb2900168efe91eec532b061d42086ea9a2011c1e82356aff62d7"
+    },
+    {
+      "path": "1219-native-engine-r3/run-sdk-gc-linux.py",
+      "bytes": 2267,
+      "sha256": "20019051db4c0488033df742ddc60b2e3092785c2ee959c6af86f7b48706b683"
+    },
+    {
+      "path": "1219-native-engine-r3/run-sdk-gc.py",
+      "bytes": 4573,
+      "sha256": "ec306f9684b0208b3b03341e80dc95f2b0b98e9cdd945e7f82adddb4c0fbae10"
+    },
+    {
+      "path": "1219-native-engine-r3/run-type-consumer.py",
+      "bytes": 3235,
+      "sha256": "fe1a1523bd6c302519b2d267cfd3a80e20c5fe77442cbd1c382050dd3f94859a"
+    },
+    {
+      "path": "1219-native-engine-r3/runtime-fs-correction-focused.log",
+      "bytes": 4798,
+      "sha256": "799f3c648429d2a18cea9d8a9245d4ea61500542efdbab9f43d166aa5e26741c"
+    },
+    {
+      "path": "1219-native-engine-r3/runtime-fs-correction-typecheck.log",
+      "bytes": 53,
+      "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-close-peer-probe.mjs",
+      "bytes": 9417,
+      "sha256": "00e3a406ac85e492cd30899b5c473619032b94b19023898d03a780a843bd1159"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-linux/install.log",
+      "bytes": 236,
+      "sha256": "2b300d9ea90acb069be2d15ef9a50b560433dca4e23d7f6a242a31f20a1d0a18"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-linux/json-close.log",
+      "bytes": 982,
+      "sha256": "f9b2032a2f367001cefc5a916a2020ab36bf822316502c29dbcb0f5b88f0634b"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-linux/json-normal.log",
+      "bytes": 866,
+      "sha256": "81d2c36dbc25330deda4b5c3fea39d226638c0fa48999283bd22d87a246f5665"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-linux/json-stderr.log",
+      "bytes": 983,
+      "sha256": "b471e35a02c5dfc717d7714e131ad2f2f04cd5439a5a035a4c0c845cea3005fb"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-linux/json-stdout.log",
+      "bytes": 983,
+      "sha256": "003f798a8ae752f3be6fcdaf86a62fefea89578794092b7042beb58fd1f47452"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-linux/result.json",
+      "bytes": 18560,
+      "sha256": "9bbc88f7c1df0b819531f63fbdf22a1e6cd096f6c53c2f356c64a72edee9a9f3"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-linux/sqlite-close.log",
+      "bytes": 2058,
+      "sha256": "37faacefe187fa17782e84d758a6652655f6e3f62fcc83661639bd0fc8dce266"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-linux/sqlite-normal.log",
+      "bytes": 1667,
+      "sha256": "f0651322f360ece7e4fc6543a67d145f0899e3622139953b9a185522825ad1a5"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-linux/sqlite-stderr.log",
+      "bytes": 2059,
+      "sha256": "a193053ebbda3b1181e3b89d95342bbdb9725ad04f895941ff0c5226b775235a"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-linux/sqlite-stdout.log",
+      "bytes": 2059,
+      "sha256": "47c8e6a89bf51c0c46c28ff245ca3c4a164fdf27ab157e954357de85966dd018"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-linux-docker-result.json",
+      "bytes": 443,
+      "sha256": "7706a1f7ec791bf1ea2acfb4e95509f5f9b26b3d1d666c88a45ac4155317b5bf"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-linux-docker.log",
+      "bytes": 155,
+      "sha256": "623754e90d397cec314d728b2a3ce751e3bb82d1a3afdaead791436aaf105457"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-mac/install.log",
+      "bytes": 234,
+      "sha256": "d863ab941bfba9a928276eb78136882059a912c6ca3aa560d915e2debd000ac3"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-mac/json-close.log",
+      "bytes": 985,
+      "sha256": "255ef395d5f2899d6d38dcacf7ada8af4eae71b38a6d1350e84d0be7f1afa38f"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-mac/json-normal.log",
+      "bytes": 869,
+      "sha256": "b5c427d06e48381f0837c7a059255abb48464062c194e767ef04a08e9e22e654"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-mac/json-stderr.log",
+      "bytes": 986,
+      "sha256": "237c050f6820319f58cab912b2c60c6b22731e73043e463c77dde5452b9a8fe9"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-mac/json-stdout.log",
+      "bytes": 986,
+      "sha256": "4371d8aaf9b51649e93c0a32ff48e4aeaec4346997139f59c3d974aacec07781"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-mac/result.json",
+      "bytes": 18694,
+      "sha256": "aa476fc551d671fd6694b3df997a1d3b042b569cb8e630297fab5b7ccf9a8fa7"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-mac/sqlite-close.log",
+      "bytes": 2242,
+      "sha256": "83dba6012ab53fa4ac3e9a6ecb4a8b8f562821b9e44531b15bd3d3b5b0e075cb"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-mac/sqlite-normal.log",
+      "bytes": 1852,
+      "sha256": "b0344b60f245803f67ea1b36e5b1c8ba64ec03bdc5499541792ac5c185d9c9bc"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-mac/sqlite-stderr.log",
+      "bytes": 2243,
+      "sha256": "e9bd8c9c043e58448fe7ff378f455af7d823ee8437e7f954cfd311fd49039739"
+    },
+    {
+      "path": "1219-native-engine-r3/sdk-gc-mac/sqlite-stdout.log",
+      "bytes": 2243,
+      "sha256": "348ac76e7d05c0745f1869198e9873b466e77e4b41b8cd218a321d502d239848"
+    },
+    {
+      "path": "1219-native-engine-r3/type-consumer/consumer.ts",
+      "bytes": 606,
+      "sha256": "c267590b6491501facc49fd56ce3af0b02e574eb3c8c9857382b4237bd5c4101"
+    },
+    {
+      "path": "1219-native-engine-r3/type-consumer/current-declaration-graph.log",
+      "bytes": 51749,
+      "sha256": "6775c59d31e3e0e734e88f758ccaa98fe484c4a048a31c60148a3084d97de058"
+    },
+    {
+      "path": "1219-native-engine-r3/type-consumer/current-negative.log",
+      "bytes": 297,
+      "sha256": "db7f0fbfe6674fa67fe01a1e4fccf7b29f18cd951f251bffd27b543ba7068b14"
+    },
+    {
+      "path": "1219-native-engine-r3/type-consumer/current-project-library-policy.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "1219-native-engine-r3/type-consumer/install.log",
+      "bytes": 234,
+      "sha256": "46b2b831112b92792544e1ad2dedd8ff78d496ea206dfb971d52f36361c3520d"
+    },
+    {
+      "path": "1219-native-engine-r3/type-consumer/negative.ts",
+      "bytes": 172,
+      "sha256": "a8a7b61fd678ae5d0fa25a9dd6e36ff61a537af2f6053ff7554c51f6b9d3778f"
+    },
+    {
+      "path": "1219-native-engine-r3/type-consumer/positive.log",
+      "bytes": 2844,
+      "sha256": "e70014931fffc598ab5262e861a08b05dce7afe5affb0f2e1a6b6634bc1f18ee"
+    },
+    {
+      "path": "1219-native-engine-r3/type-consumer/published-baseline-install.log",
+      "bytes": 25,
+      "sha256": "f44c4ed1a9fc1d11e559b25f9821753a9f9e3d3f8bee57e0ea7ac4d4abe6cb5d"
+    },
+    {
+      "path": "1219-native-engine-r3/type-consumer/published-baseline-project-library-policy.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "1219-native-engine-r3/type-consumer/published-baseline-strict-library.log",
+      "bytes": 2844,
+      "sha256": "e70014931fffc598ab5262e861a08b05dce7afe5affb0f2e1a6b6634bc1f18ee"
+    },
+    {
+      "path": "1219-native-engine-r3/type-consumer/published-consumer.ts",
+      "bytes": 188,
+      "sha256": "978c566048a876a89bef042eacf79542817c86003d87964460b5d7d951ce3af4"
+    },
+    {
+      "path": "1219-native-engine-r3/type-consumer/qualification.json",
+      "bytes": 1476,
+      "sha256": "039cac7a4c7731fde584e31d220b75c5af7f750003fe33291245632fb2567d55"
+    },
+    {
+      "path": "1219-native-engine-r3/type-consumer/result.json",
+      "bytes": 662,
+      "sha256": "696aa6b355a862819805bee85bee2431661abe7b18ac424e7f3c2ff7f2a7937c"
+    },
+    {
+      "path": "1219-native-engine-r4/adversarial-driver.diff",
+      "bytes": 10604,
+      "sha256": "d7a1d29127c6f2f3a5da200112619d9b432e73a83022ad1fd3b8676398c42a38"
+    },
+    {
+      "path": "1219-native-engine-r4/branch-protection.json",
+      "bytes": 623,
+      "sha256": "ea837d37abb743cb0db6906af68c242239ac10b78fdd697cf6ef3aea183bc454"
+    },
+    {
+      "path": "1219-native-engine-r4/ci-checkpoint.json",
+      "bytes": 4127,
+      "sha256": "e7eceee1b116f7b02dbdf70ecc9a35b7642332e6de7987b3d94ff2bebf671792"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/create-live-grant.mjs",
+      "bytes": 4996,
+      "sha256": "e087c3afd8bfe72ad6da62e041c33d547eab6c52703446729c817dfcafebdf69"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/first-live-task.json",
+      "bytes": 2357,
+      "sha256": "18a648de05913d66d4761fb7e66df6b52e45864f613f875cd4509df336d329c3"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/first-live-task.log",
+      "bytes": 221,
+      "sha256": "de8251ff58149911bde4319388d5687856d969f7a4a84423df17186691779934"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/harness.mjs",
+      "bytes": 43305,
+      "sha256": "a87965bfb26e19d1e2c86d2c65998eceed7d8171607be91dba672415cfec0d0a"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/lib/profileHistoryAdmission.mjs",
+      "bytes": 1918,
+      "sha256": "f31f294161348dc2763015670d54d86b160c71e79ad0af855e4db2d46140c78c"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/lib-opencode-scrub-preflight.mjs",
+      "bytes": 2900,
+      "sha256": "d981812fc4ba442e24cb2c869ad363993d5c85ac6642bd6803a5f0890da71514"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/live-docker-result.json",
+      "bytes": 237,
+      "sha256": "8ced2d089d67a5a34fe1d43826a5d7f0426dba754679001b485dd92f18f17e75"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/live-docker.log",
+      "bytes": 154,
+      "sha256": "709a71700fcfbaafd52706c855f67554edad70f858f4e397e63045880b62dbd5"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/live-r1/client-openapi.json",
+      "bytes": 609571,
+      "sha256": "17b0d1944940356d74a4cf3a4d8b0c3cb6ef73c1cdcbac16afcb6677999fc4d2"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/live-r1/controller.json",
+      "bytes": 1843,
+      "sha256": "5a0c67fc23b7502e211f709e78dd6741bb11d440ec7824b2c13957811799eeb3"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/live-r1/forward-journal.json",
+      "bytes": 11600,
+      "sha256": "f4f6956bf6fd6aac81b5c86ce954e9ecde2b3a31e03d8e9cbce9c59a7497c503"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/live-r1/harness.log",
+      "bytes": 116,
+      "sha256": "568cc2e5cf09e20128231fa9f88058a37276f130ed274839de081e34506526e6"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/live-r1/install.log",
+      "bytes": 235,
+      "sha256": "ef57e0580df4e0d366284289cfca6d0d6434447eebad4419a2a94c88922c020a"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/live-r1/native-args.jsonl",
+      "bytes": 3100,
+      "sha256": "6bd97038b8d466d89e15e7c563742eb32d681e8fb57557d0ae378a88b8c787d1"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/live-r1/report.json",
+      "bytes": 42842,
+      "sha256": "04d1e66db1b49960d948d41939bf2c873d1b9c3d033acd49928875cb3e4af8b3"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/offline-docker-result.json",
+      "bytes": 243,
+      "sha256": "25652177c1dc63580d67a476714ac920c7712bdc6747a26c22250b4943944643"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/offline-docker.log",
+      "bytes": 157,
+      "sha256": "801cebbdcfd5db1eb40c8c1dd55aff40a0390767459b87ce71e6ecf76bfbd6fb"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/offline-r1/client-openapi.json",
+      "bytes": 609571,
+      "sha256": "17b0d1944940356d74a4cf3a4d8b0c3cb6ef73c1cdcbac16afcb6677999fc4d2"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/offline-r1/controller.json",
+      "bytes": 1686,
+      "sha256": "1c092d84f573f37d4d94eccf8672a7583cbda78ae9e31e3523a2a7c33b31b720"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/offline-r1/forward-journal.json",
+      "bytes": 11547,
+      "sha256": "d1260a93f290fc548c3805c8f52c5b0b47436fe50fa4fd18f68849520e270bf2"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/offline-r1/harness.log",
+      "bytes": 119,
+      "sha256": "567baf2e6abfc2fcdda4610912fa802c18d98544d703c87e3d3fc391cb57eab1"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/offline-r1/install.log",
+      "bytes": 236,
+      "sha256": "0ab7f99a7ba84544e659ca67476eaa9e466d2bcfd38d6495cba09bc3ffb7ffd0"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/offline-r1/native-args.jsonl",
+      "bytes": 3100,
+      "sha256": "d77c93912e2aeb2eaabada735965c856067c57c10aef3766b8cdb8a06e273d9b"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/offline-r1/report.json",
+      "bytes": 41742,
+      "sha256": "29c4f19fe798d13c5c8c6fae3c76fb97bb24f9d4d895199ad33c112e760d6e69"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/run-docker.py",
+      "bytes": 1872,
+      "sha256": "257d6aa25cc7b1a8b67140d735474cdce9eec5178d5ca161bd8ead714a9f2aa8"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/run-docker.py.before-syntax-fix",
+      "bytes": 1871,
+      "sha256": "158598501f53e07d7e92c6fc71c3f6cb79ba2a8b4735039b496b3b47fa2a4c32"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/run-first-live.py",
+      "bytes": 3068,
+      "sha256": "37caf92be30f601eaf46d406a2eed477de4e86f748d401be96dd245928d92a38"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/run-inside.py",
+      "bytes": 3951,
+      "sha256": "733213948a363e8585caa00b0c34269a4779b4f13e81c3bdb29f84a6b34ecb91"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql/run-inside.py.before-syntax-fix",
+      "bytes": 3948,
+      "sha256": "3a42b42dfc477f04464116850d213021fa1e4177942a9dc64a803792fe8f05c0"
+    },
+    {
+      "path": "1219-native-engine-r4/client-sql-MODEL_ATTEMPT.json",
+      "bytes": 2188,
+      "sha256": "2f0a3d6646ca321bdd5c08938862a9112a51c1a129f8e4e7b478cac1fd484b88"
+    },
+    {
+      "path": "1219-native-engine-r4/create-e41-pool-grant.mjs",
+      "bytes": 4397,
+      "sha256": "28098ad3e775e81f7ce2d0df2a433815e7249fe5e4a3c9f642633157ae1e30a0"
+    },
+    {
+      "path": "1219-native-engine-r4/create-e41-pool-grant.mjs.before-cwd-fix",
+      "bytes": 4403,
+      "sha256": "b3e64f343114f0bbed90f6b39bd2d84b89bf6ed1d204ca0dd82b71b70ada2e04"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-MODEL_ATTEMPT.json",
+      "bytes": 2164,
+      "sha256": "a701b12f66309855057998754686a6aa169f831c1414311a8817169801f2af2a"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-chain-json-sonnet55-r1/identity-correlation.json",
+      "bytes": 1118,
+      "sha256": "2d023a0601a938d3c1a8aa4ff59c28836d0b65c0df634ca4055f775577e73dcd"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-chain-json-sonnet55-r1/model-witness.json",
+      "bytes": 24225,
+      "sha256": "2eabcd8140efc9339ab64859897297208c6f24a269bb2c3dad8a5b7b2768688d"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-chain-json-sonnet55-r1/report.json",
+      "bytes": 7844,
+      "sha256": "298d68932cd39e23851f9a9340a9ba344b560fe399b8d07e8a9057482be461ca"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-chain-json-sonnet55-r1/run.log",
+      "bytes": 2394,
+      "sha256": "dd4401649c68a7be5e5b6b25e332a158073d6d8768ce6aaa904a8f5b827da50a"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-chain-stream-sonnet55-r1/identity-correlation.json",
+      "bytes": 1118,
+      "sha256": "99cb838374314f333455f3ad4a9fdeecd00681a72e94c801fda75cc676778c38"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-chain-stream-sonnet55-r1/model-witness.json",
+      "bytes": 24225,
+      "sha256": "1168f6371f472660815e93616d1bf9c35d396a0af68017ea2b2f7ba25b4c7507"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-chain-stream-sonnet55-r1/report.json",
+      "bytes": 7830,
+      "sha256": "c7642e9c2080edab580724f240581c6261ba1dff7582ef3fff9206321f76a17b"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-chain-stream-sonnet55-r1/run.log",
+      "bytes": 2388,
+      "sha256": "807eacf3e193808585784224c6bb2bd8810bb09295faa31a2bf78e04b431acf7"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-live-task.json",
+      "bytes": 10636,
+      "sha256": "d2c29d8b0c5498370310905125fc9a22d2f94c0972783d56fa558dbc1efeecf7"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-parallel-json-sonnet55-r1/identity-correlation.json",
+      "bytes": 672,
+      "sha256": "49b5f08676a66e6096388cead36e607beb2a5ca0a63a35ef6a3237f87c437041"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-parallel-json-sonnet55-r1/model-witness.json",
+      "bytes": 17003,
+      "sha256": "b7ea8ea18c5cd4ba5aa9738fc1c49518a4355d40824244c063ed8b49625d7b04"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-parallel-json-sonnet55-r1/report.json",
+      "bytes": 6116,
+      "sha256": "23d0663b0bfb37b5b8ca2341134afd5b908e7d98401e7aa8e7094060682c4799"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-parallel-json-sonnet55-r1/run.log",
+      "bytes": 1995,
+      "sha256": "db81cd38df4e1ee5efd306142093740a8ccac4a359c41c09af88bab06fa5d80a"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-parallel-stream-sonnet55-r1/identity-correlation.json",
+      "bytes": 672,
+      "sha256": "7726acaafa1d8fa924cb2b5def2f46bd88d6bd5ab481c0049f76657f27ccd05b"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-parallel-stream-sonnet55-r1/model-witness.json",
+      "bytes": 17003,
+      "sha256": "aa36cb95c9c1fdd682b133b50c84c2adc7e1c76375dac369a67d0df5626ffb0f"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-parallel-stream-sonnet55-r1/report.json",
+      "bytes": 6108,
+      "sha256": "eebf5815aace1edd5217f79267c7a50b7645f9022605c76b56c2608e1ca385f8"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-parallel-stream-sonnet55-r1/run.log",
+      "bytes": 1991,
+      "sha256": "a92b90e16112b3b810cb200f6b99333ccb311980d0f1af12fe734377d6ef0d89"
+    },
+    {
+      "path": "1219-native-engine-r4/e41-prestart-path-refusal.json",
+      "bytes": 517,
+      "sha256": "230c5075e15c60cc0dafeabb07962b389afe5654d625c86ffc5121bfae685424"
+    },
+    {
+      "path": "1219-native-engine-r4/engine-correction.diff",
+      "bytes": 92954,
+      "sha256": "6a92a5efe7e14113dd3fd775732e83b55f9c5a2d0f3da76912e296fe71715a49"
+    },
+    {
+      "path": "1219-native-engine-r4/final-build.log",
+      "bytes": 2864,
+      "sha256": "27ef6a1af99ff97cd9c3cef3ef770719f1f9e2fc3d4fd664da5ee7778ebe1d69"
+    },
+    {
+      "path": "1219-native-engine-r4/final-full.log",
+      "bytes": 1523418,
+      "sha256": "02ffc78287e9e7ff3b58ba4d014be13eea46b1ff68d1c868b5d561a6565f0a94"
+    },
+    {
+      "path": "1219-native-engine-r4/final-local.json",
+      "bytes": 494,
+      "sha256": "99099dd52c18bd5effdc1327f66309cbbbb11dc0273a14ba5cdb94afe0a115bd"
+    },
+    {
+      "path": "1219-native-engine-r4/final-pack/rynfar-meridian-1.84.0.tgz",
+      "bytes": 1742868,
+      "sha256": "17740db38f9ff727c54c477469824538306afb9ae0256f8937729991f58a0d09"
+    },
+    {
+      "path": "1219-native-engine-r4/final-pack.log",
+      "bytes": 80030,
+      "sha256": "a3f3baff826703c516b290dd8cd268c94f2b160014056c1591b9715383630790"
+    },
+    {
+      "path": "1219-native-engine-r4/final-source.json",
+      "bytes": 1104,
+      "sha256": "106914d7603f63ac751cacca542af1d738a456243065ff6a3765aad988e88c4a"
+    },
+    {
+      "path": "1219-native-engine-r4/final-typecheck.log",
+      "bytes": 53,
+      "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+    },
+    {
+      "path": "1219-native-engine-r4/hosted-ci.json",
+      "bytes": 4137,
+      "sha256": "a71cd5c1f0e5a520f60cc94c5080d48d155e15d795047ef815adafaacc2473f8"
+    },
+    {
+      "path": "1219-native-engine-r4/introduced-authors.tsv",
+      "bytes": 5442,
+      "sha256": "050223cdf58d8197a6c4aa89724baf316f4451c0b4f770583913c886c0365e2b"
+    },
+    {
+      "path": "1219-native-engine-r4/issue1244-current.json",
+      "bytes": 1991,
+      "sha256": "47e2ebe867a834d03133e8090a64c7a3aa83a6884659e5fe1412e4612364a475"
+    },
+    {
+      "path": "1219-native-engine-r4/package-identity.json",
+      "bytes": 1297,
+      "sha256": "adf91768794090ececfbfe454bc7648359b8d75373dd429cb6458a10e3d0f2fe"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/ATTEMPT.json",
+      "bytes": 1326,
+      "sha256": "9eab9914bf1caddf65c40722379b2c1ae6debb84b538d5bd78110d49b468b677"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody/actor-112.json",
+      "bytes": 1100,
+      "sha256": "a6505186b415f08a75e3100fc208a8d4a1bca657c18d7ead9d1150694e4b985d"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody/actor-130.json",
+      "bytes": 1100,
+      "sha256": "b4fe0deb45c22e1f30b5acd255043e303697c8c9f2d8c58c193b30ff3534be59"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody/actor-14.json",
+      "bytes": 25097,
+      "sha256": "73f3f5a87af2d6ce6ffeb3cbde11f632b38916be8924ef0fe2567e64cf8e610c"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody/actor-145.json",
+      "bytes": 1569,
+      "sha256": "cadac5bfbf0eb9756b39673f3667833628b5373762198b1bdc986cc72b9b8162"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody/actor-194.json",
+      "bytes": 1569,
+      "sha256": "852e45c9396566d9a2fddcd3c30bf98dbb6e199d9550ba299a3a3ffb185a589c"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody/actor-239.json",
+      "bytes": 1729,
+      "sha256": "d12a2f9962693cd5278116d21aced49829e676f37d38576a7ce63c59864a742c"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody/actor-259.json",
+      "bytes": 1729,
+      "sha256": "d5c7c62217ef625d6f9f1ee1282f5aa7cc305b539eb693dabe9ec58be6e99f9d"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody/actor-279.json",
+      "bytes": 1100,
+      "sha256": "a78f95af3e2b55c1bc5130e4d38d8fc7a45b1b609f7376c0ec41cd0041a6578c"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody/actor-297.json",
+      "bytes": 1100,
+      "sha256": "3c842d6c57b9d0940f4cef1d1d31a0cd049273b24efad8598cf2ff2d272216cb"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody/actor-414.json",
+      "bytes": 1076,
+      "sha256": "3f174e7736f5ecb7edfe8ceaedc6540f1af019127706ccecc90311c3e25c9bda"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody/actor-45.json",
+      "bytes": 1095,
+      "sha256": "ca8f81a6fb2cb74f84bf928d95bbdce947ae6dd7570bac2b8ec8641551b3b9e9"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody/actor-61.json",
+      "bytes": 1095,
+      "sha256": "16591d425674e09ff3d8d04e69026038d39195768a72d0a08c0c06ebee0a399e"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody/actor-83.json",
+      "bytes": 1095,
+      "sha256": "9fd8ab9a040ed81db20be1a8db7a73592e6fe6b5ac3517d954e4f35022bce7a1"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody/actor-94.json",
+      "bytes": 1099,
+      "sha256": "827b0333bc342322f851a159660f00b0fcbb2c28f0179b461154ad1fce694660"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/custody-observer.mjs",
+      "bytes": 4151,
+      "sha256": "4558864dc5e61b9b0eac7856bf3d42b3611fc7bcbd412a3a381022956bab1fa8"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/docker-result.json",
+      "bytes": 449,
+      "sha256": "af2fd84447995391f45d10b836fe01a34897aae4af55663d637723b742fc08f1"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/docker.log",
+      "bytes": 1757,
+      "sha256": "ae17079c5e4925d95c14a28595f3f3785d3fcf10fb3c69367f893b212693b2c0"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/preparation.json",
+      "bytes": 2562,
+      "sha256": "83868fe73b0b5590a3853326cbee257ba8170648053fe0bd92ec91324799f40c"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/result.json",
+      "bytes": 1757,
+      "sha256": "ae17079c5e4925d95c14a28595f3f3785d3fcf10fb3c69367f893b212693b2c0"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/run-docker.py",
+      "bytes": 2170,
+      "sha256": "e430aabd25f283a144f89075273b2864326da7931a32864c13a3236e566fb44a"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/run-inside.py",
+      "bytes": 2594,
+      "sha256": "1db24f8b813b74bba9e61d6a004edb8fce8e00f2326dcf299eec063e99fad997"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-linux-main/run.log",
+      "bytes": 190,
+      "sha256": "240ecf778d2058430caa2728cb2e9f34a20e47293302de2f74e73935185ad3e1"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/ATTEMPT.json",
+      "bytes": 1309,
+      "sha256": "d0a863e898afaee10d68a3bd9e3ecc12c056c57d9836db2bcde7bade02394018"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody/actor-21496.json",
+      "bytes": 29435,
+      "sha256": "65c1a66e9e70b23c616541fc7f065bee0086887b5981ebf22f1655e7a63ac7ef"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody/actor-28319.json",
+      "bytes": 1884,
+      "sha256": "b23072a34f772c93017f0452eea5d7582604f5273d1b39bb44be0dc6e75dc0e3"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody/actor-28328.json",
+      "bytes": 1884,
+      "sha256": "63da421bdccb0a383ad3f3fd4a0901cbb2b339af5b9f6c62e7045307bbc8192d"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody/actor-28341.json",
+      "bytes": 1884,
+      "sha256": "eab74a8df43911172ebad9a91545b23c2d26182253cfdc6069d3d90b39ba0586"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody/actor-28356.json",
+      "bytes": 1884,
+      "sha256": "a4f21934a7761191166ad720f9dfcbdcf1cf21f1101a0706206caa1f844ada05"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody/actor-28375.json",
+      "bytes": 1884,
+      "sha256": "911ea3a21a005817b8a38e7932cbfbdb57ef45cbfe3d69697570f999ce3501df"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody/actor-28395.json",
+      "bytes": 1884,
+      "sha256": "c4871e70498f453497965fd96198d5ab037f72ae9b2c0523f162e9b68857a094"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody/actor-28404.json",
+      "bytes": 2367,
+      "sha256": "d9c51f0c0200aaa7561d39963dda798926aefdf3e12e59067a9ab2efb75c79a4"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody/actor-28429.json",
+      "bytes": 2367,
+      "sha256": "abfffcc3f45447f91178bbca55fa5936d2da98a46d4708e26fbe38ba20683377"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody/actor-28443.json",
+      "bytes": 2527,
+      "sha256": "86c5dbdaa3672d06322dc80be505b04dbfaedc61ca9e3b114652638b536605fd"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody/actor-28471.json",
+      "bytes": 2527,
+      "sha256": "eebf793f3381e06a1bd5dd43b7d72bcc0ba1fea46f7ee6d545a607e5aea0e584"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody/actor-28506.json",
+      "bytes": 1884,
+      "sha256": "63ad7113858e9c70ad478ab74a63c22c577812326cff47df754903f102f7b0e7"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody/actor-28531.json",
+      "bytes": 1630,
+      "sha256": "7aae7a8576debf0e33d06d7a9233617f1c7e6be6fac940a716dc0824e762f0ea"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody/actor-28620.json",
+      "bytes": 1860,
+      "sha256": "eb1e965865393e16d6f68c505c334e1db76a5208c80135dcad4fd98381780f9c"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/custody-observer.mjs",
+      "bytes": 4043,
+      "sha256": "1cf600f60471d5dbe6d9279cd1362c80b01b0765692e3c801fb9b316ae0abe89"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/preparation.json",
+      "bytes": 2381,
+      "sha256": "5378c2337a2a01b033bdb2a542909fe2a178b82bb6a6174ed8d63d6a4438bc0b"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/result.json",
+      "bytes": 1744,
+      "sha256": "09b41efa48bd08b292f71aa7d0e886ade00c18a2a07ae7d0b735893bb221a718"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/run.log",
+      "bytes": 191,
+      "sha256": "a4f5bb3477527e2b51a1c38282fb6a6c0cbc14cf09690b0e38ff49cd981b0636"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-main/run.py",
+      "bytes": 2592,
+      "sha256": "69c8b830e94ca0863beb1972471a5c8fc5dca67ba61595774f5f62b3c8c2246d"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/ATTEMPT.json",
+      "bytes": 1334,
+      "sha256": "894040de49cc50c96768d279f796964f152b4f61901dfedfb9012c65942340ac"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody/actor-28041.json",
+      "bytes": 29457,
+      "sha256": "f1c9c6a544ef52a2e87d96d386ae37e464b3fb93f302800ba854a60fc209e525"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody/actor-28438.json",
+      "bytes": 1884,
+      "sha256": "fc873a11d9649ccfb4a786cbc1744854e4c041c03ac3e94c96ddcee2b629bf6d"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody/actor-28459.json",
+      "bytes": 1884,
+      "sha256": "2d182096151864ac61d7783bdfad582a02bf1685e9ae000509606ad54227c561"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody/actor-28499.json",
+      "bytes": 1884,
+      "sha256": "8b8769c0656b2bda93cd7b8e5333cfb29cabaaeb361ce17632971d6b1594490a"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody/actor-28513.json",
+      "bytes": 1884,
+      "sha256": "62a6c4e176f8fc9d567f16ebc1472e48c5f260b34d1eced403150288d8b69b75"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody/actor-28532.json",
+      "bytes": 1884,
+      "sha256": "2511afdfdbf67b7400b202e7e58f91abd49c3374dbaf977f9d82046a41bacdf7"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody/actor-28548.json",
+      "bytes": 1884,
+      "sha256": "deb7031e1723bc3bc6a659ed52c7d97b486fca1291963eb0515d3fa90a586ef2"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody/actor-28563.json",
+      "bytes": 2367,
+      "sha256": "a90d19a972053ed1ed719be80bce9fc7fb577071c74ef208cc3103cd6fb3c3b6"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody/actor-28621.json",
+      "bytes": 2367,
+      "sha256": "0d2bd97b8a3f4215126f5e8b159d4fb76bea79a3e096eed44d41213ee47a1b96"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody/actor-28652.json",
+      "bytes": 2527,
+      "sha256": "38fa9fe8868d610b2b7ff0bba8fb40485a983353087dd2cb03b0a16d9d303f38"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody/actor-28664.json",
+      "bytes": 2527,
+      "sha256": "fcd24205aed5bbdcb772aa6f5198fb7d8bb2eabbcaadca02859665160b81a04c"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody/actor-28737.json",
+      "bytes": 1884,
+      "sha256": "eecdb52321b7e5e96db8578b75daf3cac14e2dbba1a2f2fc97cc2be3cf2a46fe"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody/actor-28851.json",
+      "bytes": 1630,
+      "sha256": "e0d9614f183cf8cea8b5d73088a2eb09bfe99daa60be1d28c7e658bd6179d8f3"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody/actor-28937.json",
+      "bytes": 1860,
+      "sha256": "7dbab48d512796923a3e712719fad12ca2f9e0bca13742b58c906438e31c1215"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/custody-observer.mjs",
+      "bytes": 4043,
+      "sha256": "1cf600f60471d5dbe6d9279cd1362c80b01b0765692e3c801fb9b316ae0abe89"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/harness/scripts/e2e-session-bookkeeping-packaged.mjs",
+      "bytes": 11935,
+      "sha256": "6c8ad62755a5a39eabe16f554282cacd46b965b353e8d94b0b16a7024ecb7e59"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/harness/scripts/fixtures/bookkeeping-package-legacy-writer.mjs",
+      "bytes": 633,
+      "sha256": "cd6edcae3f2e7142053d872be383dc70b7e520807218b695974fe351e85acb43"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/harness/scripts/fixtures/bookkeeping-package-server.mjs",
+      "bytes": 2135,
+      "sha256": "662777de6614be9b7545addc356d5028d503db53ced4ab9a911d46a5f1a8c371"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/harness/scripts/lib/e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/preparation.json",
+      "bytes": 2328,
+      "sha256": "cf3292da7bfca8e83eaf4a960dbe917ec96c55448dd49fe436f4bcf5629a8333"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/result.json",
+      "bytes": 1769,
+      "sha256": "3b0ff69c515fb97611cd5d06867db5160d7061998bd53b7fc5ba88fd04e6f873"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/run.log",
+      "bytes": 191,
+      "sha256": "a4f5bb3477527e2b51a1c38282fb6a6c0cbc14cf09690b0e38ff49cd981b0636"
+    },
+    {
+      "path": "1219-native-engine-r4/packages-mac-published/run.py",
+      "bytes": 2597,
+      "sha256": "e2430c960d39eea67e506698d472ae9982c2a282dfed01518a6530ce685996de"
+    },
+    {
+      "path": "1219-native-engine-r4/pr-premerge-readonly.json",
+      "bytes": 4366,
+      "sha256": "2bda2048cebffb7f7d76e728bbfba755ba38d600caad63e8dcae2331adef3fd8"
+    },
+    {
+      "path": "1219-native-engine-r4/pr1220-current.json",
+      "bytes": 2941,
+      "sha256": "10a447c6bf8007e179960b990c2537c61f87c807a3f3ee0fca4ad9bf16ec05ee"
+    },
+    {
+      "path": "1219-native-engine-r4/qualified-e41/e41-model-observer.mjs",
+      "bytes": 9195,
+      "sha256": "d706efaf51d1f07943d9ab926f6e51dbadb2b36d2499306bb61dfd4931488e2f"
+    },
+    {
+      "path": "1219-native-engine-r4/qualified-e41/run-e41.mjs",
+      "bytes": 23882,
+      "sha256": "733d38fa7169f99ba94bc5aeb2b48f84fc486e9934f8a9a23a7d09a3e104015a"
+    },
+    {
+      "path": "1219-native-engine-r4/root-custody.json",
+      "bytes": 114,
+      "sha256": "f9e12aa5556366427a7b38e5768c9eac2ea902fa302c56f758d5d04c33d50aa6"
+    },
+    {
+      "path": "1219-native-engine-r4/run-e41-live.py",
+      "bytes": 8036,
+      "sha256": "7795cdfbe56eda11547cbd49592294e6ca171f47a79df2aa8dd191dcdcf73616"
+    },
+    {
+      "path": "1219-native-engine-r4/run-e41-live.py.before-cwd-fix",
+      "bytes": 8039,
+      "sha256": "1cda9295d1c6be0804f5ab83d35bec9020e0364eac259e4e7f2bbf4e39f6c6b5"
+    },
+    {
+      "path": "1219-native-engine-r4/run-final.py",
+      "bytes": 2022,
+      "sha256": "ab45c3a8d4bdc4c1806d254d44bb3e8f03522d3b70152d91d08b4c3716284964"
+    },
+    {
+      "path": "1219-native-engine-r4/run-sdk-gc-linux.py",
+      "bytes": 2267,
+      "sha256": "dc9214b258842b266d91296f15adf21249ac4b31230e434ee25f1e797424dcf4"
+    },
+    {
+      "path": "1219-native-engine-r4/run-sdk-gc.py",
+      "bytes": 4603,
+      "sha256": "f42a8d4f11467b08878baf70a10a55231649810bb3598df4dc01ce372333f69b"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-close-peer-probe.mjs",
+      "bytes": 9417,
+      "sha256": "00e3a406ac85e492cd30899b5c473619032b94b19023898d03a780a843bd1159"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-linux/install.log",
+      "bytes": 235,
+      "sha256": "30e8fe7b0f6cb2a4ff67c9c12888efe4f8a3a5c6c8c6b28015c39b8c4a8d859d"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-linux/json-close.log",
+      "bytes": 982,
+      "sha256": "f9b2032a2f367001cefc5a916a2020ab36bf822316502c29dbcb0f5b88f0634b"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-linux/json-normal.log",
+      "bytes": 866,
+      "sha256": "81d2c36dbc25330deda4b5c3fea39d226638c0fa48999283bd22d87a246f5665"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-linux/json-stderr.log",
+      "bytes": 983,
+      "sha256": "b471e35a02c5dfc717d7714e131ad2f2f04cd5439a5a035a4c0c845cea3005fb"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-linux/json-stdout.log",
+      "bytes": 983,
+      "sha256": "003f798a8ae752f3be6fcdaf86a62fefea89578794092b7042beb58fd1f47452"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-linux/result.json",
+      "bytes": 18595,
+      "sha256": "e89b1a9f11b71ac1d0d7e88337610659d7bd70985b3795509acfd0abb2854cc6"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-linux/sqlite-close.log",
+      "bytes": 2058,
+      "sha256": "37faacefe187fa17782e84d758a6652655f6e3f62fcc83661639bd0fc8dce266"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-linux/sqlite-normal.log",
+      "bytes": 1667,
+      "sha256": "f0651322f360ece7e4fc6543a67d145f0899e3622139953b9a185522825ad1a5"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-linux/sqlite-stderr.log",
+      "bytes": 2059,
+      "sha256": "a193053ebbda3b1181e3b89d95342bbdb9725ad04f895941ff0c5226b775235a"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-linux/sqlite-stdout.log",
+      "bytes": 2059,
+      "sha256": "47c8e6a89bf51c0c46c28ff245ca3c4a164fdf27ab157e954357de85966dd018"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-linux-docker-result.json",
+      "bytes": 443,
+      "sha256": "ac3ca0f681ab366ba35d870b58e1116d9e2325f7616e8d6bd30510ed08317367"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-linux-docker.log",
+      "bytes": 155,
+      "sha256": "0988889e06d31c8d83a675e4290f5880674f6694ad9e959e5883e3c0298f4afb"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-mac/install.log",
+      "bytes": 234,
+      "sha256": "5af31a133bb3a1cd0410f83ca38c7174fe64c6af4db37efaee27f63544454163"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-mac/json-close.log",
+      "bytes": 985,
+      "sha256": "195c6ec2b8d9172cd886e0774c767b2034f6b7bb17a4041d887e7ec67e78c6ed"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-mac/json-normal.log",
+      "bytes": 869,
+      "sha256": "af89e3247a2f1d04fcb3174db73e8219207601a2dc26c476d130131a006f73a4"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-mac/json-stderr.log",
+      "bytes": 986,
+      "sha256": "1b3271d36b187c21ec6ca7f8b77f3c207f4a09899c6404bd9d191c15188ff8fb"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-mac/json-stdout.log",
+      "bytes": 986,
+      "sha256": "d7a801439bfd8f30e1d8cb0a055c9f1812430a789f2053b5d6d6d23367f488ae"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-mac/result.json",
+      "bytes": 18729,
+      "sha256": "c8de8dedc72d38cce4acfaf15a5c75b2b1b14ad1a9c6fc9443de08edbe1d07a6"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-mac/sqlite-close.log",
+      "bytes": 2242,
+      "sha256": "5beae364eb037eb9ad58520bdf3669b6f943e5003ecec93fe85869cbb592153b"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-mac/sqlite-normal.log",
+      "bytes": 1852,
+      "sha256": "6631fd33ffcacd21922010645cf24f6f26fac1722241b32de0d6a8cdda271294"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-mac/sqlite-stderr.log",
+      "bytes": 2243,
+      "sha256": "ffeb9a6124fd5e1f7b17f3d4024001cfe52437a484235e9015440a79631b8612"
+    },
+    {
+      "path": "1219-native-engine-r4/sdk-gc-mac/sqlite-stdout.log",
+      "bytes": 2243,
+      "sha256": "fe25ce535e2832ade6646a4205651da322df99031d49f3f27743c64171d57361"
+    }
+  ],
+  "excludedBinaryArtifacts": [
+    "1219-native-engine-r2/binding/package/prebuilds/darwin-arm64.node"
+  ],
+  "exclusions": "Temporary runtime binaries/dependency installs, superseded package tarballs, private grants and owned native/client state are excluded. Exact current independently installed package is included. All earlier failed native/fixture/CI/type/FS attempts remain in the proof.",
+  "credentialLiteralScanMatches": 0
+}
