@@ -1,0 +1,152 @@
+[
+  {
+    "repository": "rynfar/meridian",
+    "number": 1390,
+    "title": "feat: allow configuring Claude SDK subprocess permission mode (auto for OpenCode clients)",
+    "url": "https://github.com/rynfar/meridian/issues/1390",
+    "draft": false,
+    "createdAt": "2026-10-16T16:12:34Z",
+    "updatedAt": "2026-10-20T06:09:41Z",
+    "author": "Noah-Silvera"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1338,
+    "title": "Priority routing keeps using a profile on paid overage while other profiles still have included volume",
+    "url": "https://github.com/rynfar/meridian/issues/1338",
+    "draft": false,
+    "createdAt": "2026-10-11T15:25:22Z",
+    "updatedAt": "2026-10-11T15:27:55Z",
+    "author": "paulkolle"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1311,
+    "title": "Feature: client-neutral agent role/name headers for Pi integrations",
+    "url": "https://github.com/rynfar/meridian/issues/1311",
+    "draft": false,
+    "createdAt": "2026-10-08T01:20:38Z",
+    "updatedAt": "2026-10-08T01:20:38Z",
+    "author": "nateberkopec"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1303,
+    "title": "Session persistence rewrites the full store, including unchanged transcript locators",
+    "url": "https://github.com/rynfar/meridian/issues/1303",
+    "draft": false,
+    "createdAt": "2026-10-07T17:19:49Z",
+    "updatedAt": "2026-10-07T17:19:49Z",
+    "author": "materemias"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1302,
+    "title": "Feature request: detached start and stop commands for programmatic auto-start",
+    "url": "https://github.com/rynfar/meridian/issues/1302",
+    "draft": false,
+    "createdAt": "2026-10-07T16:33:52Z",
+    "updatedAt": "2026-10-07T16:33:52Z",
+    "author": "Blankeos"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1277,
+    "title": "feat: define opt-in SQLite bookkeeping and embedding lifecycle contract",
+    "url": "https://github.com/rynfar/meridian/issues/1277",
+    "draft": false,
+    "createdAt": "2026-10-05T00:42:51Z",
+    "updatedAt": "2026-10-05T01:12:59Z",
+    "author": "rynfar"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1244,
+    "title": "Decide async completion for exported session-cache cleanup (#1220)",
+    "url": "https://github.com/rynfar/meridian/issues/1244",
+    "draft": false,
+    "createdAt": "2026-10-02T21:03:30Z",
+    "updatedAt": "2026-10-03T02:23:32Z",
+    "author": "rynfar"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1229,
+    "title": "macOS/nono.sh: process-incarnation capture fails on setuid /bin/ps",
+    "url": "https://github.com/rynfar/meridian/issues/1229",
+    "draft": false,
+    "createdAt": "2026-10-01T21:15:24Z",
+    "updatedAt": "2026-10-01T21:15:39Z",
+    "author": "kalelkenobi"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1094,
+    "title": "opencode: unpin v2 version",
+    "url": "https://github.com/rynfar/meridian/issues/1094",
+    "draft": false,
+    "createdAt": "2026-09-21T16:12:13Z",
+    "updatedAt": "2026-09-26T07:36:43Z",
+    "author": "lungsin"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1073,
+    "title": "Subscription-backed Antigravity and unified provider experience",
+    "url": "https://github.com/rynfar/meridian/issues/1073",
+    "draft": false,
+    "createdAt": "2026-09-19T02:52:31Z",
+    "updatedAt": "2026-09-19T18:53:15Z",
+    "author": "rynfar"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1011,
+    "title": "Land the two passthrough commits held back from #980",
+    "url": "https://github.com/rynfar/meridian/issues/1011",
+    "draft": false,
+    "createdAt": "2026-09-10T21:04:46Z",
+    "updatedAt": "2026-09-11T14:40:49Z",
+    "author": "rynfar"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 933,
+    "title": "npm test is flaky on CI (~1 in 3 runs) and blocked the 1.67.0 npm publish",
+    "url": "https://github.com/rynfar/meridian/issues/933",
+    "draft": false,
+    "createdAt": "2026-09-04T09:50:00Z",
+    "updatedAt": "2026-09-26T07:38:11Z",
+    "author": "rynfar"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 917,
+    "title": "Intermittent CI failures: concurrency tests fail fast, never the same one twice",
+    "url": "https://github.com/rynfar/meridian/issues/917",
+    "draft": false,
+    "createdAt": "2026-08-31T22:35:41Z",
+    "updatedAt": "2026-09-09T09:34:23Z",
+    "author": "rynfar"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 769,
+    "title": "Official OpenClaw scrub plugin (meridian-plugin-openclaw-scrub) \u2014 follow-up to #495",
+    "url": "https://github.com/rynfar/meridian/issues/769",
+    "draft": false,
+    "createdAt": "2026-08-07T12:40:44Z",
+    "updatedAt": "2026-09-26T07:36:22Z",
+    "author": "chris2k20"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 650,
+    "title": "Wire event-driven plugin-input bumps (repository_dispatch from plugin repos)",
+    "url": "https://github.com/rynfar/meridian/issues/650",
+    "draft": false,
+    "createdAt": "2026-07-17T17:49:40Z",
+    "updatedAt": "2026-07-17T18:06:17Z",
+    "author": "rynfar"
+  }
+]

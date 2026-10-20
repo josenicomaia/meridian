@@ -1,0 +1,84 @@
+{
+  "at": "2026-10-20T20:31:45.834146+00:00",
+  "visibleRepos": 165,
+  "managedQueues": [
+    {
+      "repository": "rynfar/hudscrub",
+      "archived": false,
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+      },
+      "openPRs": 0,
+      "openIssues": 0
+    },
+    {
+      "repository": "rynfar/meridian",
+      "archived": false,
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+      },
+      "openPRs": 22,
+      "openIssues": 15
+    },
+    {
+      "repository": "rynfar/meridian-plugin-hermes-scrub",
+      "archived": false,
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+      },
+      "openPRs": 0,
+      "openIssues": 0
+    },
+    {
+      "repository": "rynfar/meridian-plugin-openclaw-scrub",
+      "archived": false,
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+      },
+      "openPRs": 0,
+      "openIssues": 0
+    },
+    {
+      "repository": "rynfar/meridian-plugin-opencode-scrub",
+      "archived": false,
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+      },
+      "openPRs": 1,
+      "openIssues": 0
+    },
+    {
+      "repository": "rynfar/meridian-plugin-pi-scrub",
+      "archived": false,
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+      },
+      "openPRs": 1,
+      "openIssues": 0
+    }
+  ]
+}

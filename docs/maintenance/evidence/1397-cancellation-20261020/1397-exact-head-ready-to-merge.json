@@ -1,0 +1,119 @@
+{
+  "at": "2026-10-20T20:30:36.766670+00:00",
+  "head": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+  "base": "3667a1555e104d0d82fee180eedfde68ab218390",
+  "github": {
+    "baseRefOid": "3667a1555e104d0d82fee180eedfde68ab218390",
+    "headRefOid": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+    "isDraft": false,
+    "mergeStateStatus": "CLEAN",
+    "mergeable": "MERGEABLE",
+    "reviewDecision": "",
+    "state": "OPEN",
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T20:16:59Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39490608377/job/118862465879",
+        "name": "authorship",
+        "startedAt": "2026-10-20T20:16:51Z",
+        "status": "COMPLETED",
+        "workflowName": "Attribution"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T20:25:41Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39490614464/job/118862484976",
+        "name": "test",
+        "startedAt": "2026-10-20T20:16:54Z",
+        "status": "COMPLETED",
+        "workflowName": "CI"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T20:18:42Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39490614530/job/118862485588",
+        "name": "smoke",
+        "startedAt": "2026-10-20T20:16:54Z",
+        "status": "COMPLETED",
+        "workflowName": "Docker"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T20:17:16Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39490614478/job/118862486070",
+        "name": "build (.#checks.x86_64-linux.home)",
+        "startedAt": "2026-10-20T20:16:54Z",
+        "status": "COMPLETED",
+        "workflowName": "Nix installable builds"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T20:17:44Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39490614503/job/118862485844",
+        "name": "desktop-build (ubuntu-latest)",
+        "startedAt": "2026-10-20T20:16:54Z",
+        "status": "COMPLETED",
+        "workflowName": "desktop"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T20:18:19Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39490614503/job/118862485646",
+        "name": "desktop-build (macos-latest)",
+        "startedAt": "2026-10-20T20:16:59Z",
+        "status": "COMPLETED",
+        "workflowName": "desktop"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T20:18:34Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39490614464/job/118862484941",
+        "name": "windows-smoke",
+        "startedAt": "2026-10-20T20:16:54Z",
+        "status": "COMPLETED",
+        "workflowName": "CI"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T20:21:21Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39490614530/job/118863413570",
+        "name": "build-push",
+        "startedAt": "2026-10-20T20:18:45Z",
+        "status": "COMPLETED",
+        "workflowName": "Docker"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T20:16:51Z",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39490614464/job/118862486951",
+        "name": "changelog-duplication",
+        "startedAt": "2026-10-20T20:16:51Z",
+        "status": "COMPLETED",
+        "workflowName": "CI"
+      }
+    ]
+  },
+  "allLocalAndActualAndProofGatesPass": true,
+  "introducedSignedCommitObjects": 14,
+  "allOld10ObjectsPreserved": true,
+  "route": "Owner approved1413 neutral commit-preserving merge, no admin/squash/rebase/re-sign",
+  "durableProof": {
+    "commit": "b5a9f2a81902cd717aec7592c01217ff0afd5aec",
+    "branch": "evidence/backlog-1406-live-20261020",
+    "remoteArchiveVerified": true,
+    "archiveSha256": "e62a7b32502f3e774cafba5648cf5d1e6491a4d15bfa67fe3abf475ec51bb340",
+    "bytes": 293408,
+    "url": "https://github.com/rynfar/meridian/blob/b5a9f2a81902cd717aec7592c01217ff0afd5aec/docs/maintenance/evidence/1397-cancellation-20261020/README.md",
+    "at": "2026-10-20T20:29:42.955417+00:00"
+  }
+}

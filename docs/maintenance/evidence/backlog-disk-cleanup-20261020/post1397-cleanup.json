@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-20T20:32:15.599721+00:00",
+  "verifiedMerge": "413f4b7c73dc25302b877404066767f599ac210e",
+  "resources": [
+    {
+      "path": "/private/tmp/meridian-main-priority-final-20261020",
+      "kind": "worktree",
+      "head": "3667a1555e104d0d82fee180eedfde68ab218390",
+      "recoveryRef": "refs/maintenance/backlog-cleanup/20261020-post1397/meridian-main-priority-final-20261020",
+      "removed": true
+    },
+    {
+      "path": "/private/tmp/meridian-pr1397-20261020",
+      "kind": "worktree",
+      "head": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+      "recoveryRef": "refs/maintenance/backlog-cleanup/20261020-post1397/meridian-pr1397-20261020",
+      "removed": true
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1397-live-r2/packages-final/baseline-mac/node_modules",
+      "kind": "generated install",
+      "removed": true
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1397-live-r2/packages-final/baseline-linux/node_modules",
+      "kind": "generated install",
+      "removed": true
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1397-live-r2/packages-final/candidate-mac/node_modules",
+      "kind": "generated install",
+      "removed": true
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1397-live-r2/packages-final/candidate-linux/node_modules",
+      "kind": "generated install",
+      "removed": true
+    }
+  ],
+  "rootHEADAndOriginal12HashesPreserved": true,
+  "ownedContainersRemain": 0,
+  "totalTemporaryWorktreesRemovedThisCleanup": 44,
+  "totalInstallOrCacheTreesRemovedThisCleanup": 48,
+  "taskWorktreesRemaining": 1
+}

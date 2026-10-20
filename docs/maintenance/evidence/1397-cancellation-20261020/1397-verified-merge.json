@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-20T20:31:11.932159+00:00",
+  "pr": {
+    "headRefOid": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+    "mergeCommit": {
+      "oid": "413f4b7c73dc25302b877404066767f599ac210e"
+    },
+    "mergedAt": "2026-10-20T20:30:39Z",
+    "state": "MERGED",
+    "url": "https://github.com/rynfar/meridian/pull/1397"
+  },
+  "head": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+  "base": "3667a1555e104d0d82fee180eedfde68ab218390",
+  "merge": "413f4b7c73dc25302b877404066767f599ac210e",
+  "tree": "34f5d4ed1fe5063bc7492341dc5923e303c5044d",
+  "parentAndTreeMatch": true,
+  "signatureVerified": true,
+  "mergeAuthor": {
+    "name": "Trevor Walker",
+    "email": "rynfar@gmail.com",
+    "date": "2026-10-20T20:30:38Z"
+  },
+  "mergeSubject": "Merge pull request #1397 from passabilities/dex/priority-cancel",
+  "all14CommitObjectsReachableAndUnchanged": true,
+  "all10OriginalAuthorAndDatesRetained": true,
+  "mainRemoteVerified": true,
+  "route": "Owner approved1413 neutral merge; no admin/squash/rebase/re-sign"
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "repository": "rynfar/meridian",
+    "number": 1429,
+    "title": "feat: list and redeem Claude banked resets",
+    "url": "https://github.com/rynfar/meridian/pull/1429",
+    "draft": false,
+    "createdAt": "2026-10-20T10:33:09Z",
+    "updatedAt": "2026-10-20T11:38:45Z",
+    "author": "materemias"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1427,
+    "title": "chore(main): release meridian 1.84.1",
+    "url": "https://github.com/rynfar/meridian/pull/1427",
+    "draft": false,
+    "createdAt": "2026-10-20T06:37:46Z",
+    "updatedAt": "2026-10-20T19:38:09Z",
+    "author": "github-actions[bot]"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1426,
+    "title": "feat: read x-session-id as conversation identity on /v1/chat/completions",
+    "url": "https://github.com/rynfar/meridian/pull/1426",
+    "draft": false,
+    "createdAt": "2026-10-20T00:13:23Z",
+    "updatedAt": "2026-10-20T00:18:32Z",
+    "author": "alexgleason"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1410,
+    "title": "fix(passthrough): share built tool definitions between sessions",
+    "url": "https://github.com/rynfar/meridian/pull/1410",
+    "draft": false,
+    "createdAt": "2026-10-18T23:33:23Z",
+    "updatedAt": "2026-10-20T13:34:51Z",
+    "author": "Nowaker"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1408,
+    "title": "feat: add the Meridian Pi extension and meridian setup --client pi",
+    "url": "https://github.com/rynfar/meridian/pull/1408",
+    "draft": true,
+    "createdAt": "2026-10-18T22:20:46Z",
+    "updatedAt": "2026-10-18T22:20:46Z",
+    "author": "nateberkopec"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1402,
+    "title": "feat(proxy): opt-in auto permission mode for the SDK subprocess (#1390)",
+    "url": "https://github.com/rynfar/meridian/pull/1402",
+    "draft": true,
+    "createdAt": "2026-10-16T20:43:26Z",
+    "updatedAt": "2026-10-16T20:46:32Z",
+    "author": "Noah-Silvera"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1400,
+    "title": "fix(routing): fail over a model whose allowance is spent without benching the whole account",
+    "url": "https://github.com/rynfar/meridian/pull/1400",
+    "draft": false,
+    "createdAt": "2026-10-16T19:29:36Z",
+    "updatedAt": "2026-10-19T10:52:52Z",
+    "author": "passabilities"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1399,
+    "title": "fix(session): let session cleanup keep up with the transcripts turns leave",
+    "url": "https://github.com/rynfar/meridian/pull/1399",
+    "draft": false,
+    "createdAt": "2026-10-16T19:29:34Z",
+    "updatedAt": "2026-10-19T11:07:06Z",
+    "author": "passabilities"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1396,
+    "title": "fix(claude-code): resume tool rounds after a one-request system reminder",
+    "url": "https://github.com/rynfar/meridian/pull/1396",
+    "draft": false,
+    "createdAt": "2026-10-16T19:29:27Z",
+    "updatedAt": "2026-10-19T05:14:06Z",
+    "author": "passabilities"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1359,
+    "title": "feat: add detached CLI startup and graceful stop",
+    "url": "https://github.com/rynfar/meridian/pull/1359",
+    "draft": true,
+    "createdAt": "2026-10-12T23:24:30Z",
+    "updatedAt": "2026-10-13T05:56:54Z",
+    "author": "rynfar"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1347,
+    "title": "fix: prefer included capacity before paid overage in priority routing",
+    "url": "https://github.com/rynfar/meridian/pull/1347",
+    "draft": true,
+    "createdAt": "2026-10-12T17:37:20Z",
+    "updatedAt": "2026-10-13T01:18:03Z",
+    "author": "rynfar"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1340,
+    "title": "fix(antigravity): warn once on a completed replay-tail call",
+    "url": "https://github.com/rynfar/meridian/pull/1340",
+    "draft": false,
+    "createdAt": "2026-10-11T21:54:03Z",
+    "updatedAt": "2026-10-20T10:31:11Z",
+    "author": "Cd1s"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1322,
+    "title": "fix: preserve Claude working checkpoints across native side calls",
+    "url": "https://github.com/rynfar/meridian/pull/1322",
+    "draft": true,
+    "createdAt": "2026-10-09T03:50:50Z",
+    "updatedAt": "2026-10-13T08:28:24Z",
+    "author": "rynfar"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1317,
+    "title": "fix: bound Antigravity history recaps and preserve current requests",
+    "url": "https://github.com/rynfar/meridian/pull/1317",
+    "draft": true,
+    "createdAt": "2026-10-08T22:20:29Z",
+    "updatedAt": "2026-10-13T08:28:20Z",
+    "author": "rynfar"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1314,
+    "title": "fix: keep the latest user request in focus on long Antigravity histories",
+    "url": "https://github.com/rynfar/meridian/pull/1314",
+    "draft": false,
+    "createdAt": "2026-10-08T09:44:47Z",
+    "updatedAt": "2026-10-20T16:42:52Z",
+    "author": "Cd1s"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1266,
+    "title": "fix: explain denied process identity probes without weakening locks",
+    "url": "https://github.com/rynfar/meridian/pull/1266",
+    "draft": true,
+    "createdAt": "2026-10-04T21:24:34Z",
+    "updatedAt": "2026-10-08T05:45:34Z",
+    "author": "rynfar"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1261,
+    "title": "fix: delete old Claude Code transcripts again",
+    "url": "https://github.com/rynfar/meridian/pull/1261",
+    "draft": false,
+    "createdAt": "2026-10-04T12:04:02Z",
+    "updatedAt": "2026-10-14T11:14:04Z",
+    "author": "Nowaker"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1243,
+    "title": "fix(session): keep the session store in SQLite instead of rewriting it whole on every change",
+    "url": "https://github.com/rynfar/meridian/pull/1243",
+    "draft": false,
+    "createdAt": "2026-10-02T20:47:01Z",
+    "updatedAt": "2026-10-20T11:26:54Z",
+    "author": "Nowaker"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1220,
+    "title": "fix(session): stop session store writes from freezing the proxy",
+    "url": "https://github.com/rynfar/meridian/pull/1220",
+    "draft": false,
+    "createdAt": "2026-10-01T20:04:09Z",
+    "updatedAt": "2026-10-19T10:40:20Z",
+    "author": "Nowaker"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1219,
+    "title": "feat(session): add opt-in SQLite bookkeeping with offline recovery",
+    "url": "https://github.com/rynfar/meridian/pull/1219",
+    "draft": false,
+    "createdAt": "2026-10-01T19:28:33Z",
+    "updatedAt": "2026-10-20T17:51:58Z",
+    "author": "justprosh"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1193,
+    "title": "feat: optional prompt-cache keepalive for idle sessions",
+    "url": "https://github.com/rynfar/meridian/pull/1193",
+    "draft": false,
+    "createdAt": "2026-09-29T13:17:10Z",
+    "updatedAt": "2026-10-20T15:48:02Z",
+    "author": "XInTheDark"
+  },
+  {
+    "repository": "rynfar/meridian",
+    "number": 1050,
+    "title": "test: investigate subscription-backed Antigravity CLI bridge",
+    "url": "https://github.com/rynfar/meridian/pull/1050",
+    "draft": true,
+    "createdAt": "2026-09-18T17:07:46Z",
+    "updatedAt": "2026-09-18T17:07:46Z",
+    "author": "rynfar"
+  },
+  {
+    "repository": "rynfar/meridian-plugin-opencode-scrub",
+    "number": 20,
+    "title": "chore(main): release meridian-plugin-opencode-scrub 0.3.0",
+    "url": "https://github.com/rynfar/meridian-plugin-opencode-scrub/pull/20",
+    "draft": false,
+    "createdAt": "2026-10-01T07:53:08Z",
+    "updatedAt": "2026-10-15T04:46:24Z",
+    "author": "github-actions[bot]"
+  },
+  {
+    "repository": "rynfar/meridian-plugin-pi-scrub",
+    "number": 15,
+    "title": "chore(main): release meridian-plugin-pi-scrub 0.2.3",
+    "url": "https://github.com/rynfar/meridian-plugin-pi-scrub/pull/15",
+    "draft": false,
+    "createdAt": "2026-10-01T06:33:17Z",
+    "updatedAt": "2026-10-01T06:33:18Z",
+    "author": "github-actions[bot]"
+  }
+]

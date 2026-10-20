@@ -1,0 +1,128 @@
+[
+  {
+    "path": "/private/tmp/meridian-priority-live-ljYbdj",
+    "report": "/tmp/meridian-resume-20261020/1397-nonstream-offline-candidate-r1/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.859941+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-xEfTdj",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/live-mac-watchdog-baseline-r1/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.864140+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-DHGeB8",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/live-mac-nonstream-candidate-r1/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.866558+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-Aeyz6k",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/offline-mac-watchdog-baseline-r2/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.869345+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-t8cK90",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/offline-mac-watchdog-baseline-r3/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.872109+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-bwzyTO",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/offline-mac-subtree-baseline-r3/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.874737+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-r2EVT6",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/live-mac-nonstream-baseline-r1/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.877539+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-1bLbbV",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/offline-mac-nonstream-candidate-r3/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.879914+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-96WtGb",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/offline-mac-nonstream-candidate-r2/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.882071+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-XRDlrV",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/live-mac-watchdog-candidate-r1/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.884209+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-zyHPQf",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/offline-mac-nonstream-baseline-r2/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.886576+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-gOSmUK",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/offline-mac-nonstream-baseline-r3/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.888840+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-QFLrXy",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/offline-mac-watchdog-candidate-r2/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.890633+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-uu4qAI",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/offline-mac-subtree-candidate-r3/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.892474+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-3Do0QQ",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/offline-mac-watchdog-candidate-r3/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.893992+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-JLRdZS",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/offline-mac-queued-candidate-r4/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.896123+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-K5QcTy",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/offline-mac-queued-baseline-r3/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.898946+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-priority-live-dINK8C",
+    "report": "/tmp/meridian-resume-20261020/1397-live-r2/offline-mac-queued-baseline-r4/report.json",
+    "joined": true,
+    "removed": true,
+    "at": "2026-10-20T20:15:43.901599+00:00"
+  }
+]

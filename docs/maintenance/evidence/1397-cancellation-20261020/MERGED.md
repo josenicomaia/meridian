@@ -1,0 +1,5 @@
+# Verified merge
+
+[#1397](https://github.com/rynfar/meridian/pull/1397) merged at `413f4b7c73dc25302b877404066767f599ac210e` on 2026-10-20 20:30:39 UTC. Parents are exact baseline3667 and candidatef60; the signed merge tree equals the validated candidate. All14introduced objects, including all10previously recorded Author/AuthorDate/committer records, remain reachable byte-for-byte. No squash/admin/rebase/re-signing. [Receipt](1397-verified-merge.json).
+
+After durable final proof and merge verification, removed this item's candidate and baseline worktrees plus four independently installed package dependency trees. The cumulative cleanup is **44 temporary worktrees,48generated install/cache trees,18completed native fixture roots**, with all commits pinned. All12original root dirty hashes and rootHEAD446a are unchanged. No owned test containers remain. Internal free space is approximately **69 GiB**, up from43GiB before cleanup (about26GiB reclaimed); other project writes can affect filesystem totals. Only the evidence worktree remains for this task.
