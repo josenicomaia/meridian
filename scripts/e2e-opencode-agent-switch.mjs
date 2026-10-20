@@ -16,6 +16,8 @@ import {resolveOpenCodeScrub,configureOpenCodeScrub,verifyOpenCodeScrub} from '.
 assert(!process.versions.bun,'Run with Node to observe original subprocess handles')
 const repo=resolve(process.env.E2E_MERIDIAN_ROOT??'.'), client=process.env.E2E_OPENCODE_BIN, native=process.env.E2E_NATIVE_BIN
 assert(client?.startsWith('/')&&native?.startsWith('/'),'Absolute client/native binaries required')
+const clientVersion=process.env.E2E_OPENCODE_VERSION??'2.0.21'
+assert(['2.0.21','2.0.31'].includes(clientVersion),'Pin an explicitly qualified OpenCode agent-switch host')
 const scrub=resolveOpenCodeScrub(process.env.E2E_PLUGIN_PATH,process.env.E2E_SCRUB_VERSION)
 const live=process.argv.includes('--live'), expected=process.env.E2E_EXPECT??'candidate'
 const diagnose=process.argv.includes('--diagnose')
@@ -119,7 +121,7 @@ const env={PATH:process.env.PATH,HOME:process.env.HOME,PWD:work,INIT_CWD:work,ME
 for(const kind of ['CONFIG','DATA','CACHE','STATE'])env[`XDG_${kind}_HOME`]=join(root,kind.toLowerCase())
 async function run(command,args){const child=cp.spawn(command,args,{cwd:work,env,stdio:['ignore','pipe','pipe']});let text='',error='';child.stdout.on('data',b=>text+=b);child.stderr.on('data',b=>error+=b);const timer=setTimeout(()=>child.kill('SIGKILL'),30000);const [code]=await once(child,'close');clearTimeout(timer);assert.equal(code,0,error.slice(-500));return text.trim()}
 try{
- report.client=await run(client,['--version']);assert.equal(report.client,'opencode v2.0.21')
+ report.client=await run(client,['--version']);assert.equal(report.client,`opencode v${clientVersion}`)
  report.native=await run(native,['--version'])
  report.nativeSha256=createHash('sha256').update(readFileSync(native)).digest('hex')
  profiles??=[{id:'owned-agent-switch',type:'api',apiKey:'owned-loopback',baseUrl:`http://127.0.0.1:${upstream.address().port}`}]
