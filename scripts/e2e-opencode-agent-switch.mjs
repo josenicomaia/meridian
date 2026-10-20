@@ -4,7 +4,8 @@
 // grant and explicit opt-in. No private SDK transcripts are read or edited.
 import assert from 'node:assert/strict'
 import cp from 'node:child_process'
-import {syncBuiltinESMExports} from 'node:module'
+import {createRequire,syncBuiltinESMExports} from 'node:module'
+import {StringDecoder} from 'node:string_decoder'
 import {createServer} from 'node:http'
 import {once} from 'node:events'
 import {mkdtempSync,mkdirSync,readFileSync,writeFileSync,statSync,realpathSync} from 'node:fs'
@@ -29,7 +30,8 @@ const root=realpathSync(mkdtempSync('/tmp/meridian-agent-switch-'))
 for(const dir of ['home','project','config','sessions','client','data','cache','state'])mkdirSync(join(root,dir),{mode:0o700})
 const work=join(root,'project'),nonce=randomBytes(12).toString('hex'),history='OWNED_HISTORY_'+randomUUID(),model='claude-haiku-5-5'
 const primarySystem='OWNED_PRIMARY_SYSTEM_'+randomUUID()
-const report={scope:live?'actual OpenCode/SDK/native/model':'actual OpenCode/SDK/native, loopback model responder only',expected,diagnose,platform:process.platform,arch:process.arch,node:process.version,model,requests:[],upstreamRequests:[],provider:[],actors:[],turns:[],discovery:0,refusal:false}
+const report={scope:live?'actual OpenCode/SDK/native/model':'actual OpenCode/SDK/native, loopback model responder only',expected,diagnose,platform:process.platform,arch:process.arch,node:process.version,model,requests:[],upstreamRequests:[],provider:[],nativeModels:[],actors:[],turns:[],discovery:0,refusal:false}
+let stopped=false
 let profiles
 if(live){
  assert.equal(process.env.E2E_ALLOW_LIVE_MODEL,'1')
@@ -50,10 +52,27 @@ const spawn=cp.spawn
 cp.spawn=function(...args){
  const child=spawn.apply(this,args),row={pid:child.pid,closed:false,stdoutClosed:!child.stdout,stderrClosed:!child.stderr};report.actors.push(row)
  child.once('close',(code,signal)=>Object.assign(row,{closed:true,code,signal}));child.stdout?.once('close',()=>row.stdoutClosed=true);child.stderr?.once('close',()=>row.stderrClosed=true)
+ // Observe bytes only when the real consumer reads them. Adding a data
+ // listener here could put the SDK stream into flowing mode before its parser.
+ if(child.stdout){const read=child.stdout.read,decoder=new StringDecoder('utf8');let pending=''
+  child.stdout.read=function(...readArgs){const bytes=read.apply(this,readArgs)
+   if(bytes!==null){pending+=typeof bytes==='string'?bytes:decoder.write(bytes)
+    if(pending.length>1048576){report.nativeObservationFailure='Native observation line exceeded bound';stopped=true;pending=''}
+    let end;while((end=pending.indexOf('\n'))>=0){const line=pending.slice(0,end);pending=pending.slice(end+1);let value;try{value=JSON.parse(line)}catch{continue}
+     let entry
+     if(value.type==='system'&&value.subtype==='init')entry={type:'init',model:value.model}
+     if(value.type==='assistant')entry={type:'assistant',id:value.message?.id,model:value.message?.model}
+     if(value.type==='stream_event'&&value.event?.type==='message_start')entry={type:'message_start',id:value.event.message?.id,model:value.event.message?.model}
+     if(entry){report.nativeModels.push({...entry,pid:child.pid,session:value.session_id});if(typeof entry.model==='string'&&entry.model!==model){report.nativeModelMismatch=true;stopped=true}}
+     if(value.type==='result')for(const actualModel of Object.keys(value.modelUsage??{})){report.nativeModels.push({type:'result_usage',model:actualModel,pid:child.pid,session:value.session_id});if(actualModel!==model){report.nativeModelMismatch=true;stopped=true}}
+    }
+   }return bytes
+  }
+ }
  return child
 }
 syncBuiltinESMExports()
-let proxy,server,stopped=false
+let proxy,server
 const upstreamControllers=new Set()
 const upstream=createServer(async(req,res)=>{
  const controller=new AbortController();upstreamControllers.add(controller)
@@ -83,6 +102,7 @@ const upstream=createServer(async(req,res)=>{
    if(!generation){res.setHeader('content-type','application/json');res.end('{}');return}
    const text=row.systemHasCanary?nonce:'NONE'
    const message={id:'msg_'+randomUUID(),type:'message',role:'assistant',model:body.model,content:[{type:'text',text}],stop_reason:'end_turn',stop_sequence:null,usage:{input_tokens:100,output_tokens:1}}
+   Object.assign(row,{responseId:message.id,responseModel:message.model,stopReason:message.stop_reason})
    if(!body.stream){res.setHeader('content-type','application/json');res.end(JSON.stringify(message));return}
    const events=[{type:'message_start',message:{...message,content:[],stop_reason:null}},{type:'content_block_start',index:0,content_block:{type:'text',text:''}},{type:'content_block_delta',index:0,delta:{type:'text_delta',text}},{type:'content_block_stop',index:0},{type:'message_delta',delta:{stop_reason:'end_turn',stop_sequence:null},usage:{output_tokens:1}},{type:'message_stop'}]
    res.setHeader('content-type','text/event-stream');res.end(events.map(e=>`event: ${e.type}\ndata: ${JSON.stringify(e)}\n\n`).join(''));return
@@ -99,7 +119,7 @@ const upstream=createServer(async(req,res)=>{
   for await(const chunk of response.body){
    if(generation){buffer+=Buffer.from(chunk).toString().replaceAll('\r','');assert(buffer.length<1048576);let end
     while((end=buffer.indexOf('\n\n'))>=0){const frame=buffer.slice(0,end);buffer=buffer.slice(end+2);for(const line of frame.split('\n'))if(line.startsWith('data: ')){let event;try{event=JSON.parse(line.slice(6))}catch{continue}
-     if(event.type==='message_start'){row.responseModel=event.message?.model;assert.equal(row.responseModel,model)}
+     if(event.type==='message_start'){row.responseModel=event.message?.model;row.responseId=event.message?.id;assert.equal(row.responseModel,model)}
      if(event.type==='content_block_delta'&&event.delta?.type==='text_delta'){answer+=event.delta.text;assert(answer.length<1048576)}
      if(event.type==='message_delta'&&event.delta?.stop_reason){row.stopReason=event.delta.stop_reason;if(row.stopReason==='refusal'){report.refusal=true;stopped=true}}
     }}
@@ -184,6 +204,29 @@ try{
  assert(primary.some(r=>r.agent==='reviewer'&&r.mode==='primary'&&r.systemHasCanary),'New agent instructions/matching-plugin identity did not reach Meridian')
  assert(report.turns.every(r=>r.historyPresent),'Original client history was lost')
  if(live)assert(report.provider.every(r=>r.status===200&&r.responseModel===model&&r.stopReason==='end_turn'),'Actual provider identity or terminal result missing')
+ assert(!report.nativeObservationFailure&&!report.nativeModelMismatch,'Native model boundary failed')
+ const require=createRequire(join(repo,'package.json')),sdk=await import(pathToFileURL(require.resolve('@anthropic-ai/claude-agent-sdk')))
+ const previousConfig=process.env.CLAUDE_CONFIG_DIR
+ report.storedModels=[]
+ // Read the application's own mapping, then use the public SDK API under its
+ // exact transcript namespace. API and OAuth profiles need not share a path.
+ const mappings=JSON.parse(readFileSync(join(root,'sessions','sessions.json'),'utf8'))
+ const configDirs=[...new Set(Object.values(mappings).map(row=>row?.currentTranscript?.configDir).filter(Boolean))]
+ assert.equal(configDirs.length,1,'Owned model proof requires one explicit SDK namespace')
+ assert(resolve(configDirs[0]).startsWith(root+'/'),'SDK namespace escaped the owned fixture')
+ try{process.env.CLAUDE_CONFIG_DIR=configDirs[0]
+  for(const session of new Set(report.nativeModels.map(row=>row.session).filter(Boolean))){
+   const rows=await sdk.getSessionMessages(session,{dir:work})
+   report.storedModels.push(...rows.filter(row=>row.type==='assistant').map(row=>({session,id:row.message?.id,model:row.message?.model})))
+  }
+ }finally{if(previousConfig===undefined)delete process.env.CLAUDE_CONFIG_DIR;else process.env.CLAUDE_CONFIG_DIR=previousConfig}
+ assert(report.provider.length>0&&report.storedModels.length>0,'Model correlation requires owned SDK history')
+ assert(report.storedModels.every(row=>row.model===model),'Owned SDK history contains an unexpected model')
+ for(const row of report.provider){
+  assert(report.nativeModels.some(native=>native.type==='message_start'&&native.id===row.responseId&&native.model===model),'Provider response missing from native boundary')
+  assert(report.storedModels.some(stored=>stored.id===row.responseId&&stored.model===model),'Provider response missing from owned SDK history')
+ }
+ report.providerNativeStoredCorrelated=true
  assert.deepEqual(report.turns.map(r=>r.systemHasCanary),expected==='baseline'?[false,false,false,false]:[false,true,true,false])
  assert.deepEqual(report.telemetry.map(rows=>{assert.equal(rows.length,1);assert.equal(rows[0].status,200);return rows[0].isResume}),expected==='baseline'?[false,true,true,true]:[false,false,true,false])
  report.result=expected==='baseline'?'EXPECTED_BASELINE_FAILURE':'PASS'
