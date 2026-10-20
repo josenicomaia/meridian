@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-20T23:34:58.333865+00:00",
+  "removedSourceFixtures": [
+    {
+      "path": "/tmp/meridian-resume-20261020/1303-byte-budget/source-baseline",
+      "KiB": 9988
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1303-byte-budget/source-candidate",
+      "KiB": 11360
+    }
+  ],
+  "extraDependencyInstalls": 0,
+  "extraWorktrees": 0,
+  "ownedContainersRemaining": [],
+  "remoteProofCommit": "67bd548ecbe33d7a64148242b03205c43e255db7",
+  "allSixFinalCaseRootsRemoved": true,
+  "readOnlySharedDependenciesUnchangedByContainer": true
+}

@@ -1,0 +1,10 @@
+{
+  "main": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+  "candidateSource": "c91cf4357f04c1f3473896a182aaad2c51f524e1",
+  "packageSHA256": "17740db38f9ff727c54c477469824538306afb9ae0256f8937729991f58a0d09",
+  "actualDeclaration": "export declare function clearSessionCache(): void;",
+  "approvedContract": "#1277item6/#1244: Promise<void>; immediate in-memory reset, ordered awaited durable cleanup, existing best-effort policy",
+  "finding": "The completed public-type consumer asserted opaque initialization/close but omitted clearSessionCache completion type. Whole1277 was closed prematurely; follow-up required.",
+  "previousValidatedNativeStorageAndByteBudgetsRemainValid": true,
+  "models": 0
+}

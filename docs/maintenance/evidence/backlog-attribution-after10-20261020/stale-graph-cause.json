@@ -1,0 +1,6 @@
+{
+  "cause": "Audit clone origin is local user checkout, whose main is deliberately preserved at446a; fetching it cannot establish current GitHub main",
+  "staleAuditMain": "446a0f1633be3a0cf36d8f1e9f222e914d2f7c83",
+  "correction": "Fetch public GitHub URL directly into owned bare audit clone; reuse fresh paginated GitHub PR metadata, then re-run the unchanged audit script",
+  "perPR1219GitHubAuthorSignatureTreeAlreadyIndependentlyVerified": true
+}

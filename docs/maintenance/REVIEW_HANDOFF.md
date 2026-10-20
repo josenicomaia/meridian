@@ -1,3 +1,15 @@
+## Active continuation, 2026-10-20 23:44 UTC
+
+The backlog goal remains ACTIVE. Ten original PRs are verified merged through #1219/main91df; #1303 is validated and closed after the six-case 100/900 mapping/lease/GC write-budget matrix. [Closeout and scoped cleanup](evidence/1303-write-budget-20261020/README.md).
+
+**#1277 was closed too early and is now OPEN.** The final #1219 package still declares `clearSessionCache(): void`, and SQL cache reset waits until commit. Approved #1244/#1277 item6 requires `Promise<void>`, immediate in-memory reset and ordered awaited best-effort cleanup. The earlier consumer type gate omitted this signature. [Exact declarations, finding and reopen receipt](evidence/1244-cleanup-contract-audit-20261020/README.md). Next correct this specific gap from current main with meaningful regression/live/CI gates. Existing owner approval applies; #1220's broader writer and old cache-prefix hold remain separate. Do not describe the complete contract as delivered until corrected.
+
+[Corrected direct-GitHub attribution audit](evidence/backlog-attribution-after10-20261020/README.md): zero newly misattributed merged contributions; historical137 and one unmapped record remain unchanged. A stale local-main graph attempt was rejected and corrected.
+
+Owner disk limit is enforced: 46 completed worktrees and48 old install/cache trees previously removed; another five duplicate install/download paths (620.7MiB logical size) removed now. Only the task evidence worktree remains; no task-owned Docker containers or build cache. About63GiB internal/49GiB DevSSD remain, with other active projects consuming disk too. Keep only current candidate/baseline/evidence; remove completed resources after durable proof. User checkout, other threads and services/volumes are preserved. [Latest cleanup receipt](evidence/backlog-disk-cleanup-20261020/additional-tooling-cleanup.json). No release, Apple notarization, or external comment is authorized here.
+
+---
+
 ## Active continuation, 2026-10-20 23:10 UTC
 
 **Ten original backlog PR merges are now verified**, including [#1219](evidence/1219-runtime-sqlite-20261020/MERGED.md), signed squash `91df1ba233593e53118c2e9184f5a13d1d0f8902`. Aleksey Proshutinskiy/justprosh is the verified Git Author; landed tree equals reviewedc91, parent413f, maintainercoauthor and GitHubsignaturevalid. Main is91df1ba233593e53118c2e9184f5a13d1d0f8902. #1277 is CLOSED aftervalidateddelivery. #1244approvalwasalreadygranted; #1220remainsheldbyitsseparateoldcache-prefixevidence. No releaseorAppleaction.

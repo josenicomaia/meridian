@@ -1,0 +1,15 @@
+import type { ProxyConfig, ProxyInstance, ProxyServer } from "./types";
+export type { ProxyConfig, ProxyInstance, ProxyServer };
+export type { Transform, RequestContext, ResponseContext, TelemetryContext, SessionContext, ToolUseContext, ToolResultContext, ErrorContext, TransformHook, ObserveHook, } from "./transform";
+export { runTransformHook, runObserveHook, buildPipeline, createRequestContext } from "./transform";
+import { computeLineageHash, hashMessage, computeMessageHashes, type LineageResult } from "./session/lineage";
+import { clearSessionCache, getMaxSessionsLimit } from "./session/cache";
+export { initializeProxyBookkeeping } from "./session/bookkeeping/embedding";
+export type { ProxyBookkeepingHandle } from "./session/bookkeeping/embedding";
+export { computeLineageHash, hashMessage, computeMessageHashes };
+export { clearSessionCache, getMaxSessionsLimit };
+export type { LineageResult };
+export declare function createProxyServer(config?: Partial<ProxyConfig>): ProxyServer;
+export declare function installProxyProcessErrorHandlers(): void;
+export declare function startProxyServer(config?: Partial<ProxyConfig>): Promise<ProxyInstance>;
+//# sourceMappingURL=server.d.ts.map

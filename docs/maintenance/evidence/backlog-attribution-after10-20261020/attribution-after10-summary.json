@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "repo": "rynfar/meridian",
+    "main": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+    "generatedAt": "2026-10-20T23:24:14.119Z",
+    "outsidePullRequests": 341,
+    "merged": 88,
+    "open": 14,
+    "relandedUnderMaintainer": 137,
+    "relandedWithoutTrailer": 0,
+    "closedForMaintainerPr": 19,
+    "closedForMaintainerPrWithoutTrailer": 18,
+    "landedAsAuthorPrClosed": 43,
+    "mergedButMaintainerAuthor": 0,
+    "closedNotLanded": 40,
+    "closedNotLandedByOwnerWithoutComment": 4,
+    "authorshipStatements": 51,
+    "unmappedForeignCommits": 1
+  },
+  "current1219": [
+    {
+      "number": 1219,
+      "author": "justprosh",
+      "title": "feat(session): add opt-in SQLite bookkeeping with offline recovery",
+      "state": "MERGED",
+      "closedBy": "rynfar",
+      "forkGone": false,
+      "ownerComments": 0,
+      "class": "merged"
+    }
+  ],
+  "unchangedLegacyUnmapped": [
+    {
+      "via": 1209,
+      "landed": "0f2a4a541b3b7b14022317ecd9ffe14c149b8f1d",
+      "commit": "5f488d8ee7950babf60eb7e299cb2999f6a5cdc1",
+      "name": "Nate Berkopec"
+    }
+  ],
+  "note": "Mixed-author forwarded PRs additionally require their preserved per-commit manifests; aggregate PR-author counts alone are not credit proof. Initial stale-graph audit retained separately; corrected audit main matches GitHub91df."
+}
