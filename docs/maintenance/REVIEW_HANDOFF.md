@@ -1,3 +1,20 @@
+## Active backlog continuation, 2026-10-20 19:15 UTC
+
+This evidence branch is the current portable checkpoint; dated source checkpoints below are historical. The user's backlog goal remains ACTIVE. Continue independently actionable work without stopping at a merge checkpoint. No new release is authorized; Apple notarization remains deferred. The user's dirty root checkout and local main remain unchanged (12 original file hashes verified).
+
+Seven original PRs now have verified merges: #1419 (`a2c19dfa`), #1403 (`acb8d390`), #1395 (`30cc1d2d`), #1423 (`5187ee`), #1394 (`89f844bd`), #1406 (`90e93497`) and #1401 (`6f50d2f315f62369c99a9cd307e2beaa93440a6c`). #1404 and #1405 are closed after affected-flow validation. Separately, necessary owner harness PR #1431 (`e57dd9c3`) is merged; do not count it as removal from the original queue. Contributor Author credit is verified, including all22 retained objects in forwarded #1401. Main is `6f50d2f315f62369c99a9cd307e2beaa93440a6c`.
+
+- #1406: 7055/36/0 all25, typecheck/build and CI pass.17 qualified actual cases213 generations; older fixture errors retained. Its signed squash Author is Mohamed R. Khalil, with substantive maintainer coauthor. [Proof](evidence/1406-live-20261020/MERGED.md).
+- #1401: 7086/36/0 all25, typecheck/build,8greenCI+skip,20 actual cases234 generations. Real Linux OpenCode2.0.31/plugin+scrub0.2.3 and keyless Pi1.3.0 show baseline dropped replies/candidate retained both; separate rewinds pass both. Four Mac E41 modes and10 supported-client E42 source/pack cases pass. Same-grant distinct aliases prove profile history custody, not different subscriptions/quota failover. Original receipt publication CI race causally repaired; all failures preserved. [Proof](evidence/1401-history-20261020/README.md), [verified merge](evidence/1401-history-20261020/verified-merge.json).
+- #1428 is next: pure adapter/source/client-prompt behavior is account-agnostic. Old personal-account known-quota failure remains intact. Current original branch integrated main with signed additive `e5100bd4`; fresh local/CI gates are running. A new controlled healthy Team baseline/candidate comparison must retain exact reported model/client/SDK/platform and preserve old quota evidence; do not claim the old account recovered.
+- #1219 remains held on real libsql0.5.29/SQLite3.45.1 WAL-reset source provenance and broader actual migration/recovery/topology acceptance; cleanup/owner defects fixed and7968/63/0+allCI+installed native8case proof qualified. Source audit/GC proofs are in original #1219 and owner evidence #1414 bodies. No automatic SQLite activation.
+- #1397 old actual Sonnet5.5 upstream error is incompletely recorded; retain unknown, no blind model/account retry. #1410/#1399 old Opus5.5 model4.8/refusal and #1396 mixed-model cases remain unresolved. #1400 needs real spent allowance and healthy distinct pool, without artificial burn. #1340 exactlargefixture rejected by current input limit; smaller case does not reproduce.
+- Drafts and reporter/owner-deferred public contracts remain deferred; #650 sender dispatch tokens actually missing; #769 private exact trigger and #1094 exact affected payload/version remain missing. Scrub queues contain only separately unauthorized release PRs.
+
+Usage-display HTTP429 alone does not establish inference quota exhaustion. Truthful bounded included attempts may use fresh official active-profile confirmation with paid ExtraUsage disabled and explicitly unknown window capacity. Actual inference rejection/overage/unexpected identity stops dependent work; no OAuth refresh, paid usage, credential writes or old failed-case hold edits. Final-head local/CI and affected real flow are still merge gates.
+
+---
+
 ## STOP: contributor attribution — #1363 (2026-10-13)
 
 Read this before touching any contributor PR. Entries below that record credit

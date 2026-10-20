@@ -1,0 +1,221 @@
+{
+  "at": "2026-10-20T19:12:08.516512+00:00",
+  "head": "f923e9df3cf0c54a11f9a9df86ed5d95af5791a6",
+  "base": "e57dd9c3b795bbf0340c78b6f377799e5b8e0136",
+  "tree": "e81469ec71e7d07a4ce2cab08d0e1f74efce5270",
+  "introducedVerified": [
+    "8c096b592879660548bb71e02f43c339f36982e1",
+    "44a1343fcd41ff7724dee3c6591cf11fb93d2330",
+    "14d5213633e5cc24a498a48bdb0cf94cd4734ee8",
+    "b75bf73b16e0ea6d994bc192701e0f84c0df6230",
+    "8a53f0f8b787d7e343e159144b6d4ec54f1e928f",
+    "7c3295817737d50529e825f80973768a5077f54b",
+    "8fb34e0fbae54c3c52a720891dd7a097ebcdcb10",
+    "3ab7e8e334a24dc3e53dfac10a9dc6230a23860b",
+    "69a20f664cf6203afdd0d824561a980a3ef9d4c7",
+    "356eeb0b536d8e3859e8a6f5e5bd1a58d674f8ec",
+    "07f4fe9ed23070fbb5dc23ec40323975b3d8f5b3",
+    "32483870992ce3f953322cf6c1bf9bbdaede2469",
+    "1c2bd51dd940c082cdcfc85bdea31671edb650b0",
+    "41244e9b7a297a47d1719102fb0065a364f3baf5",
+    "14bf3ecb51af8992a67a031d209406b555c6fa49",
+    "7101bd0bc87942de40acc9c54821e4c489bcda75",
+    "414dd3222408bf4a7813d3c57cc495e6f7b6fc61",
+    "7d7c1e140d8f61653878806b553eba8d18a68857",
+    "71ab157fd73099de627fc8ecccc2940e803cc26e",
+    "92aa60944c833a5e1b00465e4d37c324f8f6c9f9",
+    "46ac9af191e2af104889d3b53615ffe0cb0f7c13",
+    "f923e9df3cf0c54a11f9a9df86ed5d95af5791a6"
+  ],
+  "signatureProtection": {
+    "url": "https://api.github.com/repos/rynfar/meridian/branches/main/protection/required_signatures",
+    "enabled": true
+  },
+  "protection": {
+    "url": "https://api.github.com/repos/rynfar/meridian/branches/main/protection",
+    "required_signatures": {
+      "url": "https://api.github.com/repos/rynfar/meridian/branches/main/protection/required_signatures",
+      "enabled": true
+    },
+    "enforce_admins": {
+      "url": "https://api.github.com/repos/rynfar/meridian/branches/main/protection/enforce_admins",
+      "enabled": false
+    },
+    "required_linear_history": {
+      "enabled": false
+    },
+    "allow_force_pushes": {
+      "enabled": false
+    },
+    "allow_deletions": {
+      "enabled": false
+    },
+    "block_creations": {
+      "enabled": false
+    },
+    "required_conversation_resolution": {
+      "enabled": false
+    },
+    "lock_branch": {
+      "enabled": false
+    },
+    "allow_fork_syncing": {
+      "enabled": false
+    }
+  },
+  "PR": {
+    "baseRefOid": "e57dd9c3b795bbf0340c78b6f377799e5b8e0136",
+    "headRefName": "dex/stale-copy-guard",
+    "headRefOid": "f923e9df3cf0c54a11f9a9df86ed5d95af5791a6",
+    "headRepositoryOwner": {
+      "id": "MDQ6VXNlcjY5NTgzMDA=",
+      "name": "passabilities.eth",
+      "login": "passabilities"
+    },
+    "mergeStateStatus": "CLEAN",
+    "state": "OPEN",
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T18:49:24Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39478067628/job/118819121076",
+        "name": "authorship",
+        "startedAt": "2026-10-20T18:49:17Z",
+        "status": "COMPLETED",
+        "workflowName": "Attribution"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T18:58:34Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39478072101/job/118819133019",
+        "name": "test",
+        "startedAt": "2026-10-20T18:49:19Z",
+        "status": "COMPLETED",
+        "workflowName": "CI"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T18:50:56Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39478072141/job/118819133305",
+        "name": "smoke",
+        "startedAt": "2026-10-20T18:49:19Z",
+        "status": "COMPLETED",
+        "workflowName": "Docker"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T18:49:44Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39478072111/job/118819133555",
+        "name": "build (.#checks.x86_64-linux.home)",
+        "startedAt": "2026-10-20T18:49:19Z",
+        "status": "COMPLETED",
+        "workflowName": "Nix installable builds"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T18:50:10Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39478072315/job/118819134376",
+        "name": "desktop-build (ubuntu-latest)",
+        "startedAt": "2026-10-20T18:49:19Z",
+        "status": "COMPLETED",
+        "workflowName": "desktop"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T18:50:41Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39478072315/job/118819134766",
+        "name": "desktop-build (macos-latest)",
+        "startedAt": "2026-10-20T18:49:23Z",
+        "status": "COMPLETED",
+        "workflowName": "desktop"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T18:51:16Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39478072101/job/118819132562",
+        "name": "windows-smoke",
+        "startedAt": "2026-10-20T18:49:19Z",
+        "status": "COMPLETED",
+        "workflowName": "CI"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T18:53:29Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39478072141/job/118819988077",
+        "name": "build-push",
+        "startedAt": "2026-10-20T18:50:59Z",
+        "status": "COMPLETED",
+        "workflowName": "Docker"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-20T18:49:15Z",
+        "conclusion": "SKIPPED",
+        "detailsUrl": "https://github.com/rynfar/meridian/actions/runs/39478072101/job/118819135218",
+        "name": "changelog-duplication",
+        "startedAt": "2026-10-20T18:49:16Z",
+        "status": "COMPLETED",
+        "workflowName": "CI"
+      }
+    ]
+  },
+  "local": {
+    "head": "f923e9df3cf0c54a11f9a9df86ed5d95af5791a6",
+    "base": "e57dd9c3b795bbf0340c78b6f377799e5b8e0136",
+    "started": "2026-10-20T18:49:40.206580+00:00",
+    "commands": [
+      {
+        "label": "typecheck",
+        "exit": 0
+      },
+      {
+        "label": "build",
+        "exit": 0
+      },
+      {
+        "label": "full",
+        "exit": 0
+      }
+    ],
+    "final": true,
+    "prior": "71ab7068/36/0all25; CIreceipt-openingracecausallyfixed;46acTSnarrowingerrorcaught/repairedbeforeanymodelattempt",
+    "correction": "Fixture-only atomic receipt publication, root argument narrowing preserved; no productcode/assertion/timeout/threshold change",
+    "exit": 0,
+    "finished": "2026-10-20T19:00:17.330028+00:00",
+    "totals": {
+      "pass": 7086,
+      "skip": 36,
+      "fail": 0
+    },
+    "invocations": 25,
+    "logSHA256": "9b36971406b33662b1f29cddb2cf73333783414dbcb4d50a3508e9e07e1cafaf"
+  },
+  "live": {
+    "qualifiedCases": 20,
+    "actualGenerations": 234,
+    "source": "f923e9df3cf0c54a11f9a9df86ed5d95af5791a6",
+    "baseline": "e57dd9c3b795bbf0340c78b6f377799e5b8e0136",
+    "local": {
+      "pass": 7086,
+      "skip": 36,
+      "fail": 0
+    },
+    "invocations": 25,
+    "CI": "8SUCCESS+expectedskip",
+    "introducedAuthoredObjects": 22,
+    "earlier18Unchanged": true,
+    "allSignaturesVerified": true,
+    "models": "PrimaryHaiku5.5, originalolderclientdetachedtitlecanuseexactHaiku4.5canonical20251001, eachboundtooriginalHTTPrequest/provider/native/publicSDK ID",
+    "grantsRemoved": true,
+    "olderHoldsUnchanged": true
+  },
+  "ownerRoute": "Approved1413commit-preservingneutralmerge;noadmin"
+}
