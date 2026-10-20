@@ -1,0 +1,17 @@
+# OpenCode one-shot prompt proof
+
+Original PR #1428 source `e5100bd4cf40804cb8799f5a85a63890fe668984` against unchanged main `6f50d2f315f62369c99a9cd307e2beaa93440a6c`. The adapter-boundary correction limits replacement system prompts to OpenCode one-shot title/summary requests with client prompts enabled. Ordinary turns, compaction, other adapters and client-prompt opt-outs keep their configured behavior.
+
+Final local gates:7091pass/36skip/0fail across25isolated invocations; focused/typecheck/build0;8executedCIchecksSUCCESS+expectedskip. Required test: https://github.com/rynfar/meridian/actions/runs/39481622366/job/118832718354
+
+22qualified actual cases,231real generations: actual pinned OpenCode2.0.31 on DebianLinuxarm64, SDK0.2.141/native2.1.301 and independently installed baseline/candidate packages; three pinned Macbeta title+summary baseline/candidate pairs; all4E41 modes on Macnative2.1.302;10supported-client E42 source/package cases. PrimaryHaiku5.5 and originalolderclientdetachedHaiku4.5 role/alias are checked against each originalrequest/provider/native/publicSDKmessage. Alloriginalactors/pipesjoined, allgrantsremoved, olderholdhashunchanged.
+
+The Linux baseline's actual detached title answered `NONE`; the candidate returned a descriptive title. Both retained all four primary/agent-switch turns. Native initialization records baseline append-domain versus candidate replacement-domain; actual title and summary hooks are present. Complete reports retain original responses from owned fixture prompts only.
+
+The original personal-account included-quota rejection remains unqualified and is not claimed recovered. The fix has no account or entitlement branches; the new controlled comparison uses one owned Team account throughout, fresh official active-profile metadata with paidExtraUsage disabled, explicitly unknown currentwindows and fixedattemptbounds. No OAuthrefresh, credentialwrite, usageendpointretry or billingchange.
+
+Two new zero-generation preflight failures are retained. A pinned beta submitted before asynchronous catalog adoption; controlled1000msdelay reproduces coldModelUnavailable and warmreadinesspasses, followed by actualsamebeta baseline/candidate passes. Later an unbounded firstHTTPreadiness fetch stalled despite independent boundedHTTPresponses; the originalclientstallcause remainsunknown. The verified ownedclient was stopped and originalactorsjoined with0queries. An exact bounded complete-response readiness helper passes controlled first-response timeout/second-readinesssuccess, joining both requests/server; the remaining cases use that helper. No claim that the client startup bug itself is fixed. One initially unjoined synthetic HTTP control was retained and corrected by resolving its originalrequest beforejoining.
+
+Exact reusable stable/beta titleharness scripts are committed separately in ownerPR #1432 (`980864bc4492e67168b6f204d665952052d6fca0`), keeping this contributor's branch free of evidence-only changes. The archive includes every executed controller/helper variant, complete metadata, causal controls, packageidentities, originalquota failure and originalPRarchive.
+
+Archive SHA256 `896a5c4e304d163202544763d53f9c2d4e2043f1a0a331e5d6e8111107e33710`,137180bytes,142regularfiles. Verify `manifest.sha256.json`, inspect the scripts, supply pinnedabsoluteclient/native/package paths and privateaccess-onlycredentials, and run in new isolateddirectories. No credentials/customertranscripts/privateSDKfiles included.
