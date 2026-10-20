@@ -1,0 +1,19 @@
+{
+  "head": "f97e6dbf05f82873d5759671a54010b5ad237f46",
+  "sha256": "44b70b20ef7e2fcc632b201938585d1807df1d474926c33ac6a073cbf105997e",
+  "bytes": 404124,
+  "files": 265,
+  "summary": {
+    "head": "f97e6dbf05f82873d5759671a54010b5ad237f46",
+    "base": "413f4b7c73dc25302b877404066767f599ac210e",
+    "local": {
+      "pass": 8016,
+      "skip": 63,
+      "fail": 0
+    },
+    "isolatedGroups": 26,
+    "packageSHA256": "dc52da980cd459149cfeb0ae3a691f978055f1299828b15f1d3b18cb0b7c11d3",
+    "models": 0,
+    "scope": "Packaged storage/operator acceptance only; actual model/client/native-engine gates remain open"
+  }
+}

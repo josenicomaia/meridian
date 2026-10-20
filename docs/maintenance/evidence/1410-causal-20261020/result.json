@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-20T20:56:00.937933+00:00",
+  "scriptSHA256": "c5b3fcdb5b8e736aa6b816733c32a5b5d1261e0cc3e26c68b82ae29099bf279c",
+  "result": "Historical mixed annotation confirmed in correct owned namespace; root cause remains unresolved",
+  "models": 0,
+  "newWorktrees": 0,
+  "currentHead": "45c25a2cd3031aa6a060a5012a7e740ebcfe1e29",
+  "currentMain": "413f4b7c73dc25302b877404066767f599ac210e",
+  "newFacts": [
+    "The original session still exists only in its expected owned-1410 namespace, with exact original fixture cwd.",
+    "The third response has messageID msg_011CgB3qSxfUCvf4hjiAAKgj shared by its thinking/tool_use fragments, both annotated Opus4.8; two preceding tool responses are Opus5.5.",
+    "Other two local namespace controls do not contain that session; this is not evidence of cross-namespace history contamination.",
+    "Public SDK projection cannot recover missing provider wire trace or raw original CLI error flags. No original executed-source snapshot existed; do not infer absence of old pin from post-run edited script.",
+    "Later separate model-boundary attempt2 has five real Opus5.5 provider/native/stored-correlated generations; it does not explain or overwrite this original failure."
+  ],
+  "disposition": "Retain actual acceptance hold; no live model retry made. Continue independently actionable1219 storage/operator validation."
+}
