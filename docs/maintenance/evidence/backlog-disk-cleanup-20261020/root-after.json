@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-20T20:09:04.172131+00:00",
+  "head": "446a0f1633be3a0cf36d8f1e9f222e914d2f7c83",
+  "allOriginal12FileHashesMatch": true,
+  "statusUnchanged": true,
+  "checks": {
+    "DESIGN.md": true,
+    "E2E.md": true,
+    "apps/desktop/README.md": true,
+    "apps/desktop/src/contracts.ts": true,
+    "apps/desktop/src/core.ts": true,
+    "apps/desktop/src/main.ts": true,
+    "apps/desktop/src/manager.ts": true,
+    "apps/desktop/src/renderer.ts": true,
+    "apps/desktop/src/style.css": true,
+    "apps/desktop/src/tray.css": true,
+    "apps/desktop/src/trayRenderer.ts": true,
+    "scripts/e2e-desktop-dock.cjs": true
+  }
+}

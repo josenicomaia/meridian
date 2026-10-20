@@ -1,0 +1,343 @@
+[
+  {
+    "path": "/private/tmp/meridian-1219-gc-baseline-20261020",
+    "action": "removed",
+    "head": "e8169b97aa06dd1e2af7122696db3b3a44e2784e",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-1219-gc-baseline-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:00.395964+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-1394-e84-main-20261020",
+    "action": "removed",
+    "head": "5187ee293917896d90bf9829ee90daf3d9680b9a",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-1394-e84-main-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:00.675365+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-1396-live-baseline",
+    "action": "removed",
+    "head": "095b4869b5fe386e2f3a273cc5b60ec3853c8659",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-1396-live-baseline",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:01.946304+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-1410-live-baseline",
+    "action": "removed",
+    "head": "095b4869b5fe386e2f3a273cc5b60ec3853c8659",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-1410-live-baseline",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:02.984748+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-backlog-review-20261018",
+    "action": "removed",
+    "head": "b9127448fb9c88fc1e44b06020935987c8677f79",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-backlog-review-20261018",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:04.077598+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-config-docs-20261019",
+    "action": "removed",
+    "head": "16cf313ec86e5159aa9ef35d2c9baf58306b22c0",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-config-docs-20261019",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:04.329023+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-e85-harness-20261020",
+    "action": "removed",
+    "head": "831abe32bf6321dfa74bd28056333aabf66be4e1",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-e85-harness-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:05.419229+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-forwarded-credit-20261018",
+    "action": "removed",
+    "head": "15f35f173d70d11c111da92081855bc36082ab0c",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-forwarded-credit-20261018",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:05.632205+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-issue1430-20261020",
+    "action": "removed",
+    "head": "89f844bde91c1f9d71b0943482a19668bb9c206c",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-issue1430-20261020",
+    "dirtyWorkRecovered": true,
+    "at": "2026-10-20T20:07:05.857568+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-issues-20261019-r2",
+    "action": "removed",
+    "head": "9b160722b9ecdb535e80283782ef5c66fae877a5",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-issues-20261019-r2",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:07.052233+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-logger-fixture-20261019",
+    "action": "removed",
+    "head": "b3ebc945d3b0d749e072df96ad76b74953cfebe4",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-logger-fixture-20261019",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:08.137637+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-main-1401-post1406-20261020",
+    "action": "removed",
+    "head": "6f50d2f315f62369c99a9cd307e2beaa93440a6c",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-main-1401-post1406-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:08.443160+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-main-1406-20261020",
+    "action": "removed",
+    "head": "89f844bde91c1f9d71b0943482a19668bb9c206c",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-main-1406-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:08.739360+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-main-controls-20261018",
+    "action": "removed",
+    "head": "095b4869b5fe386e2f3a273cc5b60ec3853c8659",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-main-controls-20261018",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:09.694740+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-main-priority-20261020",
+    "action": "removed",
+    "head": "19ff3bcac167cdcbbd91a6f79f7af07605a0ad99",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-main-priority-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:09.954630+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-overnight-baseline-20261019",
+    "action": "removed",
+    "head": "6c241a897bdc7ffe4c233d32270a17402b3528a0",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-overnight-baseline-20261019",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:11.003480+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-overnight-evidence-20261019",
+    "action": "removed",
+    "head": "81527b23584b588eb912fa9c3f62796c947e59f5",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-overnight-evidence-20261019",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:11.283280+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr-1377",
+    "action": "preserved",
+    "reason": "stale registration; cannot establish clean checkout"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1219-20261020",
+    "action": "removed",
+    "head": "5da7b6b40e2b2871c0f50313f59dc09e4c13806d",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1219-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:11.612456+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1220-20261019",
+    "action": "removed",
+    "head": "b1fffe4ac8118f52fec9d74555cae45f31332fb7",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1220-20261019",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:12.834556+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1243-20261020",
+    "action": "removed",
+    "head": "5198b68aea1eb648e3b5685285f2b1008ab827b4",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1243-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:14.090748+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1340-20261020",
+    "action": "removed",
+    "head": "bd5808f30aa2228998c3a665118383250c43022e",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1340-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:15.262824+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1394-20261020",
+    "action": "removed",
+    "head": "bca6d090848d700feee7c31d36a35bb8fd20aced",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1394-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:16.308460+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1395-20261020",
+    "action": "removed",
+    "head": "ea4c6a6f494b5a8897f31f76033bd60a8ec343a6",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1395-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:17.396494+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1398-20261018",
+    "action": "removed",
+    "head": "3ebbc740b2deac17347af55b0236e5f33429495e",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1398-20261018",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:18.475029+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1398-baseline-20261018",
+    "action": "removed",
+    "head": "095b4869b5fe386e2f3a273cc5b60ec3853c8659",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1398-baseline-20261018",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:18.688259+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1399-20261019",
+    "action": "removed",
+    "head": "7379cd4652af910897480bae3469f6c6e65c3025",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1399-20261019",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:19.799246+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1400-20261019",
+    "action": "removed",
+    "head": "2f17bf73d0b0974af229a9d1c8d12479bedcf8ec",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1400-20261019",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:20.886079+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1401-r2-20261019",
+    "action": "removed",
+    "head": "f923e9df3cf0c54a11f9a9df86ed5d95af5791a6",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1401-r2-20261019",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:21.955020+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1403-20261020",
+    "action": "removed",
+    "head": "2886e0000d9bd08301889e80a4e51b8a04d31efd",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1403-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:23.013408+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1406-20261019",
+    "action": "removed",
+    "head": "0eab35da83ca4e6eafde168c975e6a33c2210f44",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1406-20261019",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:24.166668+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1407-20261019",
+    "action": "removed",
+    "head": "a347cb288f833161155f40ce346b6e0f3802b588",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1407-20261019",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:25.232838+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1409-20261018",
+    "action": "removed",
+    "head": "2cc0256c6be71d4b1b19497e6592bd53439cc8f9",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1409-20261018",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:26.334272+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1410-correction-20261018",
+    "action": "removed",
+    "head": "45c25a2cd3031aa6a060a5012a7e740ebcfe1e29",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1410-correction-20261018",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:27.442341+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1419-20261019",
+    "action": "removed",
+    "head": "b55d569615ad92b58195d39865b041a8d8c553fb",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1419-20261019",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:28.542410+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1428-20261020",
+    "action": "removed",
+    "head": "e5100bd4cf40804cb8799f5a85a63890fe668984",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1428-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:29.594097+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1428-pack-20261020",
+    "action": "removed",
+    "head": "dba37e39932cd9e6a45b9874f060edc3cf0e2282",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1428-pack-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:31.203538+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-pr1429-20261020",
+    "action": "removed",
+    "head": "d4e61289bb8a6938a744a390603d6ee0f9fec7cd",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-pr1429-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:31.427979+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-release-1.84.0-20261019",
+    "action": "removed",
+    "head": "fae06f874116ed7ec2eafe58f89c6dc1813fe347",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-release-1.84.0-20261019",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:32.530686+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-release-evidence-20261019",
+    "action": "removed",
+    "head": "b8be84c6f671e66f30a4b55cf88ee0738e72c76c",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-release-evidence-20261019",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:32.793180+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-resume-main-20261020",
+    "action": "removed",
+    "head": "600095b55508fe418c141d66e2115a28df4ad5ef",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-resume-main-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:33.913804+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-title-harness-20261020",
+    "action": "removed",
+    "head": "61fa29329d78decb0ec30bf2a29bc13ee1dd469a",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-title-harness-20261020",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:35.656395+00:00"
+  },
+  {
+    "path": "/private/tmp/meridian-watchdog-fixture-20261019",
+    "action": "removed",
+    "head": "ee77d3c1a3f0ba10fcfda22900b79b6bf4533869",
+    "recoveryRef": "refs/maintenance/backlog-cleanup/20261020/meridian-watchdog-fixture-20261019",
+    "dirtyWorkRecovered": false,
+    "at": "2026-10-20T20:07:36.867097+00:00"
+  }
+]

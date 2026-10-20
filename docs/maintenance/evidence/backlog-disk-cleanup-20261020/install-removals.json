@@ -1,0 +1,269 @@
+[
+  {
+    "path": "/tmp/meridian-issue-r2-evidence/logger-linux-baseline/node_modules",
+    "KiB": 1386196,
+    "removed": true,
+    "at": "2026-10-20T20:07:44.413411+00:00"
+  },
+  {
+    "path": "/tmp/meridian-issue-r2-evidence/linux-final/node_modules",
+    "KiB": 578960,
+    "removed": true,
+    "at": "2026-10-20T20:07:45.009813+00:00"
+  },
+  {
+    "path": "/tmp/meridian-issue-r2-evidence/linux-candidate/node_modules",
+    "KiB": 578960,
+    "removed": true,
+    "at": "2026-10-20T20:07:45.681500+00:00"
+  },
+  {
+    "path": "/tmp/meridian-issue-r2-evidence/linux-baseline/node_modules",
+    "KiB": 578948,
+    "removed": true,
+    "at": "2026-10-20T20:07:46.365178+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1397-live-r2/packages/baseline-linux/node_modules",
+    "KiB": 573976,
+    "removed": true,
+    "at": "2026-10-20T20:07:47.089433+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1428-live-r2/packages/baseline-linux/node_modules",
+    "KiB": 573968,
+    "removed": true,
+    "at": "2026-10-20T20:07:47.731432+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1401-live/post1406-packages-r1/baseline-linux/node_modules",
+    "KiB": 573968,
+    "removed": true,
+    "at": "2026-10-20T20:07:48.499313+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1401-live/final-packages-r3/baseline-linux/node_modules",
+    "KiB": 573968,
+    "removed": true,
+    "at": "2026-10-20T20:07:49.092304+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1401-live/keyed-alias-offline-r1/baseline-linux/node_modules",
+    "KiB": 573964,
+    "removed": true,
+    "at": "2026-10-20T20:07:49.713853+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1428-live-r2/packages/candidate-linux/node_modules",
+    "KiB": 573960,
+    "removed": true,
+    "at": "2026-10-20T20:07:50.393189+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1397-live-r2/packages/candidate-linux/node_modules",
+    "KiB": 573960,
+    "removed": true,
+    "at": "2026-10-20T20:07:50.995247+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1428-linux-candidate/node_modules",
+    "KiB": 573956,
+    "removed": true,
+    "at": "2026-10-20T20:07:51.591459+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1401-linux-candidate/node_modules",
+    "KiB": 573952,
+    "removed": true,
+    "at": "2026-10-20T20:07:52.149127+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1401-live/keyed-alias-offline-r1/candidate-linux/node_modules",
+    "KiB": 573952,
+    "removed": true,
+    "at": "2026-10-20T20:07:52.759604+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1401-live/post1406-packages-r1/candidate-linux/node_modules",
+    "KiB": 573952,
+    "removed": true,
+    "at": "2026-10-20T20:07:53.399373+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1401-live/final-packages-r3/candidate-linux/node_modules",
+    "KiB": 573952,
+    "removed": true,
+    "at": "2026-10-20T20:07:54.130177+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1423-linux-candidate/node_modules",
+    "KiB": 573948,
+    "removed": true,
+    "at": "2026-10-20T20:07:54.756328+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1397-linux-candidate/node_modules",
+    "KiB": 573948,
+    "removed": true,
+    "at": "2026-10-20T20:07:55.201817+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1423-linux-baseline/node_modules",
+    "KiB": 573936,
+    "removed": true,
+    "at": "2026-10-20T20:07:55.789925+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1219-stock-node-owner-fence/install/node_modules",
+    "KiB": 523996,
+    "removed": true,
+    "at": "2026-10-20T20:07:56.407727+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1219-stock-node-package/candidate-install/node_modules",
+    "KiB": 523996,
+    "removed": true,
+    "at": "2026-10-20T20:07:57.013787+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1219-stock-node-package/baseline-install/node_modules",
+    "KiB": 523976,
+    "removed": true,
+    "at": "2026-10-20T20:07:57.778365+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1397-live-r2/packages/baseline-mac/node_modules",
+    "KiB": 523092,
+    "removed": true,
+    "at": "2026-10-20T20:07:58.401664+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1428-mac-candidate/node_modules",
+    "KiB": 523080,
+    "removed": true,
+    "at": "2026-10-20T20:07:59.043223+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1428-live-r2/packages/candidate-mac/node_modules",
+    "KiB": 523076,
+    "removed": true,
+    "at": "2026-10-20T20:07:59.649144+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1397-live-r2/packages/candidate-mac/node_modules",
+    "KiB": 523076,
+    "removed": true,
+    "at": "2026-10-20T20:08:00.273933+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1423-mac-candidate/node_modules",
+    "KiB": 523072,
+    "removed": true,
+    "at": "2026-10-20T20:08:00.807043+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1406-live/installed/node_modules",
+    "KiB": 523072,
+    "removed": true,
+    "at": "2026-10-20T20:08:01.445184+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1401-live/post1406-packages-r1/candidate-mac/node_modules",
+    "KiB": 523068,
+    "removed": true,
+    "at": "2026-10-20T20:08:02.003559+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/1401-live/final-packages-r3/candidate-mac/node_modules",
+    "KiB": 523068,
+    "removed": true,
+    "at": "2026-10-20T20:08:02.610572+00:00"
+  },
+  {
+    "path": "/tmp/meridian-release-20261019/registry-install/node_modules",
+    "KiB": 519900,
+    "removed": true,
+    "at": "2026-10-20T20:08:03.191030+00:00"
+  },
+  {
+    "path": "/tmp/meridian-release-20261019/pack-install/node_modules",
+    "KiB": 519900,
+    "removed": true,
+    "at": "2026-10-20T20:08:03.858621+00:00"
+  },
+  {
+    "path": "/tmp/meridian-release-20261019/baseline-install/node_modules",
+    "KiB": 519880,
+    "removed": true,
+    "at": "2026-10-20T20:08:04.272064+00:00"
+  },
+  {
+    "path": "/tmp/meridian-issue-r2-evidence/linux-2021/node_modules",
+    "KiB": 389524,
+    "removed": true,
+    "at": "2026-10-20T20:08:04.310542+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/opencode-beta-19271/node_modules",
+    "KiB": 178980,
+    "removed": true,
+    "at": "2026-10-20T20:08:04.340215+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/opencode-stable-2.0.21/node_modules",
+    "KiB": 175884,
+    "removed": true,
+    "at": "2026-10-20T20:08:04.379340+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/opencode-stable-2.0.16/node_modules",
+    "KiB": 174444,
+    "removed": true,
+    "at": "2026-10-20T20:08:04.412798+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/opencode-beta-18866/node_modules",
+    "KiB": 118284,
+    "removed": true,
+    "at": "2026-10-20T20:08:04.433332+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/opencode-beta-18314/node_modules",
+    "KiB": 117692,
+    "removed": true,
+    "at": "2026-10-20T20:08:04.444048+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/responses-tooling/node_modules",
+    "KiB": 33096,
+    "removed": true,
+    "at": "2026-10-20T20:08:04.736554+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/scrub-tooling/node_modules",
+    "KiB": 72,
+    "removed": true,
+    "at": "2026-10-20T20:08:04.739159+00:00"
+  },
+  {
+    "path": "/tmp/meridian-resume-20261020/npm-cache",
+    "KiB": 473980,
+    "kind": "isolated package cache",
+    "removed": true,
+    "at": "2026-10-20T20:08:04.931449+00:00"
+  },
+  {
+    "path": "/tmp/meridian-issue-r2-evidence/linux-runtime/.npm",
+    "KiB": 858892,
+    "kind": "isolated package cache",
+    "removed": true,
+    "at": "2026-10-20T20:08:05.230752+00:00"
+  },
+  {
+    "path": "/tmp/meridian-issue-r2-evidence/logger-linux-home/.bun",
+    "KiB": 1134712,
+    "kind": "isolated package cache",
+    "removed": true,
+    "at": "2026-10-20T20:08:06.590975+00:00"
+  }
+]

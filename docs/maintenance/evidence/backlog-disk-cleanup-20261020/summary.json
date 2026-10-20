@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-20T20:09:34.475162+00:00",
+  "worktreesRemoved": 42,
+  "generatedInstallOrCacheTreesRemoved": 44,
+  "internalFreeBeforeApproxGiB": 43,
+  "internalFreeAfterGiB": 65.93,
+  "internalReclaimedApproxGiB": 22.9,
+  "sizeCaveat": "Before value rounded by df -h; APFS clone/shared blocks mean logical du bytes are not reclaimed physical bytes. Concurrent unrelated writes can also affect df.",
+  "rootOriginal12FileHashesPreserved": true,
+  "rootHEADPreserved": "446a0f1633be3a0cf36d8f1e9f222e914d2f7c83",
+  "ownedTaskWorktreesKept": 3,
+  "staleWorktreePreserved": "Old pr1377 checkout has missing tracked files and cannot be established clean. Left untouched; recovery Git ref pinned.",
+  "docker": "No Meridian-named containers or images and zero Docker build cache; no owned live test actors. Other project containers/images/volumes preserved. All previous owned containers used --rm.",
+  "recoveryRefs": "refs/maintenance/backlog-cleanup/20261020/*",
+  "unfinishedOwnWork": "Issue1430 four files saved as verified full-source XZ plus binary patch. Patch applied to exact HEAD in an isolated temporary directory; all file hashes matched.",
+  "policy": [
+    "Keep only current candidate, current baseline and evidence worktree for this queue.",
+    "After each completed item, retain durable sanitized proof and pinned commits, then remove its worktrees and obsolete generated installs. Recreate held source from pinned refs when needed.",
+    "Use Docker --rm with task-specific ownership. Stop and join original children/pipes, then remove only that task resources. Never global-prune unrelated project data.",
+    "Preserve root checkout, user/other-thread worktrees and active dependency targets."
+  ]
+}
