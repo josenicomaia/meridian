@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-20T18:21:56.662023+00:00",
+  "pr": {
+    "author": {
+      "id": "U_kgDOEX3jxQ",
+      "is_bot": false,
+      "login": "mradwankhalil",
+      "name": "Mohamed R. Khalil"
+    },
+    "headRefOid": "0eab35da83ca4e6eafde168c975e6a33c2210f44",
+    "mergeCommit": {
+      "oid": "90e934976d760e9c3af68c2c0eccffdb8a6fd061"
+    },
+    "mergedAt": "2026-10-20T18:21:47Z",
+    "state": "MERGED",
+    "url": "https://github.com/rynfar/meridian/pull/1406"
+  },
+  "sha": "90e934976d760e9c3af68c2c0eccffdb8a6fd061",
+  "tree": "6d22269df5a92c3c5c11e704a14456f4d0fe9df9",
+  "parent": "89f844bde91c1f9d71b0943482a19668bb9c206c",
+  "signature": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJq17E6CRC1aQ7uu5UhlAAANXIQAG/sk73hLx9n5pBO0bOSsu9f\nEjRv7Lk3epnwdhHnsb7CVg81ysHfSwYFBV0EFM5nFzwhit+31eermMkk06KIR0vZ\neDlB//x1dQ+S9w5vPKL01K5vzjwRbFVQ+1fzRfDk216hKoZczvlB/gHmI6XLs3vI\nMhhdl8KEyjV+I6F3pXgXa2T+LwStv5DayimdjKlz6q+1X0oM1ZlZGds6sykPrdCS\nSjL65JKrNH//USD5HiQFcVSvKlFmaOaUCNsIhtrvK7baWDXbYC1ARtBIJCzXXH/Z\nYlOE9sApImR53WEVPb6hc3uJqsIlw/fPDNITkNvdfibD/xAOoQp/IpUGapjlO2uG\n+5UrquRA+PBkKFvTjj2bjO4QJgBdqPPDP5mG+H1/WoCaFodcD2/k+GIqQrx6JlSi\nqwFkWLhUPOflHPQpHFYyYWa4He2RpiINZsosNCdrz3M4P+0jUbcHHWkW8oIJ09up\nzsyRpmz0B9TOvjR0jgrynU2VkOcgCQI5v3HWK3LdH3TPRMN95HQCbdu0Mom4cA06\nIWUGoR3/rbtogCTiihyZRen5VnLef8QrjuNde3EJMeCwOIavuiqESHwiTE6i7+Z7\nDPbInztml4A9OV0yeFVmVVF13XxvQAKUHw5LvuIrDfiFXpcW5auY9c6i4peFv3Bf\n4WRqV2ZcIrcWE55WoAZ2\n=uJI6\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree 6d22269df5a92c3c5c11e704a14456f4d0fe9df9\nparent 89f844bde91c1f9d71b0943482a19668bb9c206c\nauthor Mohamed R. Khalil <m.radwan.khalil@gmail.com> 1792520506 +0300\ncommitter GitHub <noreply@github.com> 1792520506 -0600\n\nfix: isolate client-owned passthrough from proxy-host settings and MCP discovery (#1406)\n\nCo-authored-by: Trevor Walker <rynfar@gmail.com>",
+    "verified_at": "2026-10-20T18:21:46Z"
+  },
+  "author": {
+    "name": "Mohamed R. Khalil",
+    "email": "m.radwan.khalil@gmail.com",
+    "date": "2026-10-20T18:21:46Z"
+  },
+  "gitAuthorAndTree": "Mohamed R. Khalil <m.radwan.khalil@gmail.com>\n2026-10-20T21:21:46+03:00\n6d22269df5a92c3c5c11e704a14456f4d0fe9df9\nfix: isolate client-owned passthrough from proxy-host settings and MCP discovery (#1406)\n\nCo-authored-by: Trevor Walker <rynfar@gmail.com>\n",
+  "sourceContributorPreservedAsAuthor": true,
+  "mainReachabilityVerified": true,
+  "localAndCI": "7055/36/0all25 type/build0,8green+expectedskip exact0eab",
+  "actual": "17qualifiedcases213generations plus2retainedunqualifiedfixturegens; originalactorsjoined/grantsdeleted; allolderholdsunchanged"
+}
