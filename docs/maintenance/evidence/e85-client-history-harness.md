@@ -41,7 +41,14 @@ For a newly authorized live task, replace `--aliases` with `--live` and set
 `E2E_ALLOW_LIVE_MODEL=1`, `E2E_USAGE_GUARD_FILE` and `E2E_LIVE_PROFILE_FILE`. The
 access-only grant must be a mode-0600 JSON array with one `oauth-token` profile
 and no refresh token. The guard must carry a timestamp less than five minutes
-old, `canInfer: true`, `extraUsageEnabled: false` and `refreshes: 0`. Credentials
+old, an active organization, `profileExtraUsageEnabled: false`, `refreshes: 0`
+and `credentialWrites: 0`. A known-capacity record has `canInfer: true`,
+`extraUsageEnabled: false` and both current usage windows below exhaustion.
+When the usage display is rate-limited, an explicitly authorized bounded attempt
+may instead carry `includedAttemptPermitted: true`, `includedCapacityKnown: false`
+and `maximumGenerationsPerCase` from 1 to 12. The evidence keeps capacity labelled
+unknown and enforces that lower request bound. Paid usage must remain freshly
+disabled; the record never refreshes credentials or invents fresh usage windows. Credentials
 are read before the probe isolates its environment; they are never printed.
 The two aliases deliberately share that grant. This tests profile namespace
 custody, not distinct subscriptions, quota exhaustion or failover eligibility.

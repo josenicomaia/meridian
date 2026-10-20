@@ -1,7 +1,7 @@
 {
-  "sourceSHA256": "59d0e30d66f42d6ab7e105b1d0a99d88ba54646993b57530b86213835b5b30b6",
-  "baseline": "89f844bde91c1f9d71b0943482a19668bb9c206c",
-  "candidate": "7d7c1e140d8f61653878806b553eba8d18a68857",
+  "sourceSHA256": "3a1380d29bda284d51ab0446c1f47381f4707e2565f56b8f2c61115776a2b7b3",
+  "baseline": "90e934976d760e9c3af68c2c0eccffdb8a6fd061",
+  "candidate": "71ab157fd73099de627fc8ecccc2940e803cc26e",
   "scope": "Actual installed Linux clients/SDK/native; scripted loopback API, zero real models",
   "versions": {
     "node": "24.20.0",
@@ -104,5 +104,11 @@
       "providerNativeStoredCorrelated": true
     }
   ],
-  "missing": "Actual-model acceptance, E41 and supported-client gates on final product combination remain with PR1401."
+  "missing": "Actual-model acceptance, E41 and supported-client gates on final product combination remain with PR1401.",
+  "admissionHelperSHA256": "f31f294161348dc2763015670d54d86b160c71e79ad0af855e4db2d46140c78c",
+  "admissionBoundaryControls": {
+    "pass": 18,
+    "fail": 0,
+    "scope": "Pure known-capacity versus truthful bounded unknown-capacity, paid status, timestamp, credential side effects and generation limits"
+  }
 }

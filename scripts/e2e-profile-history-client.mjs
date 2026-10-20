@@ -14,6 +14,7 @@ import {randomBytes,randomUUID,createHash} from 'node:crypto'
 import {pathToFileURL} from 'node:url'
 import {resolveOpenCodeScrub,configureOpenCodeScrub,verifyOpenCodeScrub} from './lib-opencode-scrub-preflight.mjs'
 import {observeChildClosure,stopAndJoinChild} from './lib/e2eProcessCustody.mjs'
+import {validateProfileHistoryAdmission} from './lib/profileHistoryAdmission.mjs'
 
 assert(!process.versions.bun,'Run with Node to observe original subprocess handles')
 const repo=resolve(process.env.E2E_MERIDIAN_ROOT??'.'), client=process.env.E2E_OPENCODE_BIN, native=process.env.E2E_NATIVE_BIN
@@ -40,15 +41,14 @@ const childWitnesses=new Map()
 async function bounded(promise,ms,label){let timer;try{return await Promise.race([promise,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(label)),ms)})])}finally{clearTimeout(timer)}}
 const consoleMethods=['log','debug','warn','error'],originalConsole=Object.fromEntries(consoleMethods.map(name=>[name,console[name]]))
 for(const name of consoleMethods)console[name]=(...args)=>{const line=args.map(String).join(' '),match=line.match(/^\[PROXY\] (\S+) adapter=(\S+)/);if(match)report.proxyRequestLines.push({requestId:match[1],adapter:match[2],profile:line.match(/profile=([^\s(]+)/)?.[1],lineage:line.match(/lineage=(\S+)/)?.[1],diverged:line.match(/diverged=(\S+)/)?.[1]})}
-let stopped=false
+let stopped=false,maximumGenerations=12
 let profiles
 if(live){
  assert.equal(process.env.E2E_ALLOW_LIVE_MODEL,'1')
  const guardPath=process.env.E2E_USAGE_GUARD_FILE
  const guard=JSON.parse(readFileSync(guardPath,'utf8'))
- assert(guard.canInfer&&guard.extraUsageEnabled===false&&guard.refreshes===0,'Fresh read-only included-usage guard required')
- assert(Number.isFinite(Date.parse(guard.at))&&Date.now()-Date.parse(guard.at)>=0&&Date.now()-Date.parse(guard.at)<300000,'Usage observation is older than five minutes')
- report.usageGuard={extraUsageEnabled:guard.extraUsageEnabled,windows:guard.windows}
+ const admission=validateProfileHistoryAdmission(guard);maximumGenerations=admission.maximumGenerations
+ report.usageGuard={...admission,...(admission.includedCapacityKnown?{windows:guard.windows}:{})}
  const grant=process.env.E2E_LIVE_PROFILE_FILE
  assert.equal(statSync(grant).mode&0o077,0)
  const granted=JSON.parse(readFileSync(grant,'utf8'))
@@ -115,7 +115,7 @@ const handleUpstream=async(req,res,ownedProfile)=>{
    body=json??JSON.parse(payload)
    const text=JSON.stringify(body.messages),turns=[...text.matchAll(/OWNED_RETURN_TRIP_TURN_(\d)/g)].map(m=>Number(m[1]))
    row={turn:turns.length?Math.max(...turns):null,primary:JSON.stringify(body.system).includes(primarySystem),model:body.model,systemHasCanary:JSON.stringify(body.system).includes(nonce),historyPresent:text.includes(history),profile:ownedProfile??String(req.headers['x-api-key']??'').replace('owned-loopback-',''),payloadText:text}
-   if(diagnose||stopped||url.pathname!='/v1/messages'||body.model!==model||report.provider.length>=12){
+   if(diagnose||stopped||url.pathname!='/v1/messages'||body.model!==model||report.provider.length>=maximumGenerations){
     transport.deniedBeforeForward=true;stopped=true;report.diagnosticStop=diagnose
     res.writeHead(400,{'content-type':'application/json'});res.end(JSON.stringify({type:'error',error:{type:'invalid_request_error',message:'Owned probe model/attempt boundary reached'}}))
     if(server)void stopAndJoinChild(server,childWitnesses.get(server),{graceMs:2000,forceMs:3000});return
