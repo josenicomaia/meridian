@@ -1,0 +1,108 @@
+{
+  "sourceSHA256": "59d0e30d66f42d6ab7e105b1d0a99d88ba54646993b57530b86213835b5b30b6",
+  "baseline": "89f844bde91c1f9d71b0943482a19668bb9c206c",
+  "candidate": "7d7c1e140d8f61653878806b553eba8d18a68857",
+  "scope": "Actual installed Linux clients/SDK/native; scripted loopback API, zero real models",
+  "versions": {
+    "node": "24.20.0",
+    "platform": "Linux arm64 Debian",
+    "sdk": "0.2.141",
+    "native": "2.1.301",
+    "OpenCode": "2.0.31",
+    "scrub": "0.2.3",
+    "Pi": "1.3.0"
+  },
+  "cases": [
+    {
+      "flow": "keyed",
+      "label": "baseline",
+      "result": "EXPECTED_BASELINE_FAILURE",
+      "joined": true,
+      "foreignAnswersOnReturn": [
+        false,
+        false
+      ],
+      "clientFinalReplyRecalls": [
+        false,
+        false
+      ],
+      "providerNativeStoredCorrelated": true
+    },
+    {
+      "flow": "keyed",
+      "label": "candidate",
+      "result": "PASS",
+      "joined": true,
+      "foreignAnswersOnReturn": [
+        true,
+        true
+      ],
+      "clientFinalReplyRecalls": [
+        true,
+        true
+      ],
+      "providerNativeStoredCorrelated": true
+    },
+    {
+      "flow": "rewind",
+      "label": "baseline",
+      "result": "PASS",
+      "joined": true,
+      "foreignAnswersOnReturn": [
+        false,
+        false
+      ],
+      "clientFinalReplyRecalls": [
+        false,
+        false
+      ],
+      "providerNativeStoredCorrelated": true
+    },
+    {
+      "flow": "rewind",
+      "label": "candidate",
+      "result": "PASS",
+      "joined": true,
+      "foreignAnswersOnReturn": [
+        false,
+        false
+      ],
+      "clientFinalReplyRecalls": [
+        false,
+        false
+      ],
+      "providerNativeStoredCorrelated": true
+    },
+    {
+      "flow": "pi",
+      "label": "baseline",
+      "result": "EXPECTED_BASELINE_FAILURE",
+      "joined": true,
+      "foreignAnswersOnReturn": [
+        false,
+        false
+      ],
+      "clientFinalReplyRecalls": [
+        false,
+        false
+      ],
+      "providerNativeStoredCorrelated": true
+    },
+    {
+      "flow": "pi",
+      "label": "candidate",
+      "result": "PASS",
+      "joined": true,
+      "foreignAnswersOnReturn": [
+        true,
+        true
+      ],
+      "clientFinalReplyRecalls": [
+        true,
+        true
+      ],
+      "providerNativeStoredCorrelated": true
+    }
+  ],
+  "missing": "Actual-model acceptance, E41 and supported-client gates on final product combination remain with PR1401."
+}
