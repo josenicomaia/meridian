@@ -52,11 +52,12 @@ const spawn=cp.spawn
 cp.spawn=function(...args){
  const child=spawn.apply(this,args),row={pid:child.pid,closed:false,stdoutClosed:!child.stdout,stderrClosed:!child.stderr};report.actors.push(row)
  child.once('close',(code,signal)=>Object.assign(row,{closed:true,code,signal}));child.stdout?.once('close',()=>row.stdoutClosed=true);child.stderr?.once('close',()=>row.stderrClosed=true)
- // Observe bytes only when the real consumer reads them. Adding a data
- // listener here could put the SDK stream into flowing mode before its parser.
- if(child.stdout){const read=child.stdout.read,decoder=new StringDecoder('utf8');let pending=''
-  child.stdout.read=function(...readArgs){const bytes=read.apply(this,readArgs)
-   if(bytes!==null){pending+=typeof bytes==='string'?bytes:decoder.write(bytes)
+ // Observe each emitted chunk in place without adding a data listener or
+ // changing flowing mode. The native transport can emit directly from its
+ // pipe, bypassing Readable.read; forwarding emit preserves its consumer.
+ if(child.stdout){const emit=child.stdout.emit,decoder=new StringDecoder('utf8');let pending=''
+  child.stdout.emit=function(event,...eventArgs){
+   if(event==='data'){const bytes=eventArgs[0];pending+=typeof bytes==='string'?bytes:decoder.write(bytes)
     if(pending.length>1048576){report.nativeObservationFailure='Native observation line exceeded bound';stopped=true;pending=''}
     let end;while((end=pending.indexOf('\n'))>=0){const line=pending.slice(0,end);pending=pending.slice(end+1);let value;try{value=JSON.parse(line)}catch{continue}
      let entry
@@ -66,7 +67,7 @@ cp.spawn=function(...args){
      if(entry){report.nativeModels.push({...entry,pid:child.pid,session:value.session_id});if(typeof entry.model==='string'&&entry.model!==model){report.nativeModelMismatch=true;stopped=true}}
      if(value.type==='result')for(const actualModel of Object.keys(value.modelUsage??{})){report.nativeModels.push({type:'result_usage',model:actualModel,pid:child.pid,session:value.session_id});if(actualModel!==model){report.nativeModelMismatch=true;stopped=true}}
     }
-   }return bytes
+   }return emit.call(this,event,...eventArgs)
   }
  }
  return child
