@@ -1,0 +1,11 @@
+{
+  "mode": "json",
+  "models": 0,
+  "node": "v22.22.3",
+  "platform": "darwin",
+  "arch": "arm64",
+  "result": "PASS",
+  "root": "/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-clear-installed-rkjbcE",
+  "completionPromise": true,
+  "fixtureRemoved": true
+}

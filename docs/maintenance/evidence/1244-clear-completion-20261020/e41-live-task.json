@@ -1,0 +1,284 @@
+{
+  "task": "clear-completion-e41-sonnet55",
+  "head": "78974b54d042398dfda1bdace7eb3b4235152e43",
+  "base": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+  "scriptSHA256": {
+    "/tmp/meridian-resume-20261020/clear-completion/qualified-e41/run-e41.mjs": "d3db40ac4628f07d48db2148f4434893cb22468ccf2b59bc175551c06864dec9",
+    "/tmp/meridian-resume-20261020/clear-completion/qualified-e41/e41-model-observer.mjs": "d706efaf51d1f07943d9ab926f6e51dbadb2b36d2499306bb61dfd4931488e2f",
+    "/tmp/meridian-resume-20261020/clear-completion/create-e41-pool-grant.mjs": "82e09d8090d06404132dba200523a5f5a54e23b1c8b9ed52faec1ad6cdcfa6ae",
+    "/tmp/meridian-resume-20261020/clear-completion/run-e41-live.py": "98f71a4010e934274c925a4d8c490cfe96c43ac8f6616a161b8eda51ce183e17"
+  },
+  "cases": [
+    {
+      "case": "e41-chain-json-clear-sonnet55-r1",
+      "started": "2026-10-20T23:52:18.142774+00:00",
+      "admission": {
+        "at": "2026-10-20T23:52:18.135Z",
+        "task": "clear-completion-e41-sonnet55",
+        "profileHTTP": 200,
+        "organizationPlanActive": true,
+        "profileExtraUsageEnabled": false,
+        "refreshes": 0,
+        "credentialWrites": 0,
+        "includedCapacityKnown": false,
+        "includedAttemptPermitted": true,
+        "maximumGenerationsPerCase": 12,
+        "maximumCases": 4,
+        "distinctAccounts": 1,
+        "permittedInferenceProfileIds": [
+          "pool-a"
+        ],
+        "checks": [
+          {
+            "ordinal": 1,
+            "profileId": "pool-a",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "8ced9a14b71b9acc1007f917ad6968621e88d86bba0c665a0339af4995b66c31",
+            "permittedInference": true,
+            "capacity": "unknown; explicitboundedattempt"
+          }
+        ],
+        "usageEndpointRetries": 0,
+        "authorizationBasis": "User-authorized #1244/#1277 clearSessionCache completion correction and ordinary E41 regression for SQL bookkeeping, actual Sonnet5.5/SDK0.2.141/native2.1.302 on current final source. Only Team read-only access; paid ExtraUsage disabled and included capacity explicitly unknown. Twelve-generation-per-case bound, four modes. Original all held failures preserved; no pool/failover/quota-recovery claim."
+      },
+      "originalControllerPID": 24362,
+      "cacheClear": {
+        "completionPromise": true,
+        "durableMappingsCleared": true,
+        "freshSession": true,
+        "originalHistoryUnchanged": true,
+        "originalSessionId": "e3f1ed76-903d-47c3-bcaa-a5a3fe331e5d",
+        "freshSessionId": "6f48d8c0-9169-489c-a716-8614a75430c5"
+      },
+      "bookkeeping": {
+        "backend": "sqlite",
+        "engine": {
+          "version": "3.53.4",
+          "sourceId": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+        },
+        "directory": "/private/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-probe-proxy-14l9t6/meridian-store"
+      },
+      "exit": 0,
+      "result": {
+        "root": "/private/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-probe-proxy-14l9t6",
+        "result": "PASS",
+        "joined": true
+      },
+      "originalAssertions": "PASS",
+      "generations": 6,
+      "realForwards": 6,
+      "joined": true,
+      "correlated": true,
+      "stopped": null,
+      "qualified": true,
+      "fixtureRemoved": true
+    },
+    {
+      "case": "e41-chain-stream-clear-sonnet55-r1",
+      "started": "2026-10-20T23:52:44.470656+00:00",
+      "admission": {
+        "at": "2026-10-20T23:52:44.466Z",
+        "task": "clear-completion-e41-sonnet55",
+        "profileHTTP": 200,
+        "organizationPlanActive": true,
+        "profileExtraUsageEnabled": false,
+        "refreshes": 0,
+        "credentialWrites": 0,
+        "includedCapacityKnown": false,
+        "includedAttemptPermitted": true,
+        "maximumGenerationsPerCase": 12,
+        "maximumCases": 4,
+        "distinctAccounts": 1,
+        "permittedInferenceProfileIds": [
+          "pool-a"
+        ],
+        "checks": [
+          {
+            "ordinal": 1,
+            "profileId": "pool-a",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "8ced9a14b71b9acc1007f917ad6968621e88d86bba0c665a0339af4995b66c31",
+            "permittedInference": true,
+            "capacity": "unknown; explicitboundedattempt"
+          }
+        ],
+        "usageEndpointRetries": 0,
+        "authorizationBasis": "User-authorized #1244/#1277 clearSessionCache completion correction and ordinary E41 regression for SQL bookkeeping, actual Sonnet5.5/SDK0.2.141/native2.1.302 on current final source. Only Team read-only access; paid ExtraUsage disabled and included capacity explicitly unknown. Twelve-generation-per-case bound, four modes. Original all held failures preserved; no pool/failover/quota-recovery claim."
+      },
+      "originalControllerPID": 36473,
+      "cacheClear": {
+        "completionPromise": true,
+        "durableMappingsCleared": true,
+        "freshSession": true,
+        "originalHistoryUnchanged": true,
+        "originalSessionId": "a8b3a640-9a41-49d8-90eb-5794d4a7d7b2",
+        "freshSessionId": "3f451c7e-1ab1-4677-a610-9fdd7d638e6f"
+      },
+      "bookkeeping": {
+        "backend": "sqlite",
+        "engine": {
+          "version": "3.53.4",
+          "sourceId": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+        },
+        "directory": "/private/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-probe-proxy-45fxi8/meridian-store"
+      },
+      "exit": 0,
+      "result": {
+        "root": "/private/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-probe-proxy-45fxi8",
+        "result": "PASS",
+        "joined": true
+      },
+      "originalAssertions": "PASS",
+      "generations": 6,
+      "realForwards": 6,
+      "joined": true,
+      "correlated": true,
+      "stopped": null,
+      "qualified": true,
+      "fixtureRemoved": true
+    },
+    {
+      "case": "e41-parallel-json-clear-sonnet55-r1",
+      "started": "2026-10-20T23:53:11.113359+00:00",
+      "admission": {
+        "at": "2026-10-20T23:53:11.109Z",
+        "task": "clear-completion-e41-sonnet55",
+        "profileHTTP": 200,
+        "organizationPlanActive": true,
+        "profileExtraUsageEnabled": false,
+        "refreshes": 0,
+        "credentialWrites": 0,
+        "includedCapacityKnown": false,
+        "includedAttemptPermitted": true,
+        "maximumGenerationsPerCase": 12,
+        "maximumCases": 4,
+        "distinctAccounts": 1,
+        "permittedInferenceProfileIds": [
+          "pool-a"
+        ],
+        "checks": [
+          {
+            "ordinal": 1,
+            "profileId": "pool-a",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "8ced9a14b71b9acc1007f917ad6968621e88d86bba0c665a0339af4995b66c31",
+            "permittedInference": true,
+            "capacity": "unknown; explicitboundedattempt"
+          }
+        ],
+        "usageEndpointRetries": 0,
+        "authorizationBasis": "User-authorized #1244/#1277 clearSessionCache completion correction and ordinary E41 regression for SQL bookkeeping, actual Sonnet5.5/SDK0.2.141/native2.1.302 on current final source. Only Team read-only access; paid ExtraUsage disabled and included capacity explicitly unknown. Twelve-generation-per-case bound, four modes. Original all held failures preserved; no pool/failover/quota-recovery claim."
+      },
+      "originalControllerPID": 69933,
+      "cacheClear": {
+        "completionPromise": true,
+        "durableMappingsCleared": true,
+        "freshSession": true,
+        "originalHistoryUnchanged": true,
+        "originalSessionId": "a8c3b2b2-e45b-4604-99c4-402e2de2b363",
+        "freshSessionId": "aac2e083-cee1-46a2-989b-7aac54b7d869"
+      },
+      "bookkeeping": {
+        "backend": "sqlite",
+        "engine": {
+          "version": "3.53.4",
+          "sourceId": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+        },
+        "directory": "/private/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-probe-proxy-FuXEX6/meridian-store"
+      },
+      "exit": 0,
+      "result": {
+        "root": "/private/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-probe-proxy-FuXEX6",
+        "result": "PASS",
+        "joined": true
+      },
+      "originalAssertions": "PASS",
+      "generations": 4,
+      "realForwards": 4,
+      "joined": true,
+      "correlated": true,
+      "stopped": null,
+      "qualified": true,
+      "fixtureRemoved": true
+    },
+    {
+      "case": "e41-parallel-stream-clear-sonnet55-r1",
+      "started": "2026-10-20T23:53:29.842936+00:00",
+      "admission": {
+        "at": "2026-10-20T23:53:29.838Z",
+        "task": "clear-completion-e41-sonnet55",
+        "profileHTTP": 200,
+        "organizationPlanActive": true,
+        "profileExtraUsageEnabled": false,
+        "refreshes": 0,
+        "credentialWrites": 0,
+        "includedCapacityKnown": false,
+        "includedAttemptPermitted": true,
+        "maximumGenerationsPerCase": 12,
+        "maximumCases": 4,
+        "distinctAccounts": 1,
+        "permittedInferenceProfileIds": [
+          "pool-a"
+        ],
+        "checks": [
+          {
+            "ordinal": 1,
+            "profileId": "pool-a",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "8ced9a14b71b9acc1007f917ad6968621e88d86bba0c665a0339af4995b66c31",
+            "permittedInference": true,
+            "capacity": "unknown; explicitboundedattempt"
+          }
+        ],
+        "usageEndpointRetries": 0,
+        "authorizationBasis": "User-authorized #1244/#1277 clearSessionCache completion correction and ordinary E41 regression for SQL bookkeeping, actual Sonnet5.5/SDK0.2.141/native2.1.302 on current final source. Only Team read-only access; paid ExtraUsage disabled and included capacity explicitly unknown. Twelve-generation-per-case bound, four modes. Original all held failures preserved; no pool/failover/quota-recovery claim."
+      },
+      "originalControllerPID": 78866,
+      "cacheClear": {
+        "completionPromise": true,
+        "durableMappingsCleared": true,
+        "freshSession": true,
+        "originalHistoryUnchanged": true,
+        "originalSessionId": "5980e108-5956-427a-ac93-93331495a0bb",
+        "freshSessionId": "2eec6fce-5e22-451b-ad75-3dbc08c18324"
+      },
+      "bookkeeping": {
+        "backend": "sqlite",
+        "engine": {
+          "version": "3.53.4",
+          "sourceId": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+        },
+        "directory": "/private/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-probe-proxy-t8pUHl/meridian-store"
+      },
+      "exit": 0,
+      "result": {
+        "root": "/private/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-probe-proxy-t8pUHl",
+        "result": "PASS",
+        "joined": true
+      },
+      "originalAssertions": "PASS",
+      "generations": 4,
+      "realForwards": 4,
+      "joined": true,
+      "correlated": true,
+      "stopped": null,
+      "qualified": true,
+      "fixtureRemoved": true
+    }
+  ],
+  "result": "PASS",
+  "scope": "Explicit SQL backend plus all four original E41 assertions, actual Sonnet5.5/SDK0.2.141/native2.1.302, V1 client plugin and scrub0.2.3, Macarm64; protocol host, not OpenCode executable",
+  "localFullStatusAtStart": null,
+  "localFullIsStillMergeGate": true,
+  "resourcePolicy": "Current source/deps reused, no new installs/worktrees. Only sanitized report/model metadata retained; all joined fixture homes removed.",
+  "grantRemoved": true,
+  "olderHoldsUnchanged": true
+}

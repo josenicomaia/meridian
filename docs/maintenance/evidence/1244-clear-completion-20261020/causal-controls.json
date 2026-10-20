@@ -1,0 +1,16 @@
+{
+  "mutantsRejected": [
+    {
+      "name": "unguarded-cache-hooks",
+      "exit": 1,
+      "log": "unguarded-cache-hooks.log"
+    },
+    {
+      "name": "reset-after-await",
+      "exit": 1,
+      "log": "reset-after-await.log"
+    }
+  ],
+  "sourceBytesRestored": true,
+  "sha256": "d27c9ccf758a7282e8313a11d43187ec770472acce9c20dfc2651755da818559"
+}

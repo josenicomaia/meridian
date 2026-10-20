@@ -1,0 +1,12 @@
+{
+  "cause": "Creator retained the sealed prior task prefix for its grant and admission paths; controller refused missing current admission before host/model start.",
+  "models": 0,
+  "casesStarted": 0,
+  "sourceChanges": false,
+  "oldPrivateGrantRemoved": true,
+  "oldAdmissionRestoredFrom": "1219-native-engine-r4/e41-live-task.json cases[-1].admission",
+  "overwrittenAdmissionSHA256": "931b38731c28c1a760a690feeed4a96a66c68bca41abd4fd5a694ccf5087e89a",
+  "restoredAdmissionSHA256": "fe0769b845a4d33fbf34108bd66899c61e913d08f9d2ae7a13cfd8f79547ab16",
+  "emptyFixtureRemoved": true,
+  "correction": "All creator private/task paths now use clear-completion prefix; no prior attempt or hold is cleared."
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "Partial: local full suite and final-head CI remain pending",
+  "head": "78974b54d042398dfda1bdace7eb3b4235152e43",
+  "base": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+  "at": "2026-10-20T23:55:48.380414+00:00",
+  "archive": {
+    "files": 60,
+    "bytes": 1816324,
+    "sha256": "0c7e4088bf3096b953754a72a4b892c9e3637506583f15ea68c473929d2fdc9f"
+  },
+  "models": 20,
+  "allFourModesPassed": true,
+  "allFixturesJoinedAndRemoved": true
+}

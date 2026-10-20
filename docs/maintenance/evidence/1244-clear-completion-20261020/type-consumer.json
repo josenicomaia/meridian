@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-20T23:52:36.611233+00:00",
+  "cases": [
+    {
+      "label": "before",
+      "exit": 2,
+      "archiveSHA256": "17740db38f9ff727c54c477469824538306afb9ae0256f8937729991f58a0d09",
+      "clearDeclaration": "export declare function clearSessionCache(): void;"
+    },
+    {
+      "label": "after",
+      "exit": 0,
+      "archiveSHA256": "79aceeee61efa7d8ed668c3873fabe737fe2280d10a6cf0ec6e3d108d4ec2fbf",
+      "clearDeclaration": "export declare function clearSessionCache(): Promise<void>;"
+    }
+  ]
+}
