@@ -1,0 +1,247 @@
+{
+  "result": "PASS",
+  "models": 0,
+  "cases": [
+    {
+      "case": "baseline-json-100",
+      "exit": 0,
+      "originalPID": 14,
+      "originalJoined": true,
+      "report": {
+        "sourceSHA": "413f4b7c73dc25302b877404066767f599ac210e",
+        "backend": "json",
+        "count": 100,
+        "runtime": "Bun 1.4.3",
+        "platform": "linux",
+        "filesystem": "owned Linux TMPFS",
+        "models": 0,
+        "networkAttempts": 0,
+        "scope": "Synthetic Meridian mapping/ledger metadata only; no SDK transcript files or inference",
+        "seedMappingBytes": 947871,
+        "seedLedgerBytes": 34217,
+        "results": {
+          "mappingMutations": 20,
+          "mappingPayloadBytes": 18959243,
+          "mappingChanges": 20,
+          "noOpCalls": 5,
+          "noOpPayloadBytes": 0,
+          "noOpReplacements": 0,
+          "noOpGenerationUnchanged": true,
+          "changedLocatorAdvancesGeneration": true,
+          "staleGenerationRejectedWithoutPublication": true,
+          "lifecycleLeaseMutations": 40,
+          "lifecyclePayloadBytes": 1748600
+        },
+        "retainedMappings": 100,
+        "retainedResources": 100,
+        "result": "PASS",
+        "fixtureRemoved": true
+      }
+    },
+    {
+      "case": "baseline-json-900",
+      "exit": 0,
+      "originalPID": 35,
+      "originalJoined": true,
+      "report": {
+        "sourceSHA": "413f4b7c73dc25302b877404066767f599ac210e",
+        "backend": "json",
+        "count": 900,
+        "runtime": "Bun 1.4.3",
+        "platform": "linux",
+        "filesystem": "owned Linux TMPFS",
+        "models": 0,
+        "networkAttempts": 0,
+        "scope": "Synthetic Meridian mapping/ledger metadata only; no SDK transcript files or inference",
+        "seedMappingBytes": 8533471,
+        "seedLedgerBytes": 308617,
+        "results": {
+          "mappingMutations": 20,
+          "mappingPayloadBytes": 170671243,
+          "mappingChanges": 20,
+          "noOpCalls": 5,
+          "noOpPayloadBytes": 0,
+          "noOpReplacements": 0,
+          "noOpGenerationUnchanged": true,
+          "changedLocatorAdvancesGeneration": true,
+          "staleGenerationRejectedWithoutPublication": true,
+          "lifecycleLeaseMutations": 40,
+          "lifecyclePayloadBytes": 15698800
+        },
+        "retainedMappings": 900,
+        "retainedResources": 900,
+        "result": "PASS",
+        "fixtureRemoved": true
+      }
+    },
+    {
+      "case": "candidate-json-100",
+      "exit": 0,
+      "originalPID": 52,
+      "originalJoined": true,
+      "report": {
+        "sourceSHA": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+        "backend": "json",
+        "count": 100,
+        "runtime": "Bun 1.4.3",
+        "platform": "linux",
+        "filesystem": "owned Linux TMPFS",
+        "models": 0,
+        "networkAttempts": 0,
+        "scope": "Synthetic Meridian mapping/ledger metadata only; no SDK transcript files or inference",
+        "seedMappingBytes": 947871,
+        "seedLedgerBytes": 34217,
+        "results": {
+          "mappingMutations": 20,
+          "mappingPayloadBytes": 18959243,
+          "mappingChanges": 20,
+          "noOpCalls": 5,
+          "noOpPayloadBytes": 0,
+          "noOpReplacements": 0,
+          "noOpGenerationUnchanged": true,
+          "changedLocatorAdvancesGeneration": true,
+          "staleGenerationRejectedWithoutPublication": true,
+          "lifecycleLeaseMutations": 40,
+          "lifecyclePayloadBytes": 1748600
+        },
+        "retainedMappings": 100,
+        "retainedResources": 100,
+        "result": "PASS",
+        "fixtureRemoved": true
+      }
+    },
+    {
+      "case": "candidate-json-900",
+      "exit": 0,
+      "originalPID": 71,
+      "originalJoined": true,
+      "report": {
+        "sourceSHA": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+        "backend": "json",
+        "count": 900,
+        "runtime": "Bun 1.4.3",
+        "platform": "linux",
+        "filesystem": "owned Linux TMPFS",
+        "models": 0,
+        "networkAttempts": 0,
+        "scope": "Synthetic Meridian mapping/ledger metadata only; no SDK transcript files or inference",
+        "seedMappingBytes": 8533471,
+        "seedLedgerBytes": 308617,
+        "results": {
+          "mappingMutations": 20,
+          "mappingPayloadBytes": 170671243,
+          "mappingChanges": 20,
+          "noOpCalls": 5,
+          "noOpPayloadBytes": 0,
+          "noOpReplacements": 0,
+          "noOpGenerationUnchanged": true,
+          "changedLocatorAdvancesGeneration": true,
+          "staleGenerationRejectedWithoutPublication": true,
+          "lifecycleLeaseMutations": 40,
+          "lifecyclePayloadBytes": 15697720
+        },
+        "retainedMappings": 900,
+        "retainedResources": 900,
+        "result": "PASS",
+        "fixtureRemoved": true
+      }
+    },
+    {
+      "case": "candidate-sqlite-100",
+      "exit": 0,
+      "originalPID": 88,
+      "originalJoined": true,
+      "report": {
+        "sourceSHA": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+        "backend": "sqlite",
+        "count": 100,
+        "runtime": "Bun 1.4.3",
+        "platform": "linux",
+        "filesystem": "owned Linux TMPFS",
+        "models": 0,
+        "networkAttempts": 0,
+        "scope": "Synthetic Meridian mapping/ledger metadata only; no SDK transcript files or inference",
+        "seedMappingBytes": 947871,
+        "seedLedgerBytes": 34217,
+        "migrationOriginalChildJoined": true,
+        "engine": {
+          "version": "3.53.4",
+          "sourceId": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+        },
+        "results": {
+          "mappingMutations": 20,
+          "mappingPayloadBytes": 366712,
+          "mappingChanges": 0,
+          "noOpCalls": 5,
+          "noOpPayloadBytes": 0,
+          "noOpReplacements": 0,
+          "noOpGenerationUnchanged": true,
+          "changedLocatorAdvancesGeneration": true,
+          "staleGenerationRejectedWithoutPublication": true,
+          "lifecycleLeaseMutations": 40,
+          "lifecyclePayloadBytes": 494400
+        },
+        "retainedMappings": 100,
+        "retainedResources": 100,
+        "result": "PASS",
+        "fixtureRemoved": true
+      }
+    },
+    {
+      "case": "candidate-sqlite-900",
+      "exit": 0,
+      "originalPID": 128,
+      "originalJoined": true,
+      "report": {
+        "sourceSHA": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+        "backend": "sqlite",
+        "count": 900,
+        "runtime": "Bun 1.4.3",
+        "platform": "linux",
+        "filesystem": "owned Linux TMPFS",
+        "models": 0,
+        "networkAttempts": 0,
+        "scope": "Synthetic Meridian mapping/ledger metadata only; no SDK transcript files or inference",
+        "seedMappingBytes": 8533471,
+        "seedLedgerBytes": 308617,
+        "migrationOriginalChildJoined": true,
+        "engine": {
+          "version": "3.53.4",
+          "sourceId": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc"
+        },
+        "results": {
+          "mappingMutations": 20,
+          "mappingPayloadBytes": 370832,
+          "mappingChanges": 0,
+          "noOpCalls": 5,
+          "noOpPayloadBytes": 0,
+          "noOpReplacements": 0,
+          "noOpGenerationUnchanged": true,
+          "changedLocatorAdvancesGeneration": true,
+          "staleGenerationRejectedWithoutPublication": true,
+          "lifecycleLeaseMutations": 40,
+          "lifecyclePayloadBytes": 494400
+        },
+        "retainedMappings": 900,
+        "retainedResources": 900,
+        "result": "PASS",
+        "fixtureRemoved": true
+      }
+    }
+  ],
+  "heads": {
+    "baseline": "413f4b7c73dc25302b877404066767f599ac210e",
+    "candidate": "91df1ba233593e53118c2e9184f5a13d1d0f8902"
+  },
+  "started": "2026-10-20T23:21:06.185470+00:00",
+  "harnessSHA256": "d17eadff077c34b31b7a91a31a7bdad7fa0005f94740b3c0536f237eff77b79f",
+  "resourcePolicy": "Source snapshots/read-only existing dependencies; one owned TMPFS case at a time; no installs or new worktrees",
+  "sqlGrowthRatiosForNinefoldUnrelatedHistory": {
+    "mappingPayloadBytes": 1.0112349745849605,
+    "lifecyclePayloadBytes": 1.0
+  },
+  "defaultJSONStillFullDocument": true,
+  "metric": "JSON replacement payload bytes versus appended SQLite WAL bytes; not physical device writes or an SSD benchmark",
+  "runnerHomeRemoved": true,
+  "finished": "2026-10-20T23:21:10.494333+00:00"
+}

@@ -1,0 +1,198 @@
+{
+  "at": "2026-10-20T23:24:25.412011+00:00",
+  "files": [
+    {
+      "path": "baseline-json-100.log",
+      "bytes": 147,
+      "sha256": "6e3c054154276c41121e18d1b0e7797ae739f314b136cd98dc2c64c225d0a917"
+    },
+    {
+      "path": "case-r4.mjs",
+      "bytes": 7357,
+      "sha256": "d17eadff077c34b31b7a91a31a7bdad7fa0005f94740b3c0536f237eff77b79f"
+    },
+    {
+      "path": "case.mjs",
+      "bytes": 7214,
+      "sha256": "73c07db58cb8d5a0ce79ef7108a8a0cb629b07892a68749b0bf2d8ceef34d1a3"
+    },
+    {
+      "path": "docker-result.json",
+      "bytes": 229,
+      "sha256": "22a8c103d857bb007fc60c3069591fa4db6f7b72a9caf12fa8fc9c4f11e8b24d"
+    },
+    {
+      "path": "docker.log",
+      "bytes": 142,
+      "sha256": "09cd7a988226f1f74ff1b7bb17183df904ac1cf89da956571c41788fac4b9202"
+    },
+    {
+      "path": "preparation.json",
+      "bytes": 355,
+      "sha256": "0f58ff92787a1428250d3342389d8ac3353a5ee7f81b1da79468d5f78b25b11d"
+    },
+    {
+      "path": "r2/docker-result.json",
+      "bytes": 229,
+      "sha256": "3fb2a14f8408b33b573dfc036fb7db22847aa4ed002295ee043b87c17477a641"
+    },
+    {
+      "path": "r2/docker.log",
+      "bytes": 300,
+      "sha256": "488267489e0ecefcd8efe139ccae1a8defeb92a1f940f711b957a84bdc2febe3"
+    },
+    {
+      "path": "r3/baseline-json-100.log",
+      "bytes": 720,
+      "sha256": "16e16f8a08d778763611584b650cfe5f344d107c2be7a29929cefb55a87c7ce6"
+    },
+    {
+      "path": "r3/baseline-json-900.log",
+      "bytes": 724,
+      "sha256": "43641aaf7205d49aceacc56e037fd30e05758f18a25a06fdd63a815d6101e142"
+    },
+    {
+      "path": "r3/candidate-json-100.log",
+      "bytes": 720,
+      "sha256": "8829604eb0b8b0dfa5800aad1dcf02017ee1e42d31a326181bdb6565c34c2bc9"
+    },
+    {
+      "path": "r3/candidate-json-900.log",
+      "bytes": 724,
+      "sha256": "6a0f0533ea72f83211f69bf3a84232937da13376470fb10ae76295b55f2790d5"
+    },
+    {
+      "path": "r3/candidate-sqlite-100.log",
+      "bytes": 906,
+      "sha256": "c597ffaee170b6ee17cb21bb385e9d71cd917f00f7917d6859229ebfd8aa10c7"
+    },
+    {
+      "path": "r3/candidate-sqlite-900.log",
+      "bytes": 908,
+      "sha256": "6692da15b58b155065e5f233362dde3f70ebca37cc98372c6b47789bcb2c3797"
+    },
+    {
+      "path": "r3/docker-result.json",
+      "bytes": 229,
+      "sha256": "3ecacd004172b4589a9541ddf011c52f8faa2ac4d84e9c0cfea6d729420fc78e"
+    },
+    {
+      "path": "r3/docker.log",
+      "bytes": 3107,
+      "sha256": "00d3b4203b4bb46251621cd7ad656f6b5af6a1ad2bf49a6bf47070ad10698d62"
+    },
+    {
+      "path": "r3/linux-library.json",
+      "bytes": 590,
+      "sha256": "0e3069083c218d1de81a00846077a50fd9f45396a6307dc7024e723efdf09178"
+    },
+    {
+      "path": "r3/result.json",
+      "bytes": 8285,
+      "sha256": "720dffc6927b2a9f68f292df6641dfdf6b2f1c8bf3506d766514908772790083"
+    },
+    {
+      "path": "r4/baseline-json-100.log",
+      "bytes": 744,
+      "sha256": "6a8e91ce35ffc0143eeda13eafd4fcf7db54236036af2b07afe22022758e4f0e"
+    },
+    {
+      "path": "r4/baseline-json-900.log",
+      "bytes": 748,
+      "sha256": "66fc602cba91f598ebcb57d16713837962773eefeca987ff571ac4994c3f68c8"
+    },
+    {
+      "path": "r4/candidate-json-100.log",
+      "bytes": 744,
+      "sha256": "b697646d4e5e2c6183fe8900eb764db87ad88d573880df3ad447886ad411b3a5"
+    },
+    {
+      "path": "r4/candidate-json-900.log",
+      "bytes": 748,
+      "sha256": "6b5776a220cf92aa61e4a0353c3116da38905abec86d41e727fac85c581fed92"
+    },
+    {
+      "path": "r4/candidate-sqlite-100.log",
+      "bytes": 906,
+      "sha256": "c597ffaee170b6ee17cb21bb385e9d71cd917f00f7917d6859229ebfd8aa10c7"
+    },
+    {
+      "path": "r4/candidate-sqlite-900.log",
+      "bytes": 908,
+      "sha256": "6692da15b58b155065e5f233362dde3f70ebca37cc98372c6b47789bcb2c3797"
+    },
+    {
+      "path": "r4/docker-result.json",
+      "bytes": 229,
+      "sha256": "d20626c9a3c6f7a8b190b6dde7ae3427333e68fcd4221496d2cdc9403fb44622"
+    },
+    {
+      "path": "r4/docker.log",
+      "bytes": 3107,
+      "sha256": "4483923e453beaf65837465381e8de2f7f5e01b7c51f41ab2197823ef871990c"
+    },
+    {
+      "path": "r4/linux-library.json",
+      "bytes": 590,
+      "sha256": "0e3069083c218d1de81a00846077a50fd9f45396a6307dc7024e723efdf09178"
+    },
+    {
+      "path": "r4/result.json",
+      "bytes": 8421,
+      "sha256": "f22bb1ee460772e5a247f6a5632e071ccd08b1a6e88a763458130858adfb26b6"
+    },
+    {
+      "path": "result.json",
+      "bytes": 687,
+      "sha256": "17cbebafdd4de2fd1a263f1097714e9d83839323f00969c2d977a5e1d706205b"
+    },
+    {
+      "path": "run-docker-r2.py",
+      "bytes": 1601,
+      "sha256": "380f9c386f12008f77d3f7a73e4192a3862513e013e018c12c1ec1974b8d6cab"
+    },
+    {
+      "path": "run-docker-r3.py",
+      "bytes": 1601,
+      "sha256": "34f82f728f767d9a3ae23333cf477be8c9de9a16edc0f09053cb901946432d1c"
+    },
+    {
+      "path": "run-docker-r4.py",
+      "bytes": 1601,
+      "sha256": "1596e2db2b5d3b0ab549a040e492282e98b23eb109913b3b66dbe27d3e7ef5b3"
+    },
+    {
+      "path": "run-docker.py",
+      "bytes": 1592,
+      "sha256": "cf368a7a5bdd204efc022a7a8defd36b49941aa560e6d7419f707234842a9c81"
+    },
+    {
+      "path": "run-inside-r2.py",
+      "bytes": 4630,
+      "sha256": "be97bbde349dd3ddf32383c2a7008f60793f31ef82e5ff963b142699afe25406"
+    },
+    {
+      "path": "run-inside-r3.py",
+      "bytes": 4960,
+      "sha256": "3936c870f06e02f0f98e5d4167745664185e881ac8ff050e2cbb3de206db9a2b"
+    },
+    {
+      "path": "run-inside-r4.py",
+      "bytes": 4966,
+      "sha256": "1055dd1c095390a74862ff5d81530ecc317af8b205b04e6e6e40bec7ed48c0b0"
+    },
+    {
+      "path": "run-inside.py",
+      "bytes": 3144,
+      "sha256": "2ad6776fcb990a4d49729c9094f128701acbf13f3762dc57482d0c86ea55bb04"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 2213,
+      "sha256": "4904314e1e5ffe3a3fd9e5714b41e0516340b9def4af52639b1f05c361e18252"
+    }
+  ],
+  "sourceSnapshotsExcluded": "Recreate exact src/bin/package.json archives at the recorded Git SHAs; existing dependency tree is read-only, matching Linux native package extracted only in disposable TMPFS",
+  "archiveSHA256": "b874a82d96ffcda12b5e1f5f40ae7780df148d5b20120093989c7c1f76964e92",
+  "archiveBytes": 8076
+}

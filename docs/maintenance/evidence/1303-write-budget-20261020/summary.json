@@ -1,0 +1,75 @@
+{
+  "heads": {
+    "baseline": "413f4b7c73dc25302b877404066767f599ac210e",
+    "candidate": "91df1ba233593e53118c2e9184f5a13d1d0f8902"
+  },
+  "result": "PASS",
+  "models": 0,
+  "sqlGrowthRatiosForNinefoldUnrelatedHistory": {
+    "mappingPayloadBytes": 1.0112349745849605,
+    "lifecyclePayloadBytes": 1.0
+  },
+  "metric": "JSON replacement payload bytes versus appended SQLite WAL bytes; not physical device writes or an SSD benchmark",
+  "cases": [
+    {
+      "case": "baseline-json-100",
+      "sourceSHA": "413f4b7c73dc25302b877404066767f599ac210e",
+      "retainedMappings": 100,
+      "retainedResources": 100,
+      "mappingBytes": 18959243,
+      "lifecycleBytes": 1748600,
+      "noOpBytes": 0,
+      "generationChecks": true
+    },
+    {
+      "case": "baseline-json-900",
+      "sourceSHA": "413f4b7c73dc25302b877404066767f599ac210e",
+      "retainedMappings": 900,
+      "retainedResources": 900,
+      "mappingBytes": 170671243,
+      "lifecycleBytes": 15698800,
+      "noOpBytes": 0,
+      "generationChecks": true
+    },
+    {
+      "case": "candidate-json-100",
+      "sourceSHA": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+      "retainedMappings": 100,
+      "retainedResources": 100,
+      "mappingBytes": 18959243,
+      "lifecycleBytes": 1748600,
+      "noOpBytes": 0,
+      "generationChecks": true
+    },
+    {
+      "case": "candidate-json-900",
+      "sourceSHA": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+      "retainedMappings": 900,
+      "retainedResources": 900,
+      "mappingBytes": 170671243,
+      "lifecycleBytes": 15697720,
+      "noOpBytes": 0,
+      "generationChecks": true
+    },
+    {
+      "case": "candidate-sqlite-100",
+      "sourceSHA": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+      "retainedMappings": 100,
+      "retainedResources": 100,
+      "mappingBytes": 366712,
+      "lifecycleBytes": 494400,
+      "noOpBytes": 0,
+      "generationChecks": true
+    },
+    {
+      "case": "candidate-sqlite-900",
+      "sourceSHA": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+      "retainedMappings": 900,
+      "retainedResources": 900,
+      "mappingBytes": 370832,
+      "lifecycleBytes": 494400,
+      "noOpBytes": 0,
+      "generationChecks": true
+    }
+  ]
+}

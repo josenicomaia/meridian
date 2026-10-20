@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-20T23:12:27.325631+00:00",
+  "heads": {
+    "baseline": "413f4b7c73dc25302b877404066767f599ac210e",
+    "candidate": "91df1ba233593e53118c2e9184f5a13d1d0f8902"
+  },
+  "scope": "Source-only old/new main archive fixtures; shared read-only existing dependency tree; no extra worktree/install; owned Linux TMPFS metadata only, no models"
+}
