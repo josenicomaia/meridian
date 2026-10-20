@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-20T20:28:50.600191+00:00",
+  "head": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+  "base": "3667a1555e104d0d82fee180eedfde68ab218390",
+  "result": "PASS",
+  "productFit": "Priority attempts must keep the request abort subscription until its admission owner finishes; otherwise nonstream disconnect, watchdog and parent subtree cancellation retain native/model work. No public plugin interface, model choice, retry policy, timeout, database/schema or routing preference changes.",
+  "inspection": [
+    "Read final three ownership guards plus all surrounding adopted-link/stream/handler finalizers and admission ownership. Direct in-process links still detach at their owner; adopted links remain for the outer admission lifetime.",
+    "Reviewed seven-file final diff, public interface boundaries, downward dependencies, error/cleanup and concurrency paths. Original main stable UI/release settings untouched.",
+    "Real ordinary E41 all four modes preserves exact call/result batching, one real answer per tool call, unchanged parent histories, distinct durable forks and >=95% cache prefix continuity. Exact provider/native/original-child/public-stored IDs correlate for all sixteen E41 generations.",
+    "Final packaged Mac/Linux installs verified byte-for-byte against the exact f60 tarball; SDK0.2.141 andlibsql0.5.29 unchanged. First four Mac core cases on acbe have identical production source subtree to final f60 (only manual harness/docs added).",
+    "Original forwarded ten commit objects remain unchanged and every final14introduced GitHub signature is valid. Owner-approved1413 neutral merge route preserves actual =DEX/Noah Author and dates without rewriting or squashing."
+  ],
+  "findingsResolved": [
+    {
+      "finding": "Direct app.fetch mock streaming cancellation is not the same as current real Node HTTP streaming relay; queue/stream/literalEscape were already working on currentmain.",
+      "resolution": "Clarified test comment; require queued and literal Escape controls to PASS both heads. Live Mac/Linux nonstream/watchdog/subtree give causal baseline reds/candidate passes. No blanket allcancellation-broken claim."
+    },
+    {
+      "finding": "Original actual recorder catch referenced row outside its scope, hiding method/status/modelcount.",
+      "resolution": "Exact Node aborted-HEAD peer-close zero-model control reproduces crash, scoped recorder handles it and joins original actors. Original historical unknown stays unknown and all older failure holds unchanged; no claimed external rejection/quota recovery."
+    },
+    {
+      "finding": "Initial offline recorder returned before original native pipe closure; generic watchdog fixture lacked real session identity; queue incorrectly expected red.",
+      "resolution": "Original custody helper now joins exit/close/stdout/stderr including execFile; actual metadata session_id arms lease/watchdog; queue requires positive before/after. Original failed reports and exact before scripts retained."
+    },
+    {
+      "finding": "Linux disposable Node container lacks machine-id, so real proxy correctly refuses startup; driver discarded captured startup error when report was absent.",
+      "resolution": "Fresh valid per-container machine-id generated as established Linux probes do, without bypassing the startupguard. Driver persists captured host diagnostics even if no report. Exact causal startup failure and corrected eight-case preflight preserved; zero real models."
+    },
+    {
+      "finding": "Temporary worktrees, package installs and native home/session roots accumulated.",
+      "resolution": "42 worktrees,44 generated dependency/cachetrees and18completed native roots removed; original git commits pinned and dirty root preserved. Current committed strict harness removes only its joined fixture, reports outsidefixture retained; Linux tasks --rm. No new PR/worktree created for this escrow."
+    }
+  ],
+  "evidence": {
+    "actualCases": 24,
+    "actualGenerations": 44,
+    "exactModel": "claude-sonnet-5-5",
+    "localFull": {
+      "pass": 7098,
+      "skip": 36,
+      "fail": 0
+    },
+    "all25IsolatedBunGroups": true,
+    "typecheck": 0,
+    "build": 0,
+    "executedCISuccess": 8,
+    "expectedCISkip": 1
+  },
+  "limitations": [
+    "Linux arm64 native2.1.301; Mac arm64native2.1.302. No actual Windows/Linuxx64 claim.",
+    "Queue/stream/literalEscape already work on current baseline and remain positive regression controls.",
+    "Provider HTTPstream closure and original native teardown observed; no invoice-level billing proof.",
+    "Historical old recorder attempt upstream/method/modelcount remains UNKNOWN; all old holds unchanged.",
+    "Real twoaccount pool includes one known-exhausted denied spare; only sameTeamactualinference. No twohealthyaccount/quota recovery/failover claim."
+  ],
+  "remainingMergeGates": [
+    "Durable sanitized final proof remote verification",
+    "Immediate fresh GitHub head/base/checks/mergeability recheck; exact match neutral merge then verify tree, parent, signatures and all14retained objects"
+  ]
+}

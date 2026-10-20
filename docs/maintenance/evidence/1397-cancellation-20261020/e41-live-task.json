@@ -1,0 +1,218 @@
+{
+  "task": "1397-e41-sonnet55",
+  "head": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+  "base": "3667a1555e104d0d82fee180eedfde68ab218390",
+  "scriptSHA256": {
+    "/tmp/meridian-resume-20261020/1397-live-r2/qualified-e41/run-e41.mjs": "5aece7625454d5ee98819bf6a7c63f952e4e1ccc750503fe51c648a49f32f951",
+    "/tmp/meridian-resume-20261020/1397-live-r2/qualified-e41/e41-model-observer.mjs": "d706efaf51d1f07943d9ab926f6e51dbadb2b36d2499306bb61dfd4931488e2f",
+    "/tmp/meridian-resume-20261020/1397-live-r2/create-e41-pool-grant.mjs": "0ddb6f35b68c329c057b78cebc2be0142f111c0699a1dffc6ee3a0746bc08b9d",
+    "/tmp/meridian-resume-20261020/1397-live-r2/run-e41-live.py": "c52e603b17127a7b6ef18f66e4f2e464811ed233a2ad822f89d11c8f08c87f17"
+  },
+  "cases": [
+    {
+      "case": "e41-chain-json-sonnet55-r1",
+      "started": "2026-10-20T20:25:54.119926+00:00",
+      "admission": {
+        "at": "2026-10-20T20:25:54.116Z",
+        "task": "1397-e41-sonnet55",
+        "profileHTTP": 200,
+        "organizationPlanActive": true,
+        "profileExtraUsageEnabled": false,
+        "refreshes": 0,
+        "credentialWrites": 0,
+        "includedCapacityKnown": false,
+        "includedAttemptPermitted": true,
+        "maximumGenerationsPerCase": 12,
+        "maximumCases": 4,
+        "distinctAccounts": 1,
+        "permittedInferenceProfileIds": [
+          "pool-a"
+        ],
+        "checks": [
+          {
+            "ordinal": 1,
+            "profileId": "pool-a",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "8ced9a14b71b9acc1007f917ad6968621e88d86bba0c665a0339af4995b66c31",
+            "permittedInference": true,
+            "capacity": "unknown; explicitboundedattempt"
+          }
+        ],
+        "usageEndpointRetries": 0,
+        "authorizationBasis": "User-authorized ordinary E41 regression for priority cancellation, actual Sonnet5.5/SDK0.2.141/native2.1.302 on current final source. Only Team read-only access; paid ExtraUsage disabled and included capacity explicitly unknown. Twelve-generation-per-case bound, four modes. Original all held failures preserved; no pool/failover/quota-recovery claim."
+      },
+      "originalControllerPID": 12161,
+      "exit": 0,
+      "result": {
+        "root": "/private/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-probe-proxy-GxrCzh",
+        "result": "PASS",
+        "joined": true
+      },
+      "originalAssertions": "PASS",
+      "generations": 5,
+      "realForwards": 5,
+      "joined": true,
+      "correlated": true,
+      "stopped": null,
+      "qualified": true,
+      "fixtureRemoved": true
+    },
+    {
+      "case": "e41-chain-stream-sonnet55-r1",
+      "started": "2026-10-20T20:26:13.098317+00:00",
+      "admission": {
+        "at": "2026-10-20T20:26:13.095Z",
+        "task": "1397-e41-sonnet55",
+        "profileHTTP": 200,
+        "organizationPlanActive": true,
+        "profileExtraUsageEnabled": false,
+        "refreshes": 0,
+        "credentialWrites": 0,
+        "includedCapacityKnown": false,
+        "includedAttemptPermitted": true,
+        "maximumGenerationsPerCase": 12,
+        "maximumCases": 4,
+        "distinctAccounts": 1,
+        "permittedInferenceProfileIds": [
+          "pool-a"
+        ],
+        "checks": [
+          {
+            "ordinal": 1,
+            "profileId": "pool-a",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "8ced9a14b71b9acc1007f917ad6968621e88d86bba0c665a0339af4995b66c31",
+            "permittedInference": true,
+            "capacity": "unknown; explicitboundedattempt"
+          }
+        ],
+        "usageEndpointRetries": 0,
+        "authorizationBasis": "User-authorized ordinary E41 regression for priority cancellation, actual Sonnet5.5/SDK0.2.141/native2.1.302 on current final source. Only Team read-only access; paid ExtraUsage disabled and included capacity explicitly unknown. Twelve-generation-per-case bound, four modes. Original all held failures preserved; no pool/failover/quota-recovery claim."
+      },
+      "originalControllerPID": 30496,
+      "exit": 0,
+      "result": {
+        "root": "/private/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-probe-proxy-cdfJ4T",
+        "result": "PASS",
+        "joined": true
+      },
+      "originalAssertions": "PASS",
+      "generations": 5,
+      "realForwards": 5,
+      "joined": true,
+      "correlated": true,
+      "stopped": null,
+      "qualified": true,
+      "fixtureRemoved": true
+    },
+    {
+      "case": "e41-parallel-json-sonnet55-r1",
+      "started": "2026-10-20T20:26:31.569969+00:00",
+      "admission": {
+        "at": "2026-10-20T20:26:31.567Z",
+        "task": "1397-e41-sonnet55",
+        "profileHTTP": 200,
+        "organizationPlanActive": true,
+        "profileExtraUsageEnabled": false,
+        "refreshes": 0,
+        "credentialWrites": 0,
+        "includedCapacityKnown": false,
+        "includedAttemptPermitted": true,
+        "maximumGenerationsPerCase": 12,
+        "maximumCases": 4,
+        "distinctAccounts": 1,
+        "permittedInferenceProfileIds": [
+          "pool-a"
+        ],
+        "checks": [
+          {
+            "ordinal": 1,
+            "profileId": "pool-a",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "8ced9a14b71b9acc1007f917ad6968621e88d86bba0c665a0339af4995b66c31",
+            "permittedInference": true,
+            "capacity": "unknown; explicitboundedattempt"
+          }
+        ],
+        "usageEndpointRetries": 0,
+        "authorizationBasis": "User-authorized ordinary E41 regression for priority cancellation, actual Sonnet5.5/SDK0.2.141/native2.1.302 on current final source. Only Team read-only access; paid ExtraUsage disabled and included capacity explicitly unknown. Twelve-generation-per-case bound, four modes. Original all held failures preserved; no pool/failover/quota-recovery claim."
+      },
+      "originalControllerPID": 54738,
+      "exit": 0,
+      "result": {
+        "root": "/private/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-probe-proxy-3zfqPJ",
+        "result": "PASS",
+        "joined": true
+      },
+      "originalAssertions": "PASS",
+      "generations": 3,
+      "realForwards": 3,
+      "joined": true,
+      "correlated": true,
+      "stopped": null,
+      "qualified": true,
+      "fixtureRemoved": true
+    },
+    {
+      "case": "e41-parallel-stream-sonnet55-r1",
+      "started": "2026-10-20T20:26:47.103240+00:00",
+      "admission": {
+        "at": "2026-10-20T20:26:47.098Z",
+        "task": "1397-e41-sonnet55",
+        "profileHTTP": 200,
+        "organizationPlanActive": true,
+        "profileExtraUsageEnabled": false,
+        "refreshes": 0,
+        "credentialWrites": 0,
+        "includedCapacityKnown": false,
+        "includedAttemptPermitted": true,
+        "maximumGenerationsPerCase": 12,
+        "maximumCases": 4,
+        "distinctAccounts": 1,
+        "permittedInferenceProfileIds": [
+          "pool-a"
+        ],
+        "checks": [
+          {
+            "ordinal": 1,
+            "profileId": "pool-a",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "8ced9a14b71b9acc1007f917ad6968621e88d86bba0c665a0339af4995b66c31",
+            "permittedInference": true,
+            "capacity": "unknown; explicitboundedattempt"
+          }
+        ],
+        "usageEndpointRetries": 0,
+        "authorizationBasis": "User-authorized ordinary E41 regression for priority cancellation, actual Sonnet5.5/SDK0.2.141/native2.1.302 on current final source. Only Team read-only access; paid ExtraUsage disabled and included capacity explicitly unknown. Twelve-generation-per-case bound, four modes. Original all held failures preserved; no pool/failover/quota-recovery claim."
+      },
+      "originalControllerPID": 55855,
+      "exit": 0,
+      "result": {
+        "root": "/private/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-probe-proxy-Vrz06l",
+        "result": "PASS",
+        "joined": true
+      },
+      "originalAssertions": "PASS",
+      "generations": 3,
+      "realForwards": 3,
+      "joined": true,
+      "correlated": true,
+      "stopped": null,
+      "qualified": true,
+      "fixtureRemoved": true
+    }
+  ],
+  "result": "PASS",
+  "scope": "All four original E41 assertions, actual Sonnet5.5/SDK0.2.141/native2.1.302, V1 client plugin and scrub0.2.3, Macarm64; protocol host, not OpenCode executable",
+  "resourcePolicy": "Current source/deps reused, no new installs/worktrees. Only sanitized report/model metadata retained; all joined fixture homes removed.",
+  "grantRemoved": true,
+  "olderHoldsUnchanged": true
+}

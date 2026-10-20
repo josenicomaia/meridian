@@ -1,0 +1,265 @@
+{
+  "task": "1397-mac-relations-sonnet55",
+  "phase": "mac-relations",
+  "head": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+  "baseline": "3667a1555e104d0d82fee180eedfde68ab218390",
+  "cases": [
+    {
+      "case": "live-mac-subtree-baseline-r2",
+      "started": "2026-10-20T20:20:19.634440+00:00",
+      "admission": {
+        "at": "2026-10-20T20:20:19.630Z",
+        "task": "1397-mac-relations-sonnet55",
+        "profileHTTP": 200,
+        "organizationPlanActive": true,
+        "profileExtraUsageEnabled": false,
+        "refreshes": 0,
+        "credentialWrites": 0,
+        "includedCapacityKnown": false,
+        "includedAttemptPermitted": true,
+        "maximumGenerationsPerCase": 4,
+        "maximumCases": 4,
+        "distinctAccounts": 2,
+        "permittedInferenceProfileIds": [
+          "pool-a"
+        ],
+        "knownSpentSpareProfileId": "pool-b",
+        "checks": [
+          {
+            "ordinal": 1,
+            "profileId": "pool-a",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "8ced9a14b71b9acc1007f917ad6968621e88d86bba0c665a0339af4995b66c31",
+            "permittedInference": true,
+            "capacity": "unknown; explicitboundedattempt"
+          },
+          {
+            "ordinal": 2,
+            "profileId": "pool-b",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "5a8e47a7f137db3bb2bc20891eded0444c2e80b99636c6871369fb3012f310e7",
+            "permittedInference": false,
+            "capacity": "knownweeklyexhausted; zero inference permitted"
+          }
+        ],
+        "usageEndpointRetries": 0,
+        "authorizationBasis": "User-authorized backlog actual acceptance. Old aborted-recorder failure retains unknown historical model count; zero-model exact aborted-HEAD control causally repairs recorder. New controlled same-Team baseline/candidate comparison uses exact reported Sonnet5.5, SDK and nativeplatform. Real pool includes paid-disabled known-spent personal spare, denied before official inference; no twohealthyaccount/quota-recovery/failover claim. No ordinal0 or paid-usage-enabled account used."
+      },
+      "originalControllerPID": 2064,
+      "exit": 0,
+      "result": "EXPECTED_BASELINE_FAILURE",
+      "failure": null,
+      "hostResult": "CLOSED",
+      "generations": 2,
+      "officialForwards": 2,
+      "joined": true,
+      "correlated": true,
+      "fixtureRemoved": true,
+      "containerRemoved": true,
+      "profiles": [
+        "pool-a"
+      ],
+      "qualified": true
+    },
+    {
+      "case": "live-mac-subtree-candidate-r2",
+      "started": "2026-10-20T20:20:33.918341+00:00",
+      "admission": {
+        "at": "2026-10-20T20:20:33.912Z",
+        "task": "1397-mac-relations-sonnet55",
+        "profileHTTP": 200,
+        "organizationPlanActive": true,
+        "profileExtraUsageEnabled": false,
+        "refreshes": 0,
+        "credentialWrites": 0,
+        "includedCapacityKnown": false,
+        "includedAttemptPermitted": true,
+        "maximumGenerationsPerCase": 4,
+        "maximumCases": 4,
+        "distinctAccounts": 2,
+        "permittedInferenceProfileIds": [
+          "pool-a"
+        ],
+        "knownSpentSpareProfileId": "pool-b",
+        "checks": [
+          {
+            "ordinal": 1,
+            "profileId": "pool-a",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "8ced9a14b71b9acc1007f917ad6968621e88d86bba0c665a0339af4995b66c31",
+            "permittedInference": true,
+            "capacity": "unknown; explicitboundedattempt"
+          },
+          {
+            "ordinal": 2,
+            "profileId": "pool-b",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "5a8e47a7f137db3bb2bc20891eded0444c2e80b99636c6871369fb3012f310e7",
+            "permittedInference": false,
+            "capacity": "knownweeklyexhausted; zero inference permitted"
+          }
+        ],
+        "usageEndpointRetries": 0,
+        "authorizationBasis": "User-authorized backlog actual acceptance. Old aborted-recorder failure retains unknown historical model count; zero-model exact aborted-HEAD control causally repairs recorder. New controlled same-Team baseline/candidate comparison uses exact reported Sonnet5.5, SDK and nativeplatform. Real pool includes paid-disabled known-spent personal spare, denied before official inference; no twohealthyaccount/quota-recovery/failover claim. No ordinal0 or paid-usage-enabled account used."
+      },
+      "originalControllerPID": 2625,
+      "exit": 0,
+      "result": "PASS",
+      "failure": null,
+      "hostResult": "CLOSED",
+      "generations": 2,
+      "officialForwards": 2,
+      "joined": true,
+      "correlated": true,
+      "fixtureRemoved": true,
+      "containerRemoved": true,
+      "profiles": [
+        "pool-a"
+      ],
+      "qualified": true
+    },
+    {
+      "case": "live-mac-queued-baseline-r2",
+      "started": "2026-10-20T20:20:41.680467+00:00",
+      "admission": {
+        "at": "2026-10-20T20:20:41.676Z",
+        "task": "1397-mac-relations-sonnet55",
+        "profileHTTP": 200,
+        "organizationPlanActive": true,
+        "profileExtraUsageEnabled": false,
+        "refreshes": 0,
+        "credentialWrites": 0,
+        "includedCapacityKnown": false,
+        "includedAttemptPermitted": true,
+        "maximumGenerationsPerCase": 4,
+        "maximumCases": 4,
+        "distinctAccounts": 2,
+        "permittedInferenceProfileIds": [
+          "pool-a"
+        ],
+        "knownSpentSpareProfileId": "pool-b",
+        "checks": [
+          {
+            "ordinal": 1,
+            "profileId": "pool-a",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "8ced9a14b71b9acc1007f917ad6968621e88d86bba0c665a0339af4995b66c31",
+            "permittedInference": true,
+            "capacity": "unknown; explicitboundedattempt"
+          },
+          {
+            "ordinal": 2,
+            "profileId": "pool-b",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "5a8e47a7f137db3bb2bc20891eded0444c2e80b99636c6871369fb3012f310e7",
+            "permittedInference": false,
+            "capacity": "knownweeklyexhausted; zero inference permitted"
+          }
+        ],
+        "usageEndpointRetries": 0,
+        "authorizationBasis": "User-authorized backlog actual acceptance. Old aborted-recorder failure retains unknown historical model count; zero-model exact aborted-HEAD control causally repairs recorder. New controlled same-Team baseline/candidate comparison uses exact reported Sonnet5.5, SDK and nativeplatform. Real pool includes paid-disabled known-spent personal spare, denied before official inference; no twohealthyaccount/quota-recovery/failover claim. No ordinal0 or paid-usage-enabled account used."
+      },
+      "originalControllerPID": 2681,
+      "exit": 0,
+      "result": "PASS",
+      "failure": null,
+      "hostResult": "CLOSED",
+      "generations": 1,
+      "officialForwards": 1,
+      "joined": true,
+      "correlated": true,
+      "fixtureRemoved": true,
+      "containerRemoved": true,
+      "profiles": [
+        "pool-a"
+      ],
+      "qualified": true
+    },
+    {
+      "case": "live-mac-queued-candidate-r2",
+      "started": "2026-10-20T20:20:49.222087+00:00",
+      "admission": {
+        "at": "2026-10-20T20:20:49.219Z",
+        "task": "1397-mac-relations-sonnet55",
+        "profileHTTP": 200,
+        "organizationPlanActive": true,
+        "profileExtraUsageEnabled": false,
+        "refreshes": 0,
+        "credentialWrites": 0,
+        "includedCapacityKnown": false,
+        "includedAttemptPermitted": true,
+        "maximumGenerationsPerCase": 4,
+        "maximumCases": 4,
+        "distinctAccounts": 2,
+        "permittedInferenceProfileIds": [
+          "pool-a"
+        ],
+        "knownSpentSpareProfileId": "pool-b",
+        "checks": [
+          {
+            "ordinal": 1,
+            "profileId": "pool-a",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "8ced9a14b71b9acc1007f917ad6968621e88d86bba0c665a0339af4995b66c31",
+            "permittedInference": true,
+            "capacity": "unknown; explicitboundedattempt"
+          },
+          {
+            "ordinal": 2,
+            "profileId": "pool-b",
+            "profileHTTP": 200,
+            "activeOrganization": true,
+            "extraUsageEnabled": false,
+            "accountIdentitySHA256": "5a8e47a7f137db3bb2bc20891eded0444c2e80b99636c6871369fb3012f310e7",
+            "permittedInference": false,
+            "capacity": "knownweeklyexhausted; zero inference permitted"
+          }
+        ],
+        "usageEndpointRetries": 0,
+        "authorizationBasis": "User-authorized backlog actual acceptance. Old aborted-recorder failure retains unknown historical model count; zero-model exact aborted-HEAD control causally repairs recorder. New controlled same-Team baseline/candidate comparison uses exact reported Sonnet5.5, SDK and nativeplatform. Real pool includes paid-disabled known-spent personal spare, denied before official inference; no twohealthyaccount/quota-recovery/failover claim. No ordinal0 or paid-usage-enabled account used."
+      },
+      "originalControllerPID": 3054,
+      "exit": 0,
+      "result": "PASS",
+      "failure": null,
+      "hostResult": "CLOSED",
+      "generations": 1,
+      "officialForwards": 1,
+      "joined": true,
+      "correlated": true,
+      "fixtureRemoved": true,
+      "containerRemoved": true,
+      "profiles": [
+        "pool-a"
+      ],
+      "qualified": true
+    }
+  ],
+  "result": "PASS",
+  "scriptSHA256": {
+    "/private/tmp/meridian-pr1397-20261020/scripts/e2e-priority-cancellation.mjs": "cf9feb82f91f5025c5a19ee09120fe3938a3d04bebe05c41312bfbc9239b2dee",
+    "/private/tmp/meridian-pr1397-20261020/scripts/lib/priorityCancellationHost.mjs": "6dafea9cc5efc0addac945554d0d7d7342e52c75d49102787fd2d0f398c1fa2e",
+    "/tmp/meridian-resume-20261020/1397-live-r2/create-continuation-pool-grant.mjs": "a6033cbc407844757ed06b51f856e1bc695114f2167cd339e811b2b1cad4a844",
+    "/tmp/meridian-resume-20261020/1397-live-r2/run-continuation-live.py": "4a36d841b150e5f5691be2cc775b3edeac4b64c8cea1f43857b2f2c507469925"
+  },
+  "platform": "mac",
+  "model": "claude-sonnet-5-5",
+  "poolScope": "Real distinct paid-disabled Team and exhausted personal spare; only Team may forward. No twohealthyaccount/failover/quota recovery claim.",
+  "resourcePolicy": "Existing three worktrees and four current installs reused. One --rm container per Linux case. Original processes/pipes join; fixture homes removed by committed harness.",
+  "grantRemoved": true,
+  "olderHoldsUnchanged": true
+}

@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-20T20:27:59.513757+00:00",
+  "head": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+  "base": "3667a1555e104d0d82fee180eedfde68ab218390",
+  "productTreeMatchesCoreAcbe": true,
+  "phases": [
+    {
+      "phase": "first-core",
+      "head": "acbe1b56c9c8409becc04340189e0d37aec33041",
+      "cases": 4,
+      "generations": 4,
+      "allCasesQualified": true,
+      "result": "PASS"
+    },
+    {
+      "phase": "linux-core",
+      "head": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+      "cases": 4,
+      "generations": 4,
+      "allCasesQualified": true,
+      "result": "PASS"
+    },
+    {
+      "phase": "mac-relations",
+      "head": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+      "cases": 4,
+      "generations": 6,
+      "allCasesQualified": true,
+      "result": "PASS"
+    },
+    {
+      "phase": "linux-relations",
+      "head": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+      "cases": 4,
+      "generations": 6,
+      "allCasesQualified": true,
+      "result": "PASS"
+    },
+    {
+      "phase": "native-escape",
+      "head": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+      "cases": 4,
+      "generations": 8,
+      "allCasesQualified": true,
+      "result": "PASS"
+    },
+    {
+      "phase": "e41",
+      "head": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+      "cases": 4,
+      "generations": 16,
+      "allCasesQualified": true,
+      "result": "PASS"
+    }
+  ],
+  "caseCount": 24,
+  "generationCount": 44,
+  "result": "PASS",
+  "limits": [
+    "Linux arm64 native2.1.301; Mac arm64native2.1.302. No actual Windows/Linuxx64 claim.",
+    "Queue/stream/literalEscape already work on current baseline and remain positive regression controls.",
+    "Provider HTTPstream closure and original native teardown observed; no invoice-level billing proof.",
+    "Historical old recorder attempt upstream/method/modelcount remains UNKNOWN; all old holds unchanged.",
+    "Real twoaccount pool includes one known-exhausted denied spare; only sameTeamactualinference. No twohealthyaccount/quota recovery/failover claim."
+  ]
+}

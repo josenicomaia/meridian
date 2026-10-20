@@ -1,0 +1,25 @@
+{
+  "head": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+  "base": "3667a1555e104d0d82fee180eedfde68ab218390",
+  "started": "2026-10-20T20:17:14.207582+00:00",
+  "commands": [
+    {
+      "label": "focused",
+      "exit": 0
+    },
+    {
+      "label": "typecheck",
+      "exit": 0
+    },
+    {
+      "label": "build",
+      "exit": 0
+    },
+    {
+      "label": "full",
+      "exit": 0
+    }
+  ],
+  "exit": 0,
+  "finished": "2026-10-20T20:25:34.507242+00:00"
+}

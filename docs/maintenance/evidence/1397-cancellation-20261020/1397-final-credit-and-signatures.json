@@ -1,0 +1,301 @@
+{
+  "at": "2026-10-20T20:27:11.511395+00:00",
+  "head": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+  "base": "3667a1555e104d0d82fee180eedfde68ab218390",
+  "introduced": [
+    {
+      "sha": "759cf0c298f41b40f69cfd3b03e6cf24f707bdb2",
+      "author": {
+        "name": "=DEX",
+        "email": "eamonbachari@gmail.com",
+        "date": "2026-10-06T09:43:55Z"
+      },
+      "committer": {
+        "name": "Noah Passalacqua",
+        "email": "noah@passabilities.dev",
+        "date": "2026-10-16T18:10:45Z"
+      },
+      "parents": [
+        "dfe264daf2bca18fcc426e4e1268987ea166c427"
+      ],
+      "tree": "9ec5342e89bb7bbbb0b00134b662621b24d03d55",
+      "verified": true,
+      "verificationReason": "valid",
+      "commitObjectSHA256": "4d53943bf076b6e2716e12d2bc231ab1b82c18b8105bbef0091fa5fbba11e156"
+    },
+    {
+      "sha": "b22ea383f9bce19bee13c690b32e7c08f93867f5",
+      "author": {
+        "name": "=DEX",
+        "email": "eamonbachari@gmail.com",
+        "date": "2026-10-06T09:45:41Z"
+      },
+      "committer": {
+        "name": "Noah Passalacqua",
+        "email": "noah@passabilities.dev",
+        "date": "2026-10-16T18:10:45Z"
+      },
+      "parents": [
+        "759cf0c298f41b40f69cfd3b03e6cf24f707bdb2"
+      ],
+      "tree": "0bf027fe9755a217787ba73fcff7d10db431754c",
+      "verified": true,
+      "verificationReason": "valid",
+      "commitObjectSHA256": "dee91c52f1236140c185b00128434c7ba100274a370c1bb95c4711bfc044695f"
+    },
+    {
+      "sha": "b0d70e4291499c4f485e42e7a75cb88ece185672",
+      "author": {
+        "name": "Noah Passalacqua",
+        "email": "noah@passabilities.dev",
+        "date": "2026-10-16T16:59:42Z"
+      },
+      "committer": {
+        "name": "Noah Passalacqua",
+        "email": "noah@passabilities.dev",
+        "date": "2026-10-16T18:10:45Z"
+      },
+      "parents": [
+        "b22ea383f9bce19bee13c690b32e7c08f93867f5"
+      ],
+      "tree": "49b1ea71c06b4e77fff9fe0a52209f7817046de3",
+      "verified": true,
+      "verificationReason": "valid",
+      "commitObjectSHA256": "5efe8d72efeb9c94be096e5ec8532a21f982a744fb4177582220ad1d9064da64"
+    },
+    {
+      "sha": "b736addc389afbb694c4762c654545d555ac57b1",
+      "author": {
+        "name": "Noah Passalacqua",
+        "email": "noah@passabilities.dev",
+        "date": "2026-10-16T17:03:28Z"
+      },
+      "committer": {
+        "name": "Noah Passalacqua",
+        "email": "noah@passabilities.dev",
+        "date": "2026-10-16T18:10:45Z"
+      },
+      "parents": [
+        "b0d70e4291499c4f485e42e7a75cb88ece185672"
+      ],
+      "tree": "1a42ef0d2c18993bc51b3110244db2a5cdc6ef1c",
+      "verified": true,
+      "verificationReason": "valid",
+      "commitObjectSHA256": "711e5598344e0428fd0e3314637fc83197154ade012b3b4396657fe80468024a"
+    },
+    {
+      "sha": "604cf7aa3332f82148e8124447f10ac1a3b20d96",
+      "author": {
+        "name": "Noah Passalacqua",
+        "email": "noah@passabilities.dev",
+        "date": "2026-10-16T17:04:17Z"
+      },
+      "committer": {
+        "name": "Noah Passalacqua",
+        "email": "noah@passabilities.dev",
+        "date": "2026-10-16T18:10:46Z"
+      },
+      "parents": [
+        "b736addc389afbb694c4762c654545d555ac57b1"
+      ],
+      "tree": "ace665ce6d05e960f454b10d98995e177a4215ba",
+      "verified": true,
+      "verificationReason": "valid",
+      "commitObjectSHA256": "571c4f27cd73729ec44848e7262550b4170368db651e629ab7eaa43c4830e91d"
+    },
+    {
+      "sha": "8145cebfec2ee52e779569859a21372cd8f75e9c",
+      "author": {
+        "name": "Noah Passalacqua",
+        "email": "noah@passabilities.dev",
+        "date": "2026-10-16T17:05:01Z"
+      },
+      "committer": {
+        "name": "Noah Passalacqua",
+        "email": "noah@passabilities.dev",
+        "date": "2026-10-16T18:10:46Z"
+      },
+      "parents": [
+        "604cf7aa3332f82148e8124447f10ac1a3b20d96"
+      ],
+      "tree": "2e20588d8a2992b4895d9924d0797b83be88015d",
+      "verified": true,
+      "verificationReason": "valid",
+      "commitObjectSHA256": "2c9461347fdcb9ae6d1d6e548bd22ec4f80db292559567fc370b0a3599f64bb1"
+    },
+    {
+      "sha": "83d46bb5fa3d5eae3777e39fd1369c96146512df",
+      "author": {
+        "name": "Noah Passalacqua",
+        "email": "noah@passabilities.dev",
+        "date": "2026-10-16T18:12:53Z"
+      },
+      "committer": {
+        "name": "Noah Passalacqua",
+        "email": "noah@passabilities.dev",
+        "date": "2026-10-16T18:12:53Z"
+      },
+      "parents": [
+        "8145cebfec2ee52e779569859a21372cd8f75e9c"
+      ],
+      "tree": "ae879d0fe3d6d5b91ca1f4bd124fedb9539fedf2",
+      "verified": true,
+      "verificationReason": "valid",
+      "commitObjectSHA256": "9277bbb603f61044593374cbb736cef8de9f043f844cf169c4eb950d8098910c"
+    },
+    {
+      "sha": "5617da1f52d2c8c1c970b574d6302ccb648de160",
+      "author": {
+        "name": "Noah Passalacqua",
+        "email": "noah@passabilities.dev",
+        "date": "2026-10-16T18:13:24Z"
+      },
+      "committer": {
+        "name": "Noah Passalacqua",
+        "email": "noah@passabilities.dev",
+        "date": "2026-10-16T18:13:24Z"
+      },
+      "parents": [
+        "83d46bb5fa3d5eae3777e39fd1369c96146512df"
+      ],
+      "tree": "0021c7aea4b0eeceaef3d79bcc62d885220c10b8",
+      "verified": true,
+      "verificationReason": "valid",
+      "commitObjectSHA256": "21024dad6e492ad705a2c0b6e3aa03be589d70443be6bbe2b0b165a0aa384bc6"
+    },
+    {
+      "sha": "d5478ba34b69ffeb1b9c627c75bff96fcc9758a7",
+      "author": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T08:13:01Z"
+      },
+      "committer": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T08:13:01Z"
+      },
+      "parents": [
+        "5617da1f52d2c8c1c970b574d6302ccb648de160",
+        "30cc1d2d446a16de0add548fc108ace0932814ae"
+      ],
+      "tree": "68cd8795ad7d9662c98ca761fa0a8a1979d0154b",
+      "verified": true,
+      "verificationReason": "valid",
+      "commitObjectSHA256": "b2c35ec0cb5efa7f1a55f7ab1e987ce21747dcef2e0f8d96e7e5eecf4843105d"
+    },
+    {
+      "sha": "b712c4becf6742d8c31f3b7696336e95bf313c1b",
+      "author": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T08:23:33Z"
+      },
+      "committer": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T08:23:33Z"
+      },
+      "parents": [
+        "d5478ba34b69ffeb1b9c627c75bff96fcc9758a7",
+        "5187ee293917896d90bf9829ee90daf3d9680b9a"
+      ],
+      "tree": "32b4299cfb163feed3139cd2aba5d8546e0151ff",
+      "verified": true,
+      "verificationReason": "valid",
+      "commitObjectSHA256": "e80ad92357ade81aab3b069e8fe65a21e035e329509e35bc93856710ac22a1cf"
+    },
+    {
+      "sha": "c92455a844af61569f7a80907c3836226b3848f8",
+      "author": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T19:39:20Z"
+      },
+      "committer": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T19:39:20Z"
+      },
+      "parents": [
+        "b712c4becf6742d8c31f3b7696336e95bf313c1b",
+        "19ff3bcac167cdcbbd91a6f79f7af07605a0ad99"
+      ],
+      "tree": "e8c21615c4c7e4319f2899e4a68e64a32766fb54",
+      "verified": true,
+      "verificationReason": "valid",
+      "commitObjectSHA256": "8e51defa3fdde9c4aaad5d4a5ae18bb5aa5fb03d4f84de62248e6b2edd25a70d"
+    },
+    {
+      "sha": "e930defeb267fbb83b30a2ea7771723735ebe80e",
+      "author": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T19:55:19Z"
+      },
+      "committer": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T19:55:19Z"
+      },
+      "parents": [
+        "c92455a844af61569f7a80907c3836226b3848f8",
+        "3667a1555e104d0d82fee180eedfde68ab218390"
+      ],
+      "tree": "89932dcbcbad8192f0015be6957167d5cc69cdc2",
+      "verified": true,
+      "verificationReason": "valid",
+      "commitObjectSHA256": "447773f9514ef5f966a0cdabfa6efe1b25884b727f7d5fc3285eea4671e19824"
+    },
+    {
+      "sha": "acbe1b56c9c8409becc04340189e0d37aec33041",
+      "author": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T19:55:19Z"
+      },
+      "committer": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T19:55:19Z"
+      },
+      "parents": [
+        "e930defeb267fbb83b30a2ea7771723735ebe80e"
+      ],
+      "tree": "af2cb563617c4f82612cfe503211b9315064fd25",
+      "verified": true,
+      "verificationReason": "valid",
+      "commitObjectSHA256": "4522768de38a06e7b3a553a66f2a96787262b17981d17b017c39d30d584bb91f"
+    },
+    {
+      "sha": "f60eba47a31a09a9eeec2e2d2f374a457793f766",
+      "author": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T20:16:43Z"
+      },
+      "committer": {
+        "name": "Trevor Walker",
+        "email": "rynfar@gmail.com",
+        "date": "2026-10-20T20:16:43Z"
+      },
+      "parents": [
+        "acbe1b56c9c8409becc04340189e0d37aec33041"
+      ],
+      "tree": "34f5d4ed1fe5063bc7492341dc5923e303c5044d",
+      "verified": true,
+      "verificationReason": "valid",
+      "commitObjectSHA256": "acca57af69944d7ccc5e90bca1174fdcd818e6409fbf3f4a26ba888ab28f39ec"
+    }
+  ],
+  "introducedCount": 14,
+  "old10RecordedObjectsUnchanged": true,
+  "allGitHubSignaturesValid": true,
+  "GitHubPaginatedPRCommitsMatchLocal": true,
+  "mergeRoute": "Owner approved1413 forwarded commit-preserving neutral --merge; no squash/admin/rebase/re-signing.",
+  "localFullCounts": {
+    "pass": 7098,
+    "skip": 36,
+    "fail": 0
+  }
+}
