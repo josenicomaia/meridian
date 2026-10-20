@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-20T23:09:06.782476+00:00",
+  "worktreeRemoved": "/private/tmp/meridian-pr1219-engine-20261020",
+  "sourceAndPhysicalDependenciesRemoved": true,
+  "removedDirectoryKiB": 1455164,
+  "sourceRecoveryRef": "refs/maintenance/backlog-cleanup/20261020-post1219-engine/c91cf435",
+  "sourceHead": "c91cf4357f04c1f3473896a182aaad2c51f524e1",
+  "verifiedMerge": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+  "proofCommit": "543074de945425506f053c0cd71c65d5b35b8d80",
+  "remoteProofActualBytesVerified": true,
+  "originalRootHEAD": "446a0f1633be3a0cf36d8f1e9f222e914d2f7c83",
+  "originalDirtyFilesChecked": 12,
+  "changedDirtyFiles": [],
+  "ownedContainersRemaining": [],
+  "space": "Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   926Gi    12Gi    64Gi    16%    459k  671M    0%   /\n/dev/disk4s1     466Gi   407Gi    58Gi    88%     19M  608M    3%   /Volumes/DevSSD\n",
+  "unrelatedServicesPreserved": true,
+  "remainingOwnedWorktrees": [
+    "/private/tmp/meridian-1406-evidence-20261020"
+  ],
+  "futureResourcePolicy": "Only current candidate/baseline/evidence; remove completed installs, state, images and containers after proof; no global prune."
+}

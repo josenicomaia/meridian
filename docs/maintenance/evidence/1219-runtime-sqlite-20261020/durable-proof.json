@@ -1,0 +1,68 @@
+{
+  "commit": "543074de945425506f053c0cd71c65d5b35b8d80",
+  "verifiedAt": "2026-10-20T23:04:14.195475+00:00",
+  "remoteActualBytesVerified": true,
+  "files": [
+    {
+      "file": "docs/maintenance/evidence/1219-runtime-sqlite-20261020/README.md",
+      "bytes": 7398,
+      "sha256": "8a5612ea3636337d27d3ca9ecf3209631f9a1974bf466f1fc242cc5ecb22b698"
+    },
+    {
+      "file": "docs/maintenance/evidence/1219-runtime-sqlite-20261020/final-local.json",
+      "bytes": 494,
+      "sha256": "99099dd52c18bd5effdc1327f66309cbbbb11dc0273a14ba5cdb94afe0a115bd"
+    },
+    {
+      "file": "docs/maintenance/evidence/1219-runtime-sqlite-20261020/github-commits.json",
+      "bytes": 323267,
+      "sha256": "0616eda1fd4804953cf76543088eddac44cb1323fbfeed2f3678f8f81bcb1d07"
+    },
+    {
+      "file": "docs/maintenance/evidence/1219-runtime-sqlite-20261020/hosted-ci.json",
+      "bytes": 4137,
+      "sha256": "a71cd5c1f0e5a520f60cc94c5080d48d155e15d795047ef815adafaacc2473f8"
+    },
+    {
+      "file": "docs/maintenance/evidence/1219-runtime-sqlite-20261020/introduced-authors.tsv",
+      "bytes": 5442,
+      "sha256": "050223cdf58d8197a6c4aa89724baf316f4451c0b4f770583913c886c0365e2b"
+    },
+    {
+      "file": "docs/maintenance/evidence/1219-runtime-sqlite-20261020/manifest.json",
+      "bytes": 124160,
+      "sha256": "1721ce709394dd2789e3a4b72337ccf7c7cae171535f1a44074029deca37b17b"
+    },
+    {
+      "file": "docs/maintenance/evidence/1219-runtime-sqlite-20261020/package-identity.json",
+      "bytes": 1297,
+      "sha256": "adf91768794090ececfbfe454bc7648359b8d75373dd429cb6458a10e3d0f2fe"
+    },
+    {
+      "file": "docs/maintenance/evidence/1219-runtime-sqlite-20261020/proof.tar.xz",
+      "bytes": 2532004,
+      "sha256": "5d114745f8b96e1917bb90210459d708b4e444cb9bda97a64cf89be099548f39"
+    },
+    {
+      "file": "docs/maintenance/evidence/1219-runtime-sqlite-20261020/root-custody.json",
+      "bytes": 114,
+      "sha256": "f9e12aa5556366427a7b38e5768c9eac2ea902fa302c56f758d5d04c33d50aa6"
+    },
+    {
+      "file": "docs/maintenance/evidence/1219-runtime-sqlite-20261020/signature-gate.json",
+      "bytes": 813,
+      "sha256": "9d56e37f605d23cd7743cabb126b04c77a9261bdb9c035aaa09e9a0a04eb5711"
+    },
+    {
+      "file": "docs/maintenance/evidence/1219-runtime-sqlite-20261020/summary.json",
+      "bytes": 259,
+      "sha256": "715c71e2405fcb418cda8322d02011e2f7c8b755a1f7c2d8114625834d2bc814"
+    },
+    {
+      "file": "docs/maintenance/REVIEW_HANDOFF.md",
+      "bytes": 399687,
+      "sha256": "0968b8cbc9e650ee849b3d060bc544ede53ed315518aff4eb70764f4271ed536"
+    }
+  ],
+  "retrieval": "immutable raw.githubusercontent.com commit; contents API large-blob read unavailable"
+}

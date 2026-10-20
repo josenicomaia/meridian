@@ -1,0 +1,29 @@
+{
+  "author": {
+    "id": "MDQ6VXNlcjI0MjcxNjE0",
+    "is_bot": false,
+    "login": "justprosh",
+    "name": "Aleksey Proshutinskiy"
+  },
+  "headRefOid": "c91cf4357f04c1f3473896a182aaad2c51f524e1",
+  "mergeCommit": {
+    "oid": "91df1ba233593e53118c2e9184f5a13d1d0f8902"
+  },
+  "mergedAt": "2026-10-20T23:06:04Z",
+  "state": "MERGED",
+  "merge": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+  "verifiedAt": "2026-10-20T23:07:02.647858+00:00",
+  "tree": "46b41357d76e5fa00a9e998d9a70ddd54c7dce32",
+  "treeMatchesReviewed": true,
+  "sourceGitAuthor": {
+    "name": "Aleksey Proshutinskiy",
+    "email": "justprosh@users.noreply.github.com",
+    "date": "2026-10-20T23:06:03Z"
+  },
+  "githubAuthor": "justprosh",
+  "signature": "valid",
+  "maintainerCoauthorVerified": true,
+  "message": "feat(session): add opt-in SQLite bookkeeping with offline recovery\n\nCo-authored-by: Trevor Walker <rynfar@gmail.com>",
+  "mainReachable": true,
+  "rootCheckoutPreserved": true
+}
