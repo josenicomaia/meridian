@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-20T21:28:52.205236+00:00",
+  "head": "f97e6dbf05f82873d5759671a54010b5ad237f46",
+  "sourceRemoteVerified": "f97e6dbf05f82873d5759671a54010b5ad237f46",
+  "proofCommit": "f7e37f8f95bc5d4d15b28e21a9cd881e537b6ad8",
+  "proofRemoteBytesVerified": true,
+  "removedWorktree": "/private/tmp/meridian-pr1219-migration-20261020",
+  "worktreeDependenciesRemoved": true,
+  "recoveryRef": "refs/maintenance/backlog-cleanup/20261020-post1219/pr1219-f97e6dbf",
+  "removedExtractedPackagesAndBinaries": [
+    "/tmp/meridian-resume-20261020/1219-migration-diagnostic/package",
+    "/tmp/meridian-resume-20261020/1219-native-binding-options/probe",
+    "/tmp/meridian-resume-20261020/1219-native-binding-options/better-sqlite3-13.0.3.tgz",
+    "/tmp/meridian-resume-20261020/1219-linux-tmpfs-control/index.node",
+    "/tmp/meridian-resume-20261020/1219-linux-tmpfs-control/libsql-linux-arm64-gnu-0.5.29.tgz"
+  ],
+  "freeBeforeBytes": 69168488448,
+  "freeAfterBytes": 70979289088,
+  "ownedContainersRemaining": [],
+  "taskWorktreesRemaining": [
+    "/private/tmp/meridian-1406-evidence-20261020"
+  ],
+  "originalRootAnd12HashesPreserved": true,
+  "unrelatedWorktreesAndDockerPreserved": true,
+  "finalPackageRetainedForFutureBoundedAcceptance": "/tmp/meridian-resume-20261020/1219-migration-validation-r2/pack/rynfar-meridian-1.84.0.tgz"
+}

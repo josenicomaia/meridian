@@ -1,12 +1,12 @@
 {
-  "at": "2026-10-20T21:27:26.567329+00:00",
+  "at": "2026-10-20T21:29:41.432505+00:00",
   "head": "f97e6dbf05f82873d5759671a54010b5ad237f46",
   "checks": [
     {
-      "bucket": "pending",
+      "bucket": "pass",
       "link": "https://github.com/rynfar/meridian/actions/runs/39500439776/job/118896267074",
       "name": "build (.#checks.x86_64-linux.home)",
-      "state": "IN_PROGRESS"
+      "state": "SUCCESS"
     },
     {
       "bucket": "pending",
@@ -15,10 +15,34 @@
       "state": "IN_PROGRESS"
     },
     {
-      "bucket": "pending",
+      "bucket": "pass",
       "link": "https://github.com/rynfar/meridian/actions/runs/39500439734/job/118896264477",
       "name": "desktop-build (macos-latest)",
+      "state": "SUCCESS"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/rynfar/meridian/actions/runs/39500439734/job/118896264332",
+      "name": "desktop-build (ubuntu-latest)",
+      "state": "SUCCESS"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/rynfar/meridian/actions/runs/39500439866/job/118896264909",
+      "name": "check",
+      "state": "SUCCESS"
+    },
+    {
+      "bucket": "pending",
+      "link": "https://github.com/rynfar/meridian/actions/runs/39500439816/job/118896265332",
+      "name": "test",
       "state": "IN_PROGRESS"
+    },
+    {
+      "bucket": "pass",
+      "link": "https://github.com/rynfar/meridian/actions/runs/39500439816/job/118896264842",
+      "name": "windows-smoke",
+      "state": "SUCCESS"
     },
     {
       "bucket": "pending",
@@ -33,34 +57,16 @@
       "state": "IN_PROGRESS"
     },
     {
-      "bucket": "pending",
-      "link": "https://github.com/rynfar/meridian/actions/runs/39500439816/job/118896265332",
-      "name": "test",
-      "state": "IN_PROGRESS"
-    },
-    {
-      "bucket": "pending",
-      "link": "https://github.com/rynfar/meridian/actions/runs/39500439734/job/118896264332",
-      "name": "desktop-build (ubuntu-latest)",
-      "state": "IN_PROGRESS"
-    },
-    {
       "bucket": "pass",
-      "link": "https://github.com/rynfar/meridian/actions/runs/39500439866/job/118896264909",
-      "name": "check",
+      "link": "https://github.com/rynfar/meridian/actions/runs/39500439874/job/118896264597",
+      "name": "verify",
       "state": "SUCCESS"
     },
     {
-      "bucket": "pending",
-      "link": "https://github.com/rynfar/meridian/actions/runs/39500439816/job/118896264842",
-      "name": "windows-smoke",
-      "state": "IN_PROGRESS"
-    },
-    {
-      "bucket": "pending",
-      "link": "https://github.com/rynfar/meridian/actions/runs/39500439874/job/118896264597",
-      "name": "verify",
-      "state": "IN_PROGRESS"
+      "bucket": "pass",
+      "link": "https://github.com/rynfar/meridian/actions/runs/39500434449/job/118896247322",
+      "name": "authorship",
+      "state": "SUCCESS"
     },
     {
       "bucket": "skipping",
@@ -73,14 +79,8 @@
       "link": "https://github.com/rynfar/meridian/actions/runs/39500439816/job/118896266863",
       "name": "changelog-duplication",
       "state": "SKIPPED"
-    },
-    {
-      "bucket": "pass",
-      "link": "https://github.com/rynfar/meridian/actions/runs/39500434449/job/118896247322",
-      "name": "authorship",
-      "state": "SUCCESS"
     }
   ],
   "allFinalHeadChecksPassed": false,
-  "mergeGate": "Required hosted final-head test and all relevant checks remain pending; no bypass/no merge"
+  "mergeGate": "Required final-head test and remaining relevant checks still running; wholePR separately held on native engine and live affected flow; no merge/no bypass"
 }

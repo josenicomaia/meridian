@@ -1,0 +1,69 @@
+{
+  "at": "2026-10-20T21:27:51.697990+00:00",
+  "commit": "f7e37f8f95bc5d4d15b28e21a9cd881e537b6ad8",
+  "remoteHeadVerified": "f7e37f8f95bc5d4d15b28e21a9cd881e537b6ad8",
+  "allRemoteFileBytesVerified": true,
+  "files": [
+    {
+      "path": "docs/maintenance/REVIEW_HANDOFF.md",
+      "blob": "79a65184f437623de091889e0b441010f01f11f4",
+      "sha256": "defcd0ce7bdaa50681ed7c777dc3aaaa08b5e722c467ced3625143816127dc3d",
+      "bytes": 395762
+    },
+    {
+      "path": "docs/maintenance/evidence/1219-migration-20261020/README.md",
+      "blob": "8eb33581c289c82a38949b27db8d335ea9091997",
+      "sha256": "25428f1f159d52c5ef0e45e952b097f7b857fc8140915c7422e32955646d1e14",
+      "bytes": 4790
+    },
+    {
+      "path": "docs/maintenance/evidence/1219-migration-20261020/hosted-ci.json",
+      "blob": "739786d0c3ed8cabcecfd53dd12e22c313686d7c",
+      "sha256": "6fea5fc303cf739ab2f187bde98df877648ecb5cad29be05b405327cc4049b6e",
+      "bytes": 2798
+    },
+    {
+      "path": "docs/maintenance/evidence/1219-migration-20261020/manifest.json",
+      "blob": "2c9d023808d7fbab33ce95620f1f195399398429",
+      "sha256": "e217311b534fc7fc85483535232dc16204acda4c873356ed78dee97910f6f231",
+      "bytes": 622
+    },
+    {
+      "path": "docs/maintenance/evidence/1219-migration-20261020/proof.tar.xz",
+      "blob": "ede1a825d1a2e9377c73c7d3b0434ff8a4d50125",
+      "sha256": "44b70b20ef7e2fcc632b201938585d1807df1d474926c33ac6a073cbf105997e",
+      "bytes": 404124
+    },
+    {
+      "path": "docs/maintenance/evidence/1410-causal-20261020/README.md",
+      "blob": "8aea19af49b9e6491b89e9b82d680d6eb26050f7",
+      "sha256": "e06619354f244d0e0b0cb368935962f32f04be132219c9ae15bbfa81acdf1beb",
+      "bytes": 1433
+    },
+    {
+      "path": "docs/maintenance/evidence/1410-causal-20261020/inspect-original-supported-identity.mjs",
+      "blob": "854decc76e0ffde40969b5f3f638f3705f509d44",
+      "sha256": "c5b3fcdb5b8e736aa6b816733c32a5b5d1261e0cc3e26c68b82ae29099bf279c",
+      "bytes": 1412
+    },
+    {
+      "path": "docs/maintenance/evidence/1410-causal-20261020/original-supported-identity-recheck.json",
+      "blob": "5dd30abefe8d3baead9f1fe7f2f12ba740645f5d",
+      "sha256": "4c8fbb553c56b75cd92451a5984f35355a69d2fe54e121722d5b0288431f06a2",
+      "bytes": 4632
+    },
+    {
+      "path": "docs/maintenance/evidence/1410-causal-20261020/original-supported-identity.json",
+      "blob": "5dd30abefe8d3baead9f1fe7f2f12ba740645f5d",
+      "sha256": "4c8fbb553c56b75cd92451a5984f35355a69d2fe54e121722d5b0288431f06a2",
+      "bytes": 4632
+    },
+    {
+      "path": "docs/maintenance/evidence/1410-causal-20261020/result.json",
+      "blob": "ae8ffd6737973f59d451f574ec2cde44777bc5c2",
+      "sha256": "a1bec6f7eebd874a170ea342dab91b99a93614445b7eb13912a54aacdde6cc84",
+      "bytes": 1378
+    }
+  ],
+  "archiveSHA256": "44b70b20ef7e2fcc632b201938585d1807df1d474926c33ac6a073cbf105997e"
+}

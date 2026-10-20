@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-20T21:28:12.736171+00:00",
+  "head": "f97e6dbf05f82873d5759671a54010b5ad237f46",
+  "oldBodyChars": 63145,
+  "oldBodySHA256": "74ada55e20ef0e89b6667d5b6c6329af54c62ad0df824fc0b189af29400773d9",
+  "newBodyChars": 4438,
+  "readBackExact": true,
+  "proofCommit": "f7e37f8f95bc5d4d15b28e21a9cd881e537b6ad8",
+  "wholePrHeld": true
+}
