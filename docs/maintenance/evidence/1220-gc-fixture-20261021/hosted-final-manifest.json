@@ -1,0 +1,36 @@
+{
+  "head": "92222508248478a1e1e647209c0b99f49deec63a",
+  "sha256": "91599be6d37ebe2dcab6557130231906865bdff0c49259eb9b2d49dbefa9d283",
+  "members": [
+    {
+      "path": "final-922-hosted-CI.json",
+      "bytes": 3429,
+      "sha256": "56adde461b08701689025867d9f608cf1d6a7e21e994d9208c6bb22241ce4383"
+    },
+    {
+      "path": "final-922-hosted-counts.json",
+      "bytes": 250,
+      "sha256": "1b4a5a58d59ac3a6d2032a72608625f2c370a526c204abe7e1c64784d0b8c864"
+    },
+    {
+      "path": "final-922-hosted-test.log",
+      "bytes": 2254730,
+      "sha256": "1b010550220e10ae7a937248d02bcfb3274928db1352c9dd39b1f42119ac6c76"
+    },
+    {
+      "path": "backlog-final-current-inventory.json",
+      "bytes": 12798,
+      "sha256": "49190e2d46605a4e3db839622bb1becdd1c8031e6a0825357fcac70d3eed3fd9"
+    },
+    {
+      "path": "issue650-current-secret-metadata.json",
+      "bytes": 493,
+      "sha256": "5fdc96c33df2e6ca27241ab634bdf81dccae0b01f48c030f32789688a4e46ab7"
+    },
+    {
+      "path": "final-delivery-state-audit.json",
+      "bytes": 6471,
+      "sha256": "0c56ec671e00a9763fa439b013ae92c3a282503604f3a82eeb960b48e23bd3de"
+    }
+  ]
+}
