@@ -1,3 +1,13 @@
+## Latest resource closeout and CI wait, 2026-10-21
+
+Original #1220 final head82ff117dee79fb04f815efcb6c70aa5c1cc770ad and all9current proof files are remotely verified at702ee488d4ae0ddf234b20e11134d1d498b24617. Current CI: test and Docker build-push pending, other6executed contexts pass, expected changelog skip. Required test and original actual200-token E41 gate still apply; do not merge on a CI wake alone. [Source upload and full qualification](evidence/1220-current-main-20261021/CURRENT.md), [CI snapshot](evidence/1220-current-main-20261021/source-ci-initial.json).
+
+**Completed candidate and its dependencies are removed**, reclaiming1709136KiB after remote source/proof verification. This is the48thcompleted task worktree removed. Only this35MiBevidence worktree remains; no active model/local-test process or task Docker resource. [Cleanup receipt](evidence/1220-current-main-20261021/postupload-candidate-cleanup.json). Source82ff remains on its original branch, original fork and recovery ref. The user's root446a and all12original dirty hashes still match. Do not recreate an install merely to read CI. No release/Apple action.
+
+Goal ACTIVE pending final-head CI and the previously recorded external evidence/decision gates. #1243 remains OPEN, with no comment: owner clarification is not approval. Independent #1400 read-only revisit did not establish required model exhaustion. Fresh queue remains21MeridianPRs/11issues and2separate scrub releases. Register T3 CI watch after this checkpoint and end the turn; on wake refresh status and act on actual news, keeping old live holds explicit. Continue any newly actionable queue work without inventing acceptance.
+
+---
+
 ## Current continuation: #1220 original branch uploaded, 2026-10-21
 
 Goal ACTIVE. Original [#1220](https://github.com/rynfar/meridian/pull/1220) is updated nonforce from b1ff to `82ff117dee79fb04f815efcb6c70aa5c1cc770ad` on Nowaker's original branch, including main8914. Original authored objects remain intact; all12introduced GitHub signatures and Author identities verify. [Current review, controls and remaining gates](evidence/1220-current-main-20261021/CURRENT.md). Final local8102/36/0 across all26 groups, typecheck/build0; packed external Promise<void> declaration passes and published1.84void control fails. Final-head CI is pending. Whole PR remains OPEN and held on the original unexplained200-token Opus E41 and actual affected-client/model/platform proof. No new inference or merge.

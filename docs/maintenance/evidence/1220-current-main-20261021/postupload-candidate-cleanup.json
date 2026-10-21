@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-21T02:59:54.401590+00:00",
+  "removedCandidate": "/private/tmp/meridian-clear-completion-20261020",
+  "candidateKiB": 1709136,
+  "removed": true,
+  "preservedBranch": "fix/async-durable-store-writes",
+  "head": "82ff117dee79fb04f815efcb6c70aa5c1cc770ad",
+  "remoteSourceAndProofVerified": true,
+  "proofCommit": "702ee488d4ae0ddf234b20e11134d1d498b24617",
+  "remainingTaskWorktrees": [
+    "/private/tmp/meridian-1406-evidence-20261020"
+  ],
+  "newWorktrees": 0,
+  "newDependencyInstalls": 0,
+  "newDockerResources": 0,
+  "completedTaskWorktreesRemovedCumulative": 48,
+  "rootHEAD": "446a0f1633be3a0cf36d8f1e9f222e914d2f7c83",
+  "all12OriginalDirtyHashesMatch": true,
+  "sourceCI": "test/build-push pending; other six executed contexts pass; expected changelog skip",
+  "wholePR": "OPEN; original live gate unchanged"
+}
