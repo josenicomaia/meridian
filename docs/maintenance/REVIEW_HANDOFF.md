@@ -1,3 +1,13 @@
+## Current continuation: #1435 delivered; #1220 qualification, 2026-10-21
+
+Goal ACTIVE. Owner [#1435](https://github.com/rynfar/meridian/pull/1435) is verified merged as8914cfad05dc274e78313cd9cbe3a2bb14923231, now main. Exact tree/sole parent/owner Author/valid signature verified. [Delivery proof](evidence/933-heartbeat-cadence-20261021/MERGED.md). Full8078/36/0all26, standalone type/build0,8executedCIpass plus expected changelogskip and supersededpushNixcancel/PRNixpass. #933 stays OPEN. No model/product/dependency change.
+
+Reused candidate is back on original #1220 branch; fresh main8914 is additively merged. The final async durability observer now excludes unrelated-directory flushes (old-red/new-green interference control) and associates async handles by object rather than reusable fd. Original remote b1ff remains unchanged while local full-r3 runs. Do not push an unqualified head; do not merge without current CI and the unchanged original200-token model/cache gate. Original authored objects remain intact. No extra worktree/install/Docker.
+
+Owner asked what #1243 is and why closing was proposed. Explained session bookkeeping, automatic database selection versus delivered JSON-default/explicit-opt-in approach. **This is clarification, not approval. Keep #1243 OPEN and post no comment.** Earlier approval question remains pending. Continue independent authorized work. No release/Apple action. Keep root dirty checkout and resource limits intact.
+
+---
+
 ## Active continuation: heartbeat false failure and held source, 2026-10-21
 
 Goal ACTIVE. Owner test-only [#1435](https://github.com/rynfar/meridian/pull/1435) head206f5968741f6ae971df7e428533340aaee65632 is open, linked and GitHub-signature verified. [Diagnostic, old-red/new-green controls and held source](evidence/933-heartbeat-cadence-20261021/README.md). Only2testfiles;28focused/type/build pass. The old callback-count floor rejects native11/12-tick samples although gaps are<=11.01ms and elapsed<=82.9ms. Keep25msgap, no-early-expiry andstrict50msallowance; eight direct cases plus3mutants protect them. #933 stays OPEN. Final local full exec3058 is RUNNING, no current failures; GitHub test is pending and allother executed contexts pass, with supersededpushNix cancellation/PRNix success. Do not merge until all local/CI gates finish, then exact-head normal squash and verify owner/tree/signature.

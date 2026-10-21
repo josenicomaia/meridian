@@ -1,0 +1,38 @@
+{
+  "final-local.json": {
+    "bytes": 344,
+    "sha256": "0e98b695016122dea15b799b0dc675e9b915e8b5fae0759b18f0c43ecb980e3c"
+  },
+  "final-typecheck.log": {
+    "bytes": 53,
+    "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+  },
+  "final-build.log": {
+    "bytes": 2865,
+    "sha256": "e748ca1ffa7b410d7857cb3cd285549b71a92812dae8e0d9b67b2083c4f13189"
+  },
+  "final-full.log": {
+    "bytes": 1532598,
+    "sha256": "4df8c7a7942d22ea3de9d4afed6bb62af3afa4e40a8f3a190d031170754509c2"
+  },
+  "premerge-current.json": {
+    "bytes": 5099,
+    "sha256": "2960a087ea83e7393d8faf79b41b17173e42238fd0f9518414bb5b315e91604a"
+  },
+  "merged-pr.json": {
+    "bytes": 297,
+    "sha256": "25443bbfa9d140bd02039dabf02b9b40ebd526740f3ed68334d84a58e0a98e31"
+  },
+  "merge-verified.json": {
+    "bytes": 944,
+    "sha256": "072691c199b5ae135acf32a9c74ed4d22f134b94928db82d956c99e2fdeab3cc"
+  },
+  "pr-body.md": {
+    "bytes": 1988,
+    "sha256": "415fa9bdcdc7202511b7e01caec85f9aa91fb5133b2a56e7f8aa9cc73026408d"
+  },
+  "archive": {
+    "bytes": 228408,
+    "sha256": "788d4bd91e448569c088dd582e8e78458994cdb92527cca311881e8bec3bdab4"
+  }
+}
