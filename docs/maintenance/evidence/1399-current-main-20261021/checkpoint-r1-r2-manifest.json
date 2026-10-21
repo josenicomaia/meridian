@@ -1,0 +1,71 @@
+{
+  "head": "644deec8dcb1d171e9e0153be13d6b31305c7fd7",
+  "members": [
+    {
+      "path": "r1-local.json",
+      "bytes": 435,
+      "sha256": "7138dd4f5623907ea829019be4d820b301892326c9ba2c619c8f51caf4e4e4ed"
+    },
+    {
+      "path": "r1-full.log",
+      "bytes": 1375270,
+      "sha256": "fc5f33d86e52bfa2ecb6a044319f4b722f383c81a71825f97df953c050f55c0b"
+    },
+    {
+      "path": "r1-failure-analysis.json",
+      "bytes": 950,
+      "sha256": "6877cdcd0ce7ef24f3227309d922c7539149b12542394813f6d701ac1939d5b7"
+    },
+    {
+      "path": "checkpoint-extraction-before.log",
+      "bytes": 4186,
+      "sha256": "2319ba7eaf9d30f6ed9b2e13c515986d2dfdef3a13dcd56bf9f087721814e691"
+    },
+    {
+      "path": "checkpoint-extraction-after.log",
+      "bytes": 651,
+      "sha256": "70caeab074f5151590c3edc889e4e70f099609393d8adf6ea8dc735af82cc126"
+    },
+    {
+      "path": "typecheck-checkpoint-correction.log",
+      "bytes": 53,
+      "sha256": "829e3a9ec1a8b50ffcaf2cf97a3e3c857ce29f5ed30343aca263f4f549b602ac"
+    },
+    {
+      "path": "latest-push.json",
+      "bytes": 199,
+      "sha256": "9034554e6addfa2d97489244fba8b032687ae09f79f2e7904d7b9ad7a9fa7681"
+    },
+    {
+      "path": "latest-remote-verified.json",
+      "bytes": 1041,
+      "sha256": "1092f3d349a6d672ce050a6fd8354f48bf5e8cf5befdeab9b39a9a9d94fa44ac"
+    },
+    {
+      "path": "run-final-r2.py",
+      "bytes": 2511,
+      "sha256": "95d7df94315c44ab5648a695c91d9d53ca882fc1d7c4a1955fe8de66c29c20ca"
+    },
+    {
+      "path": "final-r2-build.log",
+      "bytes": 2865,
+      "sha256": "42e5fffaa73f2dc639ebcebf328820b0f892c01c2765568929cd96f3cc7d3eb2"
+    },
+    {
+      "path": "final-r2-typecheck.log",
+      "bytes": 53,
+      "sha256": "829e3a9ec1a8b50ffcaf2cf97a3e3c857ce29f5ed30343aca263f4f549b602ac"
+    },
+    {
+      "path": "local-snapshot.json",
+      "bytes": 348,
+      "sha256": "b7bb0b94067e6ba5bc95057f6ae01133391dd9f12122c8f3cede62310db863b8"
+    },
+    {
+      "path": "latest-change.diff",
+      "bytes": 3962,
+      "sha256": "9c348650964e04092ac77024be9dc5cbbc951e48d8072fac5b77f448f32c2fc3"
+    }
+  ],
+  "archiveSHA256": "d3e9ad7f8401dcae3587d0f79a6680d6cb57ed4de04eae3dd5139d4901da5329"
+}

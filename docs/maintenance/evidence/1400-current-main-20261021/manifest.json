@@ -1,0 +1,76 @@
+{
+  "head": "ec7e0a15ebf913329b47ac31b75ec69f17ad26f7",
+  "members": [
+    {
+      "path": "workspace-reuse.json",
+      "bytes": 311,
+      "sha256": "46366205a33a0bfeb5f59d144a8ec52d4c50a4b11b3b4906a2c9a214d0cf7eda"
+    },
+    {
+      "path": "doc-section-preservation.json",
+      "bytes": 244,
+      "sha256": "93fc31f2916044ca79e3b9ee59a4054196ca254a623d3766f700aae6b71dcc23"
+    },
+    {
+      "path": "source-custody-before.json",
+      "bytes": 4945,
+      "sha256": "43942fcab5d2c5838a45e69b86a0ef6e18206563661611004dba72e0e2d8d5fd"
+    },
+    {
+      "path": "latest-push.json",
+      "bytes": 197,
+      "sha256": "f4c7cd44e220878a6d38add7ef42e812aceea6d30f4958396b42dd1104db4784"
+    },
+    {
+      "path": "latest-remote-verified.json",
+      "bytes": 1140,
+      "sha256": "6c47c31cae21513bf5d352b1495cc6aa71fc0ab1249a0ef1c50b29afeaa0c571"
+    },
+    {
+      "path": "focused-active-rate-limits.log",
+      "bytes": 56077,
+      "sha256": "a34f60d0311cda9ad96ee6f4e764b59d0ce47853b37a9696c20cd3cb9ba0e912"
+    },
+    {
+      "path": "focused-priority-routing.log",
+      "bytes": 85637,
+      "sha256": "433d455b3ceeef3184019d4ecb799cc934e0128e66d038a3e79b449e8e9aaacf"
+    },
+    {
+      "path": "typecheck-precommit.log",
+      "bytes": 53,
+      "sha256": "829e3a9ec1a8b50ffcaf2cf97a3e3c857ce29f5ed30343aca263f4f549b602ac"
+    },
+    {
+      "path": "run-build-type.py",
+      "bytes": 2481,
+      "sha256": "5cb0c00a94301395538cc309bdbbb363bd497b04f6fa7334fe2b48c10dc26429"
+    },
+    {
+      "path": "source-page-preparation.json",
+      "bytes": 396,
+      "sha256": "f666bdc95faff5f0a4f126d22b9629cd27b45525c5de5e3838d9540a7b300512"
+    },
+    {
+      "path": "final-build.log",
+      "bytes": 2864,
+      "sha256": "b311d150a3629aa4c37c466f055aa3ff699aa6ff11b61393f594e9acb0b3e24a"
+    },
+    {
+      "path": "final-typecheck.log",
+      "bytes": 53,
+      "sha256": "829e3a9ec1a8b50ffcaf2cf97a3e3c857ce29f5ed30343aca263f4f549b602ac"
+    },
+    {
+      "path": "local-snapshot.json",
+      "bytes": 350,
+      "sha256": "a7f790dd5e723ee36dcaf55cd1e788230d31c353b06e74b368c3281b89282150"
+    },
+    {
+      "path": "latest-change.diff",
+      "bytes": 5687,
+      "sha256": "8851aa3f51ce41baa48e6605573b45a5426c275d5834a883d5dfdf0e5d3c9f93"
+    }
+  ],
+  "archiveSHA256": "97329157b15dfe92fd495976214d60be881355707d6425b1b4c8402980cef358"
+}
