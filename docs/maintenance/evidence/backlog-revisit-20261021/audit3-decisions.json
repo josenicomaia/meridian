@@ -1,0 +1,31 @@
+[
+  {
+    "number": 1243,
+    "head": "5198b68aea1eb648e3b5685285f2b1008ab827b4",
+    "state": "OPEN",
+    "updatedAt": "2026-10-20T11:26:54Z",
+    "comments": [],
+    "ownerReviews": []
+  },
+  {
+    "number": 1426,
+    "head": "337ccc9cb9264c84bdcf77a68862958aeff01d72",
+    "state": "OPEN",
+    "updatedAt": "2026-10-20T00:18:32Z",
+    "comments": [
+      {
+        "author": "alexgleason",
+        "body": "It's just another header to figure out the sticky session. I want to use it instead of x-session-affinity because it's the only one OpenRouter accepts over CORS, and I want to send the same header to all providers. OpenCode also sends this header and about a dozen providers use it (OpenRouter, Vercel, LLM Gateway, etc)"
+      }
+    ],
+    "ownerReviews": []
+  },
+  {
+    "number": 1429,
+    "head": "d4e61289bb8a6938a744a390603d6ee0f9fec7cd",
+    "state": "OPEN",
+    "updatedAt": "2026-10-20T11:38:45Z",
+    "comments": [],
+    "ownerReviews": []
+  }
+]

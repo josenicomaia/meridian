@@ -1,0 +1,20 @@
+{
+  "capturedUTC": "2026-10-21T12:17:14.697878+00:00",
+  "previousTurnClassification": "no_progress",
+  "currentTurnClassification": "no_progress",
+  "consecutiveNoProgressGoalTurns": 2,
+  "sameBlockingCondition": "Safe remaining delivery requires pending owner contract/disposition decisions or missing original affected-client/provider evidence and qualified live fixtures. No independent actionable queue item appeared.",
+  "queueAndMainUnchanged": true,
+  "ownerDecisionsUnchanged": true,
+  "noLiveHandleBeingWaitedOn": true,
+  "modelsRetried": 0,
+  "newSourceChanges": 0,
+  "newWorktreesOrInstalls": 0,
+  "goalStatus": "active",
+  "blockedThresholdSatisfied": false,
+  "references": [
+    "audit2-queue.json",
+    "audit2-decisions.json",
+    "goal-audit.json"
+  ]
+}
