@@ -1,0 +1,11 @@
+# CI timing diagnosis and prepared timer control
+
+Issues #917 and #933 remain open. No product source or active #1433 checkout was changed. This is a prepared correction, with failing controls, for the next focused test PR after #1433 completes.
+
+The original GitHub logs contradict the latest #917 comment that the tool-cache case had no timing bound. Run34315620193 at264cfc3a actually reports a5003.04ms Bun timeout. The third sequential request had restored both tools and completed18ms after the timeout. Existing #990 raises the harness default to30s. The same run's300ms title-turn assertion was the100ms polling case already corrected by #997 with actual query-entry signals and a shared-lease positive control.
+
+Run34315145910 atd3bfe795 failed the extra-usage test's500ms wall-clock assertion at1992ms. The request logs extended-context fallback then success, with a1.94s gap after fallback. The source branch uses continue before exponential-backoff code. The precise original CPU/filesystem scheduling cause is not directly observed and is not claimed. Existing #990 amplifies configured backoff to10s and retains a5s upper bound; total request duration still measures unrelated work.
+
+The prepared replacement observes actual setTimeout calls while letting the real implementation run. JSON/SSE each cover normal extra-usage fallback, deliberately unrelated701ms SDK-fixture latency, and a legitimate base-model rate limit. Six checks pass: extra usage arms zero configured317ms backoff timers and performs extended→base queries; the real rate-limit control arms exactly one317ms timer and performs extended→base→base queries. The old500ms assertion fails on both unrelated-delay cases. A deliberately incorrect timer filter fails both positive controls. No actual model calls, new installations or extra worktrees were used. This distinguishes backoff from total request latency rather than assuming a fast HTTP round trip.
+
+The exact external experiment, proposed relative-source patch, original source snapshots/logs and failed controls are escrowed. Apply only in a fresh owner branch after #1433 lands, then typecheck, review, full local gates and final-head CI. Neither a passing rerun nor this prepared patch is an issue closeout.

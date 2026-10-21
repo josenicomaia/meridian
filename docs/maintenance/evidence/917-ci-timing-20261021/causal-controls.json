@@ -1,0 +1,7 @@
+{
+  "oldWallclockWithUnrelated701msDelayExit": 1,
+  "missedActualBackoffTimerPositiveControlExit": 1,
+  "productSourceChanged": false,
+  "models": 0,
+  "extraInstallsOrWorktrees": 0
+}

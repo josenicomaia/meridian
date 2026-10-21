@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-21T00:00:25.888038+00:00",
+  "status": "Investigation; neither917nor933closed",
+  "toolCache": {
+    "run": 34315620193,
+    "head": "264cfc3aac4964e98685b0b84ec43fa7d625c43a",
+    "job": 102351097458,
+    "finding": "Actual Bun per-test timeout5003.04ms, not failed tool-cache content assertion. Third request restored both tools and completed18ms after timeout. Latest issue comment incorrectly says no timing bound. Existing990 raisesdefaultbudget30s.",
+    "remaining": "Do not infer filesystem/CPU scheduling cause from duration alone."
+  },
+  "titleTurn": {
+    "run": 34315620193,
+    "finding": "300ms assertion failure around100ms poll; fixed by existing997 signal/latch plus positive lease-sharing controls."
+  },
+  "extraUsage": {
+    "run": 34315145910,
+    "head": "d3bfe7959da65e23727875ac9ac46d896d93d11b",
+    "job": 102349683150,
+    "finding": "Actual elapsed1992ms vs500ms assertion. Same request logs extended-context fallback then success; source branch continue skips exponentialbackoff. A1.94s gap follows fallback, cause not directly observed. Existing990 amplifiesbackoff10s but stilluses5s wallclockjudgment.",
+    "next": "Replace wallclock inference with direct actual backoff-timer observation, positive real-rate-limit control and controlled unrelated delay. Keep productcodeunchanged; fullrequiredgates. Capturecausebeforeanyclosure."
+  },
+  "sourceChanges": false,
+  "extraWorktreesOrInstalls": 0,
+  "experimentAt": "2026-10-21T00:10:22.171992+00:00",
+  "timerExperiment": "6pass/16filtered/0fail: normal, deliberatelyunrelated701msSDKdelay, realratelimit317msbackoff \u00d7 JSON/SSE. ActualglobalsetTimeoutobservercallsoriginalimplementation. Extrausage0backofftimers/modelsequenceextended\u2192base; positivecontrol1timer/modelsequenceextended\u2192base\u2192base.",
+  "causalControls": {
+    "oldWallclockWithUnrelated701msDelayExit": 1,
+    "missedActualBackoffTimerPositiveControlExit": 1,
+    "productSourceChanged": false,
+    "models": 0,
+    "extraInstallsOrWorktrees": 0
+  },
+  "proposedFileSHA256": "b05f4b7640857a7747add13529f693ab5e1ab712c37f2b3fc5830340d0cdb18a",
+  "currentBaseSHA256": "c5151edd406e6cc71612f4084d16f878f7dc7b1ae91a25691c41a6d9561b95f5",
+  "implementationStatus": "Prepared exactrelativecandidatepatch outsideactiveworktree; no source mutation/newPR/issueclosure. Apply onlyafter1433exactheadmerges, freshmainbranch. Fulltypedlocal/CI gatesrequired; testharnessonly,no newproductbehavior/modelcallclaimed."
+}
