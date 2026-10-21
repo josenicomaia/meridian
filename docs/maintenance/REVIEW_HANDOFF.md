@@ -1,3 +1,17 @@
+## Active continuation, 2026-10-21 00:59 UTC
+
+Goal ACTIVE. Necessary owner test fix [#1434](https://github.com/rynfar/meridian/pull/1434) is now verified merged as `be79072673a22f86cfa27851e63127bdf8656b77`; this is current main. Parentdcc1, exact reviewede768 tree, owner Git Author and valid signature are verified. [Delivery and original causal evidence](evidence/917-ci-timing-20261021/MERGED.md). #917 CLOSED; #933 stays OPEN for broader fast assertion observations. All26 full groups8070/36/0 with explicit published1.84compatibility, typecheck/build,22fixture cases and8CIchecks pass. No product-source/model/dependency changes or actual inference. Two negative controls fail as expected and file bytes are restored.
+
+Earlier necessary #1433 remains verified atdcc1; #1277/#1244 are CLOSED. All five observed postmerge workflows pass (CI, Docker, desktop, Nix, Release Please); no release was published. Ten original contributor PR merges remain separately counted. The two new owner fixes address existing issues and do not carry contributor commits.
+
+The user was asked asynchronously for permission to post the exact drafted decline comment and close #1243 at reviewed5198b68a. **No response yet: UI request acceptance is not approval.** Keep it OPEN and send no comment until explicit approval. Draft is `/tmp/meridian-resume-20261020/1243-decline-comment.md`; rationale is the approved JSON-default/explicit-opt-in/offline contract delivered by1219/1433. Branch/authored proof remains preserved.
+
+Continue independent queue work. #1220's old E41 cache discrepancy is Opus5.5/SDK0.2.141/native2.1.284: published3332 tokens versus next read3132; aggregation/retry controls explain6593 aggregate, not the residual200. Exact recovery requirements are in `evidence/e41-thinking-fidelity.md`; supported history needs its original owned locator/UUIDs and cannot recreate unrecorded transport fingerprints/cache timings. No blind actual rerun. Check its async JSON composition with current synchronous SQL transaction boundaries before modifying source. #1314 is an Antigravity prompt renderer (not UI); actualPi1.1/agy1.2.7/Gemini3.8FlashLow repeated identical writes on baseline and both corrected candidates, so that gate remains. Respect other drafts/public approvals/model holds.
+
+Disk limit remains one candidate plus evidence, no new worktree/install/Docker. Current candidate is `/private/tmp/meridian-clear-completion-20261020`; it is clean at e768 after completed1434. Reuse only for concrete next implementation, otherwise remove completed dependencies/tree after durable proof. Original user root446a and its12dirty files remain preserved. No release/Apple changes/external comments.
+
+---
+
 ## Active continuation, 2026-10-21 00:33 UTC
 
 Goal ACTIVE. The ten original contributor PR merges remain verified; necessary owner follow-up [#1433](https://github.com/rynfar/meridian/pull/1433) now completes the approved cleanup API. Main is `dcc1b8c9d78738217aaf4633659704db9b06bd11`. Exact reviewed tree, owner Git Author and valid signature are verified. [Delivery/closeout proof](evidence/1244-clear-completion-20261020/MERGED.md). Both #1277 and #1244 are CLOSED after validation. #1220's broader asynchronous JSON writer remains OPEN with its old cache-prefix gate; its owner-approved API decision is no longer a blocker. Original #1219/body and #1220/body disclose this independent contract correction.

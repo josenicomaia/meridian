@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-21T00:54:11.538371+00:00",
+  "PR": {
+    "headRefOid": "e768e93db644aad89682ccaef13b7954831deddd",
+    "mergeCommit": {
+      "oid": "be79072673a22f86cfa27851e63127bdf8656b77"
+    },
+    "mergedAt": "2026-10-21T00:52:00Z",
+    "state": "MERGED",
+    "url": "https://github.com/rynfar/meridian/pull/1434"
+  },
+  "merge": "be79072673a22f86cfa27851e63127bdf8656b77",
+  "reviewedHead": "e768e93db644aad89682ccaef13b7954831deddd",
+  "parent": "dcc1b8c9d78738217aaf4633659704db9b06bd11",
+  "tree": "c5fad8484d80efcb709e0225342079acffc34235",
+  "treeMatches": true,
+  "mainReachable": true,
+  "gitAuthor": "Trevor Walker <rynfar@gmail.com>",
+  "GitHubAuthor": "rynfar",
+  "signatureVerified": true,
+  "message": "test: observe extra-usage backoff timers directly (#1434)",
+  "route": "normalheadmatchedsquash; noadmin/checkbypass"
+}
