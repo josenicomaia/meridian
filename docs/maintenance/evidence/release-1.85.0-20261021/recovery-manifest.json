@@ -1,0 +1,101 @@
+{
+  "repairHead": "7cede85b5423ef90989c8e6809220d18946667f1",
+  "members": [
+    {
+      "path": "merge-receipt.json",
+      "bytes": 227,
+      "sha256": "48da87e8ba324d9ee87dfa359413eac5294703966ed1e9e5b7a7c6dbea056aa6"
+    },
+    {
+      "path": "merged-tree-verification.json",
+      "bytes": 236,
+      "sha256": "8b25ccdc5c5b521ec2f1f76ce573a4decdf142201b53b08573d688dd5b145820"
+    },
+    {
+      "path": "github-release-current.json",
+      "bytes": 251,
+      "sha256": "c6b1185596567786ff3519d476e5fb3085171144e80379314fc9168dc21d7f71"
+    },
+    {
+      "path": "publication-progress-2.json",
+      "bytes": 8227,
+      "sha256": "1ac18380ec64d3537227cd6e1615f14b886a015747ad37f65e190e717ba9c887"
+    },
+    {
+      "path": "PUBLICATION_STATE.json",
+      "bytes": 1113,
+      "sha256": "b69aa10a826493c1a3cdb4726786b3d31610a377aa219ec63729bcb51e45b3d4"
+    },
+    {
+      "path": "publish-runtime-review.json",
+      "bytes": 525,
+      "sha256": "403f23542bae8b91173b49917fdd1b28ad46f86448d9f6e7080e6750fe175d77"
+    },
+    {
+      "path": "publish-repair-r1-local.json",
+      "bytes": 436,
+      "sha256": "2ff0b1ff86c19b2d50433fb12f2f8fdb868f9659d929c9004d1d9fe43dd9be87"
+    },
+    {
+      "path": "publish-repair-r1-counts.json",
+      "bytes": 116,
+      "sha256": "9ba8497286f6c680ec3fdfaa357eaf739b0db5fb0f17a4054f1682ed87527ef7"
+    },
+    {
+      "path": "publish-repair-r1-typecheck.log",
+      "bytes": 53,
+      "sha256": "829e3a9ec1a8b50ffcaf2cf97a3e3c857ce29f5ed30343aca263f4f549b602ac"
+    },
+    {
+      "path": "publish-repair-r1-build.log",
+      "bytes": 2863,
+      "sha256": "1119286ce54d6511780d838a2c2a6e06aa55c8aa4ddeea8d8c517af35693c63a"
+    },
+    {
+      "path": "publish-repair-r1-full.log",
+      "bytes": 1529802,
+      "sha256": "949d5b333097882c3c05b0c9058c820117fabd31761172c5d3f6def187dfcf37"
+    },
+    {
+      "path": "repair-ci-qualified.json",
+      "bytes": 3039,
+      "sha256": "0a60fbe056b15bcd4ef67e0123903971487396fc7b2aea30578129540182b889"
+    },
+    {
+      "path": "publish-runtime-pr-body.md",
+      "bytes": 1245,
+      "sha256": "d067c3201bfac421a28f4ca075b8ddeaf62e865bd1e200059605a32c8a518f9e"
+    },
+    {
+      "path": "docker-1.85.0-manifest.json",
+      "bytes": 1609,
+      "sha256": "49638677087aad5fe730ae7e3f98b0ae80a42267f5986b2f74936589bbf3bf7c"
+    },
+    {
+      "path": "docker-1.85-manifest.json",
+      "bytes": 1609,
+      "sha256": "49638677087aad5fe730ae7e3f98b0ae80a42267f5986b2f74936589bbf3bf7c"
+    },
+    {
+      "path": "pack-r3/identity-with-native-package.json",
+      "bytes": 542,
+      "sha256": "6f0cc73654e048b852e6d7ac2e85a93685ea08ffd2aa4c020b39ea0d851fb72f"
+    },
+    {
+      "path": "completed-pack-and-failed-fixture-cleanup.json",
+      "bytes": 733,
+      "sha256": "2bf639f123c169c4be77170a0c426657c9f7a4c23d79b8e5ebeb66f8fefd56d0"
+    },
+    {
+      "path": "publish-failure.log",
+      "bytes": 6015701,
+      "sha256": "58d8996fb156b2f92ca0e913138f802d8cd255d32b02aaff88fecdf945efea74"
+    },
+    {
+      "path": "desktop-failure.log",
+      "bytes": 88862,
+      "sha256": "01e6997846580b82d1f32fc0c76d66700e24d761841c54977a8a4dc378a4ea69"
+    }
+  ],
+  "archiveSHA256": "654b522d17c63778813eab22914c059cfb2e62a5662947fec1edb33f59c1c951"
+}

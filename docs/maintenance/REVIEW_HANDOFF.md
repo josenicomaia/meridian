@@ -1,3 +1,15 @@
+## Latest:1.85 GitHub/Docker published; npm runtime repair1436 qualified locally, 2026-10-21
+
+Goal ACTIVE. PR1427 merged d35fd0259ee4cead19358294d92ba718b4491fd1 with exact candidate tree; tag/release1.85 and identical Docker1.85/1.85.0 Linuxamd64+arm64 manifests exist. npm is NOT published. Actual normal workflow39557948800 selected packageManager Bun1.3.11/SQLite3.51.2 and failed the WAL-reset guard; agent missed setup-bun's version fallback. [Exact failure, repair and next gates](evidence/release-1.85.0-20261021/RECOVERY.md).
+
+PR1436 signed head7cede85b5423ef90989c8e6809220d18946667f1 pins publisher Bun1.4.3, four workflow-only lines; all other files byte-match original1.85tag.8078/36/0 full26local, typecheck/build0; controller53349 TERMINAL. Final CI test was running; fresh status before ordinary squash --match-head. After merge use the documented emergency publish_only ONCE on repaired main, validating actual run source/code equality. Never manual npm version/tag/publish. Provenance will correctly reference the workflow-repair commit, and that deliberate workflow-only difference from original tag must be recorded.
+
+Prepared registry verifier/controllers are in /tmp/meridian-release185-evidence-20261021. Fresh registry install/default native flow, integrity/provenance/signature audit and final publication outcome are still mandatory. Earlier24 actual source/tarball calls used native2.1.302; fresh npm resolution2.1.306 must be exercised as its actual installed binary/version/hash, not substituted. Original source proof2209373e remains. Old package prefixes and failed fixture credential/session homes removed; only one task checkout/install remains. No active models/grants or local Docker. Root12dirty files preserved.
+
+Actual Apple notarization again401; owner-deferred, no secret change/manual retry. Emergency publish_only skips desktop. Continue authorized backlog after publication, keeping1314/1220/1243 gates and owner deferrals explicit. No new replacement contribution PR;1436 is necessary to recover the existing authorized release.
+
+---
+
 ## Latest:1.85 exact release candidate qualified; merge/publication still pending, 2026-10-21
 
 Goal ACTIVE. Owner release authorization applies. PR1427 **d54dcd47bcc805454234179cb2433d43bfeafe76** is qualified:8078/36/0 all26local, type/build0;12distinct hosted checks pass, duplicate pushNix canceled by its known concurrency group while equivalentPRNix succeeds. Final real Linux Docker gate passes Node22.23.3/x64 migration, awaited clear and export; missing imageCLI is fixed. Source/Bun actual Sonnet5.5/SDK0.2.141/native2.1.302 all4E41 modes20generations pass; independent699-file installed tarball passes parallel-stream/fresh-clear-history with4more, all identities/native custody verified. Node22.22.3 storage/package/type gates also pass. [Exact current qualification and original failure links](evidence/release-1.85.0-20261021/QUALIFIED.md).
