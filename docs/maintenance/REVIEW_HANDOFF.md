@@ -1,3 +1,15 @@
+## Latest: #1314 concrete current-main corrections uploaded; qualification running, 2026-10-21
+
+Goal ACTIVE. Original nondraft1314 is nonforce-updated to5c96dd307cb668e611725e9d33dd90211a68bb68. Original Cd1s object is preserved; signed authored cherry3cd plus separate436d/f6ea/5c96 corrections all have valid GitHub signatures/human Authors. [Current correction/proof/limits](evidence/1314-current-main-20261021/README.md). Draft1317 is untouched; no new PR.
+
+Exact submitted/current-main controls reproduce unbounded recaps, content-first target loss, whole-batch/identity/error errors and Unicode preview defects. Corrected35focused cases and iteration typecheck pass. A separate genuine main regression refuses the historical fixture because older active-loop assistant text is never compacted; two new controls fail before and pass after. Unchanged190000byte limit, exact typed request/latest pair, original input unmodified. Reconstructed fixture now25534bytes; old provider/model failure cause is not claimed. Failed diagnostic hypotheses are retained, including old recap marker vs authoritative-history distinction.
+
+Current frozen exact-head typecheck/build pass; all26 local controller77427 is live. Check final-r1-local.json and the live handle before restart; final-head CI is running. Next: qualify actual Pi1.1/agy1.2.7/Gemini3.8FlashLow against this concrete new correction, retain old duplicate-write failures, exact reporter ACP/platform gap and native custody. Do not claim live acceptance from structural success or repeat an unexplained arm.
+
+Only /private/tmp/meridian-pr1314-current-20261021 is task-owned: the former evidence worktree was moved/reused, not duplicated. One frozen install; user dependencies untouched. Evidence branch updates use a separate temporary Git index and never alter candidate HEAD/index during the full run. No Docker/model/release/Apple action. #1220 all26local/all8CI passed but original actual gates remain; its completed checkout/install is removed. #1243 is still OPEN without comment/closure approval. Fresh165repo/sixqueue audit has no new heads except our1220/1314 corrections; eight drafts and two scrub releases remain held.
+
+---
+
 ## Latest: #1220 final local and hosted gates pass; acceptance remains held, 2026-10-21
 
 Goal ACTIVE. Original #1220 is nonforce-updated to `92222508248478a1e1e647209c0b99f49deec63a` on Nowaker's original branch. Actual fork/PR head, new human Author/signature and preserved original ancestor verify. Only one test file changes from EA; earlier fifteen introduced objects are unchanged. [Current proof, controls and acceptance limits](evidence/1220-gc-fixture-20261021/CURRENT.md).
