@@ -1,3 +1,13 @@
+## Latest: #1314 source and installed actual Pi qualify; release authorized and in validation, 2026-10-21
+
+Goal ACTIVE. Exact original PR1314 head5c96 has8098pass/36skip/0fail across all26groups, typecheck/build0 and all8executed hosted checks green. Both actual source and independently installed 699-file tarball pass Pi1.1/official agy1.2.7/Gemini3.8FlashLow completed-write/result-tail recovery, exact write/read receipts, native/client process custody and terminal artifact drain. [Final receipts, exact harness and remaining reporter/signature gates](evidence/1314-current-main-20261021/QUALIFIED.md). Original version/self-update and inherited-API-key preparation failures are retained and concretely controlled; no product explanation is inferred from them. The pinned native binary remains unchanged before/after both actual flows.
+
+Reporter DeepSeekHarness ACP version/OS remain unknown; original contributor GPG object verifies unknown_key at GitHub, leaving PR1314 BLOCKED despite valid added signatures. No bypass, new PR, draft1317 alteration or merge. Actual Pi behavior is now proven; exact reporter acceptance and a compliant final delivery route remain open.
+
+Owner explicitly authorized a release followed by continued backlog. PR1427 now targets current main with1.85.0 metadata and corrected missing #1394/#1395/#1397 notes. First real Sonnet5.5 release qualification hit included-capacity HTTP429, zero successful generations; no retry/fallback/paid usage. Read-only usage at06:00UTC reports five-hour100%, reset06:20UTC; seven-day48%. Release publication is held until actual recovery plus local/CI/package/live gates. Apple notarization stays deferred. Two task worktrees temporarily exist for simultaneous release qualification and retained1314 correction; no Docker changes, root dirty checkout preserved.
+
+---
+
 ## Latest: #1314 concrete current-main corrections uploaded; qualification running, 2026-10-21
 
 Goal ACTIVE. Original nondraft1314 is nonforce-updated to5c96dd307cb668e611725e9d33dd90211a68bb68. Original Cd1s object is preserved; signed authored cherry3cd plus separate436d/f6ea/5c96 corrections all have valid GitHub signatures/human Authors. [Current correction/proof/limits](evidence/1314-current-main-20261021/README.md). Draft1317 is untouched; no new PR.
