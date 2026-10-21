@@ -1,3 +1,15 @@
+## Latest:1.85 exact release candidate qualified; merge/publication still pending, 2026-10-21
+
+Goal ACTIVE. Owner release authorization applies. PR1427 **d54dcd47bcc805454234179cb2433d43bfeafe76** is qualified:8078/36/0 all26local, type/build0;12distinct hosted checks pass, duplicate pushNix canceled by its known concurrency group while equivalentPRNix succeeds. Final real Linux Docker gate passes Node22.23.3/x64 migration, awaited clear and export; missing imageCLI is fixed. Source/Bun actual Sonnet5.5/SDK0.2.141/native2.1.302 all4E41 modes20generations pass; independent699-file installed tarball passes parallel-stream/fresh-clear-history with4more, all identities/native custody verified. Node22.22.3 storage/package/type gates also pass. [Exact current qualification and original failure links](evidence/release-1.85.0-20261021/QUALIFIED.md).
+
+The first429 is retained. Official quota observation was exhausted/reset06:20UTC; the bounded same-account/model continuation started20minutes after that external reset with capacity explicitly UNKNOWN, paid disabled and strict first-error stop, then all24actual calls succeeded. Usage-endpoint429 is not claimed fixed. Source+pack grant files removed, fixture homes joined/removed. No model/account fallback, auth refresh or paid usage.
+
+Next: refresh exacthead/base and CI, ordinary ReleasePlease --merge --match-head-commit; verify release workflow/tag/commit/npm integrity/provenance, Docker semver/architectures and a fresh-registry real installed flow before calling the release delivered. No publication yet. Apple notarization remains owner-deferred. Current source/install worktree stays frozen until registry gate; do not restart terminal local controllers49936/50604 or actual controllers12209/61705. Proof uses an alternate Git index and preserves candidate HEAD/index.
+
+No new PR. Original root12dirty hashes/HEAD preserved, no local Docker; completed1314 checkout/deps and old release installs removed. Only active release checkout/final package install remain. Backlog goal continues after release;1314 actual Pi source+pack now qualify but reporter/signature gates remain;1220 original200-token Opus gap remains;1243 is open without comment/close authorization.
+
+---
+
 ## Latest: owner-authorized1.85 release held for live capacity and packaging qualification, 2026-10-21
 
 Goal ACTIVE. PR1427 candidate71c4258d includes current main8914 plus1.85metadata/corrected missing release notes and four test-only gate corrections.59focused/typecheck/build pass. Frozen all26local r2/controller50604 and final-head CI run; verify terminal state before restarting. Initial local and CI failures, forced controls, real Sonnet429 and package checks are [durable](evidence/release-1.85.0-20261021/README.md). No publication. Apple notarization remains owner-deferred.
