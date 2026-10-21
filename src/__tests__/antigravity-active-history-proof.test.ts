@@ -21,7 +21,7 @@ it("the live proof rejects lost instructions, changed results/identities and ove
     ["omitted by Meridian", "missing disclosure"],
   ] as const) {
     expect(rendered).toContain(before)
-    expect(() => inspectBudgetedHistory(rendered.replace(before, after), parsed)).toThrow()
+    expect(() => inspectBudgetedHistory(rendered.replaceAll(before, after), parsed)).toThrow()
   }
   expect(() => inspectBudgetedHistory("x".repeat(190001) + rendered, parsed)).toThrow("exceeds unchanged limit")
 })
