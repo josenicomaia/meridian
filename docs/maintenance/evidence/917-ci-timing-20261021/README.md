@@ -1,3 +1,5 @@
+**Current qualification:** [#1434](https://github.com/rynfar/meridian/pull/1434), head e768e93db644aad89682ccaef13b7954831deddd on dcc1. One committed HTTP/mocked-SDK test fixture changes; no product behavior or model calls. All22 fixture cases, both causal counterexamples, strict typecheck/build, full8070/36/0 across26groups with published1.84compatibility and all8executedCI checks pass. Exact implementation, final logs, controls and adversarial review are in implemented-proof.tar.xz and qualified.json. Merge/issue closeout follow this qualification checkpoint. Earlier preparation and original failures below remain historical.
+
 # CI timing diagnosis and prepared timer control
 
 Issues #917 and #933 remain open. No product source or active #1433 checkout was changed. This is a prepared correction, with failing controls, for the next focused test PR after #1433 completes.

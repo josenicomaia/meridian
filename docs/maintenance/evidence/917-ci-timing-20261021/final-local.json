@@ -1,0 +1,39 @@
+{
+  "head": "e768e93db644aad89682ccaef13b7954831deddd",
+  "base": "dcc1b8c9d78738217aaf4633659704db9b06bd11",
+  "publishedCompat": "Explicitverified1.84tar enabled forfulltest",
+  "commands": [
+    {
+      "label": "typecheck",
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "started": "2026-10-21T00:34:40.728559+00:00",
+      "exit": 0,
+      "finished": "2026-10-21T00:34:50.337199+00:00"
+    },
+    {
+      "label": "build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "started": "2026-10-21T00:34:50.337979+00:00",
+      "exit": 0,
+      "finished": "2026-10-21T00:34:56.951084+00:00"
+    },
+    {
+      "label": "full",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "started": "2026-10-21T00:34:56.951836+00:00",
+      "exit": 0,
+      "finished": "2026-10-21T00:49:20.128714+00:00"
+    }
+  ]
+}

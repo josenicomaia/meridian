@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-21T00:31:49.208725+00:00",
+  "sourceSHA256": "032179ab14d8c6a34b1f28f267c04234111b43b2fb6d7666bdf9f981c84002da",
+  "controls": [
+    {
+      "name": "old-wallclock-on-source",
+      "exit": 1
+    },
+    {
+      "name": "missed-timer-on-source",
+      "exit": 1
+    }
+  ],
+  "sourceBytesRestored": true,
+  "focusedExit": 0,
+  "productSourceChanged": false,
+  "models": 0
+}

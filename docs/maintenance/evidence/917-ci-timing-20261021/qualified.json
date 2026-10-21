@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-21T00:50:05.402972+00:00",
+  "head": "e768e93db644aad89682ccaef13b7954831deddd",
+  "base": "dcc1b8c9d78738217aaf4633659704db9b06bd11",
+  "full": {
+    "groups": 26,
+    "pass": 8070,
+    "skip": 36,
+    "fail": 0,
+    "publishedCompat": "verified1.84enabled"
+  },
+  "typecheck": 0,
+  "build": 0,
+  "focused": {
+    "pass": 22,
+    "fail": 0
+  },
+  "causalControls": "Old500msassertionFAILS2slowSDKcases; brokenactualtimerfilterFAILS2positivecontrols; bytesrestored.",
+  "CI": "8SUCCESS+expectedskip; supersededpushNixcanceledwithsameheadPRNixSUCCESS",
+  "productSourceChanged": false,
+  "modelCalls": 0,
+  "adversarialReview": "Singlefixturefileonly. Realglobaltimerobserverpreservesoriginalimplementation; matching317msdelayhasactualrate-limitpositivecontrol inJSON/SSE. Unrelated701msSDKdelaydoesnotcountasbackoff. QuerysequenceandterminalHTTP/SSEassertionsremainstrict. Mockflagsresetbeforeeachcase andtimerobserver/env restoredfinally. No5s/30sbudgetwidening, sourcebehavior/SDKoverride/header/persistence/depchange. Original1992mslatencycausebeyondrecordedbranch/controlnotclaimed.933broaderfastfailremainsopen.",
+  "remaining": "Ready/merge/landedtree+credit+signature/issuecloseout"
+}
