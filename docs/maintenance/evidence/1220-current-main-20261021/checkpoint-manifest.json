@@ -1,0 +1,212 @@
+{
+  "candidate": "5721c3db401d41cd7154f0577f8039e3d3e8916a",
+  "files": [
+    {
+      "path": "candidate-source.diff",
+      "bytes": 375330,
+      "sha256": "673dcdc5333566ed4f47e0cd55a428773c331f4dc2d9fd599ef1e889dc967de2"
+    },
+    {
+      "path": "focused-r1-bookkeeping-cache-publication.log",
+      "bytes": 7248,
+      "sha256": "d1d630f91ebc4f8bb209dc3e15164c9984222f21c4f7fcc3f7f8aa41afc12a20"
+    },
+    {
+      "path": "focused-r1-bookkeeping-lifecycle-publication.log",
+      "bytes": 3317,
+      "sha256": "9041ae54923008e6f6ccae76eb865f486a68f89d908b70f13a7451e743360f7a"
+    },
+    {
+      "path": "focused-r1-bookkeeping-store-differential.log",
+      "bytes": 253,
+      "sha256": "99b15304a93f704be21cfaed776d3fba59180a7a2f64a6d5d8fe6241e4cb6e28"
+    },
+    {
+      "path": "focused-r1-bookkeeping-store-mutations.log",
+      "bytes": 2406,
+      "sha256": "38cd6ebe51d636261d151f5dd22a2ed31a201e45afc1450d3136bb0fc6e0400c"
+    },
+    {
+      "path": "focused-r1-execution-history-store.log",
+      "bytes": 859,
+      "sha256": "c5ac55783f9051e611294384a86be4171d577c4d19f877c283b04478b6763aaa"
+    },
+    {
+      "path": "focused-r1-priority-session-store.log",
+      "bytes": 6657,
+      "sha256": "f9e337d34423824b03b05a5437f63df8879c6d6fa7a2826f2eb5e7b5deb7b9ab"
+    },
+    {
+      "path": "focused-r1-proxy-session-store.log",
+      "bytes": 3780,
+      "sha256": "0d9ae0ed802e98296eac24c85fdf97547fb1aa70b17306dd41924d71d8ae5d42"
+    },
+    {
+      "path": "focused-r1-session-cache-clear-completion.log",
+      "bytes": 1614,
+      "sha256": "e7017e08aeadacdfad425c8ed8024d98ea859dad853133b630be08dfbf9f16da"
+    },
+    {
+      "path": "focused-r1-session-cache-coherence.log",
+      "bytes": 1835,
+      "sha256": "90438d0a51c5f938fefb3c94ecf7431c711447eef6bbcaa7b3a9fb4fe87ed9fd"
+    },
+    {
+      "path": "focused-r1-typecheck.log",
+      "bytes": 53,
+      "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+    },
+    {
+      "path": "focused-r2-bookkeeping-lineage-context.log",
+      "bytes": 672,
+      "sha256": "8a6de7b0de1c00875b3e6382d95d586d78155b7c9106188a0a70e9eb08552867"
+    },
+    {
+      "path": "focused-r2-bookkeeping-profile-copies.log",
+      "bytes": 1390,
+      "sha256": "91d55f647c8467d1ba0d56de155dbc38fb006725348b1b6d642f22c82b9ff20e"
+    },
+    {
+      "path": "focused-r2-bookkeeping-store-contract.log",
+      "bytes": 742,
+      "sha256": "b799b7b5cc394fb02c2bfda9ff94530c1b4df2d5d14e75a162225ef4f8fc8d7d"
+    },
+    {
+      "path": "focused-r2-lifecycle-publication-degrade.log",
+      "bytes": 3851,
+      "sha256": "fd1e67b06e148bbd85b4c1b1e146f168ec38d4477ce537757df26e8766d84623"
+    },
+    {
+      "path": "focused-r2-priority-routing-integration.log",
+      "bytes": 81311,
+      "sha256": "a482a80404d3a663f62a778b630b2639afc11574b59b06b4d3270877387e109e"
+    },
+    {
+      "path": "focused-r2-profile-copy-prune.log",
+      "bytes": 1692,
+      "sha256": "48491dfad39ae1d0533b4c280ce06d6b95619ddbee39d4ae62988cc107bb530f"
+    },
+    {
+      "path": "focused-r2-proxy-session-store-locking.log",
+      "bytes": 1379,
+      "sha256": "99ef317d87d8e1c2df6e741d2e35ca921cc6a255e4f4bca39351d4d92e70c8aa"
+    },
+    {
+      "path": "focused-r2-proxy-session-store.log",
+      "bytes": 2894,
+      "sha256": "b3038a1643eaa1a55f248d4e17c27cc7f64a33f31bb7907e6cccefed181339b1"
+    },
+    {
+      "path": "focused-r2-session-fingerprint-context.log",
+      "bytes": 14204,
+      "sha256": "7737ba6351a70b82d4960dddf43b7c7f3cb64d6ed01071046ca8095600bed2d8"
+    },
+    {
+      "path": "focused-r2-session-store-pruning.log",
+      "bytes": 673,
+      "sha256": "563e3c73e5797751454db4709784f7abafd2f60c3575de701ea25f0ec79117fd"
+    },
+    {
+      "path": "focused-r2-store-mutation-loop-lag.log",
+      "bytes": 2857,
+      "sha256": "4838665cbf8b16075688a8c962b86cb67ba173ea069f1c6a506821050ae324f5"
+    },
+    {
+      "path": "focused-r2-typecheck.log",
+      "bytes": 53,
+      "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+    },
+    {
+      "path": "full-r1-full.log",
+      "bytes": 443701,
+      "sha256": "228fb0857b60ce21d3abe3d68e9231306c7ceaab085c3cec556e3aee7e8bc049"
+    },
+    {
+      "path": "full-r1-resource-cleanup.json",
+      "bytes": 469,
+      "sha256": "c63528964487e79fa72ebb59fcea63ea8d689a19e0c5e410efbb04010a0e6f05"
+    },
+    {
+      "path": "full-r1-stop.json",
+      "bytes": 333,
+      "sha256": "abdf683f8efd13f9ec9ccee11ab9371f597c7c89db5c61674ffcb675a5c6732c"
+    },
+    {
+      "path": "json-and-sql-clear-corrected.log",
+      "bytes": 9912,
+      "sha256": "4644371f5800295ab8a1cfc88e5a83f841c14d0c54b33e9554608258088a8c05"
+    },
+    {
+      "path": "json-clear-commit-effect-negative.log",
+      "bytes": 1787,
+      "sha256": "4be6639f6282518399138c95fc4af075910d3c08b28a47f8677540f57829a601"
+    },
+    {
+      "path": "json-clear-negative.json",
+      "bytes": 130,
+      "sha256": "9a6f0e05dd73d3e8070cd06d9ef8577208caf97f0566ff04f251c4bcf3f39c7e"
+    },
+    {
+      "path": "json-pending-clear-before.log",
+      "bytes": 955,
+      "sha256": "4c38988427eff3e75f479e1da7a516a66b7826cec930b03f442161c24bf2df8c"
+    },
+    {
+      "path": "late-headerless-key-negative.log",
+      "bytes": 971,
+      "sha256": "a94e34e86bfcf1c608fbc7df28d7021956c2547eeca9c606fd0a5fc951529426"
+    },
+    {
+      "path": "native-fixture-corrected-bookkeeping-embedding.log",
+      "bytes": 1139,
+      "sha256": "9c28ab07e62d0ed32673bd2c6f4f0ba28c0781191845c37f10321bf7d59bd1fc"
+    },
+    {
+      "path": "native-fixture-corrected-bookkeeping-lifecycle-differential.log",
+      "bytes": 269,
+      "sha256": "45f42561cfd7ff2f3171add0ffd4eb16b5df2520f328858f9eb37d7f7b6285d6"
+    },
+    {
+      "path": "native-fixture-corrected-bookkeeping-runtime.log",
+      "bytes": 1191,
+      "sha256": "dd1b810d08581a753285a1eaa2de6caf7ce904c813cf463589daedc0ed810bf4"
+    },
+    {
+      "path": "native-fixtures-corrected.json",
+      "bytes": 194,
+      "sha256": "9587a12111fa96076adce17c6b119f516aff4d0993a20b84a4cd312363041358"
+    },
+    {
+      "path": "negative-controls.json",
+      "bytes": 364,
+      "sha256": "96f3304bd16fd94c8b783249c14f7de47c9795f4d321277127015601a99bf142"
+    },
+    {
+      "path": "original-cache-metadata-recovery.json",
+      "bytes": 3473,
+      "sha256": "aaa70e650b7b2f98434b840f6a895bc4e453f3e657f5788bab22661ae13eb54c"
+    },
+    {
+      "path": "root-preserved.json",
+      "bytes": 174,
+      "sha256": "ae62d01c15365f9363b482ddaa511ab1d6b5322b5d07cabc5a5f9912c7fd078f"
+    },
+    {
+      "path": "run-negative-controls.py",
+      "bytes": 1931,
+      "sha256": "5beb90b43f8cd3b9a1f886da86bd668ed442714c9b8852a66544557399aed188"
+    },
+    {
+      "path": "source-ancestry.json",
+      "bytes": 765,
+      "sha256": "f321cb7384e3edf532b2d1ae9abd891882bfebce2a63ea7da1d5703cfb42f7ec"
+    },
+    {
+      "path": "yielding-native-continuation-negative.log",
+      "bytes": 1099,
+      "sha256": "66b5157302f96bc6f2b48e16a6a1a7d77ac066e5135e05d9b5aeaf9ffd434873"
+    }
+  ],
+  "archiveSha256": "53a857efadf108fff0799d8c51bf61e6b97244726f3a5c0d15e3ce9bcf40a75b",
+  "status": "unqualified local candidate; final type/build/npm and current-head CI required; original live cache gate OPEN"
+}

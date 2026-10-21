@@ -1,0 +1,127 @@
+{
+  "source": "task-owned persistent session-store-1220/failed-e41-recovered-usage.log",
+  "sha256": "5244ea3b0669c56132c371e29301cf43151651f8a5ef41f0f1c833ceca412e06",
+  "supportedHistoryWasRecordedPreviously": true,
+  "sdkInferenceNow": 0,
+  "currentSdkHistoryCalls": 0,
+  "exactFailingLocatorRecovered": false,
+  "knownHarnessStoresSearched": 35,
+  "matchingFailingSessionStores": 0,
+  "controlProfileLocatorExists": false,
+  "controlProfileLocatorSha256": "457c0269e7c0bdc60f0dee5eb10997ebbe6088e3b1dea5cbffe49d52daaac50f",
+  "limitation": "The control profile record is not proof of the failing run locator. It points to an absent staging directory. No global SDK namespace was searched. Exact failing fixture and transient transport/options records remain missing.",
+  "sessions": [
+    {
+      "session": "d3ed871d-7331-48af-9c67-56973388c30d",
+      "rows": 8,
+      "assistants": [
+        {
+          "messageId": "msg_011Cfe5dziPpbXZJZwCHbUkm",
+          "contentTypes": [
+            "tool_use"
+          ],
+          "input": 2,
+          "cacheRead": 0,
+          "cacheCreation": 3003,
+          "output": 111
+        },
+        {
+          "messageId": "msg_011Cfe5eD8GWB6F66txjkyxY",
+          "contentTypes": [
+            "tool_use"
+          ],
+          "input": 2,
+          "cacheRead": 3003,
+          "cacheCreation": 129,
+          "output": 111
+        },
+        {
+          "messageId": "msg_011Cfe5egKdcRN2okYPcuZBF",
+          "contentTypes": [
+            "thinking"
+          ],
+          "input": 2,
+          "cacheRead": 0,
+          "cacheCreation": 3332,
+          "output": 210
+        },
+        {
+          "messageId": "msg_011Cfe5egKdcRN2okYPcuZBF",
+          "contentTypes": [
+            "tool_use"
+          ],
+          "input": 2,
+          "cacheRead": 0,
+          "cacheCreation": 3332,
+          "output": 210
+        }
+      ]
+    },
+    {
+      "session": "f5f3346e-d2c7-4d76-9519-eafd7a769148",
+      "rows": 11,
+      "assistants": [
+        {
+          "messageId": "msg_011Cfe5dziPpbXZJZwCHbUkm",
+          "contentTypes": [
+            "tool_use"
+          ],
+          "input": 2,
+          "cacheRead": 0,
+          "cacheCreation": 3003,
+          "output": 111
+        },
+        {
+          "messageId": "msg_011Cfe5eD8GWB6F66txjkyxY",
+          "contentTypes": [
+            "tool_use"
+          ],
+          "input": 2,
+          "cacheRead": 3003,
+          "cacheCreation": 129,
+          "output": 111
+        },
+        {
+          "messageId": "msg_011Cfe5egKdcRN2okYPcuZBF",
+          "contentTypes": [
+            "thinking"
+          ],
+          "input": 2,
+          "cacheRead": 0,
+          "cacheCreation": 3332,
+          "output": 210
+        },
+        {
+          "messageId": "msg_011Cfe5egKdcRN2okYPcuZBF",
+          "contentTypes": [
+            "tool_use"
+          ],
+          "input": 2,
+          "cacheRead": 0,
+          "cacheCreation": 3332,
+          "output": 210
+        },
+        {
+          "messageId": "msg_011Cfe5f1tsLgt3U3nCTwhaQ",
+          "contentTypes": [
+            "text"
+          ],
+          "input": 2,
+          "cacheRead": 3132,
+          "cacheCreation": 427,
+          "output": 41
+        },
+        {
+          "messageId": "msg_011Cfe5fBU69DviUE6wScXbu",
+          "contentTypes": [
+            "text"
+          ],
+          "input": 4,
+          "cacheRead": 3559,
+          "cacheCreation": 53,
+          "output": 4
+        }
+      ]
+    }
+  ]
+}

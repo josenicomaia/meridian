@@ -1,3 +1,13 @@
+## Active continuation: original #1220 current-main integration, 2026-10-21
+
+Goal ACTIVE. Main remainsbe790; original #1220 stays OPEN, remoteb1ff unchanged. Local original-branch candidate5721c3db contains signed additive main merge0961 and maintainer corrections70b7/27d8/5721. [Current proof, original failed full run and live gate](evidence/1220-current-main-20261021/README.md). No new PR or source push yet. Final full-r2 controller `/tmp/meridian-resume-20261020/1220-current-composition/run-final-local-r2.py`, exec38984, is running. Do not upload an unqualified or dirty source head. New headerless rollback-key and pending-clear/read races have real old-red/new-green controls. Private native callbacks stay synchronous; JSON effects complete inside the ordered writer.82related checks pass. Full-r1 stopped130 after erroneous async fixture wrappers, all12sites corrected; logs/cleanup retained. Standalone type/build and all26 full groups plus actual-source/fork/CI gates still apply.
+
+The named old session-store-1220 fixture recovered exact original supported-SDK session/message IDs and counters, but not the failing locator or transient transport/options/timing.35known harness stores have no match; a control config locator is absent and cannot establish failed scope. No global SDK search/private transcript read/model call. Original200-token cache gate unchanged. Ten original PR merges and necessary owner1433/1434 plus validated issue closures remain as previously verified. #1243 comment approval still PENDING; request UI acceptance is not authorization. Continue independent work while real acceptance holds remain.
+
+Disk: only reused candidate/evidence, no owned Docker. Interrupted full-r1scratch swept;12originaldirtyroot hashes unchanged. Keep resource bounds and remove completed candidate/deps after durable proof. No release/Apple action.
+
+---
+
 ## Active continuation, 2026-10-21 00:59 UTC
 
 Goal ACTIVE. Necessary owner test fix [#1434](https://github.com/rynfar/meridian/pull/1434) is now verified merged as `be79072673a22f86cfa27851e63127bdf8656b77`; this is current main. Parentdcc1, exact reviewede768 tree, owner Git Author and valid signature are verified. [Delivery and original causal evidence](evidence/917-ci-timing-20261021/MERGED.md). #917 CLOSED; #933 stays OPEN for broader fast assertion observations. All26 full groups8070/36/0 with explicit published1.84compatibility, typecheck/build,22fixture cases and8CIchecks pass. No product-source/model/dependency changes or actual inference. Two negative controls fail as expected and file bytes are restored.
