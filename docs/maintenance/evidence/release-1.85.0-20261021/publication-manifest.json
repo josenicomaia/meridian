@@ -1,0 +1,207 @@
+{
+  "version": "1.85.0",
+  "phase": "PUBLISHED_AND_INSTALLED_PACKAGE_VALIDATED_NPM_DOCKER",
+  "members": [
+    {
+      "path": "DELIVERED.json",
+      "bytes": 2030,
+      "sha256": "6035f65930479b74b379bb81067cb0577ea8ba0effd778472867079da235f3e7"
+    },
+    {
+      "path": "merge-receipt.json",
+      "bytes": 227,
+      "sha256": "48da87e8ba324d9ee87dfa359413eac5294703966ed1e9e5b7a7c6dbea056aa6"
+    },
+    {
+      "path": "merged-tree-verification.json",
+      "bytes": 236,
+      "sha256": "8b25ccdc5c5b521ec2f1f76ce573a4decdf142201b53b08573d688dd5b145820"
+    },
+    {
+      "path": "repair-merge-receipt.json",
+      "bytes": 227,
+      "sha256": "03c77c5a705b6142078b72dd4af9d4702b70e176056d6894d2e30aa782430ac2"
+    },
+    {
+      "path": "repair-premerge-qualified.json",
+      "bytes": 5666,
+      "sha256": "37685b58f24c3611752354395dec9039be2789bca29aab3fc92226834b7f620a"
+    },
+    {
+      "path": "publish-recovery-dispatch.json",
+      "bytes": 742,
+      "sha256": "8209af859f4c08f00c4e7e4fbe09faec53fa2d03dbafa2f9d5ce9845c13db588"
+    },
+    {
+      "path": "recovery-progress-2.json",
+      "bytes": 3264,
+      "sha256": "2912ce40dc3082cd5ecbc1cec77f5b182931fb0505ae197edb6a4f93d859b17c"
+    },
+    {
+      "path": "registry-package.json",
+      "bytes": 7276,
+      "sha256": "dd55ac63717fbbdfba6ecdba3987c78a6ce538cc01a1f521155a2774fc19b392"
+    },
+    {
+      "path": "registry-verification.json",
+      "bytes": 861,
+      "sha256": "b325fbea8dfa67bd95fe473ce9c21ab193fa5663eb6d99f3eee69efbedf72f3f"
+    },
+    {
+      "path": "registry-provenance.json",
+      "bytes": 1412,
+      "sha256": "6596ed708a37840e3111255abc56f08772df8012b1a09fc32e3394ba42b82492"
+    },
+    {
+      "path": "registry-attestations.json",
+      "bytes": 16497,
+      "sha256": "21586ceff226556ed6069543231d858f35f4e538df2e01e13be3b087fbd1220f"
+    },
+    {
+      "path": "registry-signatures.json",
+      "bytes": 37,
+      "sha256": "539ea4684b22e24869bace50b48bda695776477f892861b08d51d219f0d08faf"
+    },
+    {
+      "path": "registry-signatures.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "registry-toolchain.json",
+      "bytes": 559,
+      "sha256": "5de199f2bec895c86e4862f95b478d64b4b84dea8e6c6e388b116bdeecb218ae"
+    },
+    {
+      "path": "registry-live-task.json",
+      "bytes": 5460,
+      "sha256": "4ab2fda8cf18ef1eeeb043de97ea85f3df2654348fbe442fb98d1a225bc1be43"
+    },
+    {
+      "path": "registry-types.json",
+      "bytes": 90,
+      "sha256": "17bb964a4f6c5bf7d10ab01631e7c477fb2b52697ba4c30b23b8502e56dac268"
+    },
+    {
+      "path": "registry-type-consumer.mts",
+      "bytes": 281,
+      "sha256": "0942f93c3ae54e62a914cfcf43b4221d7dbe91296288a5818ca105222e569f25"
+    },
+    {
+      "path": "registry-node-maintenance.log",
+      "bytes": 354,
+      "sha256": "6c2ca9f625fa7091d760c085294da4c1b9f8f63e69f0c4bbec077bb55e41c972"
+    },
+    {
+      "path": "registry-node-clear.json",
+      "bytes": 357,
+      "sha256": "f091afd502c70dcd118bfc7d66406eae26d32e12b00e055e48a43f0da1da3983"
+    },
+    {
+      "path": "registry-node-clear.log",
+      "bytes": 477,
+      "sha256": "20012028c7c13d403a291fcf29eb6a06417bd22c9ba5c4980cd7d08c0e701c07"
+    },
+    {
+      "path": "install-registry.py",
+      "bytes": 2634,
+      "sha256": "9eb6c9e548d8ea00e0c6bdabd62a0ea35184f9cef3ad9f41ff38b464d4bdf11f"
+    },
+    {
+      "path": "registry-install.log",
+      "bytes": 234,
+      "sha256": "5af31a133bb3a1cd0410f83ca38c7174fe64c6af4db37efaee27f63544454163"
+    },
+    {
+      "path": "verify-registry.mjs",
+      "bytes": 3043,
+      "sha256": "02cc6c005d8a1e526489e9465ef76bc90442210638fe105e6190720e88f425e0"
+    },
+    {
+      "path": "run-registry-live.py",
+      "bytes": 9085,
+      "sha256": "8d79f7e9e44e1b8e36f097742fe3caf396cf96f5280b31fceea277339a2fa7a3"
+    },
+    {
+      "path": "create-registry-pool-grant.mjs",
+      "bytes": 5855,
+      "sha256": "5e545fb1f483455017f34722395549834a8a4a7bbff5be640053f8ac92dad7d3"
+    },
+    {
+      "path": "docker-1.85.0-manifest.json",
+      "bytes": 1609,
+      "sha256": "49638677087aad5fe730ae7e3f98b0ae80a42267f5986b2f74936589bbf3bf7c"
+    },
+    {
+      "path": "docker-1.85-manifest.json",
+      "bytes": 1609,
+      "sha256": "49638677087aad5fe730ae7e3f98b0ae80a42267f5986b2f74936589bbf3bf7c"
+    },
+    {
+      "path": "publish-runtime-review.json",
+      "bytes": 525,
+      "sha256": "403f23542bae8b91173b49917fdd1b28ad46f86448d9f6e7080e6750fe175d77"
+    },
+    {
+      "path": "publish-repair-r1-local.json",
+      "bytes": 436,
+      "sha256": "2ff0b1ff86c19b2d50433fb12f2f8fdb868f9659d929c9004d1d9fe43dd9be87"
+    },
+    {
+      "path": "publish-repair-r1-counts.json",
+      "bytes": 116,
+      "sha256": "9ba8497286f6c680ec3fdfaa357eaf739b0db5fb0f17a4054f1682ed87527ef7"
+    },
+    {
+      "path": "publish-repair-r1-full.log",
+      "bytes": 1529822,
+      "sha256": "20ded1368d25545d353e31505ed1f9ca5f68a9690fbd3324a998212edb1335d0"
+    },
+    {
+      "path": "npm-publication-recovered.log",
+      "bytes": 2386607,
+      "sha256": "d0587c99f9f4c2189131c5bcac93825bcc535a2d9b2abb1649afd22525efef00"
+    },
+    {
+      "path": "completed-pack-and-failed-fixture-cleanup.json",
+      "bytes": 733,
+      "sha256": "2bf639f123c169c4be77170a0c426657c9f7a4c23d79b8e5ebeb66f8fefd56d0"
+    },
+    {
+      "path": "registry-parallel-stream-release-sonnet55-r1/model-witness.json",
+      "bytes": 24004,
+      "sha256": "ec01d5454e93718b80406be5d7e999464924086f82608248a715d6d7ec89cee4"
+    },
+    {
+      "path": "registry-parallel-stream-release-sonnet55-r1/report.json",
+      "bytes": 7268,
+      "sha256": "c73890a79ee19d772550e3538bdb39e74c5763d121215e289bbce3f9f88db66d"
+    },
+    {
+      "path": "registry-parallel-stream-release-sonnet55-r1/run.log",
+      "bytes": 1991,
+      "sha256": "37b2811bb4b35f9deadb7baca587e093aa816d616d6b973610a075a53f1ea52d"
+    },
+    {
+      "path": "registry-parallel-stream-release-sonnet55-r1/identity-correlation.json",
+      "bytes": 895,
+      "sha256": "e074c2b32605cd8f45eeeadb5a0039781f75e2ffb1622911e307d11266c1d030"
+    },
+    {
+      "path": "qualified-e41/installed-snapshot.mjs",
+      "bytes": 753,
+      "sha256": "e871d5bdf1b259b5f020ba59cef568436ae611bb94099c32f3771c918f1e4206"
+    },
+    {
+      "path": "qualified-e41/run-e41.mjs",
+      "bytes": 24758,
+      "sha256": "e7abc10262c83ed0f2456642ff038ac5f3ae42ce5a5d514dc0c45ed530fc2be9"
+    },
+    {
+      "path": "qualified-e41/e41-model-observer.mjs",
+      "bytes": 9230,
+      "sha256": "439927c1c62c389096b409eced1e469d0f030195e3bb0441dc9702f0f3601a21"
+    }
+  ],
+  "archiveSHA256": "2ad77f1dfb2f411aac10331ca9a074508fbea530d48414f2e6a16a1ec413c93b"
+}
