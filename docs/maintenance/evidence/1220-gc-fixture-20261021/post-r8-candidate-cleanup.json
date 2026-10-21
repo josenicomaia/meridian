@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-21T04:36:48.896526+00:00",
+  "removedWorktree": "/private/tmp/meridian-clear-completion-20261020",
+  "head": "92222508248478a1e1e647209c0b99f49deec63a",
+  "reclaimedKiB": 659328,
+  "sourceRemoteHead": "92222508248478a1e1e647209c0b99f49deec63a",
+  "recoveryRef": "refs/heads/recovery/meridian-1220-92222508-20261021",
+  "finalLocalProofCommit": "601b9caedbd8d09364228b69d6bfe79f9afe2179",
+  "fullControllerTerminal": true,
+  "noOwnedActiveProcessOrCwd": true,
+  "rootHeadAnd12DirtyHashesMatch": true,
+  "otherWorktreesUntouched": true,
+  "DockerRemoved": 0
+}
