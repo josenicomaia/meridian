@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-21T00:28:37.406300+00:00",
+  "issues": [
+    {
+      "number": 1277,
+      "closedAt": "2026-10-21T00:28:31Z",
+      "state": "CLOSED",
+      "url": "https://github.com/rynfar/meridian/issues/1277",
+      "validatedMerge": "dcc1b8c9d78738217aaf4633659704db9b06bd11",
+      "bodyReadbackVerified": true
+    },
+    {
+      "number": 1244,
+      "closedAt": "2026-10-21T00:28:36Z",
+      "state": "CLOSED",
+      "url": "https://github.com/rynfar/meridian/issues/1244",
+      "validatedMerge": "dcc1b8c9d78738217aaf4633659704db9b06bd11",
+      "bodyReadbackVerified": true
+    }
+  ],
+  "externalCommentsSent": 0,
+  "broader1220StillUnmerged": true
+}

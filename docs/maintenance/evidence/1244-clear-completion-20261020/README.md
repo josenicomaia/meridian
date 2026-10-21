@@ -1,3 +1,5 @@
+**Current state: MERGED and verified.** [Delivery, exact tree/credit/signature and issue closeout](MERGED.md). #1277/#1244 are closed; #1220's broader writer remains open. Qualification stages and original failures below are historical evidence.
+
 # Approved cache-cleanup completion correction
 
 Draft owner PR [#1433](https://github.com/rynfar/meridian/pull/1433), head78974b54d042398dfda1bdace7eb3b4235152e43 on main91df. Completes the already-approved #1244/#1277 item6. #1277 was prematurely closed and reopened; it remains open pending validated merge. #1220 originally proposed the completion contract; its broader asynchronous JSON writer is unmerged and its old cache-prefix hold remains separate. No contributor commits were copied into this independent follow-up.

@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-21T00:27:39.887392+00:00",
+  "PR": {
+    "headRefOid": "78974b54d042398dfda1bdace7eb3b4235152e43",
+    "mergeCommit": {
+      "oid": "dcc1b8c9d78738217aaf4633659704db9b06bd11"
+    },
+    "mergedAt": "2026-10-21T00:27:08Z",
+    "state": "MERGED",
+    "url": "https://github.com/rynfar/meridian/pull/1433"
+  },
+  "merge": "dcc1b8c9d78738217aaf4633659704db9b06bd11",
+  "reviewedHead": "78974b54d042398dfda1bdace7eb3b4235152e43",
+  "parent": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+  "tree": "e05d963d8240ec129aa9ffbc19fce80ddc6807dd",
+  "reviewedTreeMatches": true,
+  "mainReachable": true,
+  "gitAuthor": "Trevor Walker <rynfar@gmail.com>",
+  "GitHubAuthor": "rynfar",
+  "signatureVerified": true,
+  "message": "fix(session): await ordered cache cleanup with immediate memory reset (#1433)",
+  "route": "normalexactheadsquash; noadmin/checkbypass",
+  "sourceDisclosure": "Approvedcontractidea#1244/#1220 acknowledged; no contributor commits copied; broader1220unmerged."
+}
