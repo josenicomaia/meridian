@@ -1,0 +1,72 @@
+{
+  "landed": "075e9e4736d3457e12dda1a0108531b9b5843e96",
+  "members": [
+    {
+      "path": "merge-verified.json",
+      "bytes": 1792,
+      "sha256": "7bfbc0e6a46586102f66d4981d8d069b51e520f5ace30e6787f4e18b3902f9f8"
+    },
+    {
+      "path": "immediate-merge-gates.json",
+      "bytes": 1538,
+      "sha256": "fc199ee14fb7d870002c1a571823fb2bc11de8e7327c449b75d6798004d20f51"
+    },
+    {
+      "path": "pr-final-body-verified.json",
+      "bytes": 264,
+      "sha256": "39035888e50ff69eef07571e437a0f9a444fa6fa6561e6882395e17989a34b78"
+    },
+    {
+      "path": "1340-current-main-comparison.mjs",
+      "bytes": 2561,
+      "sha256": "24d675776fc54e4a460ad7ab6f4e772c1225cc6836e88b032fe35ebdd49a001d"
+    },
+    {
+      "path": "1340-current-main-comparison.json",
+      "bytes": 999,
+      "sha256": "c1056dfd9008039da161fdfedda2c6ec9f650c0efa74665fe9dc054dd4bd5f82"
+    },
+    {
+      "path": "1340-comparison-initial-failure.json",
+      "bytes": 283,
+      "sha256": "2f9cfe248cbe691df649440648c763b8703610708e6c46d48792ca081d7cfd56"
+    },
+    {
+      "path": "1340-body-current.md",
+      "bytes": 49910,
+      "sha256": "a268cb184c4405ed33fe7b2a0f5bb7934ec0e6e569c7d6f80c9d70c83ab1560b"
+    },
+    {
+      "path": "1340-body-verified.json",
+      "bytes": 140,
+      "sha256": "6939a172c3208963520161411a6e9b88938a60e5c177fb6e8a4941aed3c17975"
+    },
+    {
+      "path": "1400-prerequisite-public.json",
+      "bytes": 1179,
+      "sha256": "9c3f3d17fc3ba3cd7818b33c61ca0e1d7a79fdce564b6dd0189a4f78672de2b1"
+    },
+    {
+      "path": "1400-current-head.json",
+      "bytes": 206,
+      "sha256": "8c996faa3d286f480e39d3c6dfe2177fdbe6954a2412d68f54f953c77040be1d"
+    },
+    {
+      "path": "cleanup-verified.json",
+      "bytes": 872,
+      "sha256": "ac0363e16a2b2fc721331792fc13d00e634ab8cfb596f1acbb43e26585f3e104"
+    },
+    {
+      "path": "root-preserved-public.json",
+      "bytes": 136,
+      "sha256": "c98607fc9a57607f6624cc7bbcbe35dfae1ea6f8bf67480025b4154279027984"
+    },
+    {
+      "path": "queue-after-merge.json",
+      "bytes": 956,
+      "sha256": "07b07d7b5e8e9910a447223f606819d8c084fee9f05578df6c417c38c97b4a52"
+    }
+  ],
+  "archiveSHA256": "8a25a87d399d8f989d63e03028825adbe4bb022ef74279c5af7a577c9416a3d7",
+  "exclusions": "No private usage payload, account identity, utilization/reset values, grant, SDK/native session/transcript, unrelated process command line, dependency or executable bundle copied."
+}
