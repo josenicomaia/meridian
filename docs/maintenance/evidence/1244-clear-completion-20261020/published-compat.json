@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-21T00:23:31.718956+00:00",
+  "head": "78974b54d042398dfda1bdace7eb3b4235152e43",
+  "archiveSHA256": "0bc7e56683ec375bf4aba02c09f2275db1e5310dcc05bf5274b528335fc2ed3d",
+  "exit": 0,
+  "command": [
+    "bun",
+    "test",
+    "--timeout",
+    "30000",
+    "src/__tests__/bookkeeping-old-artifacts.test.ts"
+  ],
+  "scope": "Explicit original published1.84 compatibility gate; fullnpmtest default skips27compat tests when variableunset. No codechange/no modelcalls."
+}

@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-20T23:56:10.860511+00:00",
+  "path": "/Volumes/DevSSD/meridian/worktrees/clear-completion-package-consumer-20261020",
+  "logicalKiBRemoved": 539948,
+  "removed": true,
+  "afterProofCommit": "2b84ce7485fd7f5e7ee5a072ba5fbd5fe2cddc78",
+  "packageFilesVerified": 699,
+  "modelCalls": 0,
+  "fixtureReportsRemoved": false
+}

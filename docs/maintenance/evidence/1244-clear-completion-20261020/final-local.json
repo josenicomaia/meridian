@@ -1,0 +1,70 @@
+{
+  "head": "78974b54d042398dfda1bdace7eb3b4235152e43",
+  "sourceUnchanged": true,
+  "relocationReason": "Measured original2s fingerprint deadline exceeded due source-read/Git latency; unchangeddeadline is retained. Originalfailed7515/63/1 and observationcontrol are preserved.",
+  "commands": [
+    {
+      "label": "pack",
+      "started": "2026-10-20T23:51:06.323276+00:00",
+      "command": [
+        "npm",
+        "pack",
+        "--ignore-scripts",
+        "--pack-destination",
+        "/tmp/meridian-resume-20261020/clear-completion"
+      ],
+      "exit": 0,
+      "finished": "2026-10-20T23:51:08.253894+00:00",
+      "note": "Same unchanged committed head; independently installed candidate79acee remains escrowed and qualified. No release or source change."
+    },
+    {
+      "label": "typecheck",
+      "started": "2026-10-21T00:07:41.565656+00:00",
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "cwd": "/private/tmp/meridian-clear-completion-20261020",
+      "exit": 0,
+      "finished": "2026-10-21T00:07:53.053848+00:00"
+    },
+    {
+      "label": "build",
+      "started": "2026-10-21T00:07:53.055116+00:00",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "/private/tmp/meridian-clear-completion-20261020",
+      "exit": 0,
+      "finished": "2026-10-21T00:08:02.273746+00:00"
+    },
+    {
+      "label": "failed-phase-control",
+      "started": "2026-10-21T00:08:02.274790+00:00",
+      "command": [
+        "bun",
+        "test",
+        "--timeout",
+        "30000",
+        "src/__tests__/bookkeeping-cli.test.ts"
+      ],
+      "cwd": "/private/tmp/meridian-clear-completion-20261020",
+      "exit": 0,
+      "finished": "2026-10-21T00:09:05.660373+00:00"
+    },
+    {
+      "label": "full",
+      "started": "2026-10-21T00:09:05.660928+00:00",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "cwd": "/private/tmp/meridian-clear-completion-20261020",
+      "exit": 0,
+      "finished": "2026-10-21T00:23:07.550056+00:00"
+    }
+  ]
+}

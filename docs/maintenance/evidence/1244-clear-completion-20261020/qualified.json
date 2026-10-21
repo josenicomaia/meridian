@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-21T00:24:42.004021+00:00",
+  "head": "78974b54d042398dfda1bdace7eb3b4235152e43",
+  "base": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+  "sourceClean": true,
+  "full": {
+    "groups": 26,
+    "passed": 8038,
+    "skipped": 63,
+    "failed": 0,
+    "exit": 0
+  },
+  "explicitPublishedCompat": {
+    "passed": 54,
+    "skipped": 0,
+    "failed": 0,
+    "exit": 0,
+    "newlyCoveredDefaultSkips": 27
+  },
+  "uniqueSuiteWithCompat": {
+    "passed": 8065,
+    "skipped": 36,
+    "failed": 0
+  },
+  "otherGates": "typecheck/build/pack0, nativefocused16+adjacent78+SQL48, baseline9reds/4controls, twofailingmutants, actual4E41modes20Sonnet5.5generations, exactinstalledpackage699files/opaqueclose/nativewriter, oldvoidtypeconsumerred/currentPromisegreen, finalCI8SUCCESS+expectedskip+supersededduplicateNixcancel",
+  "remaining": "Draft\u2192ready, freshpremergebase/head/checks, exactheadmerge, landedtree/author/signature verification, issuecloseout, resourcecleanup/reuse"
+}
