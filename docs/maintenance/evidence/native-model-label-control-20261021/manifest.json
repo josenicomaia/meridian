@@ -1,0 +1,86 @@
+{
+  "archive": "controls.tar.xz",
+  "archiveSHA256": "77ef7eea9d10c5f456c3b6760f42f309fb54fc379e8717ef5c86a10f61d40983",
+  "members": [
+    {
+      "path": "probe.mjs",
+      "bytes": 9793,
+      "sha256": "0adf07da5b0ea9360776f615c817541797b568ec048375657f1b9612074686dd"
+    },
+    {
+      "path": "probe-r2.mjs",
+      "bytes": 10045,
+      "sha256": "332ffdc9c102fb51bca7199f3cab25c018e1807a466dd8ab9dd8a9866f822277"
+    },
+    {
+      "path": "probe-r3.mjs",
+      "bytes": 10509,
+      "sha256": "fbd3b890a2f720e70a9a2e8b44431de4742cf199623b90fb722920079554b087"
+    },
+    {
+      "path": "expected-stop.mjs",
+      "bytes": 551,
+      "sha256": "4169f922887e00636d290fe47cd0d4662554d60f5be7a445b598441e146bbe51"
+    },
+    {
+      "path": "check-expected-stop.mjs",
+      "bytes": 1148,
+      "sha256": "52aa115c0a936b91e3c0c9d8b08b58176a8a77c4d9d876bc10e2ecda602c1fff"
+    },
+    {
+      "path": "expected-stop-controls.log",
+      "bytes": 66,
+      "sha256": "57f73e375aa5987c6dfcd31b808b7015237751b4bbbeadc7bdec30b1de600b54"
+    },
+    {
+      "path": "r1-command.log",
+      "bytes": 746,
+      "sha256": "e96c9fec5a4cbd4531340a9c50b3116291b95c352184e09f074257f88ab86ff4"
+    },
+    {
+      "path": "r1-native-preflight.json",
+      "bytes": 333,
+      "sha256": "374a59a2ea21c8f30af3174dd9ba0b93670b82b116ae51a6a5d9eece068539f9"
+    },
+    {
+      "path": "native-302-dist.json",
+      "bytes": 751,
+      "sha256": "872c763b30d83d7b6f4680a9ef05a2171976de54caa55f7d5c025434937ac16c"
+    },
+    {
+      "path": "native-302-verified.json",
+      "bytes": 713,
+      "sha256": "3a6d356d14bc649a724d04e51eaa9c328273701618e90b700f93574f838e6cc4"
+    },
+    {
+      "path": "r3-command.log",
+      "bytes": 527,
+      "sha256": "2e06448f197951e03e9015b3892bcc0782c4d613b7854b6926205c53d789602d"
+    },
+    {
+      "path": "r2-public-report.json",
+      "bytes": 5525,
+      "sha256": "b66540c31edd51f477ef444169108b758129b950c341762a2e95b1df9d1b9e41"
+    },
+    {
+      "path": "r3-public-report.json",
+      "bytes": 5584,
+      "sha256": "e30d0839650c42db38645a191eb838dac671c50d0a9a9d907ce41f896831501a"
+    },
+    {
+      "path": "r3-preflight.json",
+      "bytes": 222,
+      "sha256": "84d2673a0c3301603094391835a10d858dc0c6e70cab2919c50768b551389b3a"
+    },
+    {
+      "path": "attempts.json",
+      "bytes": 791,
+      "sha256": "f51b08a4c2bec744de18c0fb82ee7feafd5b7c71f867b80c6e8674516d517a0b"
+    },
+    {
+      "path": "e2eProcessCustody.mjs",
+      "bytes": 2126,
+      "sha256": "89b4c276fba3d3b3a5b473ace061fc3ae2107d3ca80d8611696bfd5ee284b361"
+    }
+  ]
+}
