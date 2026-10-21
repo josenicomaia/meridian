@@ -13,7 +13,7 @@ Discriminating controls on the actual test and production function:
 - Corrected test with a real capture inserted before the production guard: exit 1; the producer stack identifies lifecycleLeasesSql.ts.
 - Corrected test with a real capture after an await inside that guard: exit 1 with the same producer attribution.
 
-Temporary test/production bytes were restored and hash-verified. All eighteen affected-file cases and standalone typecheck pass. Current head standalone typecheck/build pass; full local r8 is live in controller session 99240 (run-final-local-r8.py). Its archived receipt is an explicitly incomplete snapshot; never restart based on that snapshot. Current final-head Linux CI is running in [CI run 39544061173](https://github.com/rynfar/meridian/actions/runs/39544061173). No full-success claim for this head yet.
+Temporary test/production bytes were restored and hash-verified. All eighteen affected-file cases and standalone typecheck pass. Current head standalone typecheck/build and full local r8 now pass: **8,102 pass / 36 skip / 0 fail across all twenty-six groups**, full exit0 in784.94seconds. Controller99240 is terminal. [Complete exact-head local gates and generated-cache cleanup receipt](capture-scope-final-local.tar.xz), [member hashes](capture-scope-final-local-manifest.json), supersede the earlier incomplete snapshot. Current final-head Linux CI is running in [CI run 39544061173](https://github.com/rynfar/meridian/actions/runs/39544061173). No final-head hosted-CI success or merge is claimed.
 
 ## Earlier failures and actual acceptance gates remain
 

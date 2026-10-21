@@ -1,0 +1,51 @@
+{
+  "head": "92222508248478a1e1e647209c0b99f49deec63a",
+  "archiveSha256": "679e59da116d7b6dfb0e386ba5d0710d864acc44c3be945905b370610dc0b977",
+  "members": [
+    {
+      "path": "final-r8-local.json",
+      "bytes": 436,
+      "sha256": "2259d29baf7433f4c46d810abbea2d6f6ccf12118638114e7e4adaa072b3bd8f"
+    },
+    {
+      "path": "final-r8-counts.json",
+      "bytes": 197,
+      "sha256": "855e664d14f78a7bad1f8d98df3f3d25e8602fa7d10a57e0ceb686eca4e009ad"
+    },
+    {
+      "path": "final-r8-full.log",
+      "bytes": 1532243,
+      "sha256": "ab41649bc06ba21cf07e58f50bb37e94ad04675ae818bea1e832b5d9edeec9b2"
+    },
+    {
+      "path": "final-r8-typecheck.log",
+      "bytes": 53,
+      "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+    },
+    {
+      "path": "final-r8-build.log",
+      "bytes": 2864,
+      "sha256": "6ee9d92d04068b027ebfd916fbfa9d5374e0d125fae464428532250c0c80f86d"
+    },
+    {
+      "path": "run-final-local-r8.py",
+      "bytes": 1407,
+      "sha256": "b4ea3bd0aa800d6c11381b1749ceb4c9384b3e8709915b208c83de0c6328348f"
+    },
+    {
+      "path": "capture-scope-source-upload.json",
+      "bytes": 701,
+      "sha256": "12c994569bcccf394abb28e397117ce70ebf2fe5562187ddef09614f3274492f"
+    },
+    {
+      "path": "capture-scope-pr-body-verified.json",
+      "bytes": 214,
+      "sha256": "a0f3c1a206857f1daf61b05ae876efd302de0576d7be6c323341b1072bff0681"
+    },
+    {
+      "path": "post-capture-generated-cache-cleanup.json",
+      "bytes": 7427,
+      "sha256": "a9f91d8821e0ce53a448c5b4204d8bb19bbb99394d078f6382396d039c1f2b6d"
+    }
+  ]
+}
