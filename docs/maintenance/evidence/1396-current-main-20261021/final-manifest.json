@@ -1,0 +1,52 @@
+{
+  "head": "8c02fffbea2097bfe73046fc4917260489738cf2",
+  "members": [
+    {
+      "path": "final-local.json",
+      "bytes": 436,
+      "sha256": "7981835c219b727d55c3eb39a27cdc01c1c7aafd7419f61df09fb856999d21cd"
+    },
+    {
+      "path": "final-build.log",
+      "bytes": 2863,
+      "sha256": "690a563935182f52aaa1d64e60bd19fc7b8678ee647721270fe9399c8905383c"
+    },
+    {
+      "path": "final-typecheck.log",
+      "bytes": 53,
+      "sha256": "829e3a9ec1a8b50ffcaf2cf97a3e3c857ce29f5ed30343aca263f4f549b602ac"
+    },
+    {
+      "path": "final-full.log",
+      "bytes": 1550498,
+      "sha256": "1ba6e770a737d5f102f11b3bbc27e150e6b76d8d0081a10d779e5d63df8f530e"
+    },
+    {
+      "path": "final-test-counts.json",
+      "bytes": 62,
+      "sha256": "0464cbfbc16a3d22f099eccd7d8f059f01aeeb635be412f6ebebfb67694abb9f"
+    },
+    {
+      "path": "final-hosted-checks.json",
+      "bytes": 3413,
+      "sha256": "918570aa74634e70f8105998cd4a478b7333a0f11e3261686454b99f39a6541c"
+    },
+    {
+      "path": "remote-current-head.json",
+      "bytes": 1140,
+      "sha256": "1f5b11d6abc092dc2a8bb7c1c6b65e4767cb828663ba0d47d1dd1ad60ab4cc89"
+    },
+    {
+      "path": "merge-parents-custody.json",
+      "bytes": 407,
+      "sha256": "0c5fe9bfa87c202160c5c84e55010a750a6b7eed07b4763b6c2fe8c91643fe7b"
+    },
+    {
+      "path": "local-snapshot.json",
+      "bytes": 436,
+      "sha256": "7981835c219b727d55c3eb39a27cdc01c1c7aafd7419f61df09fb856999d21cd"
+    }
+  ],
+  "archiveSHA256": "918796b771713ee58bb8cde88f07dac3eb364932f9bd4c663d17c1c886d7114e",
+  "scope": "Owned mock/test and public git/CI receipts only; known Bearer fixture spellings redacted in logs."
+}
