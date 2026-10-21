@@ -1,3 +1,15 @@
+## Latest: owner-authorized1.85 release held for live capacity and packaging qualification, 2026-10-21
+
+Goal ACTIVE. PR1427 candidate71c4258d includes current main8914 plus1.85metadata/corrected missing release notes and four test-only gate corrections.59focused/typecheck/build pass. Frozen all26local r2/controller50604 and final-head CI run; verify terminal state before restarting. Initial local and CI failures, forced controls, real Sonnet429 and package checks are [durable](evidence/release-1.85.0-20261021/README.md). No publication. Apple notarization remains owner-deferred.
+
+The first live model hit included-capacity429. Read-only usage showed five-hour100%/06:20UTC reset and seven-day48%; the first post-reset read-only request at06:20:39UTC itself returned429, so capacity is still UNKNOWN, not recovered. No model retries/account switch/refresh/paid usage. Future inference requires a fresh successful recovery observation.
+
+Docker's current bundle command omits the new maintenance CLI. Exact-command baseline control lacks the file/fails MODULE_NOT_FOUND; adding bin/session-bookkeeping.ts passes actual Node migration, guarded runtime init, awaited clear and latest-state export. Dockerfile+Linux-image smoke correction is prepared outside the frozen checkout; apply only after the current full run joins. Then final CI/installed artifact/live gates and publication remain mandatory.
+
+Completed1314 exact source and independently installed actual Pi flows pass, full8098/36/0 and all8CI green. Original unknown-key signature and unspecified reporter ACP version/OS keep delivery open. Source/package proof985793c9 is remote-byte-verified (45members). Its completed checkout and temporary installs are removed, reclaiming1,199,640KiB; source branch retained, root12dirty hashes/HEAD unchanged. Only the release checkout/install is task-owned. No local Docker or global cleanup.
+
+---
+
 ## Latest: #1314 source and installed actual Pi qualify; release authorized and in validation, 2026-10-21
 
 Goal ACTIVE. Exact original PR1314 head5c96 has8098pass/36skip/0fail across all26groups, typecheck/build0 and all8executed hosted checks green. Both actual source and independently installed 699-file tarball pass Pi1.1/official agy1.2.7/Gemini3.8FlashLow completed-write/result-tail recovery, exact write/read receipts, native/client process custody and terminal artifact drain. [Final receipts, exact harness and remaining reporter/signature gates](evidence/1314-current-main-20261021/QUALIFIED.md). Original version/self-update and inherited-API-key preparation failures are retained and concretely controlled; no product explanation is inferred from them. The pinned native binary remains unchanged before/after both actual flows.

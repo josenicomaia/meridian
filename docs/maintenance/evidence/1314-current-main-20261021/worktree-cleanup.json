@@ -1,0 +1,28 @@
+{
+  "removed": [
+    {
+      "path": "/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-agy-pi-history-laB3eS",
+      "KiB": 2244
+    },
+    {
+      "path": "/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-agy-pi-history-Xuj5mb",
+      "KiB": 3824
+    },
+    {
+      "path": "/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-agy-pi-history-KQB0Hu",
+      "KiB": 4572
+    },
+    {
+      "path": "/var/folders/ks/xnz659y11jl44j80b_lfws6r0000gn/T/meridian-agy-pi-history-KJHZyp",
+      "KiB": 4572
+    },
+    {
+      "path": "/private/tmp/meridian-pr1314-current-20261021",
+      "KiB": 34496
+    }
+  ],
+  "reclaimedKiB": 49708,
+  "sourceBranchRetained": true,
+  "onlyReleaseCheckoutRemainsTaskOwned": true,
+  "nativeGroupsJoinedBeforeRemoval": true
+}

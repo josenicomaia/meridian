@@ -1,0 +1,18 @@
+{
+  "rootHeadUnchanged": true,
+  "dirtyFilesUnchanged": 12,
+  "proofCommit": "985793c9c2720b7a2a56d7ebd9f4fcc71b95cca9",
+  "originalSourceBranchRetained": true,
+  "removed": [
+    {
+      "path": "/private/tmp/meridian-pr1314-current-20261021/node_modules",
+      "KiB": 624804
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1314-current-renderer/pack/install/node_modules",
+      "KiB": 525128
+    }
+  ],
+  "reclaimedKiB": 1149932,
+  "unrelatedWorktreesAndDockerUntouched": true
+}
