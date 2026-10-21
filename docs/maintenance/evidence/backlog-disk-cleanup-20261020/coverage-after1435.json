@@ -1,0 +1,97 @@
+{
+  "visibleRepos": 165,
+  "managed": [
+    {
+      "archived": false,
+      "full_name": "rynfar/hudscrub",
+      "name": "hudscrub",
+      "owner": "rynfar",
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "pull": true,
+        "push": true,
+        "triage": true
+      },
+      "openPRs": 0,
+      "openIssues": 0
+    },
+    {
+      "archived": false,
+      "full_name": "rynfar/meridian",
+      "name": "meridian",
+      "owner": "rynfar",
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "pull": true,
+        "push": true,
+        "triage": true
+      },
+      "openPRs": 21,
+      "openIssues": 11
+    },
+    {
+      "archived": false,
+      "full_name": "rynfar/meridian-plugin-hermes-scrub",
+      "name": "meridian-plugin-hermes-scrub",
+      "owner": "rynfar",
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "pull": true,
+        "push": true,
+        "triage": true
+      },
+      "openPRs": 0,
+      "openIssues": 0
+    },
+    {
+      "archived": false,
+      "full_name": "rynfar/meridian-plugin-openclaw-scrub",
+      "name": "meridian-plugin-openclaw-scrub",
+      "owner": "rynfar",
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "pull": true,
+        "push": true,
+        "triage": true
+      },
+      "openPRs": 0,
+      "openIssues": 0
+    },
+    {
+      "archived": false,
+      "full_name": "rynfar/meridian-plugin-opencode-scrub",
+      "name": "meridian-plugin-opencode-scrub",
+      "owner": "rynfar",
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "pull": true,
+        "push": true,
+        "triage": true
+      },
+      "openPRs": 1,
+      "openIssues": 0
+    },
+    {
+      "archived": false,
+      "full_name": "rynfar/meridian-plugin-pi-scrub",
+      "name": "meridian-plugin-pi-scrub",
+      "owner": "rynfar",
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "pull": true,
+        "push": true,
+        "triage": true
+      },
+      "openPRs": 1,
+      "openIssues": 0
+    }
+  ],
+  "at": "2026-10-21T02:43:43.998087+00:00",
+  "coverageGaps": []
+}

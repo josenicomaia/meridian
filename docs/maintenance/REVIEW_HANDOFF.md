@@ -1,3 +1,15 @@
+## Current continuation: #1220 original branch uploaded, 2026-10-21
+
+Goal ACTIVE. Original [#1220](https://github.com/rynfar/meridian/pull/1220) is updated nonforce from b1ff to `82ff117dee79fb04f815efcb6c70aa5c1cc770ad` on Nowaker's original branch, including main8914. Original authored objects remain intact; all12introduced GitHub signatures and Author identities verify. [Current review, controls and remaining gates](evidence/1220-current-main-20261021/CURRENT.md). Final local8102/36/0 across all26 groups, typecheck/build0; packed external Promise<void> declaration passes and published1.84void control fails. Final-head CI is pending. Whole PR remains OPEN and held on the original unexplained200-token Opus E41 and actual affected-client/model/platform proof. No new inference or merge.
+
+Owner [#1435](https://github.com/rynfar/meridian/pull/1435) remains verified merged as8914, exact tree/parent/Author/signature,8078/36/0all26 plus8CIpass. #933 remains OPEN. The source's final JSON fixture correction follows a semantic call audit; the deliberately interrupted r3 and all original-process exits are preserved alongside the final r4. No blind green rerun resolves the live hold.
+
+Fresh coverage still165visible repos /6managed queues /no gaps: Meridian21PRs and11issues; scrub queues only2separately unauthorized releases. [Read-only #1400 prerequisite revisit](evidence/1400-allowance-revisit-20261021/README.md) does not establish a naturally spent Fable pool: two usage endpoints429, third healthy, no inference or retry. Respect existing drafts, public-contract decisions and actual-flow holds. #1243 remains OPEN: owner asked for explanation, not closure approval; no comment posted.
+
+Resource steering: only reused candidate and evidence, no new install/Docker.64completed fixture caches reclaimed343268KiB while preserving proof/scripts/logs. Original root446a and all12dirty-file hashes match. Remove the completed candidate/dependencies once this source upload and durable proof are verified; do not leave an idle install while CI/live acceptance waits. Continue independent work; no release/Apple action.
+
+---
+
 ## Current continuation: #1435 delivered; #1220 qualification, 2026-10-21
 
 Goal ACTIVE. Owner [#1435](https://github.com/rynfar/meridian/pull/1435) is verified merged as8914cfad05dc274e78313cd9cbe3a2bb14923231, now main. Exact tree/sole parent/owner Author/valid signature verified. [Delivery proof](evidence/933-heartbeat-cadence-20261021/MERGED.md). Full8078/36/0all26, standalone type/build0,8executedCIpass plus expected changelogskip and supersededpushNixcancel/PRNixpass. #933 stays OPEN. No model/product/dependency change.

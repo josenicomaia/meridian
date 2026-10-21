@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-21T02:47:10.899572+00:00",
+  "pr": 1400,
+  "head": "2f17bf73d0b0974af229a9d1c8d12479bedcf8ec",
+  "scope": "Read-only supported credential stores and official profile/usage endpoints; zero inference, refresh, credential writes or identity values logged",
+  "distinctAccountCount": 3,
+  "profileHTTP": [
+    200,
+    200,
+    200
+  ],
+  "usageHTTP": [
+    429,
+    200,
+    429
+  ],
+  "verdict": "No qualified naturally exhausted Fable allowance / healthy distinct-account pair established. Two usage endpoints returned429; this is endpoint rate limiting, not model allowance evidence. The third reports capacity and no model-specific bucket. No inference, refresh, credential write, account switch, quota burn or retry. Existing whole-pool/native/client/Linux gates remain open.",
+  "models": 0
+}

@@ -1,3 +1,5 @@
+**Latest: [qualified original-branch upload and remaining gates](CURRENT.md).** This earlier snapshot remains historical evidence.
+
 # Original #1220: current-main integration and open acceptance gate
 
 The original Nowaker PR stays OPEN. Local candidate `5721c3db401d41cd7154f0577f8039e3d3e8916a` is **not pushed or qualified yet**. Signed merge0961 retains exact originalb1ff plus current mainbe790; additive70b7 captures the headerless rollback key before JSON I/O,27d8 preserves native fixture callbacks and5721 clears memory at the store commit boundary. No contribution is copied into a maintainer PR. A future source squash still requires Nowaker's Git Author credit and all acceptance gates.

@@ -1,0 +1,395 @@
+{
+  "at": "2026-10-21T02:41:39.571664+00:00",
+  "removedDirectories": 64,
+  "reclaimedKiB": 343268,
+  "records": [
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e42-beta-18314-source-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e42-stable-2.0.21-canonical-model-r3/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e42-beta-18866-source-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e42-beta-18866-installed-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e42-stable-2.0.31-source-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e41-parallel-json-r1/home/Library/Caches/bun",
+      "KiB": 3256,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e42-stable-2.0.31-installed-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/stable-role-scripted-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/stable-alias-scripted-r3/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e42-stable-2.0.16-installed-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e42-stable-2.0.16-request-model-r2/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e42-stable-2.0.16-canonical-model-r3/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e42-beta-19271-source-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e42-beta-18314-installed-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e41-chain-stream-r1/home/Library/Caches/bun",
+      "KiB": 3256,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e42-beta-19271-installed-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e41-chain-json-r1/home/Library/Caches/bun",
+      "KiB": 3256,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/e41-parallel-stream-r1/home/Library/Caches/bun",
+      "KiB": 3256,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1406-live/stable-role-scripted-r2/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1401-live/e42-beta-18314-source-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1401-live/e42-beta-18866-source-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1401-live/e42-beta-18866-installed-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1401-live/e42-stable-2.0.31-source-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1401-live/e41-parallel-json-r1/home/Library/Caches/bun",
+      "KiB": 3260,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1401-live/e42-stable-2.0.31-installed-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1401-live/e42-stable-2.0.16-installed-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1401-live/e42-beta-19271-source-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1401-live/e42-beta-18314-installed-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1401-live/e41-chain-stream-r1/home/Library/Caches/bun",
+      "KiB": 3260,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1401-live/e42-stable-2.0.21-installed-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1401-live/e42-beta-19271-installed-r1/home/Library/Caches/bun",
+      "KiB": 6204,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1401-live/e41-chain-json-r1/home/Library/Caches/bun",
+      "KiB": 3260,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1401-live/e41-parallel-stream-r1/home/Library/Caches/bun",
+      "KiB": 3260,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e42-beta-18314-source-r1/home/Library/Caches/bun",
+      "KiB": 6208,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e42-beta-19271-installed-readiness-r1/home/Library/Caches/bun",
+      "KiB": 6208,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e42-stable-2.0.16-installed-readiness-r1/home/Library/Caches/bun",
+      "KiB": 6208,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e42-beta-18866-source-r1/home/Library/Caches/bun",
+      "KiB": 6208,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e42-stable-2.0.21-installed-readiness-r1/home/Library/Caches/bun",
+      "KiB": 6208,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e41-parallel-json-r1/home/Library/Caches/bun",
+      "KiB": 3260,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e42-beta-18866-installed-readiness-r1/home/Library/Caches/bun",
+      "KiB": 6208,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e42-beta-18866-source-readiness-r1/home/Library/Caches/bun",
+      "KiB": 6208,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e42-beta-18314-installed-r1/home/Library/Caches/bun",
+      "KiB": 6208,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e41-chain-stream-r1/home/Library/Caches/bun",
+      "KiB": 3260,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e42-beta-19271-source-readiness-r1/home/Library/Caches/bun",
+      "KiB": 6208,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e41-chain-json-r1/home/Library/Caches/bun",
+      "KiB": 3260,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e41-parallel-stream-r1/home/Library/Caches/bun",
+      "KiB": 3260,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e42-stable-2.0.31-source-readiness-r1/home/Library/Caches/bun",
+      "KiB": 6208,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1428-live-r2/e42-stable-2.0.31-installed-readiness-r1/home/Library/Caches/bun",
+      "KiB": 6208,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1394-e84/moderate-r2/candidate/state/home/Library/Caches/bun",
+      "KiB": 3256,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1394-e84/three-tool-r4/candidate/state/home/Library/Caches/bun",
+      "KiB": 3256,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1394-e84/moderate-r3/candidate/state/home/Library/Caches/bun",
+      "KiB": 3256,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1394-e84/initialized-r5/candidate/state/home/Library/Caches/bun",
+      "KiB": 3256,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1394-e84/actual-sonnet-r1/e41/parallel-stream/home/Library/Caches/bun",
+      "KiB": 3256,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1394-e84/actual-sonnet-r1/e41/chain-json/home/Library/Caches/bun",
+      "KiB": 3256,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1394-e84/actual-sonnet-r1/e41/chain-stream/home/Library/Caches/bun",
+      "KiB": 3256,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1394-e84/actual-sonnet-r1/e41/parallel-json/home/Library/Caches/bun",
+      "KiB": 3256,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1394-e84/actual-sonnet-r1/baseline/state/proxy-home/Library/Caches/bun",
+      "KiB": 3256,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1394-e84/actual-sonnet-r1/candidate/state/proxy-home/Library/Caches/bun",
+      "KiB": 3256,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1397-native-watchdog-offline-baseline-r1/client-config/cache",
+      "KiB": 1036,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1397-native-watchdog-offline-baseline-r1/client-config/plugins/marketplaces",
+      "KiB": 15036,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1397-native-watchdog-offline-candidate-r1/client-config/cache",
+      "KiB": 1036,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1397-native-watchdog-offline-candidate-r1/client-config/plugins/marketplaces",
+      "KiB": 15036,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1397-native-guarded-offline-r2/client-config/cache",
+      "KiB": 1036,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    },
+    {
+      "path": "/tmp/meridian-resume-20261020/1397-native-guarded-offline-r2/client-config/plugins/marketplaces",
+      "KiB": 15036,
+      "removed": true,
+      "kind": "completed test-owned generated cache"
+    }
+  ],
+  "worktreesAdded": 0,
+  "installsAdded": 0,
+  "dockerRemoved": 0,
+  "proofLogsScriptsPackagesPreserved": true
+}

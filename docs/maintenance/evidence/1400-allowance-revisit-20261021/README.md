@@ -1,0 +1,3 @@
+# Read-only #1400 prerequisite revisit
+
+Fresh official profile/usage reads confirm three distinct accounts without logging identities or credentials. Usage returned 429 for two accounts; that is endpoint rate limiting, not evidence of a spent model allowance. The third reported included capacity and no model-specific bucket. No qualified naturally exhausted Fable / healthy distinct-account pair was established. Existing whole-pool, native-client, delayed-refusal and Linux acceptance gates remain open. Zero inference, refresh, credential writes, account switching, quota burn or retries. [Sanitized receipt](result.json).
