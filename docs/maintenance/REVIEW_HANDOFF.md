@@ -1,3 +1,15 @@
+## Current continuation: #1220 CI red corrected locally; r6 running, 2026-10-21
+
+Goal ACTIVE. #1220 remote82ff remains OPEN; Linux test failed7606/28/1first group due live GC residue during offline migration. Other7executed checks passed. CI watch STOPPED while correcting. [Exact failure and valid ownership control](evidence/1220-gc-fixture-20261021/README.md). The preceding priority-client-cancel fixture never closed its proxies. An actual pending-work registry observer shows old=true/exit1 and fixed=false/exit0; all13functional pair tests pass, with contract guard/timeouts intact. Earlier entry-time/module-spy diagnostics were inconclusive and remain labeled as such.
+
+Original branch now local signed3ea2bf7a884f8ca49881fc1e34d679181e7da915, NOT PUSHED. Signed8d90 joins every fixture backend before global/root teardown; r5typecheck2 exposed optional closeBackend, and signed3ea2 adds explicit capability guard. Final r6 controller session34237, script `/tmp/meridian-resume-20261020/1220-current-composition/run-final-local-r6.py`, is active. Verify the live handle before treating it as stopped. Do not rerun sealed earlier controllers. After all26/type/build pass, refresh original fork82ff/main8914, push the original branch nonforce, verify signatures, record durable final gates and watch new CI. Whole PR still needs the original unexplained200-token actual Opus/client/platform evidence; no new inference.
+
+Candidate `/private/tmp/meridian-clear-completion-20261020` was recreated only for this concrete CI correction. One temporary dependency link was removed without touching the user's install; current candidate has one frozen-lockfile install (CLI2.1.296/SDK0.2.141). Keep candidate+evidence only, no Docker, and remove completed candidate/install after durable source verification. Prior48completed-worktree removals/335MiBextra caches remain recorded. Root446a+12dirty files preserved. #1243 remains OPEN, clarification is not approval. No release/Apple action.
+
+Independent [main-CI history audit](evidence/933-main-ci-audit-20261021/README.md) found recent failed witnesses already have specific source corrections; original fast500 causes remain unclassified, so #933 remains OPEN. No duplicate PR was created. The current original-branch fixture correction is caused by asynchronous interleaving and fits the contribution workflow. Ten original merges and owner1433/1434/1435 remain verified; other queue holds/drafts remain as recorded.
+
+---
+
 ## Latest resource closeout and CI wait, 2026-10-21
 
 Original #1220 final head82ff117dee79fb04f815efcb6c70aa5c1cc770ad and all9current proof files are remotely verified at702ee488d4ae0ddf234b20e11134d1d498b24617. Current CI: test and Docker build-push pending, other6executed contexts pass, expected changelog skip. Required test and original actual200-token E41 gate still apply; do not merge on a CI wake alone. [Source upload and full qualification](evidence/1220-current-main-20261021/CURRENT.md), [CI snapshot](evidence/1220-current-main-20261021/source-ci-initial.json).

@@ -1,0 +1,102 @@
+{
+  "head": "3ea2bf7a884f8ca49881fc1e34d679181e7da915",
+  "priorHead": "82ff117dee79fb04f815efcb6c70aa5c1cc770ad",
+  "files": {
+    "source-ci-final-review.json": {
+      "bytes": 2742,
+      "sha256": "898342f72db22f0c3619afb5fd833d933b6cbcd647fa3523fab740c144ea1371"
+    },
+    "ci-final-failed.log": {
+      "bytes": 1992459,
+      "sha256": "38b6225a20c7ee744e7fdd4a40bc7d732f3b8bdb8ec4f9017e9ef76c1fa591c1"
+    },
+    "gc-fixture-source.diff": {
+      "bytes": 1855,
+      "sha256": "0a668cadf9aaca5066eb7a36f99f5f6b79eb9a28adff00900a37877a7893c786"
+    },
+    "gc-teardown-before.log": {
+      "bytes": 4847,
+      "sha256": "29cf4fb053f57ccb518af8368a8057c1532576e0e23400cd4be44f2dbe5da9ea"
+    },
+    "gc-teardown-after.log": {
+      "bytes": 4659,
+      "sha256": "43a0e91dd0d7d5e890df645b4ced9692a07f55039d17d4413577e5b3fe74789e"
+    },
+    "gc-pending-owner-before.log": {
+      "bytes": 5323,
+      "sha256": "5db903aaba89f8e39cb473c810826d5663a14ce77de4633f083f4e4b034cbc81"
+    },
+    "gc-pending-owner-after.log": {
+      "bytes": 4695,
+      "sha256": "f5282017fc91b02b5897515a793db3bb9cbd11250ad0b0b452a088e38dec9997"
+    },
+    "gc-pending-owner-control.json": {
+      "bytes": 507,
+      "sha256": "3abb8e5e82acd79df5bea7b4c501436cee03a9d33574694bddc5dd1064d6af4a"
+    },
+    "check-gc-pending-owner.py": {
+      "bytes": 2002,
+      "sha256": "a7f07328b74331be2c9091f3c04510ea043e7b839d0e23c3fa0f3635afeacdfd"
+    },
+    "gc-fixture-control-summary.json": {
+      "bytes": 640,
+      "sha256": "50ea526c26add4770f8adcf436910fb5727b503965433d43575f024c708fd933"
+    },
+    "gc-fixture-dependency-install.log": {
+      "bytes": 655,
+      "sha256": "9c2d1c57db4c52d31d5b79ff579e06256ef0e91477e7b1b83588f05ea3b774d6"
+    },
+    "final-r5-local.json": {
+      "bytes": 262,
+      "sha256": "8cda461f9dda3460eb1179633054601afe8abee37647e732e52a4816d4b327b9"
+    },
+    "final-r5-typecheck.log": {
+      "bytes": 175,
+      "sha256": "a81e3b4568a33c6bf65936ab01279977972fca4d1af30cad4c00168b4fd9df38"
+    },
+    "gc-fixture-guard-typecheck.log": {
+      "bytes": 53,
+      "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+    },
+    "check-gc-fixture-ownership.py": {
+      "bytes": 2276,
+      "sha256": "58d9c9f50be53b4326bc646494578604947caa2096e5aab255b145ceee72c8f5"
+    },
+    "gc-ownership-before.log": {
+      "bytes": 4880,
+      "sha256": "ee866bdc252aa0b1b5569f6d82a026183e2c73f310c4c382d955c1275166fdb7"
+    },
+    "gc-ownership-after.log": {
+      "bytes": 4693,
+      "sha256": "b96052da881e2642b276673d7c2c436f165fbda6234b23e11075a110f3bfc8b6"
+    },
+    "gc-ownership-control.json": {
+      "bytes": 543,
+      "sha256": "d617a37ac7e4a39482b94038f680ba5a884bf662bc005a9a56c1d55520e04650"
+    },
+    "check-gc-fs-ownership.py": {
+      "bytes": 2965,
+      "sha256": "24eedafcf8dd9db08986e895df70300c6f1bd6eba07d4176105ee53f5a43466f"
+    },
+    "gc-fs-ownership-before.log": {
+      "bytes": 5398,
+      "sha256": "2d3d5d56b804b634f5b409308e3f492a34b914526e97355a5376a80d1fa89560"
+    },
+    "gc-fs-ownership-after.log": {
+      "bytes": 5210,
+      "sha256": "812887b5aea4cd46cba360bf9ad1d33ec6deba910cdac7f21e737f1081097d49"
+    },
+    "gc-fs-ownership-control.json": {
+      "bytes": 675,
+      "sha256": "3108a000733517bbf19d5a1595464a46e59a5ac43e85bb84774da188cfb272de"
+    },
+    "run-final-local-r6.py": {
+      "bytes": 1407,
+      "sha256": "e6d5a7ca5cdb22db2629c37ac03dd740359ca703813977081632c99e863c8dd0"
+    }
+  },
+  "archive": {
+    "bytes": 276232,
+    "sha256": "b71b66e601e67422a0a02ba0b433a5f92ffb2507568078e3260bc6508afca11c"
+  }
+}

@@ -1,0 +1,19 @@
+# #1220 CI correction: join cancellation-fixture backends
+
+Original #1220 remains open and unmerged. Remote head is `82ff117dee79fb04f815efcb6c70aa5c1cc770ad`; local original-branch corrections are signed `8d90e79fa806d4de76e40811f891f39941aaa9fe` and `3ea2bf7a884f8ca49881fc1e34d679181e7da915`. No source object is rewritten. **Final local r6 is running; do not push or claim final qualification until it passes. CI watch is stopped while correcting the failure.** The original 200-token affected-model acceptance hold is unchanged.
+
+## Actual failure and cause
+
+Linux [test job119012081978](https://github.com/rynfar/meridian/actions/runs/39535816851/job/119012081978) at82ff failed its first isolated group:7,606pass/28skip/1failure. All7other executed contexts passed, with the expected changelog skip. `bookkeeping-store-contract.test.ts` correctly refused migration because a live `session-gc.json.lock.candidate-2459-...` existed despite the fixture's stopped-writer declaration. The preceding file was `priority-client-cancel.test.ts`; it consumed responses but never closed its proxy backends.
+
+The unchanged ordered pair passes locally, but its late GC also attempts to chmod the following contract fixture's directory after that directory is removed. Therefore a green rerun is not the correction. The actual pending-work registry gives a discriminating control at the end of the cancellation file: original fixture **pending=true, exit1**; corrected fixture **pending=false, exit0**. All13functional cases pass in the corrected pair. The exact diagnostic script appends a temporary afterAll observer, delegates to the original real implementation, and restores source bytes in finally. The baseline is frozen at82ff. No synthetic model replaces actual model acceptance; these are existing mocked-SDK tests with0inference.
+
+## Correction and review
+
+The fixture records every proxy it creates and awaits each `closeBackend()` before restoring environment/global mocks or removing profile roots. Response consumption alone does not join asynchronous GC. The backend close contract already joins owned cleanup. The test requires that cleanup capability explicitly rather than silently ignoring its optional interface field. Only this fixture file changes; migration refusal, ownership/exclusion assertions, timeouts, product code, dependencies and the JSON/SQLite contract remain unchanged.
+
+The first r5 typecheck caught the optional method call (TS2722), before any full run. A separately signed guard correction passes standalone typecheck. Two earlier provenance attempts are deliberately retained as **inconclusive**: an entry-time observation misses a later directory lookup; another module-spy positive control never intercepted the imported function, so both cases failed that instrumentation assertion. Neither is used as product failure/fix proof. The pending-work registry control above uses actual state without those mocks.
+
+[Exact failed CI log, scripts, controls, type failure and patch](checkpoint.tar.xz), [member and archive hashes](checkpoint-manifest.json). The full r6 runs all26isolated groups with the verified published1.84compatibility tarball, standalone typecheck/build and a fresh frozen-lockfile dependency install (Bun1.4.3, SDK0.2.141, CLI2.1.296, TypeScript5.9.3). Final-head CI remains required after upload. No check bypass, blind retry or whole-PR acceptance is claimed.
+
+One existing candidate path was recreated only for this concrete CI correction. A temporary link used existing dependencies for the small diagnostic; that link alone was removed before the frozen install, leaving the user's dependencies untouched. Only candidate plus evidence are task-owned; no Docker or model work. Remove the completed candidate/install again after durable proof and original-branch upload verification. #1243 remains open with no comment or closure approval. No release/Apple action.
