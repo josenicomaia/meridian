@@ -1,0 +1,69 @@
+{
+  "capturedUTC": "2026-10-21T11:59:56.717109+00:00",
+  "verifiedProofCommit": "9d15c95376d9dc6e53975297183c6952cbba0f03",
+  "removed": [
+    {
+      "path": "/private/tmp/meridian-1399-current-main-20261021",
+      "measuredKiBBefore": 893200,
+      "removed": true,
+      "preservedCandidate": "644deec8dcb1d171e9e0153be13d6b31305c7fd7"
+    },
+    {
+      "path": "/private/tmp/meridian-1400-current-main-20261021",
+      "measuredKiBBefore": 658236,
+      "removed": true,
+      "preservedCandidate": "ec7e0a15ebf913329b47ac31b75ec69f17ad26f7"
+    },
+    {
+      "path": "/tmp/meridian-active-history-budget-20261021/native-model-label-control/pinned-cli302",
+      "measuredKiBBefore": 261684,
+      "removed": true
+    },
+    {
+      "path": "/tmp/meridian-active-history-budget-20261021/native-model-label-control/native-2.1.302.tgz",
+      "measuredKiBBefore": 116276,
+      "removed": true
+    },
+    {
+      "path": "/tmp/meridian-active-history-budget-20261021/native-model-label-control/r1/text",
+      "measuredKiBBefore": 0,
+      "removed": true
+    },
+    {
+      "path": "/tmp/meridian-active-history-budget-20261021/native-model-label-control/r2/text",
+      "measuredKiBBefore": 20,
+      "removed": true
+    },
+    {
+      "path": "/tmp/meridian-active-history-budget-20261021/native-model-label-control/r2/denied-mcp-tool",
+      "measuredKiBBefore": 24,
+      "removed": true
+    },
+    {
+      "path": "/tmp/meridian-active-history-budget-20261021/native-model-label-control/r3/text",
+      "measuredKiBBefore": 20,
+      "removed": true
+    },
+    {
+      "path": "/tmp/meridian-active-history-budget-20261021/native-model-label-control/r3/denied-mcp-tool",
+      "measuredKiBBefore": 24,
+      "removed": true
+    },
+    {
+      "path": "/tmp/meridian-active-history-budget-20261021/native-model-label-control/r2-command.log",
+      "measuredKiBBefore": 8,
+      "removed": true
+    }
+  ],
+  "measuredKiBRemoved": 1929492,
+  "spaceMeasurementLimit": "du block totals can double-count APFS CoW/shared extents; df changes include other activity, not attributed as physical savings.",
+  "spaceBefore": "Filesystem   1024-blocks      Used Available Capacity  iused      ifree %iused  Mounted on\n/dev/disk3s5   971298980 763475948 179603204    81% 12810041 1796032040    1%   /System/Volumes/Data\n/dev/disk4s1   488181744 310590240 177434440    64% 12662503 1774344400    1%   /Volumes/DevSSD\n",
+  "spaceAfter": "Filesystem   1024-blocks      Used Available Capacity  iused      ifree %iused  Mounted on\n/dev/disk3s5   971298980 763010036 180069116    81% 12772256 1800691160    1%   /System/Volumes/Data\n/dev/disk4s1   488181744 310598164 177426516    64% 12662527 1774265160    1%   /Volumes/DevSSD\n",
+  "remainingUnrelatedWorktrees": 17,
+  "unrelatedWorktreeRecordsUnchanged": true,
+  "originalRootAndAll12DirtyHashesPreserved": true,
+  "activeOwnedActorsBeforeRemoval": 0,
+  "taskDockerResourcesCreated": 0,
+  "unknownProcessesStopped": 0,
+  "note": "Only the two completed task worktrees/installations and exact owned native-pin/fixture paths were removed. Public failed/passed reports, probes and immutable remote proof remain. No private SDK file was opened or archived."
+}
