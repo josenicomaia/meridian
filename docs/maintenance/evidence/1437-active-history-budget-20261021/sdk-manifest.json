@@ -1,0 +1,80 @@
+{
+  "head": "0a0d1af9e89ce33b337a1b09ff3ccf1d3eec8e04",
+  "members": [
+    {
+      "path": "sdk-gate-correction-source.json",
+      "bytes": 667,
+      "sha256": "df9aa92177c2ad0a0c68684499f640f362a2d7a25b3ff5aeb2822fa7a8435221"
+    },
+    {
+      "path": "sdk-gate-controls.json",
+      "bytes": 3272,
+      "sha256": "85e69a958098bb7ec4f150097e9d31171ea82cd73e5eb6fe5d0cc7e10ea50ade"
+    },
+    {
+      "path": "sdk-gate-signature.json",
+      "bytes": 98,
+      "sha256": "8e44f2ce2afc0ced2779176b4d9ec100e2f5ac61158271ee80ff0449bf836b74"
+    },
+    {
+      "path": "sdk-gate-unscoped-control.log",
+      "bytes": 1229,
+      "sha256": "a94df62233557ac6f0c50bfa96393cc3c2e10cd30ae3036a9969108f022a95b1"
+    },
+    {
+      "path": "sdk-gate-dropped-control.log",
+      "bytes": 1502,
+      "sha256": "d7fc2f24618ac9f827e4bede340fa64d7f484bc900fcab5579805bbbfeb42450"
+    },
+    {
+      "path": "sdk-gate-corrected-control.log",
+      "bytes": 1636,
+      "sha256": "c763dbc7e951e75e8db805eb83dd1740b55b97c6ad280c8f8121f2d3e33960d5"
+    },
+    {
+      "path": "run-final-local-r2.py",
+      "bytes": 1374,
+      "sha256": "4a917f54c410cdc435bf1c3d75242e1e9dcb0e32b99c697c836de9078a35b35f"
+    },
+    {
+      "path": "completed-model-fixture-cleanup.json",
+      "bytes": 225,
+      "sha256": "b22c22a94fe870108605cc961d371fcc1fa25fa08780d67da49273fd6373138d"
+    },
+    {
+      "path": "stage-pi-diagnostic.py",
+      "bytes": 4417,
+      "sha256": "3e90c898cae4f4846fecb1c44f0d9b77c9a0eb91d0451a540cfddb17303db475"
+    },
+    {
+      "path": "pi-debug-r1/pi-debug.test.ts",
+      "bytes": 25031,
+      "sha256": "4c165fe9dc69f9e33fd6e2c1aab879536ea2ca57d3839254176e326a14e32e9e"
+    },
+    {
+      "path": "pi-debug-r1/run.log",
+      "bytes": 319,
+      "sha256": "63348fffe1545979f08f21b12050437100dc0e0f51fd40fad0e0f6b9e573ff1c"
+    },
+    {
+      "path": "pi-debug-r1/report.json",
+      "bytes": 8872,
+      "sha256": "e57d9a7bf976a65cabc6a549e8ca9f189aff7ddc87ed88ce034306dd3b6d5d9c"
+    },
+    {
+      "path": "sdk-process-gate.test.ts",
+      "bytes": 17057,
+      "sha256": "dc3ce734811f598d39dc8e4b666d98e300d002c8fd0f9cf2ed0d461b23c35a9b"
+    },
+    {
+      "path": "sdk-process-gate.patch",
+      "bytes": 6847,
+      "sha256": "24150c692f14dc2a02ea5430afa5a0bf51b7912d89dfa6023e25bca4b38f8f8e"
+    },
+    {
+      "path": "r2-snapshot.json",
+      "bytes": 351,
+      "sha256": "47edebe5f038243770686e31d216c9951a18544b64bc7a1136dd77e501f9db70"
+    }
+  ]
+}

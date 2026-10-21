@@ -1,0 +1,15 @@
+# PR1437 current source: SDK fixture attribution correction; full gate pending
+
+Current signed head **0a0d1af9e89ce33b337a1b09ff3ccf1d3eec8e04**. The only change after actual Pi qualification head691edd8f is `src/__tests__/sdk-process-gate.test.ts`; all application inputs are byte-identical. No additional live calls are needed for this test-only correction. Original [initial qualification and five failed local cases](README.md) remain intact; the first failed full controller43139 is terminal, not restarted.
+
+The gate test previously spied on every process's `spawnSync` across an await and joined its opened wrapper only after the assertion. Thus another operation could contaminate the count, and assertion failure skipped the original wrapper's close. The correction uses AsyncLocalStorage to attribute calls to the actual opening, delegates real calls, retains stacks, and puts wrapper join in finally. No production guard, timeout or threshold changes.
+
+All14SDK-gate tests pass. Controls: forcing unscoped attribution makes an actual unrelated synchronous-child call fail the named test; disabling observation misses actual forbidden calls both before and after an await and makes both controls fail; the corrected file passes all14. These controls prove the observer's discrimination, not which original full-run producer triggered the old count. Original caller remains unclassified.
+
+A separate instrumented Pi cross-process case runs outside the frozen checkout, with unchanged product and original5-second readiness timeout. It delegates actual lock acquire/release and records worker stderr, exit codes, headers and lifecycle events. It passes once in4.64seconds with all3workers/streams joined, alllease-release completions and no model call. This does not reproduce or explain the original12.29second follow-up timeout; the original failure remains open. The original timer tick and two concurrent cleanup GC failures also remain unresolved.
+
+Current full-local controller **10355**, script `/tmp/meridian-active-history-budget-20261021/run-final-local-r2.py`, is RUNNING when this snapshot is written. Typecheck/build have exited0; full suite and fresh exact-head hosted CI remain required. Do not restart a running controller or replace an original failure with a green rerun claim. The old application's actual Pi flow remains the same; this new head only changes the tested observer and failure-path cleanup. No merge or follow-on publication is claimed.
+
+The initial45member proof is remotely byte-verified at80b3ff3d. Completed source model fixture homes/configs were removed after that verification (9144KiB), preserving all selected logs and exact fixture wire requests. One reused task checkout/install remains for diagnosis; original root remains preserved. No task Docker resources exist; other-project containers/processes were only read-only inspected and left alone. Host remains heavily loaded; no original failure cause is inferred solely from that observation.
+
+[Exact corrected test, mutation logs, source mapping, Pi diagnostic and running-gate snapshot](sdk-observation.tar.xz), [hash manifest](sdk-manifest.json).

@@ -1,3 +1,13 @@
+## Latest:1437 test attribution/cleanup corrected; fresh full and CI running, 2026-10-21
+
+Goal ACTIVE;1.85.0 delivered npm/Docker with verified source/registry behavior, Mac401deferred. Current1437head **0a0d1af9e89ce33b337a1b09ff3ccf1d3eec8e04** is signed/VALID. [Current correction and exact controls](evidence/1437-active-history-budget-20261021/SDK-CURRENT.md). Only SDK-gate TEST changes since actualPi-qualified691; allappinputs identical. Scoped process observer and always-join failure paths pass14tests; unscoped attribution and disabled-observer before/after-await controls fail as required. Original full-run sync caller remains unclassified; no production/timeout/threshold changes.
+
+First full R1 is retained FAILED7580/36/5 firstgroup, remaining25not run, controller43139TERMINAL. R2 controller **10355** is RUNNING, script /tmp/meridian-active-history-budget-20261021/run-final-local-r2.py, output final-r2-local.json/full.log. Type/build0 already; do not restart running cells. Fresh hostedCI for0a pending;691greens do not qualify0a. No merge until all required final gates pass, and no green rerun alone is a repair claim for originalfourremaining failures. Separate instrumented Pi/lock/stderr/close case outside frozencheckout passes4.64s/all3workers joined, doesnot reproduce originalfollow-up timeout. No new models.
+
+Initial80b3ff3d proof4files/45members remotely verified. Currentmodel fixture homes/configs removed9144KiB after verified escrow; release registry install/cache removed751576KiB. One taskcheckout /private/tmp/meridian-release185-20261021 branchcodex/antigravity-active-history-budget-20261021, oneinstall retainedforrequiredgates. Root446a+12dirtyhashespreserved. Other-project jobs/containers were read-only inspected under100%hostCPU; none stopped and no taskDocker exists. Original#1220/#1314/#1340/owner/public-contract/draft holds remain, #1396 body corrected toactualhead, #1243noapproval. No another release authorized. Continue diagnosis/qualification and then existingPRassessment; do not mark wholegoalcomplete.
+
+---
+
 ## Latest: 1.85 delivered;1437 actual Pi/CI green but local full red, 2026-10-21
 
 Goal ACTIVE. Meridian1.85.0 is published and fresh-registry validated on npm/Docker; Mac notarization401 stays owner-deferred. Final release proof d063274e is remotely byte-verified (40members), notes/body updated and verified. Completed registry install/home/native config/cache removed, 751576KiB measured; no local Docker or global prune. Original root446a and all12dirty hashes remain unchanged.
