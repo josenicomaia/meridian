@@ -1,0 +1,11 @@
+{
+  "capturedUTC": "2026-10-21T12:14:48.126934+00:00",
+  "removedReadOnlySnapshot": true,
+  "existingDependencyLinkUnlinkedOnly": true,
+  "packageInstallBuildTestCommandsAgainstSharedDependencyDirectory": 0,
+  "originalHeadAnd12DirtyHashesPreserved": true,
+  "newWorktrees": 0,
+  "modelRequests": 0,
+  "dockerResources": 0,
+  "readonlyProcessTerminal": true
+}

@@ -1,0 +1,17 @@
+{
+  "capturedUTC": "2026-10-21T12:14:48.215583+00:00",
+  "previousGoalTurn": "progress: source conflicts/corrections verified and completed resources removed",
+  "currentSourceChanges": 0,
+  "merges": 0,
+  "issueClosures": 0,
+  "classification": "no_progress_toward_delivery; changed prerequisites were tested but remain unsatisfied. New compatibility confirmation and a pending owner question are not treated as a merge or fix.",
+  "consecutiveNoProgressGoalTurns": 1,
+  "sameBlockingCondition": "Remaining safe queue delivery needs owner contract/disposition authorization or actual currently missing affected-client/provider evidence/fixtures. No new actionable item or uncorrected recent CI failure found.",
+  "goalStatus": "active",
+  "requiredApprovalQuestions": [
+    "1243 exact decline explanation/post+close remains pending; do not re-ask",
+    "1426 exact public header contract and tracking issue now pending; no default/time-based approval"
+  ],
+  "noProgressNotCompletion": true,
+  "blockedThresholdSatisfied": false
+}

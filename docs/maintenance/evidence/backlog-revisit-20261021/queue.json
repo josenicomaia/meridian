@@ -1,0 +1,277 @@
+{
+  "capturedUTC": "2026-10-21T12:03:09.806708+00:00",
+  "repositories": [
+    {
+      "repository": "rynfar/meridian",
+      "items": [
+        {
+          "number": 1439,
+          "title": "Claude account banned / blocked when routing requests through Meridian on server deployment",
+          "kind": "issue",
+          "updatedAt": "2026-10-21T10:39:20Z",
+          "createdAt": "2026-10-21T10:39:20Z"
+        },
+        {
+          "number": 1438,
+          "title": "chore(main): release meridian 1.85.1",
+          "kind": "pr",
+          "updatedAt": "2026-10-21T10:12:35Z",
+          "createdAt": "2026-10-21T10:12:34Z"
+        },
+        {
+          "number": 1429,
+          "title": "feat: list and redeem Claude banked resets",
+          "kind": "pr",
+          "updatedAt": "2026-10-20T11:38:45Z",
+          "createdAt": "2026-10-20T10:33:09Z"
+        },
+        {
+          "number": 1426,
+          "title": "feat: read x-session-id as conversation identity on /v1/chat/completions",
+          "kind": "pr",
+          "updatedAt": "2026-10-20T00:18:32Z",
+          "createdAt": "2026-10-20T00:13:23Z"
+        },
+        {
+          "number": 1410,
+          "title": "fix(passthrough): share built tool definitions between sessions",
+          "kind": "pr",
+          "updatedAt": "2026-10-20T13:34:51Z",
+          "createdAt": "2026-10-18T23:33:23Z"
+        },
+        {
+          "number": 1408,
+          "title": "feat: add the Meridian Pi extension and meridian setup --client pi",
+          "kind": "pr",
+          "updatedAt": "2026-10-18T22:20:46Z",
+          "createdAt": "2026-10-18T22:20:46Z"
+        },
+        {
+          "number": 1402,
+          "title": "feat(proxy): opt-in auto permission mode for the SDK subprocess (#1390)",
+          "kind": "pr",
+          "updatedAt": "2026-10-16T20:46:32Z",
+          "createdAt": "2026-10-16T20:43:26Z"
+        },
+        {
+          "number": 1400,
+          "title": "fix(routing): fail over a model whose allowance is spent without benching the whole account",
+          "kind": "pr",
+          "updatedAt": "2026-10-21T11:59:07Z",
+          "createdAt": "2026-10-16T19:29:36Z"
+        },
+        {
+          "number": 1399,
+          "title": "fix(session): let session cleanup keep up with the transcripts turns leave",
+          "kind": "pr",
+          "updatedAt": "2026-10-21T11:59:04Z",
+          "createdAt": "2026-10-16T19:29:34Z"
+        },
+        {
+          "number": 1396,
+          "title": "fix(claude-code): resume tool rounds after a one-request system reminder",
+          "kind": "pr",
+          "updatedAt": "2026-10-21T10:56:30Z",
+          "createdAt": "2026-10-16T19:29:27Z"
+        },
+        {
+          "number": 1390,
+          "title": "feat: allow configuring Claude SDK subprocess permission mode (auto for OpenCode clients)",
+          "kind": "issue",
+          "updatedAt": "2026-10-20T06:09:41Z",
+          "createdAt": "2026-10-16T16:12:34Z"
+        },
+        {
+          "number": 1359,
+          "title": "feat: add detached CLI startup and graceful stop",
+          "kind": "pr",
+          "updatedAt": "2026-10-13T05:56:54Z",
+          "createdAt": "2026-10-12T23:24:30Z"
+        },
+        {
+          "number": 1347,
+          "title": "fix: prefer included capacity before paid overage in priority routing",
+          "kind": "pr",
+          "updatedAt": "2026-10-13T01:18:03Z",
+          "createdAt": "2026-10-12T17:37:20Z"
+        },
+        {
+          "number": 1340,
+          "title": "fix(antigravity): warn once on a completed replay-tail call",
+          "kind": "pr",
+          "updatedAt": "2026-10-21T10:18:55Z",
+          "createdAt": "2026-10-11T21:54:03Z"
+        },
+        {
+          "number": 1338,
+          "title": "Priority routing keeps using a profile on paid overage while other profiles still have included volume",
+          "kind": "issue",
+          "updatedAt": "2026-10-11T15:27:55Z",
+          "createdAt": "2026-10-11T15:25:22Z"
+        },
+        {
+          "number": 1322,
+          "title": "fix: preserve Claude working checkpoints across native side calls",
+          "kind": "pr",
+          "updatedAt": "2026-10-13T08:28:24Z",
+          "createdAt": "2026-10-09T03:50:50Z"
+        },
+        {
+          "number": 1317,
+          "title": "fix: bound Antigravity history recaps and preserve current requests",
+          "kind": "pr",
+          "updatedAt": "2026-10-13T08:28:20Z",
+          "createdAt": "2026-10-08T22:20:29Z"
+        },
+        {
+          "number": 1314,
+          "title": "fix: keep the latest user request in focus on long Antigravity histories",
+          "kind": "pr",
+          "updatedAt": "2026-10-21T06:13:23Z",
+          "createdAt": "2026-10-08T09:44:47Z"
+        },
+        {
+          "number": 1311,
+          "title": "Feature: client-neutral agent role/name headers for Pi integrations",
+          "kind": "issue",
+          "updatedAt": "2026-10-08T01:20:38Z",
+          "createdAt": "2026-10-08T01:20:38Z"
+        },
+        {
+          "number": 1302,
+          "title": "Feature request: detached start and stop commands for programmatic auto-start",
+          "kind": "issue",
+          "updatedAt": "2026-10-07T16:33:52Z",
+          "createdAt": "2026-10-07T16:33:52Z"
+        },
+        {
+          "number": 1266,
+          "title": "fix: explain denied process identity probes without weakening locks",
+          "kind": "pr",
+          "updatedAt": "2026-10-08T05:45:34Z",
+          "createdAt": "2026-10-04T21:24:34Z"
+        },
+        {
+          "number": 1261,
+          "title": "fix: delete old Claude Code transcripts again",
+          "kind": "pr",
+          "updatedAt": "2026-10-14T11:14:04Z",
+          "createdAt": "2026-10-04T12:04:02Z"
+        },
+        {
+          "number": 1243,
+          "title": "fix(session): keep the session store in SQLite instead of rewriting it whole on every change",
+          "kind": "pr",
+          "updatedAt": "2026-10-20T11:26:54Z",
+          "createdAt": "2026-10-02T20:47:01Z"
+        },
+        {
+          "number": 1229,
+          "title": "macOS/nono.sh: process-incarnation capture fails on setuid /bin/ps",
+          "kind": "issue",
+          "updatedAt": "2026-10-01T21:15:39Z",
+          "createdAt": "2026-10-01T21:15:24Z"
+        },
+        {
+          "number": 1220,
+          "title": "fix(session): stop session store writes from freezing the proxy",
+          "kind": "pr",
+          "updatedAt": "2026-10-21T04:47:58Z",
+          "createdAt": "2026-10-01T20:04:09Z"
+        },
+        {
+          "number": 1193,
+          "title": "feat: optional prompt-cache keepalive for idle sessions",
+          "kind": "pr",
+          "updatedAt": "2026-10-20T15:48:02Z",
+          "createdAt": "2026-09-29T13:17:10Z"
+        },
+        {
+          "number": 1094,
+          "title": "opencode: unpin v2 version",
+          "kind": "issue",
+          "updatedAt": "2026-09-26T07:36:43Z",
+          "createdAt": "2026-09-21T16:12:13Z"
+        },
+        {
+          "number": 1073,
+          "title": "Subscription-backed Antigravity and unified provider experience",
+          "kind": "issue",
+          "updatedAt": "2026-09-19T18:53:15Z",
+          "createdAt": "2026-09-19T02:52:31Z"
+        },
+        {
+          "number": 1050,
+          "title": "test: investigate subscription-backed Antigravity CLI bridge",
+          "kind": "pr",
+          "updatedAt": "2026-09-18T17:07:46Z",
+          "createdAt": "2026-09-18T17:07:46Z"
+        },
+        {
+          "number": 1011,
+          "title": "Land the two passthrough commits held back from #980",
+          "kind": "issue",
+          "updatedAt": "2026-09-11T14:40:49Z",
+          "createdAt": "2026-09-10T21:04:46Z"
+        },
+        {
+          "number": 933,
+          "title": "npm test is flaky on CI (~1 in 3 runs) and blocked the 1.67.0 npm publish",
+          "kind": "issue",
+          "updatedAt": "2026-09-26T07:38:11Z",
+          "createdAt": "2026-09-04T09:50:00Z"
+        },
+        {
+          "number": 769,
+          "title": "Official OpenClaw scrub plugin (meridian-plugin-openclaw-scrub) \u2014 follow-up to #495",
+          "kind": "issue",
+          "updatedAt": "2026-09-26T07:36:22Z",
+          "createdAt": "2026-08-07T12:40:44Z"
+        },
+        {
+          "number": 650,
+          "title": "Wire event-driven plugin-input bumps (repository_dispatch from plugin repos)",
+          "kind": "issue",
+          "updatedAt": "2026-07-17T18:06:17Z",
+          "createdAt": "2026-07-17T17:49:40Z"
+        }
+      ]
+    },
+    {
+      "repository": "rynfar/hudscrub",
+      "items": []
+    },
+    {
+      "repository": "rynfar/meridian-plugin-hermes-scrub",
+      "items": []
+    },
+    {
+      "repository": "rynfar/meridian-plugin-openclaw-scrub",
+      "items": []
+    },
+    {
+      "repository": "rynfar/meridian-plugin-opencode-scrub",
+      "items": [
+        {
+          "number": 20,
+          "title": "chore(main): release meridian-plugin-opencode-scrub 0.3.0",
+          "kind": "pr",
+          "updatedAt": "2026-10-15T04:46:24Z",
+          "createdAt": "2026-10-01T07:53:08Z"
+        }
+      ]
+    },
+    {
+      "repository": "rynfar/meridian-plugin-pi-scrub",
+      "items": [
+        {
+          "number": 15,
+          "title": "chore(main): release meridian-plugin-pi-scrub 0.2.3",
+          "kind": "pr",
+          "updatedAt": "2026-10-01T06:33:18Z",
+          "createdAt": "2026-10-01T06:33:17Z"
+        }
+      ]
+    }
+  ]
+}

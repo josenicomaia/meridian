@@ -1,0 +1,5 @@
+{
+  "head": "075e9e4736d3457e12dda1a0108531b9b5843e96",
+  "archiveSHA256": "7b6894f72b15ec5b9b8705e87620f2d9b94dce9f75b04cdc848746e5d5975223",
+  "scope": "Read-only current-main module snapshot; existing dependencies only read, no install/build/test/package command against shared modules; not client/model qualification."
+}

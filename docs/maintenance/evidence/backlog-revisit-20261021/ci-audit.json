@@ -1,0 +1,131 @@
+{
+  "scope": "Bounded current-state audit, not a new fix or proof all #933 failures are resolved. No CI rerun, model call, source edit or release.",
+  "main": "075e9e4736d3457e12dda1a0108531b9b5843e96",
+  "allWorkflowWindow": 100,
+  "mainCIConclusions": [
+    {
+      "run": 39582819285,
+      "head": "075e9e4736d3457e12dda1a0108531b9b5843e96",
+      "conclusion": "success"
+    },
+    {
+      "run": 39561892905,
+      "head": "3f819aaa873c9e12e91c25ec429c1e30cdf05633",
+      "conclusion": "success"
+    },
+    {
+      "run": 39557948576,
+      "head": "d35fd0259ee4cead19358294d92ba718b4491fd1",
+      "conclusion": "success"
+    },
+    {
+      "run": 39533663412,
+      "head": "8914cfad05dc274e78313cd9cbe3a2bb14923231",
+      "conclusion": "success"
+    },
+    {
+      "run": 39523889938,
+      "head": "be79072673a22f86cfa27851e63127bdf8656b77",
+      "conclusion": "success"
+    },
+    {
+      "run": 39521401553,
+      "head": "dcc1b8c9d78738217aaf4633659704db9b06bd11",
+      "conclusion": "success"
+    },
+    {
+      "run": 39512739930,
+      "head": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+      "conclusion": "success"
+    },
+    {
+      "run": 39492588724,
+      "head": "413f4b7c73dc25302b877404066767f599ac210e",
+      "conclusion": "success"
+    },
+    {
+      "run": 39487327949,
+      "head": "3667a1555e104d0d82fee180eedfde68ab218390",
+      "conclusion": "success"
+    },
+    {
+      "run": 39485048162,
+      "head": "19ff3bcac167cdcbbd91a6f79f7af07605a0ad99",
+      "conclusion": "success"
+    },
+    {
+      "run": 39481430697,
+      "head": "6f50d2f315f62369c99a9cd307e2beaa93440a6c",
+      "conclusion": "success"
+    },
+    {
+      "run": 39477483145,
+      "head": "e57dd9c3b795bbf0340c78b6f377799e5b8e0136",
+      "conclusion": "success"
+    },
+    {
+      "run": 39474068619,
+      "head": "90e934976d760e9c3af68c2c0eccffdb8a6fd061",
+      "conclusion": "success"
+    },
+    {
+      "run": 39446979811,
+      "head": "89f844bde91c1f9d71b0943482a19668bb9c206c",
+      "conclusion": "success"
+    },
+    {
+      "run": 39392929852,
+      "head": "5187ee293917896d90bf9829ee90daf3d9680b9a",
+      "conclusion": "success"
+    },
+    {
+      "run": 39385894559,
+      "head": "30cc1d2d446a16de0add548fc108ace0932814ae",
+      "conclusion": "success"
+    },
+    {
+      "run": 39383637679,
+      "head": "acb8d390e4d764e5d2e7a9b7c60fb17df47c25dd",
+      "conclusion": "success"
+    },
+    {
+      "run": 39381433030,
+      "head": "a2c19dfa23d9d8586a1d9f286c5467a381052595",
+      "conclusion": "success"
+    },
+    {
+      "run": 39296231917,
+      "head": "85355d8a18ef465c0d9696257184d725c5c8ff35",
+      "conclusion": "success"
+    }
+  ],
+  "failedRuns": [
+    {
+      "run": 39242086364,
+      "url": "https://github.com/rynfar/meridian/actions/runs/39242086364",
+      "logSHA256": "239171b08afb13557b955752cb44c1d5b3ad275b80bfffb85a74893722809f53",
+      "classification": "Warm-mutation benchmark wall-clock ratio failed (97.583835 vs <50.681326); durable-comparison/order corrections now on main, not proof of all historical noise.",
+      "currentMainCorrections": [
+        "41244e9b7a297a47d1719102fb0065a364f3baf5",
+        "414dd3222408bf4a7813d3c57cc495e6f7b6fc61"
+      ]
+    },
+    {
+      "run": 39227599682,
+      "url": "https://github.com/rynfar/meridian/actions/runs/39227599682",
+      "logSHA256": "4485344dc8cea00bcd23d9b84baf58fd7dffff43d3b8cf30efbe882506b7f93b",
+      "classification": "Recovery worker result was observed empty before publication completed; current fixture atomically renames receipts.",
+      "currentMainCorrections": [
+        "92aa60944c833a5e1b00465e4d37c324f8f6c9f9",
+        "f923e9df3cf0c54a11f9a9df86ed5d95af5791a6"
+      ]
+    },
+    {
+      "run": 38462319514,
+      "url": "https://github.com/rynfar/meridian/actions/runs/38462319514",
+      "logSHA256": "df7a3622a9c6eb3d94439a48ac00415c9b93f49f9a60110cb75e1fbd2a220ef1",
+      "classification": "Dependency installation failed SDK-linux-x64-musl integrity check before tests; do not bypass verification.",
+      "currentMainCorrections": []
+    }
+  ]
+}
