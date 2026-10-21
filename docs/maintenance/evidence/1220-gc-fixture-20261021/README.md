@@ -1,3 +1,5 @@
+**Latest: [uploaded diagnostic candidate and explicit remaining failures](CURRENT.md).** The earlier local checkpoint below is historical.
+
 # #1220 CI correction: join cancellation-fixture backends
 
 Original #1220 remains open and unmerged. Remote head is `82ff117dee79fb04f815efcb6c70aa5c1cc770ad`; local original-branch corrections are signed `8d90e79fa806d4de76e40811f891f39941aaa9fe` and `3ea2bf7a884f8ca49881fc1e34d679181e7da915`. No source object is rewritten. **Final local r6 is running; do not push or claim final qualification until it passes. CI watch is stopped while correcting the failure.** The original 200-token affected-model acceptance hold is unchanged.

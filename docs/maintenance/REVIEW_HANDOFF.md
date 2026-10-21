@@ -1,3 +1,15 @@
+## Latest: #1220 diagnostic candidate uploaded; r7 + CI pending, 2026-10-21
+
+Goal ACTIVE. Original #1220 is nonforce-updated on Nowaker's original branch to `eaee8d82edb17458cdf5cce47e5e135b31c047b8`; actual ref/PR head and all3new GitHub signatures verify. Prior12introduced objects/signatures unchanged. Only2testfiles differ from82ff: cancellation fixture joins every backend before global/root teardown; initializer fixture preserves bounded output and joins original child/pipes. [Current proof and honest limits](evidence/1220-gc-fixture-20261021/CURRENT.md). Production/dependencies unchanged. CI should be watched after this checkpoint; no new PR or merge.
+
+r6 at3ea2 failed7573/36/2first group: strict2second post-build fingerprint budget and initializer exits[0,1]with discarded stderr. Both remain retained. Current real-source fingerprint observations0.57–0.78s do not explain original stall; no cap changed.12initializer observations did not reproduce failure. Forced child-error control keeps both-success assertion red and retains exact stderr only with new diagnostic. Do not claim either original failure fixed by a green rerun; initializer causality is an explicit premerge gate alongside old200-token Opus/client/platform proof.
+
+Current EA typecheck/build pass;27review cases and13ordered fixture cases pass. Valid GC ownership control oldpending=true/exit1, fixed=false/exit0. **Local r7 is live, session4137**, script `/tmp/meridian-resume-20261020/1220-current-composition/run-final-local-r7.py`, receipt `final-r7-local.json`; all26groups still required. Do not restart based on a stale receipt or observation timeout. The previous no-upload-until-local-complete checkpoint is superseded for test-only corrections: Linux CI now runs in parallel with local full; all gates remain mandatory before merge.
+
+Active candidate `/private/tmp/meridian-clear-completion-20261020` stays clean atEA, one frozen temporary dependency install; evidence tree is the only other task worktree. Root446a/12dirty hashes preserved; no Docker/model activity. Remove completed candidate/install after local work and remote source/proof verification. #1243 remains OPEN without comment/closure approval. No release/Apple action. Other21PR/11issue queue dispositions and draft/external-evidence gates remain recorded; do not invent acceptance or repeatedly recreate completed installs.
+
+---
+
 ## Current continuation: #1220 CI red corrected locally; r6 running, 2026-10-21
 
 Goal ACTIVE. #1220 remote82ff remains OPEN; Linux test failed7606/28/1first group due live GC residue during offline migration. Other7executed checks passed. CI watch STOPPED while correcting. [Exact failure and valid ownership control](evidence/1220-gc-fixture-20261021/README.md). The preceding priority-client-cancel fixture never closed its proxies. An actual pending-work registry observer shows old=true/exit1 and fixed=false/exit0; all13functional pair tests pass, with contract guard/timeouts intact. Earlier entry-time/module-spy diagnostics were inconclusive and remain labeled as such.
