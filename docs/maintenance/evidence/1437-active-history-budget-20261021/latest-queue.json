@@ -1,0 +1,128 @@
+[
+  {
+    "headRefOid": "48b5eab11285677eaf7984020f95ccc1d43029a5",
+    "isDraft": false,
+    "number": 1438,
+    "title": "chore(main): release meridian 1.85.1"
+  },
+  {
+    "headRefOid": "d4e61289bb8a6938a744a390603d6ee0f9fec7cd",
+    "isDraft": false,
+    "number": 1429,
+    "title": "feat: list and redeem Claude banked resets"
+  },
+  {
+    "headRefOid": "337ccc9cb9264c84bdcf77a68862958aeff01d72",
+    "isDraft": false,
+    "number": 1426,
+    "title": "feat: read x-session-id as conversation identity on /v1/chat/completions"
+  },
+  {
+    "headRefOid": "45c25a2cd3031aa6a060a5012a7e740ebcfe1e29",
+    "isDraft": false,
+    "number": 1410,
+    "title": "fix(passthrough): share built tool definitions between sessions"
+  },
+  {
+    "headRefOid": "0fa93319cc75191ac70b228490de34526a669d3f",
+    "isDraft": true,
+    "number": 1408,
+    "title": "feat: add the Meridian Pi extension and meridian setup --client pi"
+  },
+  {
+    "headRefOid": "e2070fc2d6ed3d89fab9f71122eba2ff7d66872e",
+    "isDraft": true,
+    "number": 1402,
+    "title": "feat(proxy): opt-in auto permission mode for the SDK subprocess (#1390)"
+  },
+  {
+    "headRefOid": "2f17bf73d0b0974af229a9d1c8d12479bedcf8ec",
+    "isDraft": false,
+    "number": 1400,
+    "title": "fix(routing): fail over a model whose allowance is spent without benching the whole account"
+  },
+  {
+    "headRefOid": "7379cd4652af910897480bae3469f6c6e65c3025",
+    "isDraft": false,
+    "number": 1399,
+    "title": "fix(session): let session cleanup keep up with the transcripts turns leave"
+  },
+  {
+    "headRefOid": "a40be1795a1b8dbcdeccfe8525b972c17609ff73",
+    "isDraft": false,
+    "number": 1396,
+    "title": "fix(claude-code): resume tool rounds after a one-request system reminder"
+  },
+  {
+    "headRefOid": "694df9fd46f484ba60458df4338ddb767b4646d2",
+    "isDraft": true,
+    "number": 1359,
+    "title": "feat: add detached CLI startup and graceful stop"
+  },
+  {
+    "headRefOid": "3103a6efe8408d52dc3b75b27915c9d079c72797",
+    "isDraft": true,
+    "number": 1347,
+    "title": "fix: prefer included capacity before paid overage in priority routing"
+  },
+  {
+    "headRefOid": "bd5808f30aa2228998c3a665118383250c43022e",
+    "isDraft": false,
+    "number": 1340,
+    "title": "fix(antigravity): warn once on a completed replay-tail call"
+  },
+  {
+    "headRefOid": "0101f6ab1a1161f5deef81c4fc3f1bf47bacc9d6",
+    "isDraft": true,
+    "number": 1322,
+    "title": "fix: preserve Claude working checkpoints across native side calls"
+  },
+  {
+    "headRefOid": "cd6b31a752e2f2d20240fee1e63ea46a39830dd9",
+    "isDraft": true,
+    "number": 1317,
+    "title": "fix: bound Antigravity history recaps and preserve current requests"
+  },
+  {
+    "headRefOid": "5c96dd307cb668e611725e9d33dd90211a68bb68",
+    "isDraft": false,
+    "number": 1314,
+    "title": "fix: keep the latest user request in focus on long Antigravity histories"
+  },
+  {
+    "headRefOid": "d9594af2505a2938ed0ac051fe13a8c9bb49917f",
+    "isDraft": true,
+    "number": 1266,
+    "title": "fix: explain denied process identity probes without weakening locks"
+  },
+  {
+    "headRefOid": "6ac589b44b0416ab7bdb57d2270c9011a00b72d1",
+    "isDraft": false,
+    "number": 1261,
+    "title": "fix: delete old Claude Code transcripts again"
+  },
+  {
+    "headRefOid": "5198b68aea1eb648e3b5685285f2b1008ab827b4",
+    "isDraft": false,
+    "number": 1243,
+    "title": "fix(session): keep the session store in SQLite instead of rewriting it whole on every change"
+  },
+  {
+    "headRefOid": "92222508248478a1e1e647209c0b99f49deec63a",
+    "isDraft": false,
+    "number": 1220,
+    "title": "fix(session): stop session store writes from freezing the proxy"
+  },
+  {
+    "headRefOid": "7c9308968f760119e1b9f3ba8d74497af39d4a85",
+    "isDraft": false,
+    "number": 1193,
+    "title": "feat: optional prompt-cache keepalive for idle sessions"
+  },
+  {
+    "headRefOid": "72c1ca91105a595b37dcf3e201cb93e523a8381f",
+    "isDraft": true,
+    "number": 1050,
+    "title": "test: investigate subscription-backed Antigravity CLI bridge"
+  }
+]

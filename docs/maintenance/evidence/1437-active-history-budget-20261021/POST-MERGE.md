@@ -23,3 +23,7 @@ The user checkout remains at 446a0f1633be3a0cf36d8f1e9f222e914d2f7c83 with all 1
 The backlog goal remains active. Release 1.85.0 remains delivered, Mac notarization deferred, and no follow-on release is authorized. The current handoff records the remaining acceptance gates and pending owner decision rather than claiming the queue is cleared.
 
 [Exact merge/head/tree/Author/signature receipts, public prerequisite summary, zero-model comparison, queue and cleanup records](post-merge.tar.xz), [SHA256 manifest](post-merge-manifest.json).
+
+## Later bot-created queue update
+
+The final queue read after the first post-merge snapshot finds **#1438, `chore(main): release meridian 1.85.1`**, generated automatically by Release Please after #1437. Meridian is therefore **21 open PRs: the 20 previously held proposals plus this patch-release PR**, with 11 issues. This is an expected generated follow-up, not another implementation PR opened by this batch. 1.85.0 remains the completed authorized release; no new 1.85.1 publication or merge is authorized. The earlier 20-PR snapshot remains historical and accurate for its collection time.

@@ -34,7 +34,7 @@ The current [backlog skill](../../.agents/skills/meridian-backlog/SKILL.md) says
 
 ## Refreshed queue and held gates
 
-Fresh paginated discovery at 09:56 UTC covered 165 visible repositories and all six managed queues without a coverage gap; the post-merge queue refresh confirms Meridian 20 PRs / 11 issues; hudscrub, Hermes and OpenClaw scrub queues empty; OpenCode scrub release #20 and Pi scrub release #15 open. Their publication is not authorized. No unreviewed new item appeared beyond #1437. Refresh after merge.
+Fresh paginated discovery at 09:56 UTC covered 165 visible repositories and all six managed queues without a coverage gap; the first post-merge snapshot had Meridian 20 PRs / 11 issues; the final read finds 21 PRs because Release Please automatically created #1438 for 1.85.1. The 20 earlier held proposals remain, and #1438 is queued pending separate release authorization; hudscrub, Hermes and OpenClaw scrub queues empty; OpenCode scrub release #20 and Pi scrub release #15 open. Their publication is not authorized. No unreviewed new item appeared beyond #1437. Refresh after merge.
 
 - #1429: public banked-reset behavior and owner selection of scarce grants need a decision; no redemption performed.
 - #1426 and issue #1311: new public conversation/agent identity inputs require owner-approved contract and issue coverage; no silent interface expansion.
