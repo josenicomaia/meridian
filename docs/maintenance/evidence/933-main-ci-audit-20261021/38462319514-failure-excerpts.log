@@ -1,0 +1,13 @@
+test	UNKNOWN STEP	2026-10-13T20:22:48.5456487Z ##[group]Run bun install
+test	UNKNOWN STEP	2026-10-13T20:22:48.5456853Z ^[[36;1mbun install^[[0m
+test	UNKNOWN STEP	2026-10-13T20:22:48.5730672Z shell: /usr/bin/bash -e {0}
+test	UNKNOWN STEP	2026-10-13T20:22:48.5731074Z ##[endgroup]
+test	UNKNOWN STEP	2026-10-13T20:22:48.5878372Z bun install v1.3.11 (af24e281)
+test	UNKNOWN STEP	2026-10-13T20:33:28.6481350Z error: Integrity check failed for tarball: @anthropic-ai/claude-agent-sdk-linux-x64-musl
+test	UNKNOWN STEP	2026-10-13T20:33:28.7496986Z error: IntegrityCheckFailed extracting tarball from @anthropic-ai/claude-agent-sdk-linux-x64-musl
+test	UNKNOWN STEP	2026-10-13T20:33:28.8092450Z ##[error]Process completed with exit code 1.
+test	UNKNOWN STEP	2026-10-13T20:33:28.8298432Z Post job cleanup.
+test	UNKNOWN STEP	2026-10-13T20:33:28.9202512Z [command]/usr/bin/git version
+test	UNKNOWN STEP	2026-10-13T20:33:28.9239871Z git version 2.55.0
+test	UNKNOWN STEP	2026-10-13T20:33:28.9278451Z Temporarily overriding HOME='/home/runner/work/_temp/e356732f-7b1b-4922-b8d8-d6620545482d' before making global git config changes
+test	UNKNOWN STEP	2026-10-13T20:33:28.9279744Z Adding repository directory to the temporary git global config as a safe directory

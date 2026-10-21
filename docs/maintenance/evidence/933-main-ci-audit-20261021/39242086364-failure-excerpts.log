@@ -1,0 +1,26 @@
+test	UNKNOWN STEP	2026-10-19T11:13:56.1110162Z Expected: < 50.68132574999999
+test	UNKNOWN STEP	2026-10-19T11:13:56.1110585Z Received: 97.58383500000002
+test	UNKNOWN STEP	2026-10-19T11:13:56.1110718Z 
+test	UNKNOWN STEP	2026-10-19T11:13:56.1111040Z       at <anonymous> (/home/runner/work/meridian/meridian/src/__tests__/store-mutation-loop-lag.test.ts:144:26)
+test	UNKNOWN STEP	2026-10-19T11:13:56.1111377Z 
+test	UNKNOWN STEP	2026-10-19T11:13:56.1131616Z ##[error]Expected: < 50.68132574999999
+test	UNKNOWN STEP	Received: 97.58383500000002
+test	UNKNOWN STEP	
+test	UNKNOWN STEP	      at <anonymous> (/home/runner/work/meridian/meridian/src/__tests__/store-mutation-loop-lag.test.ts:144:26)
+test	UNKNOWN STEP	2026-10-19T11:13:56.1140244Z (fail) session store mutation cost on a large store > keeps a warm mutation's loop lag well below the full-document parse, serialize and write it replaced [817.01ms]
+test	UNKNOWN STEP	2026-10-19T11:13:56.2071237Z (pass) session store mutation cost on a large store > never re-parses the store or re-serializes unchanged entries on a warm mutation [94.00ms]
+test	UNKNOWN STEP	2026-10-19T11:13:56.2105436Z (pass) copy-on-write store mutations > writes exactly the document a full serialization would produce [3.00ms]
+test	UNKNOWN STEP	2026-10-19T11:13:56.2128857Z (pass) copy-on-write store mutations > owns nested caller data before memoizing serialized entries [3.00ms]
+test	UNKNOWN STEP	2026-10-19T11:13:56.2143345Z (pass) copy-on-write store mutations > prevents nested lookup edits from diverging from memoized disk bytes [1.00ms]
+test	UNKNOWN STEP	2026-10-19T11:13:56.2193367Z (pass) copy-on-write store mutations > protects nested history parsed from a foreign writer before exposing it [5.00ms]
+test	UNKNOWN STEP	2026-10-19T11:13:56.2261676Z 
+test	UNKNOWN STEP	2026-10-19T11:13:56.2261781Z  8 pass
+test	UNKNOWN STEP	2026-10-19T11:13:56.2268879Z  1 fail
+test	UNKNOWN STEP	2026-10-19T11:13:56.2269167Z  28 expect() calls
+test	UNKNOWN STEP	2026-10-19T11:13:56.2269444Z Ran 9 tests across 1 file. [953.00ms]
+test	UNKNOWN STEP	2026-10-19T11:13:56.2435880Z ##[error]Process completed with exit code 1.
+test	UNKNOWN STEP	2026-10-19T11:13:56.2574864Z Post job cleanup.
+test	UNKNOWN STEP	2026-10-19T11:13:56.3249075Z [command]/usr/bin/git version
+test	UNKNOWN STEP	2026-10-19T11:13:56.3282262Z git version 2.55.0
+test	UNKNOWN STEP	2026-10-19T11:13:56.3310268Z Temporarily overriding HOME='/home/runner/work/_temp/6f796388-fc91-4b0f-9d1e-21061bb7e685' before making global git config changes
+test	UNKNOWN STEP	2026-10-19T11:13:56.3311627Z Adding repository directory to the temporary git global config as a safe directory

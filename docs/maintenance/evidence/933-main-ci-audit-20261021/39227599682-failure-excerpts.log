@@ -1,0 +1,33 @@
+test	UNKNOWN STEP	2026-10-19T09:10:12.7182854Z Expected: "denied"
+test	UNKNOWN STEP	2026-10-19T09:10:12.7182982Z Received: ""
+test	UNKNOWN STEP	2026-10-19T09:10:12.7183056Z 
+test	UNKNOWN STEP	2026-10-19T09:10:12.7183269Z       at <anonymous> (/home/runner/work/meridian/meridian/src/__tests__/chatgpt-recovery-race.test.ts:62:48)
+test	UNKNOWN STEP	2026-10-19T09:10:12.7183635Z 
+test	UNKNOWN STEP	2026-10-19T09:10:12.7202093Z ##[error]Expected: "denied"
+test	UNKNOWN STEP	Received: ""
+test	UNKNOWN STEP	
+test	UNKNOWN STEP	      at <anonymous> (/home/runner/work/meridian/meridian/src/__tests__/chatgpt-recovery-race.test.ts:62:48)
+test	UNKNOWN STEP	2026-10-19T09:10:12.7223471Z (fail) cannot retire a live successor when two processes recover a crashed claimant [121.00ms]
+test	UNKNOWN STEP	2026-10-19T09:10:12.8460273Z (pass) recovers after killing a paused reclaimer and can reacquire after release [123.00ms]
+test	UNKNOWN STEP	2026-10-19T09:10:12.9354169Z (pass) never steals from a SIGSTOPed admitted writer with an expired heartbeat [90.00ms]
+test	UNKNOWN STEP	2026-10-19T09:10:12.9354491Z 
+test	UNKNOWN STEP	2026-10-19T09:10:12.9354804Z ##[endgroup]
+test	UNKNOWN STEP	2026-10-19T09:10:12.9354915Z 
+test	UNKNOWN STEP	2026-10-19T09:11:32.5568771Z 1 tests skipped:
+test	UNKNOWN STEP	2026-10-19T09:11:32.5569459Z (skip) session GC deletes retired transcripts on every platform > reconcile recovers a deleting claim whose executor pid was reused by a live process
+test	UNKNOWN STEP	2026-10-19T09:11:32.5569920Z 
+test	UNKNOWN STEP	2026-10-19T09:11:32.5569928Z 
+test	UNKNOWN STEP	2026-10-19T09:11:32.5570004Z 1 tests failed:
+test	UNKNOWN STEP	2026-10-19T09:11:32.5570331Z (fail) cannot retire a live successor when two processes recover a crashed claimant [121.00ms]
+test	UNKNOWN STEP	2026-10-19T09:11:32.5570524Z 
+test	UNKNOWN STEP	2026-10-19T09:11:32.5570577Z  6540 pass
+test	UNKNOWN STEP	2026-10-19T09:11:32.5570685Z  1 skip
+test	UNKNOWN STEP	2026-10-19T09:11:32.5570790Z  1 fail
+test	UNKNOWN STEP	2026-10-19T09:11:32.5570909Z  31563 expect() calls
+test	UNKNOWN STEP	2026-10-19T09:11:32.5571250Z Ran 6542 tests across 384 files. [257.68s]
+test	UNKNOWN STEP	2026-10-19T09:11:32.6022123Z ##[error]Process completed with exit code 1.
+test	UNKNOWN STEP	2026-10-19T09:11:32.6117882Z Post job cleanup.
+test	UNKNOWN STEP	2026-10-19T09:11:32.6718210Z [command]/usr/bin/git version
+test	UNKNOWN STEP	2026-10-19T09:11:32.6778032Z git version 2.55.0
+test	UNKNOWN STEP	2026-10-19T09:11:32.6800880Z Temporarily overriding HOME='/home/runner/work/_temp/fbe06acd-ceb2-4dfe-b5da-90fa00defc90' before making global git config changes
+test	UNKNOWN STEP	2026-10-19T09:11:32.6801672Z Adding repository directory to the temporary git global config as a safe directory
