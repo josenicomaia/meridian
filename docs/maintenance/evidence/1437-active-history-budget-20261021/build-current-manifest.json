@@ -1,0 +1,55 @@
+{
+  "head": "c3604dd5f951933a0eb979846edffcce9c78dc91",
+  "members": [
+    {
+      "path": "final-r3-local.json",
+      "bytes": 349,
+      "sha256": "9ccadbc61ae33c3c7da243b607174b91872d7afbb5305c394ef9146a422951ba"
+    },
+    {
+      "path": "final-r3-typecheck.log",
+      "bytes": 53,
+      "sha256": "829e3a9ec1a8b50ffcaf2cf97a3e3c857ce29f5ed30343aca263f4f549b602ac"
+    },
+    {
+      "path": "final-r3-build.log",
+      "bytes": 1010,
+      "sha256": "e07160062db802860240e775f8e6f1133e18490b3c9271548b1a54d239509d48"
+    },
+    {
+      "path": "source-page-warm-r1.json",
+      "bytes": 558,
+      "sha256": "5c78fbcd8389c15288aa8617f11f3a91a445febe661afdf431de49886523ee80"
+    },
+    {
+      "path": "source-page-warm-r4.json",
+      "bytes": 419,
+      "sha256": "a79f8153c315e0eec16ab6bb2fc323aa99d345a561073910eb5abbc14d3f8535"
+    },
+    {
+      "path": "run-final-local-r4.py",
+      "bytes": 2715,
+      "sha256": "4f8e30a060e126be5b936e9a7c6694878c519ea7fc05ede310b94698d2aadeea"
+    },
+    {
+      "path": "final-r4-build.log",
+      "bytes": 2867,
+      "sha256": "fd9f4ea93e1c2fefedac0f98a249e76441f495a2d896a2b2bff4819714a7405e"
+    },
+    {
+      "path": "final-r4-typecheck.log",
+      "bytes": 53,
+      "sha256": "829e3a9ec1a8b50ffcaf2cf97a3e3c857ce29f5ed30343aca263f4f549b602ac"
+    },
+    {
+      "path": "r3-source-mapping.json",
+      "bytes": 533,
+      "sha256": "142b21d276ff2423093721d00a29877141949ec8cd75c2c7af298610831bf095"
+    },
+    {
+      "path": "r4-running-snapshot.json",
+      "bytes": 351,
+      "sha256": "8719b6854607be7e943077d8e3ddcdb0cfba70f159882af815fede6bc6ae3013"
+    }
+  ]
+}
