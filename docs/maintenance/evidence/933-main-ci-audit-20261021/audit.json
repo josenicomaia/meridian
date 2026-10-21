@@ -1,0 +1,155 @@
+{
+  "at": "2026-10-21T03:09:39.918440+00:00",
+  "currentMain": "8914cfad05dc274e78313cd9cbe3a2bb14923231",
+  "scope": "Main push CI only; this is not an audit of every contributor branch failure",
+  "recentMainCI": [
+    {
+      "conclusion": "success",
+      "created_at": "2026-10-21T02:33:19Z",
+      "event": "push",
+      "head_sha": "8914cfad05dc274e78313cd9cbe3a2bb14923231",
+      "html_url": "https://github.com/rynfar/meridian/actions/runs/39533663412",
+      "id": 39533663412,
+      "name": "CI",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "created_at": "2026-10-21T00:52:03Z",
+      "event": "push",
+      "head_sha": "be79072673a22f86cfa27851e63127bdf8656b77",
+      "html_url": "https://github.com/rynfar/meridian/actions/runs/39523889938",
+      "id": 39523889938,
+      "name": "CI",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "created_at": "2026-10-21T00:27:11Z",
+      "event": "push",
+      "head_sha": "dcc1b8c9d78738217aaf4633659704db9b06bd11",
+      "html_url": "https://github.com/rynfar/meridian/actions/runs/39521401553",
+      "id": 39521401553,
+      "name": "CI",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "created_at": "2026-10-20T23:06:06Z",
+      "event": "push",
+      "head_sha": "91df1ba233593e53118c2e9184f5a13d1d0f8902",
+      "html_url": "https://github.com/rynfar/meridian/actions/runs/39512739930",
+      "id": 39512739930,
+      "name": "CI",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "created_at": "2026-10-20T20:30:43Z",
+      "event": "push",
+      "head_sha": "413f4b7c73dc25302b877404066767f599ac210e",
+      "html_url": "https://github.com/rynfar/meridian/actions/runs/39492588724",
+      "id": 39492588724,
+      "name": "CI",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "created_at": "2026-10-20T19:53:41Z",
+      "event": "push",
+      "head_sha": "3667a1555e104d0d82fee180eedfde68ab218390",
+      "html_url": "https://github.com/rynfar/meridian/actions/runs/39487327949",
+      "id": 39487327949,
+      "name": "CI",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "created_at": "2026-10-20T19:37:33Z",
+      "event": "push",
+      "head_sha": "19ff3bcac167cdcbbd91a6f79f7af07605a0ad99",
+      "html_url": "https://github.com/rynfar/meridian/actions/runs/39485048162",
+      "id": 39485048162,
+      "name": "CI",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "created_at": "2026-10-20T19:12:17Z",
+      "event": "push",
+      "head_sha": "6f50d2f315f62369c99a9cd307e2beaa93440a6c",
+      "html_url": "https://github.com/rynfar/meridian/actions/runs/39481430697",
+      "id": 39481430697,
+      "name": "CI",
+      "status": "completed"
+    }
+  ],
+  "failedRuns": [
+    {
+      "conclusion": "failure",
+      "created_at": "2026-10-19T11:05:23Z",
+      "head_sha": "d7d9ad02720adffc1c8e42e2d229c0b45cbed6f3",
+      "html_url": "https://github.com/rynfar/meridian/actions/runs/39242086364",
+      "id": 39242086364
+    },
+    {
+      "conclusion": "failure",
+      "created_at": "2026-10-19T09:06:42Z",
+      "head_sha": "6c241a897bdc7ffe4c233d32270a17402b3528a0",
+      "html_url": "https://github.com/rynfar/meridian/actions/runs/39227599682",
+      "id": 39227599682
+    },
+    {
+      "conclusion": "failure",
+      "created_at": "2026-10-13T20:22:38Z",
+      "head_sha": "55edbcc35f1b008628967b07a05b632dc47063df",
+      "html_url": "https://github.com/rynfar/meridian/actions/runs/38462319514",
+      "id": 38462319514
+    },
+    {
+      "conclusion": "failure",
+      "created_at": "2026-09-26T06:01:24Z",
+      "head_sha": "da28f1e81fc3a0c9b0e8abe159a9e0153d88534f",
+      "html_url": "https://github.com/rynfar/meridian/actions/runs/36222500658",
+      "id": 36222500658
+    },
+    {
+      "conclusion": "failure",
+      "created_at": "2026-09-23T09:04:17Z",
+      "head_sha": "69bcf6dea24f8041920cda2e5afb6a844a334c65",
+      "html_url": "https://github.com/rynfar/meridian/actions/runs/35840759417",
+      "id": 35840759417
+    },
+    {
+      "conclusion": "failure",
+      "created_at": "2026-09-23T08:56:27Z",
+      "head_sha": "438b2bf9bbe4a8d9c33cf1c9b16b2ade966385fd",
+      "html_url": "https://github.com/rynfar/meridian/actions/runs/35839991337",
+      "id": 35839991337
+    }
+  ],
+  "assessment": [
+    {
+      "run": 39227599682,
+      "finding": "Recovery race parent saw empty first.result. Current worker already writes pending receipt then renames; parent assertion and timeout remain unchanged.",
+      "corrections": [
+        "92aa60944c833a5e1b00465e4d37c324f8f6c9f9",
+        "f923e9df3cf0c54a11f9a9df86ed5d95af5791a6"
+      ]
+    },
+    {
+      "run": 39242086364,
+      "finding": "Warm store loop lag97.58ms exceeded50.68ms relative threshold. Current benchmark includes equivalent durable reference work and counterbalanced ordering. The old external scheduling/IO state is not recreated by this history audit; no new blanket flakiness claim.",
+      "corrections": [
+        "41244e9b7a297a47d1719102fb0065a364f3baf5",
+        "414dd3222408bf4a7813d3c57cc495e6f7b6fc61"
+      ]
+    },
+    {
+      "run": 38462319514,
+      "finding": "Dependency tarball integrity failure during install, before tests. No original downloaded bytes retained in this audit; cause remains unproven and integrity checks must remain enabled."
+    }
+  ],
+  "disposition": "Keep933OPEN. Eight recent main CI runs succeeded; that sample does not prove broad stochastic flakiness eliminated. Revisit a new unclassified failure or an exact reproducible residual, without relaxing deadlines/performance assertions or substituting green reruns. No new source change, dependency install, worktree, Docker resource or model call.",
+  "remainingOriginalGate": "The original eleven-victim backlog cluster is covered by935. A surviving132ms concurrent HTTP500 remains unclassified;1306/1312 add held-writer/body diagnostics, not a historical reproduction. Later usage-zero43ms500 and missing-plugin-marker causes also remain unknown. Eight later main CI successes cannot identify discarded original error bodies."
+}
