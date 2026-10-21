@@ -1,6 +1,6 @@
 # Issue #1439: account-suspension report, first review
 
-Reviewed2026-10-21 at current main075e9e4736d3457e12dda1a0108531b9b5843e96 and published1.85.0 (tagd35fd025; workflow-only npm provenance3f819aaa). [Report](https://github.com/rynfar/meridian/issues/1439), created10:39UTC by xiao98, has one paragraph and no comments. It reports suspension after remote-server deployment and suggests IP/traffic/header causes. It provides no exact version, client, authentication type, provider response/notice, request-id or timeline. The claimed cause is an unverified hypothesis. No closure, source fix or reproduction claim is justified.
+Reviewed2026-10-21 at current main075e9e4736d3457e12dda1a0108531b9b5843e96 and published1.85.0 (tag `meridian-v1.85.0` at d35fd025; workflow-only npm provenance3f819aaa). [Report](https://github.com/rynfar/meridian/issues/1439), created10:39UTC by xiao98, has one paragraph and no comments. It reports suspension after remote-server deployment and suggests IP/traffic/header causes. It provides no exact version, client, authentication type, provider response/notice, request-id or timeline. The claimed cause is an unverified hypothesis. No closure, source fix or reproduction claim is justified.
 
 ## Relevant current code
 

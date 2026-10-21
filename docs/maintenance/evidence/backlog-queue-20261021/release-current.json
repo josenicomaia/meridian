@@ -1,0 +1,25 @@
+{
+  "capturedUTC": "2026-10-21T12:02:16.307219+00:00",
+  "npm": {
+    "version": "1.85.0",
+    "dist.integrity": "sha512-vgNuEQexqeQOgb+Z7HRshRNBATmmgWFDX3Go0pj2Rd5pySjNKeXHBdRKVP3IPqWn6tpd0FyRCmOpCeyLCUeIFA==",
+    "dist.shasum": "40efbfb90b23074386bd7449dfe5535d6c5bb3b6",
+    "gitHead": "3f819aaa873c9e12e91c25ec429c1e30cdf05633"
+  },
+  "distTags": {
+    "latest": "1.85.0"
+  },
+  "release": {
+    "isDraft": false,
+    "isPrerelease": false,
+    "publishedAt": "2026-10-21T06:50:45Z",
+    "tagName": "meridian-v1.85.0",
+    "url": "https://github.com/rynfar/meridian/releases/tag/meridian-v1.85.0"
+  },
+  "remoteTag": {
+    "sha": "d35fd0259ee4cead19358294d92ba718b4491fd1",
+    "ref": "refs/tags/meridian-v1.85.0"
+  },
+  "firstLinkAuditFailure": "Lookup of shortened v1.85.0 failed; actual Release Please tag meridian-v1.85.0 found and verified. No publication or tag change performed.",
+  "qualification": "Original full integrity/provenance/installed-client/Docker proof is d063274e. This is a read-only metadata refresh, not another installed-client run."
+}
