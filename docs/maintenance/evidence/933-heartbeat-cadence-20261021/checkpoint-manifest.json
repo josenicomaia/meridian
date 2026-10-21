@@ -1,0 +1,138 @@
+{
+  "head": "206f5968741f6ae971df7e428533340aaee65632",
+  "base": "be79072673a22f86cfa27851e63127bdf8656b77",
+  "files": [
+    {
+      "path": "1220-current-composition/source-f7.diff",
+      "bytes": 383810,
+      "sha256": "46181ce5830cc4bb29d5edc86be5c00aad2ce52b52d303a13d3de40537ddbb20"
+    },
+    {
+      "path": "1220-current-composition/final-r2-local.json",
+      "bytes": 437,
+      "sha256": "0ed97e844462d16fb808907c0cab339cbbd0ca083d071f26b072f9870d0df41f"
+    },
+    {
+      "path": "1220-current-composition/final-r2-full.log",
+      "bytes": 1387841,
+      "sha256": "90cb6c7efc42df51c519a46ee811fd31bc3a4ae218071a2fadd93f01a0b575ab"
+    },
+    {
+      "path": "1220-current-composition/full-r2-fixtures-corrected.json",
+      "bytes": 190,
+      "sha256": "65702a1185731a3aa40a17d1d8fd92124fdda847b18013ba77ba96e7ae3ab502"
+    },
+    {
+      "path": "1220-current-composition/full-r2-fixtures-typecheck.log",
+      "bytes": 53,
+      "sha256": "add106bc00b9edd763bf031ee275ea1b35cc8c5e0f06692dd75d6abab9d31062"
+    },
+    {
+      "path": "1220-current-composition/heartbeat-diagnostic-r1/three-process.json",
+      "bytes": 2990,
+      "sha256": "27f6e81765c041ba180860b42b6afa588b99c283eaed69c7782e89922f0c92dc"
+    },
+    {
+      "path": "1220-current-composition/heartbeat-diagnostic-r1/run.log",
+      "bytes": 1099,
+      "sha256": "ac8e1fb096361e6c14c4a3d52c768619c6f1bc4d5f1c65500e59efdf9fb435e2"
+    },
+    {
+      "path": "1220-current-composition/full-r2-fixture-corrected-store-mutation-baseline.log",
+      "bytes": 453,
+      "sha256": "1867164ccde4b8a3a24cfaeebfb52291c88f4c7cd38016ce5f14901c1073ff72"
+    },
+    {
+      "path": "1220-current-composition/full-r2-fixture-corrected-bookkeeping-server-admission.log",
+      "bytes": 1173,
+      "sha256": "e64ab26abe562a464a2b556b7d3f1421070618dd36607ea7cf59a5924a7361e3"
+    },
+    {
+      "path": "1220-current-composition/full-r2-fixture-corrected-account-return-trip.log",
+      "bytes": 8847,
+      "sha256": "bd7e9f4684098e940fc41552d5d01893431be436dc0ef992bf533961f28b6714"
+    },
+    {
+      "path": "heartbeat-cadence-933/source.json",
+      "bytes": 412,
+      "sha256": "c2e0a74fec43e983c5df02ed3270a40c3986659f1c671f42db21680847cc7d4f"
+    },
+    {
+      "path": "heartbeat-cadence-933/commit-signature.json",
+      "bytes": 216,
+      "sha256": "39ed6e7cb6a9b7baae2592f4d29c51be27ef402852b4d92c8047701894e0abc3"
+    },
+    {
+      "path": "heartbeat-cadence-933/helper-baseline.log",
+      "bytes": 2506,
+      "sha256": "cc06538f975fb08cdc060ff0328d60c5cc9f052f00a038b29665e8899d3beebd"
+    },
+    {
+      "path": "heartbeat-cadence-933/helper-corrected.log",
+      "bytes": 726,
+      "sha256": "130743b75775a5e2a7ba24efd3aa750d3d43811dd30e946e151a7708743d71c1"
+    },
+    {
+      "path": "heartbeat-cadence-933/negative-controls.json",
+      "bytes": 382,
+      "sha256": "335de4223bdd391f165b90b09cbbde54186becd5a9ec4e7554dc54fe4e2d0aa6"
+    },
+    {
+      "path": "heartbeat-cadence-933/focused-corrected.log",
+      "bytes": 2815,
+      "sha256": "47262110bceb7d410b9428bc6b73033884b83e627e5ebb6bf93c774fab67f8d3"
+    },
+    {
+      "path": "heartbeat-cadence-933/focused-result.json",
+      "bytes": 102,
+      "sha256": "fd1ef5735e3874118cc46c35f777795d7b62ad429915dbb4cd7a14934f00a3c5"
+    },
+    {
+      "path": "heartbeat-cadence-933/main-baseline/three-process.json",
+      "bytes": 3117,
+      "sha256": "2a63e92e7b25fd6f9a012c27b38be9156c0da43b2a396843f3ec85caac7a111e"
+    },
+    {
+      "path": "heartbeat-cadence-933/main-baseline/run.log",
+      "bytes": 318,
+      "sha256": "90f9802c82bfbc74dfccac527f53bd34ba75dc32fdc8fdf2fd20b6b1b39a9927"
+    },
+    {
+      "path": "heartbeat-cadence-933/run-controls.py",
+      "bytes": 1995,
+      "sha256": "2dd443fbaeb90ee232b4de1722d9202f0c0138b5deae590c71bdd36dc644ce1e"
+    },
+    {
+      "path": "heartbeat-cadence-933/missing-gap-negative.log",
+      "bytes": 1730,
+      "sha256": "f949efe15d6afac5001f14e9442db82109ae153454ddf74b90ed1673c2d42273"
+    },
+    {
+      "path": "heartbeat-cadence-933/missing-deadline-negative.log",
+      "bytes": 1644,
+      "sha256": "b4eed6f3ea08092c15fa7f5400e4613f026c3da61171d15f6d6466b53df4b572"
+    },
+    {
+      "path": "heartbeat-cadence-933/missing-callback-negative.log",
+      "bytes": 1386,
+      "sha256": "b5d0d9510057151ae8180fb949a67dd63889da7970d9b43847f7ecb6044ff5b7"
+    },
+    {
+      "path": "heartbeat-cadence-933/corrected-native/three-process.json",
+      "bytes": 3202,
+      "sha256": "ccd620cf44e25e1a0610d9a9dde56c293fcc077e93ea08e77ecb12e4541a12c7"
+    },
+    {
+      "path": "heartbeat-cadence-933/corrected-native/node-contention.json",
+      "bytes": 165,
+      "sha256": "18ad61206aa59e36e5001843bf87dbecd18a0db457e03c07dbbac5531a04664e"
+    },
+    {
+      "path": "heartbeat-cadence-933/corrected-native/admission-deadline.json",
+      "bytes": 80236,
+      "sha256": "48e0f0c4868a2f576703ccd2e2bffed87c89f8463c684a4362b861edabdcedf2"
+    }
+  ],
+  "archiveSha256": "baa8acf1b8b9c9500848ba8584e8ecc0404ff613852e914a2fa7baceea76f9b4",
+  "status": "Final-head local full and CI pending; no merge authorization from green rerun"
+}
