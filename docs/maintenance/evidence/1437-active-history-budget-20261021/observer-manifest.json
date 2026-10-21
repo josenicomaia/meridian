@@ -1,0 +1,223 @@
+{
+  "head": "c3604dd5f951933a0eb979846edffcce9c78dc91",
+  "members": [
+    {
+      "path": "final-r2-local.json",
+      "bytes": 439,
+      "sha256": "c702119bc059bad9da8362acc03bfd71f7ae92d8fdb208dfe8fcc76d727c0997"
+    },
+    {
+      "path": "final-r2-full.log",
+      "bytes": 1407627,
+      "sha256": "4aa9c016018c081cfe879149ba3fc655b739eaa906e3277d4bcb846dc58e2b88"
+    },
+    {
+      "path": "final-r2-typecheck.log",
+      "bytes": 53,
+      "sha256": "829e3a9ec1a8b50ffcaf2cf97a3e3c857ce29f5ed30343aca263f4f549b602ac"
+    },
+    {
+      "path": "final-r2-build.log",
+      "bytes": 2867,
+      "sha256": "ab278d0549d88310befa4952ff6285dfff311ae618c9bc1388b1293ab5fc8090"
+    },
+    {
+      "path": "second-full-failures.json",
+      "bytes": 454,
+      "sha256": "727e07ead84e3d1111a1087c4fd52fb35604094990749dc6e29733325512b519"
+    },
+    {
+      "path": "r3-source-mapping.json",
+      "bytes": 533,
+      "sha256": "142b21d276ff2423093721d00a29877141949ec8cd75c2c7af298610831bf095"
+    },
+    {
+      "path": "run-final-local-r3.py",
+      "bytes": 1374,
+      "sha256": "1fd28f48f9dbcfdc9017359c33fab6cb0c136a2758d69254cb4ad7080993aaf8"
+    },
+    {
+      "path": "run-auth-controls.py",
+      "bytes": 3261,
+      "sha256": "ac7bacd662fb97b2fb49b738f974d81c06b5c38e9eb37f4702117c04a607f6f5"
+    },
+    {
+      "path": "runtime-heartbeat-final-focused.log",
+      "bytes": 1816,
+      "sha256": "1c2791ad445f1db57c033b68562d68472bc257353687661902d4915789044176"
+    },
+    {
+      "path": "auth-close-control/old-delay-initial.log",
+      "bytes": 774,
+      "sha256": "e682ed6e58f0ae3c521fa530520e624ef9b816400399f35ee6ea75596003cdd9"
+    },
+    {
+      "path": "auth-close-control/new-standard.log",
+      "bytes": 8740,
+      "sha256": "35644b8a65722bded079f02904e32ef57745ecd9443cdddd052ba7a9fc4e2437"
+    },
+    {
+      "path": "auth-close-control/result.json",
+      "bytes": 5592,
+      "sha256": "0b193106f120a350a2954542edf8ee9f24c2066343c3049bbd5373ac630712a1"
+    },
+    {
+      "path": "auth-close-control/new-delay-initial.log",
+      "bytes": 287,
+      "sha256": "2287a6d8482aab9a5eb2ad3cdab738b23b97d5f5ed412c0d21490c4330076f32"
+    },
+    {
+      "path": "auth-close-control/new-early-close-initial.log",
+      "bytes": 1030,
+      "sha256": "26aa9a93b814bbdb45d4c776f16d795e612f6fe61060ebe83cb8c42fedd7dbf6"
+    },
+    {
+      "path": "auth-close-control/new-delay.log",
+      "bytes": 287,
+      "sha256": "25adb115cbbc2ff425859d9d43977562d14b0f004bd466168ccce2440d4e32c9"
+    },
+    {
+      "path": "auth-close-control/unbounded-initial-result.json",
+      "bytes": 4550,
+      "sha256": "5ee2468e8eaabcf7fdc3212d12039f84c23cd5141f49ee3f7ea0ce25b9cea10f"
+    },
+    {
+      "path": "auth-close-control/old-delay.log",
+      "bytes": 774,
+      "sha256": "f5c2f47039db8f6d20529ca3e25d5b96023e80f5b6ffd7f4247ed9871d33ba72"
+    },
+    {
+      "path": "auth-close-control/new-missing-signal.log",
+      "bytes": 901,
+      "sha256": "6d6a595f430c463a2edcb1dcbcd7d47490a3a9200b470dddcc212c79b1f53497"
+    },
+    {
+      "path": "auth-close-control/new-standard-initial.log",
+      "bytes": 8740,
+      "sha256": "fdc7511939bfad9b52f1957acfde92d9b1decbdd5ea158e2b86a9c8d27afaca2"
+    },
+    {
+      "path": "auth-close-control/new-early-close.log",
+      "bytes": 908,
+      "sha256": "e2d797a2dba06155e006d202984e63a558c7422b04dd1c2e5116e64be4a644bf"
+    },
+    {
+      "path": "runtime-heartbeat-control/old-coalesced.test.ts",
+      "bytes": 14346,
+      "sha256": "dae1113398b5ccd84e824e29bd29a539368807bbc7844273ecbdcdf2195d11f5"
+    },
+    {
+      "path": "runtime-heartbeat-control/manifest-local.json",
+      "bytes": 1689,
+      "sha256": "3d8596bd9bf3fa381743c6267a793c2bf88c759f9d8272f5ce900bf866424c5d"
+    },
+    {
+      "path": "runtime-heartbeat-control/new-standard.test.ts",
+      "bytes": 14275,
+      "sha256": "f5f9293f851cb36af3b3ad38949c62b054b67f7a623b168762854bfbe1c7854e"
+    },
+    {
+      "path": "runtime-heartbeat-control/new-standard.log",
+      "bytes": 877,
+      "sha256": "ab85cbfb83f8cd6b9bd49fbc778ab909b2783d62f0c99412b4c457f3cde0864a"
+    },
+    {
+      "path": "runtime-heartbeat-control/result.json",
+      "bytes": 5245,
+      "sha256": "56ecabf04f4ce191e769a5441d874f1a788312c0b6dcd9d0733a7329a775f5e4"
+    },
+    {
+      "path": "runtime-heartbeat-control/blocked.test.ts",
+      "bytes": 14656,
+      "sha256": "4a25fc262ec82a5faa4468ddf1f32ef1efdd3660e92e8f41a0aba3d12d89056f"
+    },
+    {
+      "path": "runtime-heartbeat-control/new-coalesced-initial-wrong-cadence.log",
+      "bytes": 892,
+      "sha256": "9e4a458447caa8a3fc63a64692b2ca80a4b8ad315d2cacf14e363aa25a1aac2d"
+    },
+    {
+      "path": "runtime-heartbeat-control/heartbeat.ts",
+      "bytes": 1538,
+      "sha256": "c5b48456a903b2470a89117e0f0a5f866bd2afd448caa89350fd6c2b938ffe74"
+    },
+    {
+      "path": "runtime-heartbeat-control/new-coalesced.test.ts",
+      "bytes": 14285,
+      "sha256": "e2b2670844e330f85b1238ebc9b2afb214993bdec1b1bbdbf93c11159b7d063d"
+    },
+    {
+      "path": "runtime-heartbeat-control/initial-results.json",
+      "bytes": 4674,
+      "sha256": "33e135b53266e0780314ddf818e534c70ddb4ad66cd500909845528f9e13bef1"
+    },
+    {
+      "path": "runtime-heartbeat-control/pending-runtime-heartbeat.patch",
+      "bytes": 2084,
+      "sha256": "b262b5bc2de906bcf82a12067c5ed5a25251edc03e0969438c2ff9c0b76be481"
+    },
+    {
+      "path": "runtime-heartbeat-control/new-coalesced.log",
+      "bytes": 654,
+      "sha256": "890d5d4f4980364a9656f0f11f39d7ab02a5dd420ad427425c2b8306375f07b9"
+    },
+    {
+      "path": "runtime-heartbeat-control/blocked.log",
+      "bytes": 1209,
+      "sha256": "292b65e8d5fc21e1ef50ebbadda9370bbe07ea64690f5bc7d6a2fb31c23a1eee"
+    },
+    {
+      "path": "runtime-heartbeat-control/heartbeat-coalesced.ts",
+      "bytes": 1539,
+      "sha256": "8cb8c46a6bf8ab795183da258871b5ab6b5a4dd3665d5661ba3d07412d9efa70"
+    },
+    {
+      "path": "runtime-heartbeat-control/APPLIED.md",
+      "bytes": 400,
+      "sha256": "1ba7b60f2aaf651aadefec86afec8dd46d711ec4a76337d64ed79b7ef93332a0"
+    },
+    {
+      "path": "runtime-heartbeat-control/prepared-review.json",
+      "bytes": 827,
+      "sha256": "538f67fd6255b9c78a541c19ee84a15f10de07477998c79a2f898549b3128afd"
+    },
+    {
+      "path": "runtime-heartbeat-control/run-controls.py",
+      "bytes": 1618,
+      "sha256": "2912eaead232a18b5001cca2d2e09f775524dbaf318c6fbaf6077249d33f16c1"
+    },
+    {
+      "path": "runtime-heartbeat-control/PREPARED.md",
+      "bytes": 2274,
+      "sha256": "eae6ef91089d4b76b43a7cb63d8cf82b17653d72f41a6f86b6d903c2e46a77d6"
+    },
+    {
+      "path": "runtime-heartbeat-control/old-coalesced.log",
+      "bytes": 999,
+      "sha256": "a699258321e7c38d62a03275a977cbf86ff98f1bbd0763f434b38c0697d800f2"
+    },
+    {
+      "path": "runtime-heartbeat-control/pending-bookkeeping-runtime.test.ts",
+      "bytes": 13888,
+      "sha256": "652cde1f91f4e42191cd71bf97bd567a0966c384402a51baf19656d04045a545"
+    },
+    {
+      "path": "final-test-corrections.patch",
+      "bytes": 4589,
+      "sha256": "4bb259ba93c49b475068709f12909017bacb41abe9f32b0269a6603b62434ac9"
+    },
+    {
+      "path": "r3-snapshot.json",
+      "bytes": 349,
+      "sha256": "9ccadbc61ae33c3c7da243b607174b91872d7afbb5305c394ef9146a422951ba"
+    }
+  ],
+  "redactions": [
+    {
+      "path": "final-r2-full.log",
+      "tokenSpellings": 0,
+      "bearerSpellings": 4,
+      "originalSHA256": "2758d07632485db51a440bc19d9f1e4e1ab012bc6ed347010d7f3b9cca86318b"
+    }
+  ]
+}
