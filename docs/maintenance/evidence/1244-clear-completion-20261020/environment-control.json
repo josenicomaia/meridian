@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-21T00:08:48.509943+00:00",
+  "head": "78974b54d042398dfda1bdace7eb3b4235152e43",
+  "archive": {
+    "path": "environment-control.tar.xz",
+    "files": 9,
+    "bytes": 213872,
+    "sha256": "714562a9b6db6c2ae7357e3d6981923c7d839660716806557caa21b0abbb92aa"
+  },
+  "priorFull": "7515pass63skip1fail; firstdefaultgroup only; bookkeeping-cli.beforeAll build snapshot deadlineexpired",
+  "localCorrection": "No source/deadline change; observed firstread candidate2001msFAIL/readSync1.06s; internal baselinePASS/read77ms. Same789head2281Gitfilesbyteverified before relocation. OldownedDevSSDcandidate/physicaldeps removed; onlyonecandidateinternal+evidence now. Fullr2 pending.",
+  "CI": "All8executed finalheadchecksSUCCESS; expectedchangelogskip; earlierpushNixcanceledbyPR andsameduplicatenamePRNixSUCCESS",
+  "gate": "Local full still required before merge"
+}

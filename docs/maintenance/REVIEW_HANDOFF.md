@@ -1,3 +1,13 @@
+## Active continuation, 2026-10-21 00:08 UTC
+
+Goal ACTIVE. Approved cleanup-contract correction is draft [#1433](https://github.com/rynfar/meridian/pull/1433), head78974b54d042398dfda1bdace7eb3b4235152e43 on91df. [Current proof](evidence/1244-clear-completion-20261020/README.md): baseline9causalreds/4controls; new16pass, adjacent78pass, SQLcallers48pass; twoisolatedmutantsfail/sourcebyterestored. All4E41+clear/freshsessionmodes pass20realSonnet5.5generations, SDK141/native302/clientV1+scrub0.2.3, allidentitiescorrelated/actorsjoined/fixturesandgrantsremoved. IndependentnpmMacNode22JSON/SQL andactualold/currenttypeconsumer pass; consumer527MiBremovedafterverifieddurableproof. No contributor commits copied; original1220bodydisclosesindependentlimitedcontractfollowup; broaderwriterstillheld.
+
+All8executedheadCIchecksSUCCESS (+expectedskip; supersededpushNixcancelwithsameheadPRNixPASS). Localfirstfullended7515/63/1 due2sbuildfingerprintbudgetexpiry inCLIbeforeAll, notcachelogic. Observerreproduced2001ms with1.06sreadSync; internal/warmcontrols andsamehead2281sourcefilescompared. No deadline/sourcechange. Ownedcandidate movedfromDevSSD to `/private/tmp/meridian-clear-completion-20261020`, oldphysicaldepsremoved. Sameheadlocaltype/build/failedCLIphase/fullr2 controller44565running. **Do not merge or close1277 untilr2qualifies.** Existing20actualgenerationsareclosed; do not rerun theirmarkers. Originalroot446a+all12dirtyhashesunchanged. Onlycandidate/evidenceworktrees, no taskDocker.
+
+Next independent issue917: originalGitHubCIlogsretrieved. Toolcachecaseactually5003msBuntimeout, thirdrequestcompletes18mslater; contraryoldcommentnotimingbound. Extrausagecase1992msvs500mswallassertion; concrete1.94sgapafterfallback, exactschedulingcausenotobserved. Preparedoutsideworkingtree a directactualtimerobserver test (realHTTP/mockSDK,0models): normal/701msunrelateddelay/realratelimitpositivecontrol ×JSON/SSE all6PASS. OldwallclockcontrolFAILS2; brokenactualtimerfilterpositivecontrolFAILS2. No productsourcechanges/newPR/issueclosureyet. Implementonlyafter1433delivery, initsowncandidate; preserveauthor/draft/release/oldmodelholds.
+
+---
+
 ## Active continuation, 2026-10-20 23:44 UTC
 
 The backlog goal remains ACTIVE. Ten original PRs are verified merged through #1219/main91df; #1303 is validated and closed after the six-case 100/900 mapping/lease/GC write-budget matrix. [Closeout and scoped cleanup](evidence/1303-write-budget-20261020/README.md).
