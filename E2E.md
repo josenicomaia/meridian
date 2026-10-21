@@ -834,7 +834,7 @@ bun scripts/e2e-antigravity-active-history.mjs
 ```
 
 Use Bun 1.4.3, Pi 1.1.0 and the official agy 1.2.7 Darwin arm64 binary.
-The gate checks the default subscription, disables paid credits/custom providers,
+The gate requires the default subscription with paid credits/custom providers disabled,
 imports the retained public long-history fixture, and requires one exact write
 and a correlated read after joined backend replacement. The newest request,
 completed call/result and historical identities must survive translation within

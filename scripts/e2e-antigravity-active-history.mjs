@@ -18,6 +18,14 @@ const sha = bytes => createHash('sha256').update(bytes).digest('hex')
 const values = messages => messages.flatMap(message => Array.isArray(message.content) ? message.content : [])
 const target = call => call.input.path ?? call.input.file_path ?? call.input.filePath
 
+/** Prevent inherited routing/auth/budget overrides from changing this fixture.
+ * The official CLI keeps the existing account; client state stays isolated.
+ * @param {Record<string,string|undefined>} env @param {string} root */
+export function isolatedProxyEnvironment(env, root) {
+  const clean = Object.fromEntries(Object.entries(env).filter(([name]) => !/^(MERIDIAN_|CLAUDE_|ANTHROPIC_|OPENAI_|OPENROUTER_|AZURE_OPENAI_|GOOGLE_|GEMINI_)/.test(name)))
+  return { ...clean, MERIDIAN_CONFIG_DIR: join(root, 'proxy-config'), MERIDIAN_SESSION_DIR: join(root, 'proxy-sessions'), MERIDIAN_TELEMETRY_PERSIST: '0', MERIDIAN_NO_UPDATE_CHECK: '1', MERIDIAN_CREDENTIALS_READONLY: '1' }
+}
+
 /** Published Pi 1.1.0 docs/session-format.md: v3 linked AgentMessage entries. */
 export function historyFixture(project, model, receipt) {
   const seedPath = join(project, 'already-completed.txt'), outputPath = join(project, 'latest-target.txt')
@@ -362,6 +370,7 @@ export async function main() {
   assert(pi && isAbsolute(pi) && node && isAbsolute(node) && executable && isAbsolute(executable), 'Provide exact installed Pi CLI, supported Node and official agy paths')
   const model = 'gemini-3.8-flash-low'
   const root = await mkdtemp(join(tmpdir(), 'meridian-agy-pi-history-'))
+  process.env = isolatedProxyEnvironment(process.env, root)
   const project = join(root, 'project'), config = join(root, 'pi-config'), session = join(root, 'fixture-session.jsonl')
   for (const path of [project, config, join(root, 'home'), join(root, 'tmp')]) await mkdir(path, { mode: 0o700 })
   console.log(`Artifacts: ${root}`)
@@ -390,6 +399,7 @@ export async function main() {
   report.protocolSha256 = sha(await readFile(join(packageRoot, 'src/proxy/backends/antigravityProtocol.ts')))
   report.harnessSha256 = sha(await readFile(fileURLToPath(import.meta.url)))
   report.piCliSha256 = sha(await readFile(pi))
+  assert.equal(report.piCliSha256, 'e79626f2dd6f94aa45d30f3fa63cd84319a6eefcd150b353cfaf274366926774', 'Pinned actual Pi CLI identity changed')
   const { startProxyServer } = await import(pathToFileURL(join(packageRoot, 'dist/server.js')).href)
   const { parseAgRequest, renderAgPrompt, renderAgPromptWithinLimit } = await import(pathToFileURL(join(packageRoot, 'src/proxy/backends/antigravityProtocol.ts')).href)
   const fixture = historyFixture(project, model, `LATEST_${randomUUID()}`)
@@ -527,6 +537,8 @@ export async function main() {
     lifecycle.fail('main', error)
     primaryError = error; report.error = String(error)
   } finally {
+    report.finalNativeSha256 = sha(await readFile(executable))
+    if (report.finalNativeSha256 !== nativeSha) lifecycle.fail('native-identity', 'Official executable changed')
     // Retire before any await: already-started handlers cannot acquire/forward.
     lifecycle.retire('Final cleanup')
     await checkpoint('before-final-cleanup')
