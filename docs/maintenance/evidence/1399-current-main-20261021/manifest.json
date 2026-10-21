@@ -1,0 +1,117 @@
+{
+  "head": "aadbd441911457e7b6fc5cde1c3a21ca9ccfb3d1",
+  "members": [
+    {
+      "path": "source-custody.json",
+      "bytes": 5626,
+      "sha256": "e009e76c95d777f7415d36290f825879e598f6b47694af1cd630e9d1db018c6e"
+    },
+    {
+      "path": "merge-resolution.diff",
+      "bytes": 3087,
+      "sha256": "4a08df834f758b7332aa871454366bdf36dabc70d0dd77e64040016bb442b822"
+    },
+    {
+      "path": "sql-correction.diff",
+      "bytes": 8713,
+      "sha256": "d251175904bdffd53ae8faea2db74e80d9cb566f3ecf262d1799fe17b2acf5a8"
+    },
+    {
+      "path": "sqlite-before.log",
+      "bytes": 3629,
+      "sha256": "00e21f0e644ca58c8099d05e5581ef177fe4ff21b511e8abf4f619d5e616ca42"
+    },
+    {
+      "path": "sqlite-after.log",
+      "bytes": 3297,
+      "sha256": "5396ed23e026257a19e9afff13ba556b4189706b619b8b54c7f332ccd57740d7"
+    },
+    {
+      "path": "json-controls.log",
+      "bytes": 1021,
+      "sha256": "e0e8ea4a6d8d9a0d16df2e33cbf5557da24353cb05556039d91ef706045d403b"
+    },
+    {
+      "path": "sqlite-proxy-close-before.log",
+      "bytes": 1479,
+      "sha256": "b12a14a146e79a31373b1132219eb2a5d169afa46b7e9d9988accf1e29a79aca"
+    },
+    {
+      "path": "sqlite-proxy-close-after.log",
+      "bytes": 617,
+      "sha256": "a6378c052b56064eccc507cab01889c064701ac57c83a5c3d772a4ad96c9b5f2"
+    },
+    {
+      "path": "sqlite-close-control.json",
+      "bytes": 505,
+      "sha256": "21eb6b6d02e7e1db2f056ea4ed26e30fef1c717351ee6779699c0d0a3e9215c4"
+    },
+    {
+      "path": "run-sqlite-close-control.py",
+      "bytes": 1776,
+      "sha256": "f460f1bf1bda1ee0e0f1615b89fbaf9764c9332e0d2bd414aaa0ed04801a8d7d"
+    },
+    {
+      "path": "focused-json.log",
+      "bytes": 9842,
+      "sha256": "878a822f9c8c6c41f328d10ce54741019096e5a4021d697988dbbcad1894cc1d"
+    },
+    {
+      "path": "focused-sqlite-lifecycle.log",
+      "bytes": 10108,
+      "sha256": "8949da28343ba8540bb62db10cc9ccd7a1139d61259c2ba1d37ac25f27c923fc"
+    },
+    {
+      "path": "typecheck-precommit.log",
+      "bytes": 53,
+      "sha256": "829e3a9ec1a8b50ffcaf2cf97a3e3c857ce29f5ed30343aca263f4f549b602ac"
+    },
+    {
+      "path": "typecheck-precommit-r2.log",
+      "bytes": 53,
+      "sha256": "829e3a9ec1a8b50ffcaf2cf97a3e3c857ce29f5ed30343aca263f4f549b602ac"
+    },
+    {
+      "path": "source-page-preparation.json",
+      "bytes": 395,
+      "sha256": "f0d8876313641f1d7e5a1eb76de1f8e172daf61a1c40fa1cdd6c385e8bac8bab"
+    },
+    {
+      "path": "final-build.log",
+      "bytes": 2863,
+      "sha256": "f80a8a59c5468afc149de880c1cf680e84d08969bde6bba5a25683755c787b3f"
+    },
+    {
+      "path": "final-typecheck.log",
+      "bytes": 53,
+      "sha256": "829e3a9ec1a8b50ffcaf2cf97a3e3c857ce29f5ed30343aca263f4f549b602ac"
+    },
+    {
+      "path": "run-build-type.py",
+      "bytes": 2481,
+      "sha256": "baf234c58ca7c4ebb766bfae757e7982d2016430f7ea4ef7b06ba7e137320640"
+    },
+    {
+      "path": "run-full.py",
+      "bytes": 1548,
+      "sha256": "3079b0961e169405289010ccde1748c324387c4d53eafb258f6a1f7e26539c35"
+    },
+    {
+      "path": "remote-current-head.json",
+      "bytes": 2118,
+      "sha256": "24e70583d426b3906793c6ce9366961d3e81705013cce4f5b953509b83465fd2"
+    },
+    {
+      "path": "body-verified.json",
+      "bytes": 131,
+      "sha256": "2d1448ea0f79808b808da3cfae4ad21796f6ed122d343510fe1b8e3ef8143aa2"
+    },
+    {
+      "path": "local-snapshot.json",
+      "bytes": 348,
+      "sha256": "eca161eaffb7f35e0e2afac3d4e173092374476bee6b953276d161828496a87e"
+    }
+  ],
+  "archiveSHA256": "d3ee8318ada87526983c444dca3d89b0d084de0e9cb50318eefcad03a23a2146",
+  "scope": "Owned mock/test and public git/CI receipts only; known Bearer fixture spellings redacted in logs."
+}
