@@ -231,7 +231,7 @@ try {
     `Compaction changed the root identity or source: ${JSON.stringify(observed.slice(beforeCompaction))}`)
     // The proxy host runs Meridian silently, so its request log lines (which
     // name the routed model) are read from the diagnostic log while it runs.
-    const logs = await fetch(`${proxyURL}/telemetry/logs`).then(r => r.ok ? r.json() : []).catch(() => [])
+    const logs = await fetch(`${proxyURL}/telemetry/logs?limit=500`).then(r => r.ok ? r.json() : []).catch(() => [])
     compactionModels = (Array.isArray(logs) ? logs : []).flatMap(entry => {
       const routed = String(entry?.message ?? '').match(new RegExp(` source=${compactionSource}\\b.*? model=(\\S+)`))
       return routed ? [routed[1]] : []

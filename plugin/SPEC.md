@@ -35,12 +35,11 @@ conversation identity and the right request shape:
   [`adapters`](../src/proxy/adapters/SPEC.md).
 - Identity headers a client or stale configuration may have set are replaced,
   never trusted, so a request cannot bind to an unrelated conversation.
-- A side call that carries the conversation's history (OpenCode V2 attached
-  compaction: `fork-compaction`; Pi compaction and other side calls:
-  `fork-side-call`) declares a `fork-` source, never `subagent-`: it keeps the
-  conversation's model tier, because its request is as large as the
-  conversation. Only delegated children get the base (200k) subagent tier.
-  Owner decision 2026-10-26 (#1448).
+- OpenCode V2 attached compaction (`fork-compaction`) and Pi compaction and
+  side calls (`fork-side-call`) declare a `fork-` source, never `subagent-`:
+  they carry the conversation's history, so they keep its model tier. Owner
+  decision 2026-10-26 (#1448). Delegated children and detached one-shots (V2
+  title/summary) keep the base (200k) subagent tier.
 - The Pi model catalog mirrors the server's effort list (`VALID_EFFORTS`); a
   test keeps them identical.
 - `plugin/` ships in the npm package; the V1/V2 plugins are bundled into
@@ -49,3 +48,10 @@ conversation identity and the right request shape:
 Every live OpenCode test through Meridian's Claude path uses the matching
 plugin generation (see `E2E.md` → *Required Meridian OpenCode plugin
 preflight*).
+
+## Known limitations
+
+- The OpenCode **V1** plugin still declares compaction as a subagent
+  (`plugin/meridian.ts`), so V1 compaction of an Opus/Fable `[1m]`
+  conversation runs on the 200k tier. Unlike V2 it changes agent mode, which
+  also changes the session key, so it needs its own fix.
