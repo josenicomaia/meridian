@@ -40,6 +40,8 @@ Object.assign(proxyEnv, {
   INIT_CWD: project,
 })
 const observed = []
+let summary
+let compactionModels = []
 let proxy
 let proxyOutput
 let relay
@@ -216,8 +218,8 @@ try {
     })
     assert(settled.ok, `Session compaction did not settle: ${settled.status}`)
     assert(observed.slice(beforeCompaction).some(row => row.session === primary.session
-      && row.source === 'subagent-compaction' && row.mode === 'primary' && !row.attested),
-    `Compaction changed the root identity or tier: ${JSON.stringify(observed.slice(beforeCompaction))}`)
+      && row.source === 'fork-compaction' && row.mode === 'primary' && !row.attested),
+    `Compaction changed the root identity or source: ${JSON.stringify(observed.slice(beforeCompaction))}`)
   } finally {
     server.kill()
     await server.exited
@@ -226,9 +228,9 @@ try {
     writeFileSync(join(root, 'server.stderr'), stderr)
   }
   writeFileSync(join(root, 'requests.json'), JSON.stringify(observed, null, 2))
-  console.log(JSON.stringify({ result: 'PASS', root, client: expectedClientVersion, meridian: version, model,
+  summary = { result: 'PASS', root, client: expectedClientVersion, meridian: version, model,
     requests: observed.length, primary: observed.filter(row => row.agent === 'build'),
-    auxiliary: observed.filter(row => row.agent === 'generate' || row.source === 'subagent-compaction') }))
+    auxiliary: observed.filter(row => row.agent === 'generate' || row.source === 'fork-compaction') }
 } finally {
   relay?.stop(true)
   if (proxy) {
@@ -238,6 +240,15 @@ try {
       const [stdout, stderr] = await proxyOutput
       writeFileSync(join(root, 'meridian.stdout'), stdout)
       writeFileSync(join(root, 'meridian.stderr'), stderr)
+      // The relay sees the model the client asked for; the tier Meridian routed
+      // the compaction to is only in its request log line.
+      compactionModels = [...`${stdout}\n${stderr}`.matchAll(/ source=fork-compaction\b[^\n]*? model=(\S+)/g)].map(match => match[1])
     }
   }
+}
+if (summary) {
+  const expected = process.env.E2E_EXPECT_COMPACTION_MODEL
+  if (expected) assert(compactionModels.length > 0 && compactionModels.every(routed => routed === expected),
+    `Compaction was routed to ${JSON.stringify(compactionModels)}, expected ${expected}`)
+  console.log(JSON.stringify({ ...summary, compactionModels }))
 }
