@@ -35,6 +35,12 @@ conversation identity and the right request shape:
   [`adapters`](../src/proxy/adapters/SPEC.md).
 - Identity headers a client or stale configuration may have set are replaced,
   never trusted, so a request cannot bind to an unrelated conversation.
+- A side call that carries the conversation's history (OpenCode V2 attached
+  compaction: `fork-compaction`; Pi compaction and other side calls:
+  `fork-side-call`) declares a `fork-` source, never `subagent-`: it keeps the
+  conversation's model tier, because its request is as large as the
+  conversation. Only delegated children get the base (200k) subagent tier.
+  Owner decision 2026-10-26 (#1448).
 - The Pi model catalog mirrors the server's effort list (`VALID_EFFORTS`); a
   test keeps them identical.
 - `plugin/` ships in the npm package; the V1/V2 plugins are bundled into
