@@ -220,6 +220,13 @@ try {
     assert(observed.slice(beforeCompaction).some(row => row.session === primary.session
       && row.source === 'fork-compaction' && row.mode === 'primary' && !row.attested),
     `Compaction changed the root identity or source: ${JSON.stringify(observed.slice(beforeCompaction))}`)
+    // The proxy host runs Meridian silently, so its request log lines (which
+    // name the routed model) are read from the diagnostic log while it runs.
+    const logs = await fetch(`${proxyURL}/telemetry/logs`).then(r => r.ok ? r.json() : []).catch(() => [])
+    compactionModels = (Array.isArray(logs) ? logs : []).flatMap(entry => {
+      const routed = String(entry?.message ?? '').match(/ source=fork-compaction\b.*? model=(\S+)/)
+      return routed ? [routed[1]] : []
+    })
   } finally {
     server.kill()
     await server.exited
@@ -240,9 +247,10 @@ try {
       const [stdout, stderr] = await proxyOutput
       writeFileSync(join(root, 'meridian.stdout'), stdout)
       writeFileSync(join(root, 'meridian.stderr'), stderr)
-      // The relay sees the model the client asked for; the tier Meridian routed
-      // the compaction to is only in its request log line.
-      compactionModels = [...`${stdout}\n${stderr}`.matchAll(/ source=fork-compaction\b[^\n]*? model=(\S+)/g)].map(match => match[1])
+      // Fallback for a proxy that is not silent: its request log on stdout/stderr.
+      if (compactionModels.length === 0) {
+        compactionModels = [...`${stdout}\n${stderr}`.matchAll(/ source=fork-compaction\b[^\n]*? model=(\S+)/g)].map(match => match[1])
+      }
     }
   }
 }
