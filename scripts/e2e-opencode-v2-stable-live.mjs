@@ -20,6 +20,15 @@ const project = join(root, 'project')
 const config = join(root, 'opencode')
 const meridianConfig = join(root, 'meridian')
 for (const path of [project, config, meridianConfig]) mkdirSync(path)
+// The server scrub a Claude subscription needs for OpenCode traffic; without
+// it Claude can refuse the client as third-party ("extra usage").
+if (process.env.E2E_PLUGIN_PATH) {
+  writeFileSync(join(meridianConfig, 'plugins.json'),
+    JSON.stringify({ plugins: [{ path: resolve(process.env.E2E_PLUGIN_PATH), enabled: true }] }))
+}
+// The source the installed plugin is expected to send for attached compaction;
+// override only to observe an older plugin build as a control.
+const compactionSource = process.env.E2E_COMPACTION_SOURCE ?? 'fork-compaction'
 const marker = `OC2_STABLE_${randomUUID()}`
 const variantMarker = `VARIANT_${randomUUID()}`
 const fileReceipt = `FILE_RECEIPT_${randomUUID()}`
@@ -218,13 +227,13 @@ try {
     })
     assert(settled.ok, `Session compaction did not settle: ${settled.status}`)
     assert(observed.slice(beforeCompaction).some(row => row.session === primary.session
-      && row.source === 'fork-compaction' && row.mode === 'primary' && !row.attested),
+      && row.source === compactionSource && row.mode === 'primary' && !row.attested),
     `Compaction changed the root identity or source: ${JSON.stringify(observed.slice(beforeCompaction))}`)
     // The proxy host runs Meridian silently, so its request log lines (which
     // name the routed model) are read from the diagnostic log while it runs.
     const logs = await fetch(`${proxyURL}/telemetry/logs`).then(r => r.ok ? r.json() : []).catch(() => [])
     compactionModels = (Array.isArray(logs) ? logs : []).flatMap(entry => {
-      const routed = String(entry?.message ?? '').match(/ source=fork-compaction\b.*? model=(\S+)/)
+      const routed = String(entry?.message ?? '').match(new RegExp(` source=${compactionSource}\\b.*? model=(\\S+)`))
       return routed ? [routed[1]] : []
     })
   } finally {
@@ -237,7 +246,7 @@ try {
   writeFileSync(join(root, 'requests.json'), JSON.stringify(observed, null, 2))
   summary = { result: 'PASS', root, client: expectedClientVersion, meridian: version, model,
     requests: observed.length, primary: observed.filter(row => row.agent === 'build'),
-    auxiliary: observed.filter(row => row.agent === 'generate' || row.source === 'fork-compaction') }
+    auxiliary: observed.filter(row => row.agent === 'generate' || row.source === compactionSource) }
 } finally {
   relay?.stop(true)
   if (proxy) {
@@ -249,7 +258,7 @@ try {
       writeFileSync(join(root, 'meridian.stderr'), stderr)
       // Fallback for a proxy that is not silent: its request log on stdout/stderr.
       if (compactionModels.length === 0) {
-        compactionModels = [...`${stdout}\n${stderr}`.matchAll(/ source=fork-compaction\b[^\n]*? model=(\S+)/g)].map(match => match[1])
+        compactionModels = [...`${stdout}\n${stderr}`.matchAll(new RegExp(` source=${compactionSource}\\b[^\\n]*? model=(\\S+)`, 'g'))].map(match => match[1])
       }
     }
   }
